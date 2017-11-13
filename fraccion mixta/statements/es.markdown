@@ -1,6 +1,6 @@
 # Descripción
-Estas navegando por la red cuando te encuentras una página que te recuerda que en el pasado habian muchas formas  diferentes de representar las fracciones: porcentajes, decimales y fracciones mixtas. No importaba lo  grandes que fueran los números , las fracciones siempre lograban de representarlos  en una manera tan hermosa y compacta, te das cuenta que se empieza a perder la costumbre.
-En este problema se te dara una fracción de la manera n/m y  deberas encontrar a y b 0<=b<d , tal que  am + b = n . ** No debes simplificar (el denominador). **
+Estas navegando por la red cuando te encuentras una página que te recuerda que en el pasado habían muchas formas  diferentes de representar las fracciones: porcentajes, decimales y fracciones mixtas. No importaba lo  grandes que fueran los números , las fracciones siempre lograban  representarlos  en una manera  hermosa y compacta, cuando te diste cuenta que se empezo a perder la costumbre.
+En este problema se te dara una fracción de la manera n/m y  deberas encontrar a y b 0<=b<m , tal que  am + b = n . ** No debes simplificar (el denominador). **
 
 
 # Entrada
