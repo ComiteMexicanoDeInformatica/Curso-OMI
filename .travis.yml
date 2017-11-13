@@ -1,0 +1,10 @@
+language: python
+python:
+  - "3.5"
+
+install:
+  - "pip install -e . --upgrade"
+  - "pipenv install --dev"
+
+script:
+  - "python3 omegaup-deploy/deploy.py 'comida fria'"
