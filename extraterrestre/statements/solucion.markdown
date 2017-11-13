@@ -23,6 +23,11 @@ Como puedes ver hay diferentes escenarios que tu programa debe ser capaz de reso
 
 Si observamos la ultima imagen, debido a que los rectángulos no se sobreponen en ninguna celda, podemos obtener la respuesta sumando el área de cada uno. 
 
+C++
+
+	area = (der_1 - izq_1) * (arriba_1 - abajo_1) ; 
+ 
+
 Sin embargo, si los rectángulos se sobreponen en al menos una celda al hacer esto nos dara un area mayor a la que en realidad es, esto debido a que estamos contando dos veces cada celda en la que se sobreponen. Como podemos ver en la siguiente imagen:
 
 ![colorEjemplo](img07.png)
@@ -57,9 +62,26 @@ Se puede ver que la línea roja coincide con una arista izquierda de uno de los r
 Ahora ya que tenemos dos opciones, ¿cual de las arista izquierdas hay que tomar?
 Bueno la respuesta es algo sencilla, hay que tomar la arista izquierda (de los rectángulos que se dan en la entrada) que esté mas a la derecha. Al experimentar con mas casos podras darte cuenta porque la arista izquierda (de alguno de los rectángulos) que este mas a la izquierda no puede ser parte de la intersección.
 
+C++
+	if(izq_1 > izq_2){
+		izq_intr = izq_1;	
+	}else{
+		izq_intr = izq_2;
+	}
+
 Como se puede observar, algo similar pasa con la línea verde, hay que tomar la arista derecha (de alguno de los rectángulos) que este mas a la izquierda. 
 
-Ahora buen, para las arista de arriba y abajo pasa algo similar, solo hay que adecuar el procedimiento que acabamos de realizar.
+C++
+	if(der_1 < der_2){
+		der_intr = der_1;
+	}else{
+		der_intr = der_2;
+	}
+
+Ahora bien, para las arista de arriba y abajo pasa algo similar, solo hay que adecuar el procedimiento que acabamos de realizar. Una vez con las cuatro variables calcular el área de intersección sería algo como:
+
+C++
+	area_intr = (der_intr - izq_intr) * (arriba_intr - abajo-intr);
 
 Ahora hay que considerar el siguiente caso, cuando no existe rectángulo de intersección:
 
@@ -68,3 +90,15 @@ Ahora hay que considerar el siguiente caso, cuando no existe rectángulo de inter
 Lo que se puede detectar facilmente, ya que el línea roja estará mas a la derecha que la línea verde, y en este caso el área de intersección será cero.
 
 Con estas observaciones ya se pueden calcular la cantidad de celdas de la intersección y obtener el resultado correcto, sin contar ninguna celda mas de una vez.
+
+C++
+	if(izq_intr < der_intr && abajo_intr < arriba_intr){
+		area_intr = (der_intr - izq_intr) * (arriba_intr - abajo-intr);
+	}else{
+		area_intr = 0;
+	}
+
+# Obtener el área correcta
+
+C++
+	area_total = area_1 + area_2 - area_intr
