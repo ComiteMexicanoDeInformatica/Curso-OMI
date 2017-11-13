@@ -1,25 +1,25 @@
-# Historia
+#Historia
+En un lejano planeta coexisten dos culturas ancestrales, la Numírica y la Enteral y pese a sus similitudes culturales, se comunican en lenguajes totalmente diferentes.
 
-En un planeta lejano existen dos lenguajes: Numírico y Enteral. aunque los dos son muy parecidos por que comparten el mismo alfabeto cada palabra se escribe diferente.
+Por ejemplo, en numírico podrías decir "hola" con "53134" mientras que en enteral sería "46952".
 
-Por ejemplo, "hola" en Numírico se escribe "53134" y en Enteral "46952"
+Tu tarea será realizar traducciones entre ambos idiomas.
 
-Se te ha contratado para que ayudes a traducir palabras de un lenguaje al otro.
+# Problema
 
-# Tarea
-
-Escribe un programa que lea un diccionario de palabras y después pueda traducir palabras de un lenguaje al otro.
+Escribe un programa que dada una lista de palabras que representa un diccionario, pueda traducir palabras entre lenguajes.
 
 # Entrada
 
-La primera línea de entrada consiste de dos enteros $d$ y $w$
-Las siguientes $d$ líneas representan una traducción del diccionario. Cada línea contiene dos enteros $n_{i}$ y $e_{i}$ separados por un espacio: La palabra en Númirico y su traducción a Enteral. Se te garantiza que no hay palabras de Númirico repetidas en el diccionario.
+La primer linea tendrá dos enteros $d$ y $w$. Las siguientes $d$ lineas representan las traducciones del diccionario. Cada una con un par de enteros; $n_i$ y $e_i$ separados por un espacio.
 
-Las siguientes $w" líneas contienen una sola palabra en Numírico para que traduzcas.
+$n_i$ representa una palabra en numírico y $e_i$ su representación a enteral. Puedes estar seguro de que las palabras no se repetirán en el diccionario.
 
+Las siguientes $w$ líneas contienen un entero, representando la palabra en numírico que tendrás que traducir.
 
 # Salida
-Por cada palabra en Númirico que se te pide que traduzcas debes imprimir una línea que contenga su traduccion en Enteral. En caso de que no haya traducción debes imprimir "C?" para esa línea.
+
+Por cada palabra a traducir, deberás imprimir una línea que contenga su respectiva traduccion en enteral. Si una palabra no tiene traducción debes imprimir *"C?"* en esa línea.
 
 # Ejemplo
 
@@ -44,11 +44,10 @@ Por cada palabra en Númirico que se te pide que traduzcas debes imprimir una l�
 556
 C?
 ||description
-Observa que la palabra en Numírico $4$ no tiene traducción a Enteral.
+Como la palabra "4" no tiene una traducción a enteral, se imprime "C?".
 ||end
 
 # Límites
 
 * $0 \leq d, w \leq 1,000$
 * $-2,000,000,000 \leq n_{i}, e_{i} \leq 2,000,000,000$
-

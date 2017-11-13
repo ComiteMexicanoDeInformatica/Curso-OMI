@@ -51,3 +51,7 @@ La salida consiste de 5 líneas contestando las preguntas en el orden en que se 
 * $0 \leq p_{i} \leq 2,000,000,000$
 * $1 \leq x \leq n$
 
+#Nota
+
+* Se te asegura que la cantidad de pasajeros en los camiones son todas diferentes.
+
