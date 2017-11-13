@@ -1,16 +1,15 @@
-# Descripción.
 No dejes que el titulo del problema te engañe, si tu programa cuenta hasta el infinito es probable que suceda una de estas dos cosas:
 
 a) La computadora se canse y pare de contar.
 
 b) Obtengas un tiempo límite excedido.
 
-Por eso, lo único que tienes que hacer, es contar hasta n.
+Por eso, lo único que tienes que hacer, es contar hasta $n$.
 
 # Entrada.
-Un número n, el número hasta donde debes contar.
+Un número $n$, el número hasta donde debes contar.
 # Salida.
-Una lista de n números, los números del 1 al n, cada uno en una línea
+Una lista de $n$ números, los números del 1 al $n$, cada uno en una línea
 # Ejemplo.
 ||input
 1
@@ -29,6 +28,6 @@ Una lista de n números, los números del 1 al n, cada uno en una línea
 8
 ||end
 #Consideraciones.
-1<=n<=10,000
+1$\leq n\leq$10,000
 
 
