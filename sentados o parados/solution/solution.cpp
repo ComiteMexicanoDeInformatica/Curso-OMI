@@ -3,13 +3,20 @@ using namespace std;
 
 int main()
 {
-int a,b,c,d;
-cin>>a>>b>>c;
-d=a*b;
-cout<<d<<" ";
-if(d<=c)
+int r,s,b,ns;
+cin>>r>>s>>b;
+ns=r*s;
+if(ns<=b)
 {
-    cout<<c-d;
+cout<<ns<<" ";
+}
+else
+{
+    cout<<b<<" ";
+}
+if(ns<=b)
+{
+    cout<<b-ns;
 }
 else
 {
