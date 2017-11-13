@@ -1,10 +1,9 @@
 language: python
 python:
-  - "3.5"
-
+- '3.5'
 install:
-  - "pip install pipenv"
-  - "pipenv install --dev"
-
+- pip install pipenv
+- pipenv install --dev
 script:
-  - "python3 omegaup-deploy/deploy.py 'comida fria'"
+- pwd
+- python3 omegaUp-deploy/deploy.py 'comida fria'
