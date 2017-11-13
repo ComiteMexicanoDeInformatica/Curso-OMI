@@ -1,0 +1,3 @@
+[submodule "omegaUp-deploy"]
+	path = omegaUp-deploy
+	url = git@github.com:frcepeda/omegaUp-deploy.git
