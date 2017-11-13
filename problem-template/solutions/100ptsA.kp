@@ -1,0 +1,34 @@
+iniciar-programa
+    define-nueva-instruccion derrota-bandido(n) como inicio
+        si junto-a-zumbador entonces inicio
+            si si-es-cero(n) entonces inicio
+                repetir 2 veces gira-izquierda;
+                avanza;
+                apagate;
+            fin sino inicio
+                coge-zumbador;
+                derrota-bandido(precede(n));
+            fin;
+        fin sino inicio
+            si frente-libre entonces inicio
+                avanza;
+                derrota-bandido(n);
+            fin;
+        fin;
+    fin;
+    
+    define-nueva-instruccion cuenta-zumbadores-en-mochila(n) como inicio
+        si algun-zumbador-en-la-mochila entonces inicio
+            deja-zumbador;
+            cuenta-zumbadores-en-mochila(sucede(n));
+        fin sino inicio
+            repetir n veces coge-zumbador;
+            derrota-bandido(n);
+        fin;              
+    fin;
+
+    inicia-ejecucion
+        mientras no-orientado-al-este hacer gira-izquierda;
+        cuenta-zumbadores-en-mochila(0);
+    termina-ejecucion
+finalizar-programa
