@@ -1,0 +1,10 @@
+interface Main {
+};
+
+interface pila {
+    void agrega(
+        int n
+    );
+
+    int saca();
+};
