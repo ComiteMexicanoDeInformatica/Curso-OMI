@@ -8,19 +8,12 @@ cin>>r>>s>>b;
 ns=r*s;
 if(ns<=b)
 {
-cout<<ns<<" ";
+cout<<ns<<" "<<b-ns;
 }
 else
 {
-    cout<<b<<" ";
+    cout<<b<<" "<<0;
 }
-if(ns<=b)
-{
-    cout<<b-ns;
-}
-else
-{
-    cout<<0;
-}
+
 cout<<endl;
 }
