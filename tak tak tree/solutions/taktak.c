@@ -1,14 +1,12 @@
 
 #include<stdio.h>
-FILE* inputFile;
-FILE* outputFile;
 int main(){
-	int vegetales;
-	int nLunasLlenas=0;
-	scanf("%i",&vegetales);
-	while(vegetales%11!=1){
-		vegetales*=2;
-		nLunasLlenas++;
+	int nFrutas;
+	int nLunas=0;
+	scanf("%i",&nFrutas);
+	while(nFrutas%11!=1){
+		nFrutas*=2;
+		nLunas+=1;
 	}
-	printf("%i %i\n",nLunasLlenas,vegetales);
+	printf("%i %i\n",nLunas,nFrutas);
 }

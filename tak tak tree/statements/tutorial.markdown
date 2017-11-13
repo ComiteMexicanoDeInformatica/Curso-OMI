@@ -1,3 +1,4 @@
+
 # Análisis inicial
 
 Vamos a resumir la redacción del problema: hay un árbol que tiene algunos números como frutas. Ese números se duplica cada luna llena. Vamos a escribir un programa que cuente cuantas lunas llenas deberán pasar, hasta que el número satisfaga cierta condición ( es decir, hasta que el número sea un 'número bueno para la fiesta').

@@ -1,8 +1,7 @@
 
 # Historia
 
-La escuela está organiznado una excursión y es tu trabajo llevar el control de cuántos alumnos viajan en cada uno de los camiones.
-
+La escuela está organizando una excursión y es tu trabajo llevar el control de cuántos alumnos viajan en cada uno de los camiones.
 Para esto tienes una lista de todos los camiones y el número de alumnos que viaja en cada uno.
 
 Después se te hará una serie de preguntas del tipo "¿Cuántos alumnos hay en el camión $x$?" y debes responder el número que tienes en tu lista.
@@ -15,7 +14,7 @@ Escribe un problema que lea la lista de camiones y después conteste una serie d
 
 Tu programa deberá leer del teclado dos enteros $n$ y $p$. 
 Donde $n$ es el número de camiones y $p$ el número de preguntas que deberás contestar.
-Las siguientes $n$ lineas contienen un número entero que representa el número de alumnos en cada camión.
+Las siguientes $n$ lineas contienen ca auna un número entero que representa el número de alumnos en ese camión. El primer camión que se te da como entrada tiene como índice $1$, el segundo tiene índice $2$ y el $n$-ésimo tiene índice $n$.
 Las siguientes $p$ lineas contienen un número que representa la $x$ de la pregunta que debes responder.
 
 # Salida
