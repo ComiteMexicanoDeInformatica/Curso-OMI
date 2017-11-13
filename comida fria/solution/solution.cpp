@@ -3,17 +3,17 @@ using namespace std;
 
 int main()
 {
-int a,b,c,d=999999999,e=-1;
-cin>>a;
-c=0;
+int n,b,total,minimo=999999999,maximo=-1;
+cin>>n;
+total=0;
 //cout<<d;
-for(int i=0;i!=a;i++)
+for(int i=0;i!=n;i++)
 {
     cin>>b;
-    c+=b;
-    d=min(d,b);
-    e=max(e,b);
+    total+=b;
+    minimo=min(minimo,b);
+    maximo=max(maximo,b);
 }
-cout<<d<<" "<<e<<" "<<c/a;
+cout<<minimo<<" "<<maximo<<" "<<total/n; ///calculo del promedio (total/n )
 
 }
