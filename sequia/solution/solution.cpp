@@ -10,8 +10,8 @@ int main()
 		cin>>lluvia;
 		total+=lluvia;
 		if (total >= c) {
-			cout<<d; //respuesta de días en que se llenó
-			break;	//no se requiere continuar
+			cout<<d;   //respuesta de días en que se llenó
+			break;	  //no se requiere continuar
 		}
 	}
     return 0;
