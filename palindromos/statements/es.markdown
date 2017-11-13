@@ -1,30 +1,36 @@
-# Problema
-
-<!-- definir de qué se trata el problema de la manera mas clara y concisa posible -->
+#  Palíndromo
+# Descripción
+En una escuela preparatoria, la maestra de español organizó un concurso de escribir palíndromos. Un palíndromos es una palabra, número o frase que se lee igual del principio al final, o del final hacia el principio. 
+En este concurso se jugará con palabras solamente.
+Te pidieron que escribas un programa que lea una palabra y decida si es palíndromo o no.
 
 # Entrada
 
-<!-- Aquí se explica el formato de la entrada -->
+Una linea con una palabra.
 
 # Salida
 
-<!-- Aquí se explica el formato de la salida -->
+Una linea con la respuesta: Si o No. 
 
 # Ejemplo
 
 ||input
-entrada de ejemplo
+reconocer
 ||output
-solución de caso de ejemplo
+Si
 ||description
-explicación de la solución del caso de ejemplo
+reconocer se lee igual del principio al final que del final hacia el principio.
 ||end
-
+||input
+rallar
+||output
+Si
+||end
+||input
+roma
+||output
+No
+||end
 # Límites
 
-<!-- definir aquí todos los límites necesarios para que las personas encargadas
-de hacer las soluciones y los casos de pruebas no tengan niguna duda 
-
-Si el problema se divide en subtasks se define aquí
-
--->
+* Las palabras pueden tener de 1 a 1000 caracteres
