@@ -1,0 +1,56 @@
+# Tarea
+
+Escribe un programa que lea una lista de enteros no negativos y encuentre todos los "triples" (múltiplos de 3). Para el propósito de este problema un triple se define como cualquier número que se pueda expresar como $3 \times x$. por lo que $0$ y $3$ se consideran triples.
+
+Para complicar un poco más las cosas, una vez que identifiques todos los triples debes imprimir su ubicación en la lista original.
+
+# Entrada
+
+La primera línea de entrada consiste de un enteros $n$ que representa el número de enteros en la lista.
+Las siguientes $n$ líneas representan los enteros de la lista.
+
+# Salida
+Si hubo múltiplos de 3 en la lista, la primera línea de salida debe ser un número $k$ que indica el número de triples encontrados. La segunda línea contiene $k$ enteros separados por un espacio, describiendo la posicion de los triples en orden ascendiente.
+
+Si no hay triples solo debes imprimir, "no hay triples".
+
+# Ejemplo 1
+
+||input
+7
+10
+12
+8
+9
+3
+29
+30
+||output
+4
+2 4 5 7
+||description
+4 enteros en la lista son triples: el segundo, cuarto quinto y séptimo. (sus valores son 12 = 3x4, 9 = 3x3, 3 = 3x1, y 30 = 3x10.)
+||end
+
+# Ejemplo 2
+
+||input
+7
+16
+49
+2
+10
+28
+55
+31
+||output
+no hay triples
+||description
+Ningún número en la lista es un múltiplo de 3
+||end
+
+# Límites
+
+* $1 \leq n \leq 50,000$
+* $0 \leq l_{i} \leq 2,000,000,000$
+
