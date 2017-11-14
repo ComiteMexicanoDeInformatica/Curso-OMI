@@ -1,4 +1,4 @@
-﻿Este problema puede ser resuelto simulando la fila de clientes. Para ello, podemos usar un arreglo donde guardemos el número de tacos que pide cada cliente.
+Este problema puede ser resuelto simulando la fila de clientes. Para ello, podemos usar un arreglo donde guardemos el número de tacos que pide cada cliente.
 
     int v[10000]; //v[i] = número de tacos que ordena la persona i
 
@@ -43,7 +43,7 @@ Calcular el tamaño de nuestra cola resulta tarea fácil si guardamos el valor e
         return cont;
     }
 
-Esta estructura de datos que hemos implementado, como es de suponerse, recibe el nombre de **cola**. Una vez implementada, ya podemos usarla para resolver nuestro problema.
+Una vez implementada, ya podemos usarla para resolver nuestro problema.
 
     switch (oper) {
         case 1:
@@ -60,3 +60,5 @@ Esta estructura de datos que hemos implementado, como es de suponerse, recibe el
         case 4:
             cout << venta << endl;
     }
+
+Esta estructura de datos que hemos implementado, como es de suponerse, recibe el nombre de **cola**. Su nombre se debe precisamente a que simula el comportamiento de una cola o fila de espera, como en el problema que acabamos de resolver.
