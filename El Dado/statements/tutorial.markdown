@@ -12,5 +12,12 @@ Existen 6 resultados posibles {1, 2, 3, 4, 5, 6}
 # Función
 Una función es un conjunto de líneas de código que realizan una tarea específica y puede retornar un valor. Las funciones pueden tomar parámetros que modifiquen su funcionamiento. Las funciones son utilizadas para descomponer grandes problemas en tareas simples y para implementar operaciones que son comúnmente utilizadas durante un programa y de esta manera reducir la cantidad de código. Cuando una función es invocada se le pasa el control a la misma, una vez que esta finalizó con su tarea el control es devuelto al punto desde el cual la función fue llamada.
 
+!{Funcion}(funcion.png)
+
+	<tipo> [clase::] <nombre> ( [Parámetros] ).
+	{
+		cuerpo;
+	}
+
 # Límites
 Recuerda que el número debe de ser entero y entre el 1 al 6
