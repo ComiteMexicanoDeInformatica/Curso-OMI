@@ -9,7 +9,7 @@ La entrada consiste en dos enteros $a$ y $b$ separados por un espacio en blanco.
 
 Tu salida debe de consistir en un solo numero entero, la sumar $a$ y $b$.  
 
-#Ejemplo 
+#Ejemplo
 ||input
 5 5
 ||output
@@ -27,4 +27,3 @@ Tu salida debe de consistir en un solo numero entero, la sumar $a$ y $b$.
 #Límites
 
  * $a$ y $b$ pueden ser valores desde $1$ hasta $1,000$
-
