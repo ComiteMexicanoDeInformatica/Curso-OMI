@@ -26,4 +26,4 @@ Randy es el primero en salir
 Randy es el último en salir.
 ||end
 # Límites
-$1$ $\leq$ $N,K$ $\leq$ $10^4$
+$1$ $\leq$ $N,K$ $\leq$ $1000$
