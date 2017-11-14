@@ -37,10 +37,6 @@ int main()
         {
             cin>>a1;
             a1=sqrt(a1);
-            a1*=100;
-            a=a1;
-            a1=a;
-            a1/=100;
             printf("%.2f\n", a1);
         }
         if(k==5)
