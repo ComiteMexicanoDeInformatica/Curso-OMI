@@ -14,4 +14,8 @@ Por lo tanto, cuando hablamos de la complejidad del algoritmo, solo nos interesa
 
 Ahora, cuando tenemos una complejidad de la forma $O(n^2 + n)$, podemos también aplicar la propiedad que acabamos de definir. Esto pues se tiene que $n \leq n^2$ para cualquier $n$ entera. Así pues, podemos notar que $n^2+n \leq n^2 + n^2 = 2n^2$. Entonces, podemos reescribir nuestra complejidad como $O(2n^2)$, y por lo anterior, esto es igual a $O(n^2)$.
 
-Por lo tanto, ya que tenemos una definición un poco formal de la complejidad, podemos dar cual es la idea intuitiva de la complejidad. La cuál es, buscar una manera de acotar la cantidad de operaciones que realiza nuestro algoritmo. 
+Ya que tenemos una buena idea intuitiva de complejidad, podemos dar ejemplos de para que sirve esta herramienta. Pero antes, hay que definir que significa que un programa "corre en tiempo".
+
+A una máquina le toma alrededor de $1$ segundo hacer $70,000,000$ operaciones. Con esta información, es más fácil ver como podemos usar la complejidad de una forma útil. Por ejemplo, si nos dan como tiempo límite por caso $1$ segundo, y con las herramientas anteriores deducimos que nuestro algoritmo es $O(n^3)$ con $n \leq 1000$, entonces se tiene que $n^3 = 1,000,000,000 > 70,000,000$, por lo que nuestro algoritmo no correría en $1$ segundo. Esta es la definición de que un algoritmo no "entra en tiempo".
+
+De modo que, con la complejidad podemos saber cuando un algoritmo va a "entrar" en tiempo antes de implementarlo, y cuando no.
