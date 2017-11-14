@@ -15,7 +15,7 @@ script:
 - pipenv run python3 deploy.py --onlychanges "../Excursion"
 - pipenv run python3 deploy.py --onlychanges "../Traductor"
 - pipenv run python3 deploy.py --onlychanges "../Paseo por el Bosque"
-- pipenv run python3 deploy.py --onlychanges "../pila interactivo"
+- pipenv run python3 deploy.py --onlychanges "../PilaInteractivo"
 - pipenv run python3 deploy.py --onlychanges "../Funciones Matematicas"
 env:
   global:
