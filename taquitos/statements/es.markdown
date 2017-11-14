@@ -1,4 +1,4 @@
-# Descripción
+﻿# Descripción
 
 Eres el dueño de un puesto de tacos. Sin embargo, en estas últimas semanas tus tacos se han vuelto realmente famosos dentro de la ciudad gracias a su sabor único e inigualable. Es por ello que todos los días se forman largas filas de espera. Debido a esto, te gustaría llevar un control del negocio. Para hacer la tarea más fácil, has decidido crear un programa que te ayude en esta tarea.
 
@@ -49,6 +49,6 @@ Al principio se forman 3 personas pidiendo $4$, $3$ y $10$ tacos respectivamente
 
 # Límites
 
-* $1 \leq n \leq 100,000$
-* $1 \leq t \leq 1000$
+* $1 \leq n \leq 10,000$
+* $1 \leq t \leq 1,000$
 * Nunca se atenderá a una fila vacía.
