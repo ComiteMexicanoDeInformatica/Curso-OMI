@@ -4,7 +4,7 @@
 #include <string>
 #include <sstream>
 #include <random>
-#include <stack>
+#include <queue>
 #include <limits>
 using namespace std;
 void solucion(string entrada,string salida);
@@ -67,7 +67,7 @@ void solucion(string entrada,string salida)
     /**termina la redirección de cin y cout**/
 
     /**la solución del problema**/
-    stack<int> p;
+    queue<int> p;
 
     while(!p.empty()) p.pop();
     int n_,val_;
@@ -91,7 +91,7 @@ void solucion(string entrada,string salida)
             }
             else
             {
-                cout << p.top() << endl;
+                cout << p.front() << endl;
                 p.pop();
             }
         }

@@ -1,4 +1,4 @@
-Funciones Recursivas [topcoder](https://www.topcoder.com/community/data-science/data-science-tutorials/an-introduction-to-recursion-part-1/).)
+Funciones Recursivas ([topcoder](https://www.topcoder.com/community/data-science/data-science-tutorials/an-introduction-to-recursion-part-1/).)
 ===================
 La *recursión* es una herramienta de programación maravillosa, provee una forma simple y poderosa de abordar  una variedad de problemas. Con frecuencia es dificil "pensar" recursivamente. También es facíl escribir un programa recursivo  que tarda demasiado tiempo en ejecutarse o no termina en absoluto. En este artículo repasaremos los conceptos básicos de la recursión y esperamos que te ayude a desarrollar o perfeccionar una habilidad de programación muy importante.
 
