@@ -10,7 +10,9 @@ script:
 - pipenv run python3 deploy.py --onlychanges "../a+b"
 - pipenv run python3 deploy.py --onlychanges "../sequia"
 - pipenv run python3 deploy.py --onlychanges "../tak tak tree"
+- pipenv run python3 deploy.py --onlychanges "../Triples"
 - pipenv run python3 deploy.py --onlychanges "../Excursion"
+
 env:
   global:
   - secure: r4dk13NNX6OcnDtXDCAd5gbEVYJUubfPWtWWK+ZbMAckICJ2CKmfw3XTnBUj6F9BWpeLt9FSpQGkF54vqnRfR4XSrQUS47BhHy37ej03y0O6AMh5WGdFqhQA52w/4b+rxfhLrn/V0QY4HHhT+pifXcXdFN2TMir6lfF1mkyvdS90fy1QCT4oXHh2JE4dh1hNOXIGUXlkdvHiaJVoViGBNOoMH4GwYV/mkBdCZcAAhW8JE15Er89Kc5fYZ3aCtOY0QdzrX1BWE5fwuQe6DyrNpa2lbw5psBmSgH45o84JK8xIZRQnAzdIAo00L4mAP4YuR4Y5a5H+N37+fYBtv6wlJe8paD6aMU9sMr6TM1qWh9EwRfOhNhgj9WFQl/dU5mQrjhlrJeINfKNPbAeKYvhHyRxaC3g3o7zdlXY/qckUA40GubpN/TAoNPPFiO0KgskpYV0k5JDSJ1i7mwotGJys3FVPDoO92mE9M6Qc19BsWBTzz/ZPlHVDeKrC/nkCrL8cMSSWC1Lj5tE2hZBoqnZyvfKXZbJhRttgcz46VL2+AFNxgGBXZQIavlYQnisayNsgEGl4BZYu57XvcO/dSmeBkOXo38m/oZ68lkxp9ZPHvoT3NbA+25vJVT0wB/kGbRFzJAQceIF4TFaiD9eKpDrg8SLUPEgYy5xdAEbyiUBqQUI=
