@@ -22,7 +22,7 @@ Ahora veamos cómo implementar cada una de estas funciones. La operación de `in
         cont++;
     }
 
-Para la función de `extraer`, lo único que difiere de la pila es que en esta ocasión modificamos la posición del inicio en lugar de la posición del fin. 
+Para la función de `extraer`, lo único que difiere de la pila es que en esta ocasión modificamos la posición del inicio en lugar de la posición del fin, y en lugar de moverla una posición atrás, la movemos una posición hacia adelante. 
 
     void extraer() {
         frente = frente + 1;
