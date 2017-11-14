@@ -1,95 +1,43 @@
-	/* Petróleo
- * AIO 2010
- * Solución de muestra C ++
- * /
+#include<stdio.h>
 
-#include <iostream>
-#include <fstream>
-usando namespace std;
+char mapa[2001][2001];
+int visitados[2001][2001]; //0 no visitado, 1 visitado
+int r,c,k;
+int a,b; //lugar donde se encuentra la plataforma
 
-/ * Estos son los límites definidos en la declaración del problema. * /
-const int MAX_R = 2000;
-const int MAX_C = 2000;
-
-/ * Los archivos de entrada y salida. * /
-FILE * input_file;
-FILE * output_file;
-
-/ *
- * num_rows y num_cols contendrán el alto y el ancho del mapa,
- * respectivamente.
- * /
-int num_rows;
-int num_cols;
-
-/ *
- * num_days contendrá la cantidad de días que necesita para realizar el
- * simulación.
- * /
-int num_days;
-
-mapa de char [2] [MAX_R] [MAX_C];
-/ * Las celdas adyacentes a (x, y) se encuentran en (x + dx [i], y + dy [i]) para 0 <= i <4. * /
-int dx [] = {1, -1, 0, 0}, dy [] = {0, 0, 1, -1};
-
-color vacío (int day, int r, int c) {
-    if (r <0 || c <0 || r> = num_rows || c> = num_cols) {
-        regreso;
-    }
-    if (mapa [(día + 1)% 2] [r] [c]! = '.') {
-        regreso;
-    }
-    mapa [día% 2] [r] [c] = '*';
+void derramaCasilla(int x,int y,int d)
+{
+	if(d>k) return;
+	mapa[x][y]='*';
+	visitados[x][y]=1;
+	if(y+1<c && mapa[x][y+1]=='.' && visitados[x][y+1]==0)
+		derramaCasilla(x,y+1,d+1);
+	if(x+1<r && mapa[x+1][y]=='.' && visitados[x+1][y]==0)
+		derramaCasilla(x+1,y,d+1);
+	if(y-1>=0 && mapa[x][y-1]=='.' && visitados[x][y-1]==0)
+		derramaCasilla(x,y-1,d+1);
+	if(x-1>=0 && mapa[x-1][y]=='.' && visitados[x-1][y]==0)
+		derramaCasilla(x-1,y,d+1);
 }
 
-int main (void) {
-
-    / * Abre los archivos de entrada y salida. * /
-    ifstream inputFile ("oilin.txt");
-    ofstream outputFile ("oilout.txt");
-
-    / *
-     * Lea la altura y el ancho del mapa desde el archivo de entrada, y el número
-     * de días para simular.
-     * /
-    inputFile >> num_rows >> num_cols >> num_days;
-
-    for (int r = 0; r <num_rows; r ++) {
-        for (int c = 0; c <num_cols; c ++) {
-            inputFile >> map [0] [r] [c];
-        }
-    }
-
-    / * Encuentra el derrame. * /
-    for (int d = 0; d <= num_days; d ++) {
-        for (int r = 0; r <num_rows; r ++) {
-            for (int c = 0; c <num_cols; c ++) {
-                mapa [(d + 1)% 2] [r] [c] = mapa [d% 2] [r] [c];
-            }
-        }
-        for (int r = 0; r <num_rows; r ++) {
-            for (int c = 0; c <num_cols; c ++) {
-                if (map [d% 2] [r] [c] == '*' || map [d% 2] [r] [c] == '$') {
-                    para (int i = 0; i <4; i ++) {
-                        color (d + 1, r + dx [i], c + dy [i]);
-                    }
-                }
-            }
-        }
-    }
-
-
-    / * Escribe la respuesta al archivo de salida. * /
-    for (int r = 0; r <num_rows; r ++) {
-        for (int c = 0; c <num_cols; c ++) {
-            outputFile << map [(num_days)% 2] [r] [c];
-        }
-        outputFile << '\ n';
-    }
-
-    / * Finalmente, cierre los archivos de entrada / salida. * /
-    inputFile.close ();
-    outputFile.close ();
-
-    return 0;
+int main()
+{
+	scanf("%d %d %d",&r,&c,&k);
+	for(int i=0;i<r;i++)
+		{
+		scanf("%s",mapa[i]);
+		//Buscamos la plataforma en este renglón
+		for(int j=0;mapa[i][j]!='\0';j++) 
+			if(mapa[i][j]=='$')
+				{
+				a=i;
+				b=j;
+				}
+		}
+	derramaCasilla(a,b,0);
+	mapa[a][b]='$';
+	for(int i=0;i<r;i++)
+		printf("%s\n",mapa[i]);
+	return 0;
 }
+
