@@ -31,6 +31,7 @@ Su programa debe leer del archivo texto. La primera línea de este archivo conte
 
 # Salida
 
+<<<<<<< HEAD
 Tu programa debe escribir en el archivo salida. Su archivo de salida debe consistir en líneas R , cada una con C caracteres. Cada carácter en esta cuadrícula debe ser el mismo que el carácter correspondiente en la cuadrícula de entrada, a excepción de las casillas marinas que han sido cubiertas por petróleo después de K días. Estos deberían estar representados por caracteres $ * $.
 
 ||input 
@@ -56,6 +57,33 @@ Tu programa debe escribir en el archivo salida. Su archivo de salida debe consis
 #*#
 *$*
 *##
+=======
+Tu programa debe escribir en el archivo salida. Su archivo de salida debe consistir en líneas R , cada una con C caracteres. Cada carácter en esta cuadrícula debe ser el mismo que el carácter correspondiente en la cuadrícula de entrada, a excepción de las casillas marinas que han sido cubiertas por petróleo después de K días. Estos deberían estar representados por caracteres ` * '.
+
+||input 
+4 6 4
+### ...
+ps
+... ###
+#. # .. #
+
+||output
+### **.
+ps
+*** ###
+# * # .. #
+
+||input
+4 3 2
+#. #
+ps
+. ##
+...
+||output
+# * #
+ps
+* ##
+>>>>>>> 71c114481f21c795a31d96aedbce04b6cbab7e88
 ...
 
 ||end

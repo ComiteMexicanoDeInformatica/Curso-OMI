@@ -1,4 +1,5 @@
 # Solución
+
 En este problema, debemos obtener el número máximo, el número mínimo y la media aritmética (promedio) de un conjunto de números.
 
 La idea es tener almacenadas variables que guarden el número máximo, número mínimo y suma de los números leídos hasta ahora.
