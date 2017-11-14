@@ -1,4 +1,4 @@
-# Descripción
+﻿# Descripción
 Históricamente las computadoras han ido evolucionando conforme a la cantidad de operaciones matemáticas que pueden hacer en determinado tiempo. Las operaciones manejadas tambien han ido evolucionando hasta llegar al punto en que la computadora puede hacer operaciones muy complejas. En este problema vamos a usar algunas operaciones básicas, las cuales se te presentan a continuación.
 
 ----------
@@ -37,7 +37,7 @@ La salida será $N$ líneas las cuales representarán el resultado de cada una d
 4 49
 ||output
 8
-5.38
+5.39
 16
 12
 -11
