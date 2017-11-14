@@ -12,7 +12,7 @@ Vas a escribir un paquete para estadística tan completo que los vas a dejar sin
 Con este paquete se va a poder predecír el clima, calcular la esperanza de vida de una persona, e inclusive será un jugador de poker imbatible. 
 
 Decides que lo primero que tu progama debe hacer es análisis de datos básico,
-en el que va a leer un conjunto de datos (una lista de enteros) y va a calcular las siguientes medidas de dispersión:
+que consiste en leer un conjunto de datos (una lista de enteros) y va a calcular las siguientes medidas de dispersión:
 
  * Valor mínimo: el valor más pequeño en la lista. Por ejemplo el valor más pequeño (mínimo) de los números {5, 6, 5, 3} es 3.
  * Valor máximo: el valor más grande en la lista. El valor más grande (máximo) de los números {5, 6, 5, 3} es 6.
