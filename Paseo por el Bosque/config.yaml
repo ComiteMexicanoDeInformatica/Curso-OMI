@@ -1,0 +1,26 @@
+alias: COMI-Paseo-por-el-Bosque
+
+generate-output: true
+solution: solution/100_A.cpp
+timeout: 0.5
+
+params:
+  title: Paseo por el Bosque
+  source: Curso OMI (Orac)
+
+  visibility: 0
+
+  languages: all
+
+  time_limit: 1000
+  memory_limit: 32768
+  output_limit: 16384
+  stack_limit: 10485760
+
+  overall_wall_time_limit: 60000
+
+  validator: token-caseless
+  validator_time_limit: 1000
+  extra_wall_time: 0
+
+  email_clarifications: 0
