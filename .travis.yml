@@ -12,6 +12,7 @@ script:
 - pipenv run python3 deploy.py --onlychanges "../tak tak tree"
 - pipenv run python3 deploy.py --onlychanges "../Triples"
 - pipenv run python3 deploy.py --onlychanges "../Excursion"
+- pipenv run python3 deploy.py --onlychanges "../Traductor"
 
 env:
   global:
