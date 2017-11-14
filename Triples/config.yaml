@@ -1,14 +1,14 @@
-alias: COMI-Tak-Tak-Tree
+alias: COMI-Triples
 
 generate-output: true
-solution: solutions/100_B.cpp
-timeout: 0.5
+solution: solution/solution.cpp
+timeout: 1
 
 params:
-  title: Tak Tak Tree
+  title: Triples
   source: Curso OMI (Orac)
 
-  visibility: 0
+  visibility: 1
 
   languages: all
 

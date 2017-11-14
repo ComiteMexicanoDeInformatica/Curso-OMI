@@ -47,9 +47,9 @@ La salida consiste de 5 líneas contestando las preguntas en el orden en que se 
 
 # Límites
 
-* $1 \leq n, q \leq 10,000$
-* $0 \leq p_{i} \leq 2,000,000,000$
-* $1 \leq x \leq n$
+* $1 \leq n, q \leq 10,000$.
+* $0 \leq p_{i} \leq 2,000,000,000$.
+* $1 \leq x \leq n$.
 
 #Nota
 
