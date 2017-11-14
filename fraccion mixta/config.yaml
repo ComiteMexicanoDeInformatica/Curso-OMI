@@ -1,15 +1,16 @@
-alias: COMI-a-b
+alias: comi-Fraccion-mixta
 
 generate-output: true
 solution: solution/solution.cpp
 timeout: 0.5
 
 params:
-  title: A + B
-  source: Curso OMI (Orac)
+  title: Fracción mixta
+  source: Curso OMI (ORAC)
 
   visibility: 1
 
+  # valid options: all, karel
   languages: all
 
   time_limit: 1000
@@ -19,6 +20,7 @@ params:
 
   overall_wall_time_limit: 60000
 
+  # valid options: token-caseless, token-numeric, token-numeric, custom, literal
   validator: token-caseless
   validator_time_limit: 1000
   extra_wall_time: 0
