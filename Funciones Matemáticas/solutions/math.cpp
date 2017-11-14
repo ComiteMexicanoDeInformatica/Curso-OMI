@@ -1,0 +1,64 @@
+#include<iostream>
+#include<stdio.h>
+#include<cmath>
+#include<bits/stdc++.h>
+#include<algorithm>
+using namespace std;
+
+int main()
+{
+    int a,b,c,d;
+    float a1,b1;
+    int f,k;
+    cin>>f;
+    for(int i=0;i!=f;i++)
+    {
+        cin>>k;
+        if(k==1)
+        {
+            cin>>a;
+            if(a<0)
+               {
+                   a*=-1;
+               }
+               cout<<a<<endl;
+        }
+        if(k==2)
+        {
+            cin>>a>>b;
+            cout<<max(a,b)<<endl;
+        }
+        if(k==3)
+        {
+            cin>>a>>b;
+            cout<<min(a,b)<<endl;
+        }
+        if(k==4)
+        {
+            cin>>a1;
+            a1=sqrt(a1);
+            a1*=100;
+            a=a1;
+            a1=a;
+            a1/=100;
+            printf("%.2f\n", a1);
+        }
+        if(k==5)
+        {
+            cin>>a>>b;
+            c=a;
+            if(b==0)
+            {
+                cout<<1<<endl;
+            }
+            else
+            {
+            for(int j=1;j!=b;j++)
+            {
+                a*=c;
+            }
+            cout<<a<<endl;
+            }
+        }
+    }
+}
