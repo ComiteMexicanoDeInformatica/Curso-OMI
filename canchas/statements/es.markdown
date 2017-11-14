@@ -31,4 +31,4 @@ Tu programa deberá escribir en la pantalla un único número entero que represe
 
 # Límites
 
-$0 <= x_1, y_1, x_2, y_2 <= 1,000$
+$0 \leq x_1, y_1, x_2, y_2 \leq 10,000$
