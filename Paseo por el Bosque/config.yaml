@@ -1,7 +1,7 @@
 alias: COMI-Paseo-por-el-Bosque
 
 generate-output: true
-solution: solutions/100_B.cpp
+solution: solution/100_A.cpp
 timeout: 0.5
 
 params:
