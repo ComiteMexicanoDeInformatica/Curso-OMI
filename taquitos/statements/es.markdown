@@ -13,7 +13,7 @@ En la primera línea recibirás un entero $N$, el número de operaciones a reali
 
 # Salida
 
-Por cada una de las entradas del tipo $3$ y $4$, un entero por línea representando la respuesta a la pregunta correspondiente.
+Por cada una de las entradas del tipo $3$ y $4$, deberás imprimir un entero por línea representando la respuesta a la pregunta correspondiente.
 
 # Ejemplo
 
