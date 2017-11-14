@@ -11,7 +11,7 @@
 
 	int saca()
 	{
-		if (tama�o == 0) {
+		if (tam == 0) {
 			return -1;
 		} else {
 		return arreglo[--tam];
