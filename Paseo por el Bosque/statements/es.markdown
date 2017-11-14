@@ -19,3 +19,10 @@ En la primera línea deberás imprimir el recorrido en pre-orden, en la segunda 
 1 2 3 4 5 6 7 8
 1 4 3 2 6 8 7 5
 ||end
+
+#Nota
+
+Aquí las definiciones de los recorridos mencionados. [Recorridos de un árbol][1]
+
+
+  [1]: https://es.wikipedia.org/wiki/Recorrido_de_%C3%A1rboles
