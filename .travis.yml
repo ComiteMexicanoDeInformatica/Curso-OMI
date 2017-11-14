@@ -15,6 +15,7 @@ script:
 - pipenv run python3 deploy.py --onlychanges "../Excursion"
 <<<<<<< HEAD
 - pipenv run python3 deploy.py --onlychanges "../Traductor"
+- pipenv run python3 deploy.py --onlychanges "../Paseo por el Bosque"
 
 =======
 >>>>>>> 3a6ae23222fdc58be8cbc2cd3a1bf307854d9373
