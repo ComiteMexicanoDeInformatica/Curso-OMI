@@ -4,7 +4,7 @@ Eres el dueño de un puesto de tacos. Sin embargo, en estas últimas semanas tus
 
 # Entrada
 
-En la primera línea recibirás un entero $N$. En las siguientes $N$ líneas recibirás un entero representando la operación a realizar:
+En la primera línea recibirás un entero $N$, el número de operaciones a realizar. En las siguientes $N$ líneas recibirás un entero representando la operación a realizar:
 
  - Si el entero es un $1$, significa que un nuevo cliente se forma en la fila, por lo que deberás leer un entero $t$ representando el número de tacos que desea ordenar.
  - Si el entero es un $2$, significa que el cliente que se encuentra al frente de la fila será atendido. Se asegura que nunca se atenderá a una fila vacía.
