@@ -2,7 +2,8 @@ Funciones Recursivas
 ===================
 La *recursión* es una herramienta de programación maravillosa, provee una forma simple y poderosa de abordar  una variedad de problemas. Con frecuencia es dificil "pensar" recursivamente. También es facíl escribir un programa recursivo  que tarda demasiado tiempo en ejecutarse o no termina en absoluto. En este artículo repasaremos los conceptos básicos de la recursión y esperamos que te ayude a desarrollar o perfeccionar una habilidad de programación muy importante.
 
-#¿Qué es la recursión?
+¿Qué es la recursión?
+-----------------------
 Para poder definir exactamente lo que es la recursión, primero necesitamos responder la pregunta "¿Qué es la recursión?" Basicamente, decimos que una función es recursiva si se llama a si misma. A continuación se muestra un pseudocódigo para una función recursiva que imprime la frase "Hola Mundo!" $n$ veces:
 
 ```
@@ -30,7 +31,8 @@ Imagina si "HolaMundo(10)" llamó a "HolaMundo(10)" que llamó "HolaMundo(10)". 
 
 A veces, la recursión puede parecer mágica en la forma en que descompone los grandes problemas. Sin embargo, no existe el almuerzo gratis. Cuando a nuestra función se le da un argumento de 10, imprimimos "Hola Mundo!" Una vez y luego lo imprimimos 9 veces más. Podemos pasar una parte del trabajo junto con una llamada recursiva, pero la función original todavía tiene que dar cuenta de las 10 copias de alguna manera.
 
-#¿Por qué usar recursión?#
+¿Por qué usar recursión?
+-------------------------
 El problema que ilustramos anteriormente es simple, y la solución que escribimos funciona, pero probablemente habría sido mejor simplemente usar un ciclo en lugar de la recursión. Donde la recursión tiende a brillar es en situaciones donde el problema es un poco más complejo. La recursión se puede aplicar a casi cualquier problema, pero hay ciertos escenarios para los cuales la encontrarás particularmente útil. En lo que resta de este artículo, analizaremos algunos de estos escenarios y, a lo largo del camino, discutiremos algunas ideas centrales más para tener en cuenta al usar la recursión.
 
 **Escenario n.º 1: Jerarquías, redes o gráfos**
