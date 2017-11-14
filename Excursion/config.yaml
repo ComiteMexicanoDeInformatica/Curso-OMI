@@ -1,11 +1,11 @@
-alias: COMI-Tak-Tak-Tree
+alias: COMI-Excursion
 
 generate-output: true
 solution: solutions/100_B.cpp
 timeout: 0.5
 
 params:
-  title: Tak Tak Tree
+  title: Excursion
   source: Curso OMI (Orac)
 
   visibility: 0
