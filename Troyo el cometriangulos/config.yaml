@@ -5,7 +5,7 @@ solution: solutions/100_A.cpp
 timeout: 0.5
 
 params:
-  title: Tak Tak Tree
+  title: Troyo el cometriángulos
   source: Curso OMI (Orac)
 
   visibility: 1

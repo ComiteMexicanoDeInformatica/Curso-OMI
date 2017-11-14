@@ -1,6 +1,6 @@
 # Solución
 
-[solucion](solu.jpg)
+![solucion](solu.jpg)
 
 Como podemos ver en la imágen, el triángulo $n$ es el mismo triángulo que el $n-1$, pero añadiendole la diagonal de $n$ puntos. 
 Y ya que el triángulo $1$ tiene $1$ solo punto, entonces el triángulo $2$ va a tener $1+2=3$ puntos, el tercer triángulo va a tener $1+2+3=6$ puntos, y así sucesivamente.
