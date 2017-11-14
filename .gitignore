@@ -4,3 +4,6 @@
 * MAC
 *.DS_STORE
 derrame de petroleo/statements/es,markdown
+*.zip
+*.exe
+a.out
