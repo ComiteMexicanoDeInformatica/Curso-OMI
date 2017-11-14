@@ -1,18 +1,18 @@
-#include "pila_interactivo.h"
+﻿#include "pila_interactivo.h"
 
 int arreglo[10000];
-int tamaño;
+int tam;
 
 void agrega(int n)
 {
-	arreglo[tamaño++] = n;
+	arreglo[tam++] = n;
 }
 
 int saca()
 {
-	if (tamaño == 0) {
+	if (tam == 0) {
 		return -1;
 	} else {
-		return arreglo[--tamaño];
+		return arreglo[--tam];
 	}	
 }

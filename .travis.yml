@@ -4,10 +4,20 @@ python:
 install:
 - pip install pipenv
 - pushd omegaUp-deploy
-- pipenv install requests
+- pipenv install
 script:
-- pipenv run python3 deploy.py "../comida fria"
+- pipenv run python3 deploy.py --onlychanges "../comida fria"
+- pipenv run python3 deploy.py --onlychanges "../a+b"
+- pipenv run python3 deploy.py --onlychanges "../sequia"
+- pipenv run python3 deploy.py --onlychanges "../tak tak tree"
+- pipenv run python3 deploy.py --onlychanges "../paréntesis"
+- pipenv run python3 deploy.py --onlychanges "../Triples"
+- pipenv run python3 deploy.py --onlychanges "../Excursion"
+- pipenv run python3 deploy.py --onlychanges "../Traductor"
+- pipenv run python3 deploy.py --onlychanges "../Paseo por el Bosque"
+
+
 env:
   global:
   - secure: r4dk13NNX6OcnDtXDCAd5gbEVYJUubfPWtWWK+ZbMAckICJ2CKmfw3XTnBUj6F9BWpeLt9FSpQGkF54vqnRfR4XSrQUS47BhHy37ej03y0O6AMh5WGdFqhQA52w/4b+rxfhLrn/V0QY4HHhT+pifXcXdFN2TMir6lfF1mkyvdS90fy1QCT4oXHh2JE4dh1hNOXIGUXlkdvHiaJVoViGBNOoMH4GwYV/mkBdCZcAAhW8JE15Er89Kc5fYZ3aCtOY0QdzrX1BWE5fwuQe6DyrNpa2lbw5psBmSgH45o84JK8xIZRQnAzdIAo00L4mAP4YuR4Y5a5H+N37+fYBtv6wlJe8paD6aMU9sMr6TM1qWh9EwRfOhNhgj9WFQl/dU5mQrjhlrJeINfKNPbAeKYvhHyRxaC3g3o7zdlXY/qckUA40GubpN/TAoNPPFiO0KgskpYV0k5JDSJ1i7mwotGJys3FVPDoO92mE9M6Qc19BsWBTzz/ZPlHVDeKrC/nkCrL8cMSSWC1Lj5tE2hZBoqnZyvfKXZbJhRttgcz46VL2+AFNxgGBXZQIavlYQnisayNsgEGl4BZYu57XvcO/dSmeBkOXo38m/oZ68lkxp9ZPHvoT3NbA+25vJVT0wB/kGbRFzJAQceIF4TFaiD9eKpDrg8SLUPEgYy5xdAEbyiUBqQUI=
-  - secure: t9EYxJZuJHqrv6ADSzC5CbrG3IwlMnRaMouk7/pcqASh0Y6IjRcOcsJUxlelDFnNfv7cN2XP0p14bzDe097UVbxKrzFaBrEs1kt5bclYQq6dX3DeMNe5yWFuHqRCgNBkMZSxl4quUIYrooV6dB2cwK4C+5MVecpVJHr/TA9iRi5FSAFGHLcLrlMlOsRO6f0Xx86SRaKWqooqNqzp1q4kbC0cDeWeGNbZXYW5Umb9ItdMBnhd6jaiV7kOMpJcFAOVEq4E7MfPLlVecYXw5B7jNQ/CaEoygekmjs3oyqqY5sCFt50fDDEA4GHsrFhqf9bON+MjYSU2uXRp/V7DdmpYewdy77As75+7oqG8DLS1Ni8G0ICEDwvfITC4G8n59iDbzlmV++KJd9k3FKuf3HcZaej6qylFDFfqEMJslsFxHnRXbCbuvDY2ieZWRX1ZsdTVK0XIRPp2yLvc2hsgCHumbV6BPy78Zu+33BDuLyaS/m/DIZaMIs5s0sISc+YViKa+JzhSKeFqz3RHdktRFuO/SPv8WGWKVa5uODNtEH0K621LMqzkRA8Y2FIzKHLvNFbWsPfaW+caF6W1OR/IYCNardlxgzOP5R5bUTKJJbLS9ZL4IqPYRRvafT9BslEeCZ+xNvIpHb+cChIWuvrU1TxMMnSZI/CPxh/Pc78l1GBA/7k=
+  - secure: TlMAuEK4ZrSn34bbYmeM2yFfzceAlzFfgp38KbgJiKekE9Sg8honnIkApSIPHPeXaNQN5jkDfLmS+MxesBB6Xpeo5KV3mXJV7OPI7F8je3Lf7z7dD3UU38LQiNJ3rEaiF9hFhznEfrK5L2CposHQ+ZnEGmA6M7xFtjcKvr6h5ZRQpaqNa3qGF9CXKp2G8KcPUSh7xGCCrDQ+Cj/BXIMrnKH6mTgWsuKgjRCC3L8XdBDrBTQuroTQMi5hBmug0b5VFVn/bK2+NaaEV7xt2HGIWC/Z8RQKr2TdfYgewOpABg+PPTn0+uB5Jt1Yu3rKRr/l6LLu4PulnGmvurkvmk/jJ15+aQMlEiBBDN9NknCiiqtX7JC+p2cx0P+pZE70ZjJAFs017enSIb23BLCVor4jzlbbJZihOuAjV+ht1H/b3sulC8P5YDk/7pmibkji6iEZyGKKe4i0k2NRP9yV1/4pbo8KJEreR45V7AG0Vwr82ZhSxorLQmFgpk9usZRnbpxigx4b3e1g/g9BmWHrOzWHtTv0bQDxsqqkbhkTzxFne8e2xPnt3NORGpQ58wJyCHwdX3JRGdcWGQL43OlLeyMkaBQDEbZUZqXrpUtLQ+YDt+96WAbE4Qa2qNRCMR+9ncTU9CBEHMlQ97e7QbULhdwnCO1FzRk1FLED8ZYuuH4ftPo=
