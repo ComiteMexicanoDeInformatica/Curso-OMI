@@ -10,14 +10,12 @@ La entrada consiste en dos enteros $a$ y $b$ separados por un espacio en blanco.
 
 Tu salida debe de consistir en un solo numero entero, la sumar $a$ y $b$.  
 
-#Ejemplo de entrada
-```
- 23 45 
-```
-#Ejemplo de salida
-```
- 68 
-```
-#Puntaje
- 
-El puntaje para cada caso sera del 100% si la respuesta es correcta, y sera de 0% si la respuesta es incorreta.
+#Ejemplo 
+||input
+5 5
+||output
+10
+||description
+Explicación
+||end
+
