@@ -10,7 +10,7 @@ script:
 - pipenv run python3 deploy.py --onlychanges "../a+b"
 - pipenv run python3 deploy.py --onlychanges "../sequia"
 - pipenv run python3 deploy.py --onlychanges "../tak tak tree"
-- pipenv run python3 deploy.py --onlychanges "../paréntesis"
+- pipenv run python3 deploy.py --onlychanges "../parentesis"
 - pipenv run python3 deploy.py --onlychanges "../Triples"
 - pipenv run python3 deploy.py --onlychanges "../Excursion"
 - pipenv run python3 deploy.py --onlychanges "../Traductor"
