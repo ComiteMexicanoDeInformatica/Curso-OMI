@@ -29,14 +29,12 @@ Se garantiza que eventualmente será posible realizar el festival.
 0 23
 ||description
 En el primer ejemplo, $23=2\times11+1$ es un buen número para el festival (cada aldeano recibe dos frutos Tak-Tak y uno sobra, como lo planeado). Es por ello que no necesitan esperar, pueden iniciar el festival inmediatamente.
-
 ||input
 17
 ||output
 1 34
 ||description
 En el segundo ejemplo, 17 no es un buen número para el festival. Después de una Luna llena, el número de frutos se ha duplicado, convirtiéndose en $34=3\times11+1$. Este es un buen número para el festival.
-
 ||input
 14
 ||output
