@@ -26,21 +26,20 @@ int main()
         string str = ss.str();
         in.open(str+".in");
         /** inicia tu codigo para generar el caso**/
-        if(n%2==0) //en casos pares no hay sobreventa de tickets
+        if((n+1)%2==0) //en casos pares hay sobreventa de tickets
         {
             /**la función dis establece el límite inferior y superior del random**/
-            std::uniform_int_distribution<> dis(1 , sqrt(casos[n]));
+            std::uniform_int_distribution<> dis(1 , sqrt(casos[n])-1);
             int r = dis(gen);
             int s = dis(gen);
             in << r <<" "<<s<<endl<<casos[n];
         }
-        else      //en casos impares hay sobreventa de tickets
+        else      //en casos impares no hay sobreventa de tickets
         {
             std::uniform_int_distribution<> dis(casos[n]/2+1 , casos[n]);
             int r = dis(gen);
-            int s = dis(gen);
-            int sobreventa=1000000000-r*s;
-            in << r <<" "<<s<<endl<<sobreventa;
+            int s = casos[n]-r;
+            in << r <<" "<<s<<endl<<casos[n];
         }
         /**termina tu código para generar el caso**/
 

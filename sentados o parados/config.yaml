@@ -1,6 +1,6 @@
-alias: COMI-Sentados-o-parados
+﻿alias: COMI-Sentados-o-parados
 
-generate-output: true
+generate-output: false
 solution: solution/solution.cpp
 timeout: 0.5
 
