@@ -1,10 +1,11 @@
-Este problema puede ser resuelto simulando la fila de clientes. Para ello, podemos usar un arreglo donde guardemos el número de tacos que pide cada cliente.
+﻿Este problema puede ser resuelto simulando la fila de clientes. Para ello, podemos usar un arreglo donde guardemos el número de tacos que pide cada cliente.
 
-    int cola[10000]; //cola[i] = número de tacos que ordena la persona i
+    int v[10000]; //v[i] = número de tacos que ordena la persona i
 
 Como recordaremos, en una *pila* manejamos además un índice que nos indique la posición del último elemento insertado. Sin embargo, como podremos observar, en esta ocasión insertamos y eliminamos elementos desde posiciones distintas: insertamos al final y eliminamos desde el principio, por lo que sonaría razonable manejar dos índices para este problema.
 
-    int inicio, fin; //posición del primer y del último elemento
+    /**posición del inicio y fin de la cola y número de elementos**/
+    int frente = 0, final = -1, cont = 0; 
 
 Cada una de las operaciones las podemos interpretar de la siguiente manera:
 
@@ -13,45 +14,49 @@ Cada una de las operaciones las podemos interpretar de la siguiente manera:
  - Las operaciones del tipo $3$ equivale a encontrar la longitud actual de la cola.
  - Las operaciones del tipo $4$ equivale a imprimir la suma de todos los elementos que han sido eliminados.
 
-Ahora veamos cómo implementar cada una de estas funciones. La operación de `agregar` en realidad no difiere mucho de la que implementamos para una pila.
+Ahora veamos cómo implementar cada una de estas funciones. La operación de `insertar` en realidad no difiere mucho de la que implementamos para una pila.
 
-    void agregar(int valor) {
-        cola[fin++] = valor;
+    void insertar(int dato) {
+        final = final + 1;
+        v[final] = dato;
+        cont++;
     }
 
-Para la función de `eliminar`, lo único que difiere de la pila es que en esta ocasión modificamos la posición del inicio, en lugar de la posición del fin. 
+Para la función de `extraer`, lo único que difiere de la pila es que en esta ocasión modificamos la posición del inicio, en lugar de la posición del fin. 
 
-Para fines de este problema, haremos que nuestra función de eliminar retorne también el elemento (pues lo necesitaremos también para la operación $4$), y -1 en caso de que la cola esté vacía.
-
-    int eliminar() {
-        if (inicio == fin) //La cola esta vacia
-            return -1;
-        else //Retornamos el valor y despues actualizamos el inicio
-            return cola[inicio++];
+    void extraer() {
+        frente = frente + 1;
+        cont--;
     }
 
-En realidad la parte en que verificamos si la cola está vacía no es necesaria para este problema, puesto que se nos asegura que nunca se atenderá a una fila vacía. Sin embargo, es bueno que se tome esto en consideración para futuros problemas.
+En el caso de este problema, no debemos preocuparnos de verificar si la cola está vacía o no antes de eliminar un elemento, puesto que en el problema se nos asegura que no se atenderá a una fila vacía. Sin embargo, no debemos pasar esto de alto para futuros programas.
 
-Para calcular el tamaño de nuestra cola, no es difícil darse cuenta que son $fin-inicio$ elementos.
+La función de `extraer` podemos implementarla también para que nos regrese el elemento que hemos eliminado (y -1 por ejemplo si está vacía la cola). En esta ocasión, ambas funciones de extraer y consultar las consideraremos por separado.
+
+     int consulta() {
+         return v[frente];
+     }
+
+Calcular el tamaño de nuestra cola resulta tarea fácil si guardamos el valor en una respuesta y lo actualizamos por cada operación de `insertar` y `extraer`, como hemos hecho en esta ocasión.
 
     int longitud() {
-        return fin - inicio;
+        return cont;
     }
 
 Esta estructura de datos que hemos implementado, como es de suponerse, recibe el nombre de **cola**. Una vez implementada, ya podemos usarla para resolver nuestro problema.
 
-    int contador = 0;
-    switch (operacion) {
+    switch (oper) {
         case 1:
             cin >> t;
-            agregar(t);
+            fila.insertar(t);
             break;
         case 2:
-            contador += eliminar();
+            venta += fila.consulta();
+            fila.extraer();
             break;
         case 3:
-            cout << longitud() << "\n";
+            cout << fila.longitud() << endl;
             break;
         case 4:
-            cout << contador << "\n";
+            cout << venta << endl;
     }
