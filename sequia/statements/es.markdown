@@ -31,7 +31,7 @@ Su salida debe consistir en un entero único: la cantidad de días hasta que se 
 2
 4
 ||output 
-4
+5
 ||end
 
 En ambos ejemplos, la lluvia total cambia de la siguiente manera:
