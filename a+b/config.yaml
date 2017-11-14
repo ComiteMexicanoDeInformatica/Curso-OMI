@@ -1,4 +1,4 @@
-alias: ab
+alias: COMI-a-b
 
 generate-output: true
 solution: solution/solution.cpp
