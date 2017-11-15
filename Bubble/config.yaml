@@ -20,6 +20,6 @@ params:
 
   validator: literal
   validator_time_limit: 3000
-  extra_wall_time: 3000
+  extra_wall_time: 0
 
   email_clarifications: 0
