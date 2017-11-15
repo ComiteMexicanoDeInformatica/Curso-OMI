@@ -1,7 +1,7 @@
 ﻿alias: COMI-Mesa-redonda
 
 generate-output: true
-solution: solutions/solution.cpp
+solution: solution/solution.cpp
 timeout: 0.5
 
 params:
