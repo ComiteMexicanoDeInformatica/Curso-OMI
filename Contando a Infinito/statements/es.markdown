@@ -31,4 +31,5 @@ Una lista de $n$ números, los números del 1 al $n$, cada uno en una línea
 ||end
 
 #Límites
-1 $\leq n \leq$ 10,000
+
+ * 1 $\leq n \leq$ 10,000
