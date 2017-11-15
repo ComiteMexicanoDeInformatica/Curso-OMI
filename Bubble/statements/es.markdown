@@ -93,6 +93,6 @@ $0 \leq n \leq 1,000$
 
 # Consideraciones
 
-* se asegura que el arreglo nunca tendrá más de $1,000$ elementos.
+* se asegura que el arreglo nunca tendrá más de $1,000$ elementos .
 
 {{libinteractive:download}}
