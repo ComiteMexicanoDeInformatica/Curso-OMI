@@ -73,7 +73,7 @@ pregunta(1)
 
 || description
 
-El usuario pregunta que número hay en la posición 1.
+El usuario pregunta que número hay en la posición 1 .
 || input
 
 cambia(0)
