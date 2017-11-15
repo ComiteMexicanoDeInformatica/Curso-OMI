@@ -35,6 +35,7 @@ script:
 - pipenv run python3 deploy.py --onlychanges "../Troyo el Cometriangulos"
 - pipenv run python3 deploy.py --onlychanges "../permutacion"
 - pipenv run python3 deploy.py --onlychanges "../MesaRedonda"
+- pipenv run python3 deploy.py --onlychanges "../Conectate"
 
 
 env:
