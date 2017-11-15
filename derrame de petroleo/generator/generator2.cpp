@@ -52,9 +52,11 @@ void llenar_k()
         else if (x==2 || x==4 || x==34 || x==38) pos_k_max[x]=azar(1,10000);
         else if (x==3 || x==5 || (x>=7 && x<=11) || (x>=13 && x<=17) || x>41)
             pos_k_max[x]=azar(1,10000000);
-        else if (x==6 || x==12 || (x>=18 && x<=26)) pos_k_max[x]=1;
-        else if (x==27) pos_k_max[x]=azar(1,5);
-        else if (x==28) pos_k_max[x]=azar(1,10);
+        else if (x==6 || x==12 || (x>=18 && x<=24)) pos_k_max[x]=1;
+        else if (x==25) pos_k_max[x]=azar(1,1000);
+        else if (x==26) pos_k_max[x]=azar(1,2000);
+        else if (x==27) pos_k_max[x]=azar(1,4000);
+        else if (x==28) pos_k_max[x]=azar(1,8000);
         else if (x==29) pos_k_max[x]=azar(1,30);
         else if (x==30) pos_k_max[x]=azar(1,50);
         else if (x==31) pos_k_max[x]=azar(1,100);
@@ -111,21 +113,17 @@ void llenar_tierra()
     for (int x=0; x<NUM_CASOS; x++)
     {
         if (x<=3 || (x>=6 && x<=11)) { tierra[x]=azar(0,0); }
-        else if (x==4 || x==5 || (x>=12 && x<=17)) {
+        else if (x==4 || x==5 || (x>=12 && x<=19)) {
             tierra[x]=azar(1,pos_rc[x][0]*pos_rc[x][1]); }
-        else if (x==18) tierra[x]=azar(1,1);
-        else if (x==19) tierra[x]=azar(1,2);
         else if (x==20) tierra[x]=azar(1,5);
         else if (x==21) tierra[x]=azar(1,10);
         else if (x==22) tierra[x]=azar(1,50);
         else if (x==23) tierra[x]=azar(1,100);
-        else if (x==24) tierra[x]=azar(1,500);
-        else if (x==25) tierra[x]=azar(1,2500);
-        else if (x==26) tierra[x]=azar(pos_rc[x][0]*pos_rc[x][1],pos_rc[x][0]*pos_rc[x][1]);
-        else if (x<=29) tierra[x]=azar(1,200);
-        else if (x<=36) tierra[x]=azar(1,500);
-        else if (x<=40) tierra[x]=azar(1,1500);
-        else tierra[x]=azar(1,500);
+        else if (x==24) tierra[x]=azar(1,60);
+        else if (x==25) tierra[x]=azar(99,101);
+        else if (x<=37) tierra[x]=azar(91,401);
+        else if (x<=36) tierra[x]=azar(191,200);
+        else tierra[x]=azar(191,200);
     }
 }
 void muestra()
@@ -207,6 +205,6 @@ int main()
     llenar_pp(); /* Indica la posición de la plataforma petrolera */
     llenar_tierra(); /* Valores minimo y máximo de tierra que puede haber */
     /// muestra();
-    generar(13,1,1);
+    generar(42,1,1);
     return 0;
 }
