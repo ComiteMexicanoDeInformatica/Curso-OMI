@@ -1,0 +1,8 @@
+interface Main {
+	int pregunta(int x);
+	 void cambia (int x);
+};
+
+interface Bubble {
+    int inicio(int n);
+};
