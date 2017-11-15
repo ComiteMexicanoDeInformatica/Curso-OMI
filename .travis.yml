@@ -25,6 +25,7 @@ script:
 - pipenv run python3 deploy.py --onlychanges "../Triples"
 - pipenv run python3 deploy.py --onlychanges "../Troyo el cometriangulos"
 - pipenv run python3 deploy.py --onlychanges "../Bubble"
+- pipenv run python3 deploy.py --onlychanges "../Binomios"
 
 env:
   global:
