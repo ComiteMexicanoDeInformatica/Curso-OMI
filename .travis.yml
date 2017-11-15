@@ -7,8 +7,8 @@ install:
 - pipenv install
 script:
 - pipenv run python3 deploy.py --onlychanges "../a+b"
+- pipenv run python3 deploy.py --onlychanges "../canchas"
 - pipenv run python3 deploy.py --onlychanges "../comida fria"
-- pipenv run python3 deploy.py --onlychanges "../contando a infinito"
 - pipenv run python3 deploy.py --onlychanges "../contando a infinito"
 - pipenv run python3 deploy.py --onlychanges "../Criba"
 - pipenv run python3 deploy.py --onlychanges "../Excursion"
