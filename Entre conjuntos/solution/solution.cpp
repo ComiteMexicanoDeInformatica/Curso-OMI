@@ -34,7 +34,7 @@ int minInB() {
     int min = b[0];
     for (int i=1; i<m; i++)
         if(b[i] < min)
-            min = a[i];
+            min = b[i];
     return min;
 }
 
