@@ -40,7 +40,7 @@ long long pista(long long x){
 int main()
 {
     scanf("%lld %lld",&l,&r);
-    lg = log2(r-l+1);
+    lg = log2(r-l+1) + 1;
     i=l;
     f=r;
     adivina(l,r);
