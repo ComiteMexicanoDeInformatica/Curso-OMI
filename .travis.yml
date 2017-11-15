@@ -1,31 +1,34 @@
 language: python
+
 python:
 - '3.5'
+
 install:
 - pip install pipenv
 - pushd omegaUp-deploy
 - pipenv install
+
 script:
-- pipenv run python3 deploy.py --onlychanges "../a+b"
-- pipenv run python3 deploy.py --onlychanges "../canchas"
-- pipenv run python3 deploy.py --onlychanges "../comida fria"
-- pipenv run python3 deploy.py --onlychanges "../contando a infinito"
+- pipenv run python3 deploy.py --onlychanges "../A+B"
+- pipenv run python3 deploy.py --onlychanges "../Binomios"
+- pipenv run python3 deploy.py --onlychanges "../Bubble"
+- pipenv run python3 deploy.py --onlychanges "../Canchas"
+- pipenv run python3 deploy.py --onlychanges "../Comida Fria"
+- pipenv run python3 deploy.py --onlychanges "../Contando a Infinito"
 - pipenv run python3 deploy.py --onlychanges "../Criba"
 - pipenv run python3 deploy.py --onlychanges "../Excursion"
-- pipenv run python3 deploy.py --onlychanges "../fraccion mixta"
+- pipenv run python3 deploy.py --onlychanges "../Fraccion Mixta"
 - pipenv run python3 deploy.py --onlychanges "../Funciones Matematicas"
-- pipenv run python3 deploy.py --onlychanges "../parentesis"
+- pipenv run python3 deploy.py --onlychanges "../Parentesis"
 - pipenv run python3 deploy.py --onlychanges "../Paseo por el Bosque"
-- pipenv run python3 deploy.py --onlychanges "../PilaInteractivo"
-- pipenv run python3 deploy.py --onlychanges "../sentados o parados"
-- pipenv run python3 deploy.py --onlychanges "../sequia"
-- pipenv run python3 deploy.py --onlychanges "../tak tak tree"
-- pipenv run python3 deploy.py --onlychanges "../taquitos"
+- pipenv run python3 deploy.py --onlychanges "../Pila Interactivo"
+- pipenv run python3 deploy.py --onlychanges "../Sentados o Parados"
+- pipenv run python3 deploy.py --onlychanges "../Sequia"
+- pipenv run python3 deploy.py --onlychanges "../Tak-Tak Tree"
+- pipenv run python3 deploy.py --onlychanges "../Taquitos"
 - pipenv run python3 deploy.py --onlychanges "../Traductor"
 - pipenv run python3 deploy.py --onlychanges "../Triples"
-- pipenv run python3 deploy.py --onlychanges "../Troyo el cometriangulos"
-- pipenv run python3 deploy.py --onlychanges "../Bubble"
-- pipenv run python3 deploy.py --onlychanges "../Binomios"
+- pipenv run python3 deploy.py --onlychanges "../Troyo el Cometriangulos"
 
 env:
   global:
