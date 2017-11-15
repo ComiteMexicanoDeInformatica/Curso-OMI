@@ -43,7 +43,7 @@ int main() {
 		//La interseccion tiene sentido
 		area_intr = (der_intr-izq_intr) * (arriba_intr-abajo_intr);
 	} else {
-		//There doesn't seem to be an intersection
+		//No hay interseccion
 		area_intr = 0;
 	}
 	area_total = area_1 + area_2 - area_intr;
