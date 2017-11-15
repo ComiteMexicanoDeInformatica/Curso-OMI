@@ -32,6 +32,8 @@ script:
 - pipenv run python3 deploy.py --onlychanges "../Traductor"
 - pipenv run python3 deploy.py --onlychanges "../Triples"
 - pipenv run python3 deploy.py --onlychanges "../Troyo el Cometriangulos"
+- pipenv run python3 deploy.py --onlychanges "../Quicksort"
+
 
 env:
   global:
