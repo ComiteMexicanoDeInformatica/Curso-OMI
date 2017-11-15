@@ -35,4 +35,4 @@ x^3+3x^2y+3xy^2+y^3
 # Límites
 
 * $0 \leq n \leq 50$
-* Para la solución deberás usar un **long long int**.
+* Si utilizas únicamente **int** obtendrás pocos puntos, para la solución deberás usar **long long int**.
