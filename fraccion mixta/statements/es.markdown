@@ -12,6 +12,8 @@ Una sola línea que contiene los enteros $n$ y $m$.
 
 Si  $b \neq 0$, imprime en una línea la representación en la forma $a \cdot \frac{b}{m}$. En caso contrario solo imprime $a$.
 
+No debes simplificar la fracción.
+
 # Ejemplo
 
 ||input
@@ -30,4 +32,4 @@ En este caso no existe parte fraccionaria
 
 # Límites
 
- * $1 \leq n,m \leq 10^8$
+ * $1 \leq n < m \leq 10^8$
