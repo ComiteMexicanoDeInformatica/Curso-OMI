@@ -3,7 +3,7 @@
 #include<cstdlib>
 #include"Bubble.h"
 using namespace std;
-int cosa[1001];
+int cosa[1011];
 int n;
 int pregunta(int x)
 {
