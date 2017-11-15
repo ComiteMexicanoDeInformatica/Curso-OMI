@@ -16,11 +16,11 @@ Este proceso lo hacemos desde $i=0$ hasta $i=n-2$ , podemos notar que después d
 
 ## Tu función `inicio(int n)`
 
-C/C++ `void inicio(int n);`
+C/C++ `int inicio(int n);`
 
 ### Descripción
 
-El evaluador buscará en tu código esta función y la llamará con el número $n$ como parámetro. Tu implementación deberá llamar las funciones `pregunta(int x)` (la cual retorna el elemento que se encuentra en esa posición) y `cambia(int x)` (la cual intercambia los elementos de la posición $x$ y $x+1$ ) para ordenar el arreglo de tamaño $n$.   
+El evaluador buscará en tu código esta función y la llamará con el número $n$ como parámetro. Tu implementación deberá llamar las funciones `pregunta(int x)` (la cual retorna el elemento que se encuentra en esa posición) y `cambia(int x)` (la cual intercambia los elementos de la posición $x$ y $x+1$ ) para ordenar el arreglo de tamaño $n$ y retornar 0 cuando termine  
 
 ### Parámetros
 
