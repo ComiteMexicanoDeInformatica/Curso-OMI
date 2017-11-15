@@ -28,11 +28,13 @@ void Quicksort(int nsize, int arr[]) {
         int piv = HacerParticion(nsize);
 
         int izq[nsize], der[nsize];
-        memcpy(izq, arr, sizeof(izq));
-        memcpy(der, arr + piv + 1, sizeof(der));
+        memcpy(izq, v, sizeof(izq));
+        memcpy(der, v + piv + 1, sizeof(der));
 
         Quicksort(piv, izq);
         Quicksort(nsize - piv - 1, der);
+        memcpy(arr, izq, sizeof(izq));
+        memcpy(arr + piv + 1, der, sizeof(der));
     }
 }
 

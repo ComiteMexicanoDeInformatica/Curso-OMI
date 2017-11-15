@@ -26,7 +26,9 @@ Lo que hace que Quicksort pueda ser más rápido o no, es la elección del pivote. 
 
 **Tu función** `HacerParticion`
 
-C/C++ `int HacerParticion(int n);`
+C/C++ `int HacerParticion(int n);`+
+
+Pascal `function HacerParticion(var n: LongInt): LongInt;`
 
 **Descripción**
 
@@ -40,6 +42,8 @@ Esta función hará la partición del arreglo y deberá retornar la posición final d
 
 C/C++ `int ElementoEnPosicion(int i);`
 
+Pascal `function ElementoEnPosicion(var i: LongInt): LongInt;`
+
 **Descripción**
 
 Esta función retornará el elemento en la posición $i$ del arreglo o -1 en caso de que el índice dado esté fuera del rango. Los elementos del arreglo son siempre enteros no negativos.
@@ -49,6 +53,8 @@ Esta función retornará el elemento en la posición $i$ del arreglo o -1 en caso d
  - `i`: Un entero indicando el índice del elemento en el arreglo.
 
 C/C++ `int Intercambiar(int i, int j);`
+
+Pascal `function Intercambiar(var i, j: LongInt): LongInt;`
 
 **Descripción**
 
