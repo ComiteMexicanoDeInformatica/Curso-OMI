@@ -26,6 +26,7 @@ script:
 - pipenv run python3 deploy.py --onlychanges "../Pila Interactivo"
 - pipenv run python3 deploy.py --onlychanges "../Sentados o Parados"
 - pipenv run python3 deploy.py --onlychanges "../Sequia"
+- pipenv run python3 deploy.py --onlychanges "../SimplificarFracciones"
 - pipenv run python3 deploy.py --onlychanges "../Tak-Tak Tree"
 - pipenv run python3 deploy.py --onlychanges "../Taquitos"
 - pipenv run python3 deploy.py --onlychanges "../Traductor"
