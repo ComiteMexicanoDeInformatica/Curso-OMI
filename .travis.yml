@@ -9,7 +9,7 @@ install:
 - pipenv install
 
 script:
-- pipenv run python3 deploy.py --onlychanges "../A+B"
+- pipenv run python3 deploy.py --onlychanges "../Programacion Basica/A+B"
 - pipenv run python3 deploy.py --onlychanges "../AdivinaElNumero"
 - pipenv run python3 deploy.py --onlychanges "../Binomios"
 - pipenv run python3 deploy.py --onlychanges "../Bubble"

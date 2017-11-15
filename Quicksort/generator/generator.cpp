@@ -1,5 +1,6 @@
 #include <iostream>
 #include <sstream>
+#include <algorithm>
 #include <fstream>
 #include <cstdio>
 #include <ctime>
@@ -11,14 +12,20 @@ int main() {
 
     for (int i = 0; i < 10; i++) {
         stringstream ss;
+        int v[casos[i]];
         ss << i + 1;
 
         ofstream in("../cases/" + ss.str() + ".in");
         ofstream out("../cases/" + ss.str() + ".out");
 
+        for (int j = 0; j < casos[i]; j++)
+            v[j] = rand();
+        if (i == 9) //Caso especial
+            sort(v, v + casos[i]);
+
         in << casos[i] << "\n";
         for (int j = 0; j < casos[i]; j++)
-            in << rand() << " ";
+            in << v[j] << " ";
         out << "SI";
 
         in.close();
