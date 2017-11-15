@@ -24,5 +24,8 @@ En la primera línea deberás imprimir el recorrido en pre-orden, en la segunda 
 
 Aquí las definiciones de los recorridos mencionados, y de que es un árbol binario de búsqueda. [Recorridos de un árbol][1]
 
-
   [1]: https://es.wikipedia.org/wiki/Recorrido_de_%C3%A1rboles
+  
+#Límites
+
+* $1 \leq N \leq 10^5$.
