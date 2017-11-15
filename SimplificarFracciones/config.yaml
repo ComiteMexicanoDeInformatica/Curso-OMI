@@ -1,11 +1,11 @@
-alias: COMI-a-b
+alias: COMI-Simplificar-Fracciones
 
 generate-output: true
 solution: solution/solution.cpp
-timeout: 0.5
+timeout: 1
 
 params:
-  title: A + B
+  title: Simplificar Fracciones
   source: Curso OMI (Orac)
 
   visibility: 1

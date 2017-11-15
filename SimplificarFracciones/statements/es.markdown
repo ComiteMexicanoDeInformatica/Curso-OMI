@@ -15,15 +15,15 @@ Está muy facil la regla, ¿no?. Entonces ahora te preguntarás, *¿cómo cácul
 ----------
 **Algoritmo de Euclides**
 
-Se tienen dos números $a$ y $b$. El mcd se obtiene cómo sigue.
+	Se tienen dos números a y b. El MCD se obtiene cómo sigue.
 
-**Paso 1:** Se divide el número mayor entre el menor.
+	Paso 1: Se divide el número mayor entre el menor.
 
-**Paso 2:** Si,
+	Paso 2: Si,
 
-1.- La división es exacta, el divisor es el m.c.d.
+	1.- La división es exacta, el divisor es el m.c.d.
 
-2.- La división no es exacta, dividimos el divisor entre el resto obtenido y se continúa de esta forma hasta obtener una división exacta, siendo el último divisor el m.c.d.
+	2.- La división no es exacta, dividimos el divisor entre el resto obtenido y se continúa de esta forma hasta obtener una división exacta, siendo el último divisor el m.c.d.
 
 ----------
 #Problema
