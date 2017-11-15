@@ -1,9 +1,8 @@
 ﻿alias: COMI-Bubble
 
-generate-output: true
-solution: solutions/solution.cpp
-timeout: 0.5
+generate-output: false
 interactive: true
+
 params:
   title: Bubble
   source: Curso OMI (Orac)
@@ -11,7 +10,7 @@ params:
   visibility: 1
 
   languages: all
-	
+
   time_limit: 1000
   memory_limit: 32768
   output_limit: 16384
