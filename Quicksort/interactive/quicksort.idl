@@ -1,8 +1,0 @@
-interface Main {
-    int ElementoEnPosicion(int i);
-    int Intercambiar(int i, int j);
-};
-
-interface quicksort {
-    int HacerParticion(int n);
-};
