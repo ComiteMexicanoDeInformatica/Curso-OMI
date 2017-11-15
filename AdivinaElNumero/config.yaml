@@ -1,7 +1,5 @@
 alias: COMI-Adivina-el-numero
 
-
-
 # optional argument, if false, the problem won't be deployed
 
 # disabled: true
@@ -46,11 +44,9 @@ interactive: true
 
 params:
 
-  title: Adivina el numero
+  title: Adivina el número
 
   source: Curso OMI (ORAC)
-
-
 
   visibility: 0
 
@@ -78,7 +74,7 @@ params:
 
   # valid options: token-caseless, token-numeric, token-numeric, custom, literal
 
-  validator: custom
+  validator: literal
 
   validator_time_limit: 1000
 
