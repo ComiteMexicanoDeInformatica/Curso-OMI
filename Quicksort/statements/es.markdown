@@ -24,7 +24,7 @@ Lo que hace que Quicksort pueda ser más rápido o no, es la elección del pivote. 
 
 # Implementación
 
-###Tu función `HacerParticion`
+**Tu función** `HacerParticion`
 
 C/C++ `int HacerParticion(int n);`
 
@@ -36,7 +36,7 @@ Esta función hará la partición del arreglo y deberá retornar la posición final d
 
  - `n`: Un entero indicando el tamaño del arreglo.
 
-###Funciones del evaluador `ElementoEnPosicion()`, `Intercambiar()`
+**Funciones del evaluador** `ElementoEnPosicion()`, `Intercambiar()`
 
 C/C++ `int ElementoEnPosicion(int i);`
 
