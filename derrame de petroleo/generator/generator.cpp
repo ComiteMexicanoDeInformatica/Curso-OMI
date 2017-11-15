@@ -137,6 +137,10 @@ void muestra()
         printf("\n");
     }
 }
+void generar(int _caso, int _min, int _max)
+{
+    cout <<
+}
 int main()
 {
     ios_base::sync_with_stdio(0); cin.tie(0);
@@ -151,5 +155,6 @@ int main()
     llenar_pp(); /* Indica la posición de la plataforma petrolera */
     llenar_tierra(); /* Valores minimo y máximo de tierra que puede haber */
     muestra();
+    generar(1,1,1);
     return 0;
 }
