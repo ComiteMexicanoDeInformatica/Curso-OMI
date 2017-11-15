@@ -1,23 +1,20 @@
-# Descripción
+En el centro de la aldea Tak-Tak se encuentra un gran árbol en expansión, cuyas largas ramas proporcionan sombra durante los veranos calurosos. El fruto del árbol Tak-Tak (como es conocido afectuosamente) es renombrado por su dulce y delicioso sabor.
 
-La vida es simple en la remota aldea de Tak-Tak. Libre de los ruidos y bullicios de la vida moderna, los habitantes ocupan su día complaciendo sus dos más grandes gustos: el campo y la cocina. Sus campos de vegetales crecen fuertes y altos, y sus deliciosas comidas comunales iluminan mucho en la noche.
+Sólo un grupo selecto de 10 aldeanos conoce la ubicación del árbol y este grupo te ha seleccionado para ser su nuevo integrante. Pero para ser aceptado primero deberás ser capaz de contestar la siguiente pregunta:
 
-En el centro de la aldea se encuentra un gran árbol en expansión, cuyas largas ramas proporcionan sombra durante los veranos calurosos. El fruto del árbol Tak-Tak (como es conocido afectuosamente) es renombrado por su dulce y delicioso sabor.
+_Dado el número de frutas actualmente en el árbol y el número de integrantes del grupo ($11$ contándote a ti), calcula ¿cuántas noches tienen que pasar para que si cosechan TODAS las frutas del árbol menos 1 (para que puedan seguir multiplicándose) a cada miembro del grupo le toque el mismo número de frutas?_
 
-A diferencia de las plantas comunes, el árbol Tak-Tak no es afectado por el clima y las temporadas. En su lugar, los frutos crecen de acuerdo a los ciclos de la Luna. Cada mes cuando la Luna llena está en su punto más alto, cada fruto del árbol brilla y se convierte en dos frutos. Cuando el Sol sale, los habitantes se despiertan para ver que el número de frutos se ha duplicado.
+# Problema
 
-Los aldeanos están planeando un enorme festival para este año. En el día del festival cortarán todos los frutos del árbol excepto uno. Esto se dividirá equitativamente entre los once habitantes de la aldea, 
-ya que son gente justa. (No está permitido rebanar ni cortar - cada habitante debe recibir un número entero de frutos.) Después, la fruta restante del árbol Tak-Tak se deja para comenzar el ciclo de nuevo.
-
-Si los habitantes no pueden compartir de forma pareja con un fruto sobrante, esperarán hasta que puedan. Están muy emocionados por el festival y les gustaría saber cuántas Lunas llenas deberán de esperar.
+Escribe un programa que dado $f$ el número de frutas acualmente en el árbol calcule la cantidad de noches que es necesario esperar para que, si se cosechan TODAS las frutas del árbol menos 1, a cada miembro del grupo le toquen la misma cantidad de frutas.
 
 # Entrada
 
-La entrada consistirá de un solo entero, el número de frutos iniciales en el árbol. Este estará entre 2 y 1,000,000 inclusive.
+Tu programa deberá leer del teclado un único número entero $f$ que representa la cantidad de frutas en el árbol.
 
 # Salida
 
-La salida consistirá de dos enteros separados por un espacio: el menor número de Lunas llenas que los habitantes deberán esperar para que el festival sea posible, y el número de frutos para ese entonces.
+La salida consistirá de dos enteros separados por un espacio: el menor número de noches que los los deberán esperar, y el número de frutos para ese entonces.
 
 Se garantiza que eventualmente será posible realizar el festival.
 
@@ -28,17 +25,21 @@ Se garantiza que eventualmente será posible realizar el festival.
 ||output
 0 23
 ||description
-En el primer ejemplo, $23=2\times11+1$ es un buen número para el festival (cada aldeano recibe dos frutos Tak-Tak y uno sobra, como lo planeado). Es por ello que no necesitan esperar, pueden iniciar el festival inmediatamente.
+En el primer ejemplo, $23=2\times11+1$ es un buen número (cada aldeano recibe dos frutos Tak-Tak y uno sobra, como lo planeado). Es por ello que no necesitan esperar.
 ||input
 17
 ||output
 1 34
 ||description
-En el segundo ejemplo, 17 no es un buen número para el festival. Después de una Luna llena, el número de frutos se ha duplicado, convirtiéndose en $34=3\times11+1$. Este es un buen número para el festival.
+En el segundo ejemplo, 17 no es un buen número. Después de una noche, el número de frutos se ha duplicado, convirtiéndose en $34=3\times11+1$. Este es un buen número por que a todos los tocan $3$ y sobra $1$.
 ||input
 14
 ||output
 2 56
 ||description
-En el tercer ejemplo, 14 no es un buen número para el festival. Después de dos Lunas llenas, el número de frutos se ha cuadruplicado, convirtiéndose en $56=5 \times 11+1$. Este es un buen número para el festival.
+En el tercer ejemplo, 14 no es un buen número. Después de dos noches, el número de frutos se ha cuadruplicado, convirtiéndose en $56=5 \times 11+1$.
 ||end
+
+$ Límites
+
+ * $2 \leq $f \leq 1,000,000$
