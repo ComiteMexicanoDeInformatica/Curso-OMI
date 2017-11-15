@@ -15,7 +15,7 @@ Está muy facil la regla, ¿no?. Entonces ahora te preguntarás, *¿cómo cácul
 ----------
 **Algoritmo de Euclides**
 
-	Se tienen dos números $a$ y $b$. El mcd se obtiene cómo sigue.
+	Se tienen dos números a y b. El MCD se obtiene cómo sigue.
 
 	Paso 1: Se divide el número mayor entre el menor.
 
