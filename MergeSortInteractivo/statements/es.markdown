@@ -98,6 +98,6 @@ la primer sublista son los elementos entre la posición $0$  y $3$ es decir {1,5
 
 # Restricciones
 
-$0 /leq n /leq 10,000$
+$0 \leq n \leq 10,000$
 
 {{libinteractive:download}}
