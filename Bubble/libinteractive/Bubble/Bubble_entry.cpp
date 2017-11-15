@@ -116,7 +116,7 @@ static void __message_loop_Main(int __current_function, int __noreturn) {
 	while (readfull(&__in, &__msgid, sizeof(__msgid), 0)) {
 		if (__msgid == __current_function) return;
 		switch (__msgid) {
-			case 0x53a430a3u: {
+			case 0xa4fe3cf6u: {
 				// Main -> Bubble.inicio
 				uint32_t __cookie;
 				int inicio_n;
@@ -149,8 +149,8 @@ static void __message_loop_Main(int __current_function, int __noreturn) {
 }
 
 int pregunta(int x) {
-	const uint32_t __msgid = 0xdb50b844u;
-	const uint32_t __cookie = 0x56b20b9du;
+	const uint32_t __msgid = 0x88c25a3eu;
+	const uint32_t __cookie = 0x8fd3c36cu;
 
 	writefull(&__out, &__msgid, sizeof(__msgid));
 	writefull(&__out, &x, sizeof(int));
@@ -171,8 +171,8 @@ int pregunta(int x) {
 }
 
 void cambia(int x) {
-	const uint32_t __msgid = 0x20f31aau;
-	const uint32_t __cookie = 0x581cbca0u;
+	const uint32_t __msgid = 0xa4e5075fu;
+	const uint32_t __cookie = 0xb397dedbu;
 
 	writefull(&__out, &__msgid, sizeof(__msgid));
 	writefull(&__out, &x, sizeof(int));
