@@ -115,7 +115,7 @@ Intercambiamos los elementos $5$ y $4$, por lo que el arreglo queda como $4$ y $
 
 # Límites
 
-* El tamaño del arreglo nunca será mayor a 1000
+* El tamaño del arreglo nunca será mayor a $20,000$
 * El arreglo está indexeado en 0
 * Los elementos del arreglo siempre serán enteros no-negativos.
 
