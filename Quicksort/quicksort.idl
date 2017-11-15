@@ -1,8 +1,8 @@
 interface Main {
     int ElementoEnPosicion(int i);
-    bool Intercambiar(int i, int j);
-}
+    int Intercambiar(int i, int j);
+};
 
 interface quicksort {
     int HacerParticion(int n);
-}
+};

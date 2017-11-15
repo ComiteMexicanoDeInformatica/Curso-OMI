@@ -48,11 +48,11 @@ Esta función retornará el elemento en la posición $i$ del arreglo o -1 en caso d
 
  - `i`: Un entero indicando el índice del elemento en el arreglo.
 
-C/C++ `bool Intercambiar(int i, int j);`
+C/C++ `int Intercambiar(int i, int j);`
 
 **Descripción**
 
-Esta función intercambiará los elementos del arreglo en las posiciones $i$ y $j$. Retorna `true` si fue posible intercambiarlos y `false` en caso contrario.
+Esta función intercambiará los elementos del arreglo en las posiciones $i$ y $j$. Retorna 1 si fue posible intercambiarlos y 0 en caso contrario.
 
 **Parámetros**
 
