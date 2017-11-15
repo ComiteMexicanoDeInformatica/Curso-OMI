@@ -1,0 +1,9 @@
+interface Main {
+	long pista(
+		long n
+	);
+};
+
+interface AdivinaElNumero {
+    void adivina(long a,long b);
+};
