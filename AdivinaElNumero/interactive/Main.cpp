@@ -2,9 +2,10 @@
 #include "AdivinaElNumero.h"
 #include <limits.h>
 #include <algorithm>
+#include <math.h>
 using namespace std;
 
-long long l,r,i,f,preguntas,p;
+long long l,r,i,f,preguntas,p,lg;
 bool d=false,found=false;
 
 long long pista(long long x){
@@ -39,16 +40,17 @@ long long pista(long long x){
 int main()
 {
     scanf("%lld %lld",&l,&r);
+    lg = log2(r-l+1);
     i=l;
     f=r;
     adivina(l,r);
     if(!found) printf("0.0");
 
     if(found){
-        if(preguntas <= 69){
+        if(preguntas <= lg){
             printf("1.0");
         }
-        if(preguntas > 69 && preguntas <= 100){
+        if(preguntas > lg && preguntas <= 2*lg){
             printf("0.5");
         }
         if(preguntas > 100){

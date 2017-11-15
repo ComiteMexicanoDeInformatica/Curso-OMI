@@ -1,30 +1,37 @@
 language: python
+
 python:
 - '3.5'
+
 install:
 - pip install pipenv
 - pushd omegaUp-deploy
 - pipenv install
+
 script:
-- pipenv run python3 deploy.py --onlychanges "../a+b"
-- pipenv run python3 deploy.py --onlychanges "../canchas"
-- pipenv run python3 deploy.py --onlychanges "../comida fria"
-- pipenv run python3 deploy.py --onlychanges "../contando a infinito"
+- pipenv run python3 deploy.py --onlychanges "../A+B"
+- pipenv run python3 deploy.py --onlychanges "../AdivinaElNumero"
+- pipenv run python3 deploy.py --onlychanges "../Binomios"
+- pipenv run python3 deploy.py --onlychanges "../Bubble"
+- pipenv run python3 deploy.py --onlychanges "../Canchas"
+- pipenv run python3 deploy.py --onlychanges "../Comida Fria"
+- pipenv run python3 deploy.py --onlychanges "../Contando a Infinito"
 - pipenv run python3 deploy.py --onlychanges "../Criba"
 - pipenv run python3 deploy.py --onlychanges "../Excursion"
-- pipenv run python3 deploy.py --onlychanges "../fraccion mixta"
+- pipenv run python3 deploy.py --onlychanges "../Fraccion Mixta"
 - pipenv run python3 deploy.py --onlychanges "../Funciones Matematicas"
-- pipenv run python3 deploy.py --onlychanges "../parentesis"
+- pipenv run python3 deploy.py --onlychanges "../Palindromos"
+- pipenv run python3 deploy.py --onlychanges "../Parentesis"
 - pipenv run python3 deploy.py --onlychanges "../Paseo por el Bosque"
-- pipenv run python3 deploy.py --onlychanges "../PilaInteractivo"
-- pipenv run python3 deploy.py --onlychanges "../sentados o parados"
-- pipenv run python3 deploy.py --onlychanges "../sequia"
-- pipenv run python3 deploy.py --onlychanges "../tak tak tree"
-- pipenv run python3 deploy.py --onlychanges "../taquitos"
+- pipenv run python3 deploy.py --onlychanges "../Pila Interactivo"
+- pipenv run python3 deploy.py --onlychanges "../Sentados o Parados"
+- pipenv run python3 deploy.py --onlychanges "../Sequia"
+- pipenv run python3 deploy.py --onlychanges "../Tak-Tak Tree"
+- pipenv run python3 deploy.py --onlychanges "../Taquitos"
 - pipenv run python3 deploy.py --onlychanges "../Traductor"
 - pipenv run python3 deploy.py --onlychanges "../Triples"
-- pipenv run python3 deploy.py --onlychanges "../Troyo el cometriangulos"
-- pipenv run python3 deploy.py --onlychanges "../Binomios"
+- pipenv run python3 deploy.py --onlychanges "../Troyo el Cometriangulos"
+
 env:
   global:
   - secure: r4dk13NNX6OcnDtXDCAd5gbEVYJUubfPWtWWK+ZbMAckICJ2CKmfw3XTnBUj6F9BWpeLt9FSpQGkF54vqnRfR4XSrQUS47BhHy37ej03y0O6AMh5WGdFqhQA52w/4b+rxfhLrn/V0QY4HHhT+pifXcXdFN2TMir6lfF1mkyvdS90fy1QCT4oXHh2JE4dh1hNOXIGUXlkdvHiaJVoViGBNOoMH4GwYV/mkBdCZcAAhW8JE15Er89Kc5fYZ3aCtOY0QdzrX1BWE5fwuQe6DyrNpa2lbw5psBmSgH45o84JK8xIZRQnAzdIAo00L4mAP4YuR4Y5a5H+N37+fYBtv6wlJe8paD6aMU9sMr6TM1qWh9EwRfOhNhgj9WFQl/dU5mQrjhlrJeINfKNPbAeKYvhHyRxaC3g3o7zdlXY/qckUA40GubpN/TAoNPPFiO0KgskpYV0k5JDSJ1i7mwotGJys3FVPDoO92mE9M6Qc19BsWBTzz/ZPlHVDeKrC/nkCrL8cMSSWC1Lj5tE2hZBoqnZyvfKXZbJhRttgcz46VL2+AFNxgGBXZQIavlYQnisayNsgEGl4BZYu57XvcO/dSmeBkOXo38m/oZ68lkxp9ZPHvoT3NbA+25vJVT0wB/kGbRFzJAQceIF4TFaiD9eKpDrg8SLUPEgYy5xdAEbyiUBqQUI=
