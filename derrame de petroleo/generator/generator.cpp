@@ -27,8 +27,14 @@ void llenar_r()
 
     for (int x=0; x<NUM_CASOS; x++)
     {
-        if (x<6) { valor_r=azar(1,1); valor_c=azar(1,1); }
-        else if (x<18) { valor_r=azar(2000,2000); valor_c=azar(2000,2000); }
+        if (x<4) { valor_r=azar(1,1); valor_c=azar(1,1); }
+        else if (x<7) { valor_r=azar(50,50); valor_c=azar(50,50); }
+        else if (x==13) { valor_r=azar(200,200); valor_c=azar(400,400); }
+        else if (x==14) { valor_r=azar(400,400); valor_c=azar(600,600); }
+        else if (x==15) { valor_r=azar(600,600); valor_c=azar(100,100); }
+        else if (x==16) { valor_r=azar(800,800); valor_c=azar(1000,1000); }
+        else if (x==17) { valor_r=azar(1000,1000); valor_c=azar(800,800); }
+        else if (x==18) { valor_r=azar(100,100); valor_c=azar(2000,2000); }
         else { valor_r=azar(10,50); valor_c=azar(10,50); }
         /* En la posición 0 se guarda r y en 1 se guarda c */
         pos_rc[x][0]=valor_r;
@@ -137,6 +143,56 @@ void muestra()
         printf("\n");
     }
 }
+void generar(int _caso, int _min, int _max)
+{
+    int _r,_c,_k,_tierra=tierra[_caso],_azarr,_azarc;
+    _r=pos_rc[_caso][0];
+    _c=pos_rc[_caso][1];
+    _k=pos_k_max[_caso];
+    cout << _r << " " << _c << " " << _k << endl;
+
+    char plataforma[_r][_c];
+
+    ///    #    Tierra
+    ///    .    Mar
+
+    /// Rellenar
+
+    for (int x=0; x<_r; x++) {
+        for (int y=0; y<_c; y++) {
+            /* if (_tierra==0)
+                plataforma[x][y]='.';
+            else
+            {
+                if (y%2==0) plataforma[x][y]='#';
+                else if (y%4==1 && x==_r-1) plataforma[x][y]='#';
+                else if (y%4==3 && x==0) plataforma[x][y]='#';
+                else plataforma[x][y]='.';
+            } */
+            plataforma[x][y]='.';
+        }
+    }
+
+    while (_tierra--)
+    {
+        do
+        {
+            _azarr=azar(1,_r);
+            _azarc=azar(1,_c);
+            _azarr--;
+            _azarc--;
+        } while (plataforma[_azarr][_azarc]!='.');
+        plataforma[_azarr][_azarc]='#';
+    }
+
+    /// Mostrar
+    for (int x=0; x<_r; x++) {
+        for (int y=0; y<_c; y++) {
+            cout << plataforma[x][y];
+        }
+        cout << endl;
+    }
+}
 int main()
 {
     ios_base::sync_with_stdio(0); cin.tie(0);
@@ -150,6 +206,7 @@ int main()
     llenar_k(); /* Llena los valores de k máximos */
     llenar_pp(); /* Indica la posición de la plataforma petrolera */
     llenar_tierra(); /* Valores minimo y máximo de tierra que puede haber */
-    muestra();
+    /// muestra();
+    generar(13,1,1);
     return 0;
 }

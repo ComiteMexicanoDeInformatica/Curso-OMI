@@ -1,7 +1,6 @@
 #include<stdio.h>
 
 char mapa[2001][2001];
-int visitados[2001][2001]; //0 no visitado, 1 visitado
 int r,c,k;
 int a,b; //lugar donde se encuentra la plataforma
 
@@ -9,14 +8,13 @@ void derramaCasilla(int x,int y,int d)
 {
 	if(d>k) return;
 	mapa[x][y]='*';
-	visitados[x][y]=1;
-	if(y+1<c && mapa[x][y+1]=='.' && visitados[x][y+1]==0)
+	if(y+1<c && mapa[x][y+1]=='.')
 		derramaCasilla(x,y+1,d+1);
-	if(x+1<r && mapa[x+1][y]=='.' && visitados[x+1][y]==0)
+	if(x+1<r && mapa[x+1][y]=='.')
 		derramaCasilla(x+1,y,d+1);
-	if(y-1>=0 && mapa[x][y-1]=='.' && visitados[x][y-1]==0)
+	if(y-1>=0 && mapa[x][y-1]=='.')
 		derramaCasilla(x,y-1,d+1);
-	if(x-1>=0 && mapa[x-1][y]=='.' && visitados[x-1][y]==0)
+	if(x-1>=0 && mapa[x-1][y]=='.')
 		derramaCasilla(x-1,y,d+1);
 }
 

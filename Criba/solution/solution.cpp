@@ -30,11 +30,11 @@ while(x!=z)
     cin>>y;
     if(criba[y]==0)
     {
-        cout<<"SI";
+        cout<<"SI"<<endl;
     }
     else
     {
-        cout<<"NO";
+        cout<<"NO"<<endl;
     }
     x++;
 }

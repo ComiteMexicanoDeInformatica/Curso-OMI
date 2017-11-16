@@ -1,7 +1,7 @@
 #include "AdivinaElNumero.h"
-
+#include <stdio.h>
 void adivina(long long a,long long b){
-
+    printf("lol");
     int resp;
     long long md;
 

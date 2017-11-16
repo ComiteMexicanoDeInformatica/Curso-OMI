@@ -30,7 +30,6 @@ SI
 SI
 NO
 NO
-NO
 ||end
 
 # Límites

@@ -1,6 +1,4 @@
-# Problema
-
-En este problema tendras que adivinar el numero que este pensado OmegaUp!
+¡En este problema tendrás que adivinar el número que esté pensado OmegaUp!
 
 # Entrada y Salida
 
@@ -33,6 +31,8 @@ Puedes llamar a esta función con cualquier entero como parámetro, y puede regres
 * `0`: El numero que esta pensando omegaUp es igual a $x$.
 
 * `1`: El numero que esta pensando omegaUp es mayor a $x$.  
+
+**Nota:** El ultimo llamado que debe hacer tu programa a `pista()` es con la respuesta, es decir, con el numero que esta pensando OmegaUp.
 
 # Rutina de Ejemplo
 

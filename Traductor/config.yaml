@@ -3,6 +3,7 @@ alias: COMI_Traductor
 generate-output: true
 solution: solutions/solution.cpp
 timeout: 0.5
+admin-groups: [workshop-2017]
 
 params:
   title: Traductor

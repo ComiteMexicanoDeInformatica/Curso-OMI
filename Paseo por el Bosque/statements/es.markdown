@@ -22,7 +22,10 @@ En la primera línea deberás imprimir el recorrido en pre-orden, en la segunda 
 
 #Nota
 
-Aquí las definiciones de los recorridos mencionados. [Recorridos de un árbol][1]
+* Aquí las definiciones de los recorridos mencionados, y de que es un árbol binario de búsqueda. [Recorridos de un árbol][1]
+[1]: https://es.wikipedia.org/wiki/Recorrido_de_%C3%A1rboles
+* Se te asegura que todos los valores de entrada son diferentes.
+  
+#Límites
 
-
-  [1]: https://es.wikipedia.org/wiki/Recorrido_de_%C3%A1rboles
+* $1 \leq N \leq 10^5$.

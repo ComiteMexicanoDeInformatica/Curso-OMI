@@ -1,0 +1,19 @@
+#include "DeCuartoEnCuarto.h"
+
+int siguienteCuarto(int n){
+
+}
+
+void move(int c){
+
+}
+
+void regresa(){
+
+}
+
+int main()
+{
+	genGraph();
+	return 0;
+}
