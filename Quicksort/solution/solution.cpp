@@ -8,9 +8,13 @@ int HacerParticion(int n) {
     int i = -1, j;
 
     for (j = 0; j < n - 1; j++)
-        if (ElementoEnPosicion(j) <= piv)
+        if (ElementoEnPosicion(j) < piv)
             Intercambiar(++i, j);
+    Intercambiar(++i, n - 1);
 
-    Intercambiar(i + 1, n - 1);
-    return i + 1;
+    piv = ElementoEnPosicion(i);
+    for (j = i; j < n - 1; j++)
+        if (piv != ElementoEnPosicion(j + 1))
+            break;
+    return (i + j) / 2;
 }

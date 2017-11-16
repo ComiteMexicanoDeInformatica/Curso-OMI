@@ -2,7 +2,7 @@
 #include <stdio.h>
 using namespace std;
 
-#define MAXN 2000
+#define MAXN 10000
 int n, *v;
 
 int ElementoEnPosicion(int i) {
