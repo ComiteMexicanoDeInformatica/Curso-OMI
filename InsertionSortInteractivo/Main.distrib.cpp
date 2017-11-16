@@ -1,7 +1,7 @@
 #include <algorithm>
 #include <iostream>
 #include "ordenador.h"
-#define MAX_OPERACIONES 5000
+#define MAX_OPERACIONES 100*100
 
 using namespace std;
 
@@ -82,7 +82,7 @@ int main()
 	ordenar(n);
 	if(operacionesExcedidas)
 		{
-		cout<<"Numero de operaciones excedidas\n";
+		cout<<"Numero de operaciones excedidas :(\n";
 		return 0;
 		}
 	sort(A,A+n);
@@ -92,7 +92,7 @@ int main()
 		cout<<A[x]<<" "<<B[x]<<" ";
 		if(A[x]!=B[x])
 			{
-			cout<<"incorrecto\nNo has resuelto el problema\n";
+			cout<<"incorrecto\nNo has resuelto el problema :(\n";
 			return 0;
 			}
 		else

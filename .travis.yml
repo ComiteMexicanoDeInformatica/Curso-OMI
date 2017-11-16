@@ -42,6 +42,7 @@ script:
 - pipenv run python3 deploy.py --onlychanges "../Conectate"
 - pipenv run python3 deploy.py --onlychanges "../derrame de petroleo"
 - pipenv run python3 deploy.py --onlychanges "../RoundRobin"
+- pipenv run python3 deploy.py --onlychanges "../Entre conjuntos"
 
 
 

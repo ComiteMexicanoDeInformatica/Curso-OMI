@@ -2,10 +2,10 @@
 
 /**
 
-int siguiente(int indice)
-int obten(int indice)
-bool desplaza(int indice)
-void inserta(int indice)
+int guardar(int indice)
+int obtener(int indice)
+bool desplazar(int indice)
+void insertar(int indice)
 
 **/
 

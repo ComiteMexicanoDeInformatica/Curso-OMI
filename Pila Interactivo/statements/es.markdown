@@ -10,7 +10,7 @@ Este problema se trata de implementar una pila.
 
 ## Tu función `agrega(int n)`
 
-C/C++ `void atrapando(int N);`
+C/C++ `void agrega(int N);`
 
 ### Descripción
 
@@ -34,12 +34,6 @@ En caso de que la pila este vacía imprime $-1$.
 
 A continuación se muestran las primeras llamadas de una rutina de ejemplo.
 
-|| input
-Función llamada
-|| output
-Valor devuelto
-|| description
-Descripción
 || input
 agrega(3)
 || output
@@ -67,7 +61,7 @@ Se devuelve 9 porque es el elemento de hasta arriba y la pida queda [3, 6]
 || input
 saca()
 || output
-4
+6
 || description
 Se devuelve 6 porque es el elemento de hasta arriba y la pida queda [3]
 || input
