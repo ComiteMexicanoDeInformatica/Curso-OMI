@@ -29,7 +29,7 @@ script:
 - pipenv run python3 deploy.py --onlychanges "../Parentesis"
 - pipenv run python3 deploy.py --onlychanges "../Paseo por el Bosque"
 - pipenv run python3 deploy.py --onlychanges "../permutacion"
-- pipenv run python3 deploy.py --onlychanges "../Pila Interactivo"
+- pipenv run python3 deploy.py --onlychanges "../PilaInteractivo"
 - pipenv run python3 deploy.py --onlychanges "../Quicksort"
 - pipenv run python3 deploy.py --onlychanges "../Sequia"
 - pipenv run python3 deploy.py --onlychanges "../SimplificarFracciones"
@@ -43,6 +43,7 @@ script:
 - pipenv run python3 deploy.py --onlychanges "../derrame de petroleo"
 - pipenv run python3 deploy.py --onlychanges "../RoundRobin"
 - pipenv run python3 deploy.py --onlychanges "../Entre conjuntos"
+- pipenv run python3 deploy.py --onlychanges "../Bucket"
 
 
 
