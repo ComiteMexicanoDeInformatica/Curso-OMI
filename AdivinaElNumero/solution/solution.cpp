@@ -12,8 +12,10 @@ void adivina(long long a,long long b){
             if(resp == 1){
                 a = md+1;
             }else{
-                b = md;
+                b = md-1;
             }
     }
+
+    pista(a);
     return;
 }
