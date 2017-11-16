@@ -25,7 +25,7 @@ Un entero que indica el número de casillas desde las cuales, se puede llegar a 
 ||output
 4
 ||description
-!{Cuadrícula de Pistas}(PistasAzul.jpg)
+![Cuadrícula de Pistas](PistasAzul.jpg)
 
 En el ejemplo la respuesta es 4 porque desde las casillas (0,0), (0,2), (2,0) y (2,2), es posible llegar a la casilla que marca el objeto (1,2) siguiendo las pistas de cada casilla.
 ||end
