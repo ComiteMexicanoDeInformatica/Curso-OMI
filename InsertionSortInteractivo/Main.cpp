@@ -71,7 +71,6 @@ int main()
 			}
 		A[y+1]=c;
 		}
-    cout<<n<<" "<<m<<endl;
 	if(n<=100) //primeros 40 puntos
 		m=n*n;
 	//Operación del alumno
