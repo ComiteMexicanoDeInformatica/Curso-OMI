@@ -3,7 +3,7 @@ alias: COMI-Derrame-de-Petroleo
 generate-output: true
 solution: solution/solucion2.cpp
 timeout: 1.5
-
+admin-groups: [workshop-2017]
 params:
   title: Derrame de Petroleo
   source: Curso OMI (ORAC)
