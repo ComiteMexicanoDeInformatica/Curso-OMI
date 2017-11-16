@@ -20,8 +20,8 @@ bool smallerThanB(int t){
     return true;
 }
 
-int int main() {
-    cin >> a >> b;
+	int main() {
+    cin >> n >> m;
     for (int i=0; i<n; i++)
         cin >> a[i];
     for (int i=0; i<m; i++)

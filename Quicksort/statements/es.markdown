@@ -121,7 +121,7 @@ Intercambiamos los elementos $5$ y $4$, por lo que el arreglo queda como $4$ y $
 
 # Límites
 
-* $0 < n \leq 2,000$
+* $0 < n \leq 5,000$
 
 # Consideraciones
 
