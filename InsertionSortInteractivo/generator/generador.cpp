@@ -5,7 +5,7 @@
 #include <string>
 #include <sstream>
 #include <random>
-#define MAX_NUM 20 //(long long)(1<<31)-1
+#define MAX_NUM ((long long)1<<31)-1
 
 using namespace std;
 
@@ -19,7 +19,6 @@ int main()
 	for(int i=0;i<5;i++)
 		{
 		uniform_int_distribution<> dis( (i ? tam[i-1]+1  : 1 ) , tam[i]);
-		cout<<(i ? tam[i-1]+1  : 1 )<<" "<<tam[i]<<endl;
 		k=(i==4?8:10); //número de casos 
 		for(int j=0;j<k;j++)
 			{

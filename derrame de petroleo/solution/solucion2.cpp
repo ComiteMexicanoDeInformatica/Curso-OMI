@@ -8,7 +8,14 @@ struct estado{
 
 struct cola_circular{
   estado v[2000*2000];
-  int inicio=0,fin=-1,cont=0;
+  int inicio,fin,cont;
+  cola_circular()
+  {
+         inicio=0;
+         fin=-1;
+         cont=0;
+  }
+
   void insertar(estado edo)
   {
     fin=(fin+1)%maxcola;
@@ -39,13 +46,13 @@ cola_circular nodos;
 
 bool estadoValido(estado edo)
 {
-    /**Si se sale del mapa no es v·lido**/
+    /**Si se sale del mapa no es v√°lido**/
     if(edo.fila<0 || edo.fila>=R || edo.columna<0 || edo.columna>=C)
         return false;
-    /**Si es una pared '#', el inicio '$' o una casilla que ya fue explorada '*', no es v·lido**/
+    /**Si es una pared '#', el inicio '$' o una casilla que ya fue explorada '*', no es v√°lido**/
     if(mapa[edo.fila][edo.columna]=='#' || mapa[edo.fila][edo.columna]=='$' || mapa[edo.fila][edo.columna]=='*')
         return false;
-    /**Si su nivel de profundidad en el ·rbol es mayor que K, no es v·lido**/
+    /**Si su nivel de profundidad en el √°rbol es mayor que K, no es v√°lido**/
     if(edo.nivel>K)
         return false;
     return true;
@@ -70,14 +77,14 @@ int main()
  }
 
  /**Busqueda en amplitud. Generar el estado padre y marcarlo como procesado
-    La marca en esta soluciÛn se har· sobre el mapa con caracteres '$', '#' y '*'
+    La marca en esta soluci√≥n se har√° sobre el mapa con caracteres '$', '#' y '*'
  **/
  nodos.insertar(padre);
- /**El inicio ya est· marcado con '$' **/
+ /**El inicio ya est√° marcado con '$' **/
 
  while(!nodos.vacio())
  {
-     /**extraer el siguiente nodo de la cola, generar sus hijos e insertarlos, solo si son estados v·lidos**/
+     /**extraer el siguiente nodo de la cola, generar sus hijos e insertarlos, solo si son estados v√°lidos**/
      padre=nodos.consultar();
      nodos.extraer();
      padre.nivel++;

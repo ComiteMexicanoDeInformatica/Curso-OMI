@@ -3,8 +3,12 @@
 
 * MAC
 *.DS_STORE
-derrame de petroleo/statements/es,markdown
 *.zip
 *.exe
 a.out
-pila interactivo/solution/solution.cpp
+
+# libinteractive
+*.cbp
+*.layout
+libinteractive
+libinteractive.jar

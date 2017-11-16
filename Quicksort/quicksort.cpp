@@ -5,4 +5,5 @@
 
 int HacerParticion(int n) {
     //FIXME
+    return 0;
 }
