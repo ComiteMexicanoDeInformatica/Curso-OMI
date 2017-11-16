@@ -1,8 +1,9 @@
 alias: COMI-Entre-conjuntos
 
 generate-output: true
-solution: solution/solution.cpp
+solution: solution/100_B.cpp
 timeout: 0.5
+admin-groups: [workshop-2017]
 
 params:
   title: Entre conjuntos
