@@ -1,23 +1,25 @@
 interface Main {
 	
-	int siguiente();
+	int guardar(
+		int indice
+	);
 
-	int obten(
+	int obtener(
 		int indice
 	);	
 
-	bool desplaza(
+	bool desplazar(
 		int indice
 	);
 	
-	void inserta(
+	void insertar(
 		int indice
 	);
 };
 
 interface ordenador{
 	
-	void ordena(
+	void ordenar(
 		int n
 	);
 

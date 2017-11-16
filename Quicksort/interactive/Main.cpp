@@ -1,10 +1,9 @@
 #include "quicksort.h"
 #include <stdio.h>
-#include <string.h>
 using namespace std;
 
 #define MAXN 2000
-int n, v[MAXN];
+int n, *v;
 
 int ElementoEnPosicion(int i) {
     if (i < 0 || i >= n)
@@ -21,20 +20,13 @@ int Intercambiar(int i, int j) {
     return 1;
 }
 
-void Quicksort(int nsize, int arr[]) {
+void Quicksort(int nsize, int *arr) {
     if (nsize > 1) {
         n = nsize;
-        memcpy(v, arr, sizeof(v));
+        v = arr;
         int piv = HacerParticion(nsize);
-
-        int izq[nsize], der[nsize];
-        memcpy(izq, v, sizeof(izq));
-        memcpy(der, v + piv + 1, sizeof(der));
-
-        Quicksort(piv, izq);
-        Quicksort(nsize - piv - 1, der);
-        memcpy(arr, izq, sizeof(izq));
-        memcpy(arr + piv + 1, der, sizeof(der));
+        Quicksort(piv, arr);
+        Quicksort(nsize - piv - 1, arr + piv + 1);
     }
 }
 

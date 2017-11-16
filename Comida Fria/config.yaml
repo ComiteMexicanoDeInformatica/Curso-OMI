@@ -1,8 +1,9 @@
-alias: COMI-Comida-Fria
+﻿alias: COMI-Comida-Fria
 
 generate-output: true
 solution: solution/solution.cpp
 timeout: 0.5
+admin-groups: [workshop-2017]
 
 params:
   title: Comida Fría

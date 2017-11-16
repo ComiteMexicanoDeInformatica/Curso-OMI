@@ -41,14 +41,16 @@ int main()
 	//Casos especiales
 	uniform_int_distribution<> dis(1800,2000);
 	uniform_int_distribution<> dis2(0 , MAX_NUM); //0 <= A[i] <= 2^31 -1
-	//t=dis(gen);
+	t=dis(gen);
 	t=10;
 	int napadas[t];
 	for(int x=0;x<t;x++)
 		{
 		napadas[x]=dis2(gen);
-		sort(napadas,napadas+t);
+		cout<<napadas[x]<<" ";
 		}
+	cout<<endl;
+	sort(napadas,napadas+t);
 	ofstream in49,in50;
 	stringstream ss49,ss50;
 	ss49 << 49;
