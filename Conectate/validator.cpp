@@ -12,23 +12,36 @@ int n;
 
 int push(int num)
 {
+    int ar = maxN*2;
+    int ab = maxN*2;
     int result = 0;
-    if(arriba.empty())
+    if(!arriba.empty())
+    {
+        ar =  arriba.top();
+    }
+    if(!abajo.empty())
+    {
+        ab =  abajo.top();
+    }
+    if(ar>num && ab> num)
+    {
+        if(ar<=ab)
+        {
+            arriba.push(num);
+            result = 1;
+        }
+        else
+        {
+            abajo.push(num);
+            result = 2;
+        }
+    }
+    else if(ar>num)
     {
         arriba.push(num);
         result = 1;
     }
-    else if(arriba.top()>num)
-    {
-        arriba.push(num);
-        result = 1;
-    }
-    else if(abajo.empty())
-    {
-        abajo.push(num);
-        result = 2;
-    }
-    else if(abajo.top()>num)
+    else if(ab>num)
     {
         abajo.push(num);
         result = 2;

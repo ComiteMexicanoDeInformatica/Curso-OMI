@@ -4,6 +4,8 @@ generate-output: true
 solution: solutions/100_B.cpp
 timeout: 0.5
 
+admin-groups: [workshop-2017]
+
 params:
   title: Tak Tak Tree
   source: Curso OMI (Orac)
