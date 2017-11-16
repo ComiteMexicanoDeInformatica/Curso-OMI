@@ -1,5 +1,4 @@
 #include <algorithm>
-#include <string.h>
 #include <iostream>
 #include "ordenador.h"
 #define MAX_OPERACIONES 5000
@@ -9,14 +8,18 @@ using namespace std;
 int A[2001],B[2001];
 int i,m,n,j,N;
 bool operacionesExcedidas;
+int valorGuardado;
 
-int siguiente()
+int guardar(int indice) //siguiente guarda el valor en indice
 {
-	cout<<"siguiente numero: "<<A[i]<<endl;
-	return A[i++];
+	if(indice<0 || indice >=n)
+		return -1;
+	valorGuardado=B[indice];
+	cout<<"Valor guardado: "<<valorGuardado<<endl;
+	return valorGuardado;
 }
 
-int obten(int indice)
+int obtener(int indice)
 {
 	if(indice<0 || indice>=n) //indice no válido
 		{
@@ -26,7 +29,7 @@ int obten(int indice)
 	return B[indice];
 }
 
-bool desplaza(int indice)
+bool desplazar(int indice)
 {
 	if(indice<0 || indice>=n-1 || m<0) //indice no válido, número de operaciones excedidas
 		{
@@ -44,7 +47,7 @@ bool desplaza(int indice)
 	return 1;
 }
 
-void inserta(int indice)
+void insertar(int indice)
 {
 	if(N<0)
 		{
@@ -52,9 +55,15 @@ void inserta(int indice)
 		operacionesExcedidas=1;
 		return;
 		}
-	cout<<"inserta "<<A[j]<<" en posicion "<<indice<<endl;
+	if(indice<0 || indice>=n)
+		{
+		cout<<"Indice no valido. No se inserto el valor "<<valorGuardado<<endl;
+		return;
+		}
+	cout<<"insertar "<<valorGuardado<<" en posicion "<<indice<<endl;
 	N--;
-	B[indice]=A[j++];
+	B[indice]=valorGuardado;
+	valorGuardado=-1;
 }
 
 int main()
@@ -66,9 +75,11 @@ int main()
 	N=n;
 	m=MAX_OPERACIONES;
 	for(int x=0;x<n;x++)
+	        {
 		cin>>A[x];
-	memset(B,-1,sizeof B);
-	ordena(n);
+		B[x]=A[x];
+		}
+	ordenar(n);
 	if(operacionesExcedidas)
 		{
 		cout<<"Numero de operaciones excedidas\n";
