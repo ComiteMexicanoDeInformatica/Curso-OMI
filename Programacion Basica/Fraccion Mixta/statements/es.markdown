@@ -34,7 +34,7 @@ La fracción mixta de $n$ y $m$ es $3 \frac{4}{6}$.
 7
 ||description
 En este caso no existe parte fraccionaria.
-(Es decir, $b = 0$.)
+Es decir, $b = 0$.
 ||end
 
 # Límites
