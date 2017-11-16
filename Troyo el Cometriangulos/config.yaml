@@ -1,8 +1,9 @@
-alias: COMI-Troyo
+﻿alias: COMI-Troyo
 
 generate-output: true
 solution: solutions/100_A.cpp
 timeout: 0.5
+admin-groups: [workshop-2017]
 
 params:
   title: Troyo el cometriángulos
