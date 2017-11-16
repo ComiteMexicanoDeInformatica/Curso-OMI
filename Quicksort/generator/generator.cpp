@@ -20,7 +20,7 @@ int main() {
         in << casos[i] << "\n";
         for (int j = 0; j < casos[i]; j++)
             in << rand() << " ";
-        out << "SI";
+        out << "1\n";
 
         in.close();
         out.close();

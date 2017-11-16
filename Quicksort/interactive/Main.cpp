@@ -47,9 +47,9 @@ int main() {
 
     for (int i = 0; i < nsize - 1; i++)
         if (arr[i] > arr[i + 1]) {
-            printf("NO");
+            printf("0\n");
             return 0;
         }
-    printf("SI");
+    printf("1\n");
     return 0;
 }
