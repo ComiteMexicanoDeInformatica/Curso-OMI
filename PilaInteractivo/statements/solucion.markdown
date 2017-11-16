@@ -19,18 +19,18 @@
 	}
 ```
 
-# Funci�n agrega
+# Función agrega
 
-Aqu� lo �nico que se hace es agregar el elemento una posici�n despu�s del ultimo que se ingres� o en la 0 si es el primero.
+Aquí lo único que se hace es agregar el elemento una posición después del último que se ingresó o en la 0 si es el primero.
 
-La operaci�n tam++ se denomina pos-incremento y lo que hace es acceder al valor actual de la variable e inmediata mente despues incrementa en uno la variable.
+La operación tam++ se denomina pos-incremento y lo que hace es acceder al valor actual de la variable e inmediata mente después incrementa en uno la variable.
 
-Tambien existe el pre-incremento como ++tam y aumenta el valor de la varible y despues accede a el.
+También existe el pre-incremento como ++tam y aumenta el valor de la varible y después accede a él.
 
-# Funci�n saca
+# Función saca
 
-Como se puede ver el condicional valida cuando el tama�o es cero o mayor, cuando es cero no hay nada que sacar y es el caso especial, por eso el -1; de lo contrario se regresa el ultimo elemento que se ingres� y se reduce en uno el tama�o.
+Como se puede ver el condicional válida cuando el tamaño es cero o mayor, cuando es cero no hay nada que sacar y es el caso especial, por eso el -1; de lo contrario se regresa el ultimo elemento que se ingresó y se reduce en uno el tamaño.
 
-La operaci�n --tam se denomina pre-decremento y lo que hace es disminuir en uno el valor de la variable e inmediatamente despues acceder al nuevo valor de la variable.
+La operación --tam se denomina pre-decremento y lo que hace es disminuir en uno el valor de la variable e inmediatamente después acceder al nuevo valor de la variable.
 
-Tambien existe el pos-decremento como tam-- y accede al valor y despues lo decrementa en uno.
+También existe el pos-decremento como tam-- y accede al valor y después lo decrementa en uno.

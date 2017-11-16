@@ -18,7 +18,7 @@ script:
 - pipenv run python3 deploy.py --onlychanges "../AdivinaElNumero"
 - pipenv run python3 deploy.py --onlychanges "../Binomios"
 - pipenv run python3 deploy.py --onlychanges "../Bubble"
-- pipenv run python3 deploy.py --onlychanges "../Comida Fria"
+- pipenv run python3 deploy.py --onlychanges "../Progrmacion Basica/Revancha"
 - pipenv run python3 deploy.py --onlychanges "../Conectate"
 - pipenv run python3 deploy.py --onlychanges "../Criba"
 - pipenv run python3 deploy.py --onlychanges "../derrame de petroleo"
