@@ -1,0 +1,15 @@
+interface Main
+{
+	
+};
+
+interface recuerdame
+{
+	void recuerdame(
+		int x
+	);
+
+	bool soy(
+		int x
+	);
+};
