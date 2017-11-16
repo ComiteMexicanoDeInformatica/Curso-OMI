@@ -13,8 +13,8 @@ srand(time(NULL));
 cin>>n;
 for(int i=0;i<n;i++)
 {
-    cin>>cosa[n];
-    muhs[cosa[n]]++;
+    cin>>cosa[i];
+    muhs[cosa[i]]++;
 }
 inicio(n,cosa);
 int x=0;
