@@ -14,7 +14,7 @@ script:
 - pipenv run python3 deploy.py --onlychanges "../Programacion Basica/Fraccion Mixta"
 - pipenv run python3 deploy.py --onlychanges "../Programacion Basica/Canchas"
 - pipenv run python3 deploy.py --onlychanges "../Programacion Basica/Tak-Tak Tree"
-- pipenv run python3 deploy.py --onlychanges "..Programacion Basica/ContandoInfinito"
+- pipenv run python3 deploy.py --onlychanges "../Programacion Basica/ContandoInfinito"
 - pipenv run python3 deploy.py --onlychanges "../AdivinaElNumero"
 - pipenv run python3 deploy.py --onlychanges "../Binomios"
 - pipenv run python3 deploy.py --onlychanges "../Bubble"

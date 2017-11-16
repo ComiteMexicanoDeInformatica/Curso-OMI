@@ -4,7 +4,7 @@
 using namespace std;
 
 int *A,*B;
-int i,m,n,j,N;
+int i,m,n,j,N,M;
 bool operacionesExcedidas;
 int valorGuardado;
 
@@ -71,6 +71,7 @@ int main()
 			}
 		A[y+1]=c;
 		}
+    cout<<n<<" "<<m<<endl;
 	if(n<=100) //primeros 40 puntos
 		m=n*n;
 	//Operación del alumno
@@ -82,7 +83,6 @@ int main()
 		}
 	for(int x=0;x<n;x++)
 		{
-		//cout<<A[x]<<" "<<B[x]<<endl;
 		if(A[x]!=B[x])
 			{
 			cout<<"0\n";

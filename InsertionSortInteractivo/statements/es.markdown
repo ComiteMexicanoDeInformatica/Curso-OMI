@@ -132,7 +132,7 @@ Tu función solicita almacenar el valor 1 en la posición 0 (el último valor al
 
 # Restricciones
 
-$1 \leq n \leq 500$
+$1 \leq n \leq 400$
 
 # Consideraciones
 
