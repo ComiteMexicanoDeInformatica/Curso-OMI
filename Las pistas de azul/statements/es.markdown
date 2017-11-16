@@ -21,26 +21,27 @@ Un entero que indica el número de casillas desde las cuales, se puede llegar a 
 1 2
 0 2 -1 -1 2 0
 1 1 -1 -1 2 2
-1 2 0 1 1 2
+1 2  0  1 1 2
 ||output
 4
 ||description
-![enter image description here][1]
+!{Cuadrícula de Pistas}(PistasAzul.jpg)
 
 En el ejemplo la respuesta es 4 porque desde las casillas (0,0), (0,2), (2,0) y (2,2), es posible llegar a la casilla que marca el objeto (1,2) siguiendo las pistas de cada casilla.
 ||end
+
 **NOTA**
 
  1. Al menos te tienes que mover a una casilla para que puedas contarla, es decir, empezar en la casilla del objeto no deberá contarse
  2. Las casillas que están marcadas con -1,-1 indica que no hay pista que te lleve a otra casilla
  
 # Límites
+
  - $0<=F, C<=N-1$
  - $1<=N<=50$
 
  **Subtarea 1** Para un conjunto de 60% de los casos no se creará un ciclo dentro del mundo(Un ciclo es una secuencia de pistas que eventualmente te llevan a repetir una casilla)
  
-  **Subtarea 2** Para el 100% de los casos, puede o no haber un ciclo en el mundo
+ **Subtarea 2** Para el 100% de los casos, puede o no haber un ciclo en el mundo
 
-
-  [1]: /img/82d70f2a494bdbc30d1a839e44896c3e88e0a3ce.jpeg
+ 
