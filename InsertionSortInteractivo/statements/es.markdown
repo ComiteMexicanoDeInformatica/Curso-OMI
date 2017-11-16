@@ -1,3 +1,4 @@
+
 # Problema
 
 Este problema se trata de ordenar un arreglo con el ordenamiento de inserción. Un ordenamiento por inserción hace lo siguiente:
