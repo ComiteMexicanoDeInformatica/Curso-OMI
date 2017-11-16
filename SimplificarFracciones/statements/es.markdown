@@ -60,4 +60,4 @@ Se reciben 5 fracciones y se regresan al resultado en el orden en que llegaron. 
 # Límites
 
 * $ 1\leq N \leq 100000$
-* $ 1\leq a, b \leq 2^{64}$
+* $ 1\leq a, b \leq 2^{63}$
