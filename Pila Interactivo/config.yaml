@@ -1,4 +1,4 @@
-alias: Pila-Interactivo
+alias: COMI-Pila-Interactivo
 
 
 # optional argument, if false, the problem won't be deployed
@@ -39,13 +39,14 @@ timeout: 1
 
 interactive: true
 
-
+admin-groups: [workshop-2017]
 
 # all of these are required unless create is set to false
 
+
 params:
 
-  title: Pila Interactiva
+  title: Pila Interactivo
 
   source: Curso OMI (ORAC)
 
