@@ -26,7 +26,9 @@ Lo que hace que Quicksort pueda ser más rápido o no, es la elección del pivote. 
 
 **Tu función** `HacerParticion`
 
-C/C++ `int HacerParticion(int n);`
+C/C++ `int HacerParticion(int n);`+
+
+Pascal `function HacerParticion(var n: LongInt): LongInt;`
 
 **Descripción**
 
@@ -40,6 +42,8 @@ Esta función hará la partición del arreglo y deberá retornar la posición final d
 
 C/C++ `int ElementoEnPosicion(int i);`
 
+Pascal `function ElementoEnPosicion(var i: LongInt): LongInt;`
+
 **Descripción**
 
 Esta función retornará el elemento en la posición $i$ del arreglo o -1 en caso de que el índice dado esté fuera del rango. Los elementos del arreglo son siempre enteros no negativos.
@@ -48,11 +52,13 @@ Esta función retornará el elemento en la posición $i$ del arreglo o -1 en caso d
 
  - `i`: Un entero indicando el índice del elemento en el arreglo.
 
-C/C++ `bool Intercambiar(int i, int j);`
+C/C++ `int Intercambiar(int i, int j);`
+
+Pascal `function Intercambiar(var i, j: LongInt): LongInt;`
 
 **Descripción**
 
-Esta función intercambiará los elementos del arreglo en las posiciones $i$ y $j$. Retorna `true` si fue posible intercambiarlos y `false` en caso contrario.
+Esta función intercambiará los elementos del arreglo en las posiciones $i$ y $j$. Retorna 1 si fue posible intercambiarlos y 0 en caso contrario.
 
 **Parámetros**
 
@@ -115,7 +121,7 @@ Intercambiamos los elementos $5$ y $4$, por lo que el arreglo queda como $4$ y $
 
 # Límites
 
-* El tamaño del arreglo nunca será mayor a 1000
+* El tamaño del arreglo nunca será mayor a $20,000$
 * El arreglo está indexeado en 0
 * Los elementos del arreglo siempre serán enteros no-negativos.
 

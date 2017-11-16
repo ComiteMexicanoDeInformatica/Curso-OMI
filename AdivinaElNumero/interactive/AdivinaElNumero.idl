@@ -1,6 +1,6 @@
 interface Main {
 	long pista(
-		long n
+		long x
 	);
 };
 

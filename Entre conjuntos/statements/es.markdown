@@ -27,7 +27,7 @@ Dos enteros $n$ y $m$ representando el tamaño de $A$ y $B$. Seguido de una lín
 
 # Salida
 
-Una sola línea con todos los enteros entre ambos conjuntos, separados con un espacio como se muestra en el ejemplo.
+Una sola línea con todos los enteros entre ambos conjuntos, separados con un espacio en orden creciente como se muestra en el ejemplo.
 
 # Ejemplo
 
@@ -49,4 +49,4 @@ Hay dos valores de $x$ entre $A=\\{2,3,6\\}$ y $B = \\{42,84\\}$
 # Límites
 
 * $1 \leq n,m \leq 10$
-* $1 \leq a_i,b_i \leq 100$
+* $1 \leq a_i,b_i \leq 100000$

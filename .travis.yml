@@ -9,7 +9,8 @@ install:
 - pipenv install
 
 script:
-- pipenv run python3 deploy.py --onlychanges "../A+B"
+- pipenv run python3 deploy.py --onlychanges "../Programacion Basica/A+B"
+- pipenv run python3 deploy.py --onlychanges "../Programacion Basica/Sentados o Parados"
 - pipenv run python3 deploy.py --onlychanges "../AdivinaElNumero"
 - pipenv run python3 deploy.py --onlychanges "../Binomios"
 - pipenv run python3 deploy.py --onlychanges "../Bubble"
@@ -24,13 +25,18 @@ script:
 - pipenv run python3 deploy.py --onlychanges "../Parentesis"
 - pipenv run python3 deploy.py --onlychanges "../Paseo por el Bosque"
 - pipenv run python3 deploy.py --onlychanges "../Pila Interactivo"
-- pipenv run python3 deploy.py --onlychanges "../Sentados o Parados"
+- pipenv run python3 deploy.py --onlychanges "../Quicksort"
 - pipenv run python3 deploy.py --onlychanges "../Sequia"
+- pipenv run python3 deploy.py --onlychanges "../SimplificarFracciones"
 - pipenv run python3 deploy.py --onlychanges "../Tak-Tak Tree"
 - pipenv run python3 deploy.py --onlychanges "../Taquitos"
 - pipenv run python3 deploy.py --onlychanges "../Traductor"
 - pipenv run python3 deploy.py --onlychanges "../Triples"
 - pipenv run python3 deploy.py --onlychanges "../Troyo el Cometriangulos"
+- pipenv run python3 deploy.py --onlychanges "../permutacion"
+- pipenv run python3 deploy.py --onlychanges "../MesaRedonda"
+- pipenv run python3 deploy.py --onlychanges "../Conectate"
+
 
 env:
   global:
