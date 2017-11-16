@@ -5,14 +5,15 @@
 
 int HacerParticion(int n) {
     int piv = ElementoEnPosicion(n - 1);
-    int i = -1, j, k;
+    int i = -1, j, k = n;
 
-    for (j = 0; j < n - 1; j++)
+    for (j = 0; j < n; j++)
         if (ElementoEnPosicion(j) < piv)
             Intercambiar(++i, j);
 
-    for (j = ++i, k = i; j < n; j++)
-        if (ElementoEnPosicion(j) == piv)
-            Intercambiar(++k, j);
-    return (++i + --k) / 2;
+    for (j = n - 1; j >= 0; j--)
+        if (ElementoEnPosicion(j) > piv)
+            Intercambiar(--k, j);
+
+    return (i + k) / 2;
 }
