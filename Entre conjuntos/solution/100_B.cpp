@@ -21,7 +21,7 @@ bool smallerThanB(int t){
 }
 
 	int main() {
-    cin >> a >> b;
+    cin >> n >> m;
     for (int i=0; i<n; i++)
         cin >> a[i];
     for (int i=0; i<m; i++)
