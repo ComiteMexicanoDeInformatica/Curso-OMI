@@ -44,6 +44,7 @@ script:
 - pipenv run python3 deploy.py --onlychanges "../RoundRobin"
 - pipenv run python3 deploy.py --onlychanges "../Entre conjuntos"
 - pipenv run python3 deploy.py --onlychanges "../Bucket"
+- pipenv run python3 deploy.py --onlychanges "../Las pistas de azul"
 
 
 
