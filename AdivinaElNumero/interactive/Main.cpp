@@ -28,13 +28,13 @@ long long pista(long long x){
         return 1;
     }
     if(r_mayor < r_menor){
-        f = max(i,x);
+        f = max(i,x-1);
         return -1;
     }
     if(r_mayor == r_menor){
         d = !d;
         if(!d) { i = min(x + 1,f); return 1;}
-        if(d) { f = max(i,x); return -1;}
+        if(d) { f = max(i,x-1); return -1;}
     }
 }
 int main()
