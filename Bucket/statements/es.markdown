@@ -2,11 +2,11 @@
 
 Este problema se trata de ordenar un arreglo con el ordenamiento de cubetas. Un ordenamiento de cubetas hace lo siguiente:
 
-1.-Lee $n_i$ suma y en a un arreglo en la posición $n_{i}$ .
+1.-Lee $m_i$ suma y en a un arreglo en la posición $m_{i}$ .
 
 
 
-En este problema te daremos un arreglo  $N$ de $M$ números números , seguido te haremos $k$ preguntas, las preguntas consisten en decir cuantas veces se repite cierto número.Los números siempre estaran entre 0 y 100.      
+En este problema te daremos un arreglo  $M$ de $N$ números números , seguido te haremos $k$ preguntas, las preguntas consisten en decir cuantas veces se repite cierto número.Los números siempre estaran entre 0 y 100.      
 
 # Entrada y Salida
 
