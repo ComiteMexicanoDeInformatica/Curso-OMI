@@ -5,20 +5,17 @@
 #include <math.h>
 using namespace std;
 
-long long l,r,i,f,preguntas,p,lg;
+long long l,r,i,f,preguntas,p,lg,last;
 bool d=false,found=false;
 
 long long pista(long long x){
 
+    last = x;
     preguntas ++;
 
     if(x > f) return -1;
     if(x < i) return 1;
-    if(x==i && x==f) {
-            found = true;
-            p=preguntas;
-            return 0;
-    }
+    if(x==i && x==f) return 0;
 
     int r_menor = x - i;
     int r_mayor = f - x;
@@ -44,9 +41,9 @@ int main()
     i=l;
     f=r;
     adivina(l,r);
-    if(!found) printf("0.0");
+    if(i!=j || last!=i) { printf("0.0"); return 0;
 
-    if(found){
+    if(i==j && last == i){
         if(preguntas <= lg){
             printf("1.0");
         }

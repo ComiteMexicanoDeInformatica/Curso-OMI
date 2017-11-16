@@ -1,0 +1,9 @@
+interface Main {
+	int siguienteCuarto(int n);
+	void move(int c);
+	void regresa();
+};
+
+interface AdivinaElNumero {
+    void Player1(int x);
+};

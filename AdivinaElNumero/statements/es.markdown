@@ -32,6 +32,8 @@ Puedes llamar a esta función con cualquier entero como parámetro, y puede regres
 
 * `1`: El numero que esta pensando omegaUp es mayor a $x$.  
 
+**Nota:** El ultimo llamado que debe hacer tu programa a `pista()` es con la respuesta, es decir, con el numero que esta pensando OmegaUp.
+
 # Rutina de Ejemplo
 
 A continuación se muestran las primeras llamadas de una rutina de ejemplo.

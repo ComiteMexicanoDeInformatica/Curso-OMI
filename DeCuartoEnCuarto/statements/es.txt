@@ -6,21 +6,22 @@ Los cuartos de la casa tienen la particularidad que tienen exactamente dos puert
 
 # Entrada y Salida
 
-**Este es un problema interactivo**, por lo que no tendrás que leer la entrada ni imprimir la salida, sino implementar en tu código la función `Player1(int x)` y podrás mandar a llamar la función del evaluador `siguienteCuarto(int c,int n)`.
+**Este es un problema interactivo**, por lo que no tendrás que leer la entrada ni imprimir la salida, sino implementar en tu código la función `Player1(int x)` y podrás mandar a llamar algunas funciones del evaluador.
 
 # Implementación
 
-### Tu función `Player1(int x)`
+### Tu función `Player1(int x, int y)`
 
-C/C++ `void Player1(int x);`
+C/C++ `void Player1(int x, int y);`
 
 ### Descripción
 
-El evaluador buscará en tu código esta función y la llamará con un entero $x$ donde $1$ $\leq$ N $\leq$ $10^{5}$ .
+El evaluador buscará en tu código esta función y la llamará con dos enteros $x$ , $y$ donde $1$ $\leq$ N $\leq$ $10^{5}$ .
 
 ### Parámetros
 
 * `x`: El cuarto donde inicia el personaje.
+* `y`: El cuarto a donde debe llegar personaje.
 
 ### Función del evaluador `siguienteCuarto(int n)`
 
