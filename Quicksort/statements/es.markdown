@@ -26,7 +26,7 @@ Lo que hace que Quicksort pueda ser más rápido o no, es la elección del pivote. 
 
 **Tu función** `HacerParticion`
 
-C/C++ `int HacerParticion(int n);`+
+C/C++ `int HacerParticion(int n);`
 
 Pascal `function HacerParticion(var n: LongInt): LongInt;`
 
