@@ -5,11 +5,12 @@
 using namespace std;
 
 
-long long l,r,numero,preguntas;
+long long l,r,numero,preguntas,last;
 bool f=false;
 
 long long pista(long long x){
 
+    last = x;
     preguntas ++;
 
     if(x == numero) {
@@ -29,9 +30,9 @@ int main()
     r = max(numero, r);
     adivina(l,r);
 
-    if(!f)
+    if(last!=numero)
         printf("No encontraste el numero! :(");
-    if(f){
+    if(last == numero){
         if(preguntas < 63){
             printf("Obtuviste el 100%% del puntaje de este caso! :), hiciste %lld preguntas",preguntas);
         }
