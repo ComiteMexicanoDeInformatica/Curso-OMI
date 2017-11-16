@@ -1,4 +1,4 @@
-﻿alias: COMI-Comida-Fria
+﻿alias: COMI-Las-Pistas-de-Azul
 
 generate-output: true
 solution: solution/solution.cpp
@@ -6,7 +6,7 @@ timeout: 0.5
 admin-groups: [workshop-2017]
 
 params:
-  title: Comida Fría
+  title: Las pistas de Azul
   source: Curso OMI (Orac)
 
   visibility: 1
