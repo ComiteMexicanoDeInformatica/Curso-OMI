@@ -4,5 +4,5 @@ interface Main {
 };
 
 interface quicksort {
-    int HacerParticion(int n);
+    int HacerParticion(int inicio, int fin);
 };
