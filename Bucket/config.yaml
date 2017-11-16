@@ -1,0 +1,26 @@
+﻿alias: COMI-Bucket
+
+generate-output: false
+interactive: true
+admin-groups: [workshop-2017]
+
+params:
+  title: Bucket
+  source: Curso OMI (Orac)
+
+  visibility: 1
+
+  languages: all
+
+  time_limit: 3100
+  memory_limit: 32768
+  output_limit: 16384
+  stack_limit: 10485760
+
+  overall_wall_time_limit: 60000
+
+  validator: literal
+  validator_time_limit: 3000
+  extra_wall_time: 0
+
+  email_clarifications: 0

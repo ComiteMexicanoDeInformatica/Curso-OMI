@@ -1,4 +1,3 @@
-#include <algorithm>
 #include <iostream>
 #include "ordenador.h" //esto también tiene que llamarse igual
 
@@ -56,15 +55,21 @@ int main()
 	valorGuardado=-1;
 	cin>>n;
 	N=n;
+	int c;
 	A=(int*)malloc(n*sizeof(int));
 	B=(int*)malloc(n*sizeof(int));
 	for(int x=0;x<n;x++)
 		{
-		cin>>*(A+x);
-		B[x]=A[x];
-		for(int y=x-1;y>=0;y--) //si hay dos números iguales no cuenta el m
-			if(A[y]>A[x])
-				m++;
+		cin>>c;
+		B[x]=c;
+		int y=x-1;
+		while(y>=0 && A[y]>c) //si hay dos números iguales no cuenta el m
+			{
+			m++;
+			A[y+1]=A[y];
+			y--;
+			}
+		A[y+1]=c;
 		}
 	if(n<=100) //primeros 40 puntos
 		m=n*n;
@@ -75,9 +80,9 @@ int main()
 		cout<<"0\n";
 		return 0;
 		}
-	sort(A,A+n);
 	for(int x=0;x<n;x++)
 		{
+		//cout<<A[x]<<" "<<B[x]<<endl;
 		if(A[x]!=B[x])
 			{
 			cout<<"0\n";

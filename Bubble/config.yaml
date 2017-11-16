@@ -2,6 +2,7 @@
 
 generate-output: false
 interactive: true
+admin-groups: [workshop-2017]
 
 params:
   title: Bubble

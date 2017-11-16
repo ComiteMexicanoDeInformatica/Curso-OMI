@@ -1,8 +1,9 @@
-alias: COMI-Funciones-Matematicas
+﻿alias: COMI-Funciones-Matematicas
 
 generate-output: true
 solution: solution/solucion.cpp
 timeout: 0.5
+admin-groups: [workshop-2017]
 
 params:
   title: Funciones Matemáticas
