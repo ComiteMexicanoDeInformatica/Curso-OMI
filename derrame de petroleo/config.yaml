@@ -1,7 +1,7 @@
 alias: COMI-Derrame-de-Petroleo
 
 generate-output: true
-solution: solution/solchida.cpp
+solution: solution/solucion2.cpp
 timeout: 1.5
 
 params:
