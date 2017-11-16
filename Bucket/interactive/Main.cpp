@@ -20,7 +20,7 @@ inicio(n,cosa);
 int x=0;
 for(int i=0;i<=100;i++)
 {
-    if(muhs[i]!=preguta(i))
+    if(muhs[i]!=pregunta(i))
     {
         x=1;
     }
