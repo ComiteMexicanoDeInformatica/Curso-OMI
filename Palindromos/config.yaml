@@ -3,6 +3,7 @@ alias: COMI-Palindromos
 generate-output: true
 solution: solutions/100_B.cpp
 timeout: 0.5
+admin-groups: [workshop-2017]
 
 params:
   title: Palindromos
