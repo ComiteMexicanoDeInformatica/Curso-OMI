@@ -2,11 +2,11 @@
 
 int k[110];
 
-void inicio(int n[1000])
+void inicio(int N,int M[])
 {
-for(int i=0;i!=1000;i++)
+for(int i=0;i!=N;i++)
 {
-k[n[i]]++;
+k[M[i]]++;
 }
 }
 int pregunta(int x)
