@@ -1,4 +1,4 @@
-alias: comi-Contando-a-Infinito
+alias: COMI-Contando-a-Infinito
 
 generate-output: true
 solution: solution/solution.cpp

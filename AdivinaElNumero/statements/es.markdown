@@ -1,6 +1,4 @@
-# Problema
-
-En este problema tendras que adivinar el numero que este pensado OmegaUp!
+¡En este problema tendrás que adivinar el número que esté pensado OmegaUp!
 
 # Entrada y Salida
 

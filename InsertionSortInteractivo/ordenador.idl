@@ -1,0 +1,25 @@
+interface Main {
+	
+	int siguiente();
+
+	int obten(
+		int indice
+	);	
+
+	bool desplaza(
+		int indice
+	);
+	
+	void inserta(
+		int indice
+	);
+};
+
+interface ordenador{
+	
+	void ordena(
+		int n
+	);
+
+};
+

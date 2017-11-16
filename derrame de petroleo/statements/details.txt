@@ -1,0 +1,48 @@
+﻿Distribución de los casos de Derrame de Petróleo
+
+               R            C       K              $                 Tierra
+ 0             4            6       4              2,2               9  EJEMPLO 1
+ 1             1            1       1              2,2               4  EJEMPLO 2
+ 2             1            1       1                                0
+ 3             1            1       10 000 000                       0
+ 4             50          50       10 000 000                       ESPIRAL
+ 5             50          50       10 000                           HORIZONTAL
+ 6             50          50       10 000 000                       VERTICAL
+ 7             2000      2000       1              Centro            0
+ 8             2000      2000       10 000 000     Centro            0
+12             2000      2000       10 000 000     derecha           0
+13             200      400         1              Centro            Al azar
+14             400      600         10 000 000     Centro            Al azar
+15             600      100         10 000 000     izquierda         Al azar
+16             800      1000        10 000 000     arriba            Al azar
+17             1000     800         400 000        abajo             Al azar
+18             100      2000        40 000         derecha           Al azar
+19        >=10 <=50   >=10 <=50     1              Al azar           1
+20        >=10 <=50   >=10 <=50     1              Al azar           2
+21        >=10 <=50   >=10 <=50     1              Al azar           <=5
+22        >=10 <=50   >=10 <=50     1              Al azar           <=10
+23        >=10 <=50   >=10 <=50     1              Al azar           <=50
+24        >=10 <=50   >=10 <=50     1 000          Al azar           <=100
+25        >=10 <=50   >=10 <=50     2 000          Al azar           <=500
+26        >=10 <=50   >=10 <=50     4 000          Al azar           <=2500
+27        >=10 <=50   >=10 <=50     8 000          Al azar           =2500
+28        >=10 <=50   >=10 <=50     <=5            Al azar           <=200
+29        >=10 <=50   >=10 <=50     <=10           Al azar           <=200
+30        >=10 <=50   >=10 <=50     <=30           Al azar           <=200
+31     >=100 <=1000   >=100 <=1000  <=50           Al azar           <=500
+32     >=100 <=500    >=100 <=500   <=100          Al azar           <=500
+33     >=100 <=1000   >=100 <=1000  <=500          Al azar           <=500
+34     >=100 <=500    >=100 <=500   <=1 000        Al azar           <=500
+35     >=100 <=1000   >=100 <=1000  <=10 000       Al azar           <=500
+36     >=100 <=500    >=100 <=500   <=100 000      Al azar           <=500
+37     >=100 <=1000   >=100 <=1000  <=1 000 000    Al azar           <=500
+38        >=10 <=50   >=10 <=50     <=1 000        Al azar           <=1500 FORZADO
+39        >=10 <=50   >=10 <=50     <=10 000       Al azar           <=1500 FORZADO
+40        >=10 <=50   >=10 <=50     <=100 000      Al azar           <=1500 FORZADO AREA 1X1 RODEADA TIERRA
+41        >=10 <=50   >=10 <=50     <=1 000 000    Al azar           <=1500 FORZADO AREA RODEADA TIERRA
+
+
+Verificar errores
+
+* Que r,c,k correspondan a ésta lista
+* Que exista el caracter $
