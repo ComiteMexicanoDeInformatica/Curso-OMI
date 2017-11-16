@@ -2,11 +2,11 @@ En el centro de la aldea Tak-Tak se encuentra un gran árbol en expansión, cuya
 
 Sólo un grupo selecto de 10 aldeanos conoce la ubicación del árbol y este grupo te ha seleccionado para ser su nuevo integrante. Pero para ser aceptado primero deberás ser capaz de contestar la siguiente pregunta:
 
-_Dado el número de frutas actualmente en el árbol y el número de integrantes del grupo ($11$ contándote a ti), calcula ¿cuántas noches tienen que pasar para que si cosechan TODAS las frutas del árbol menos 1 (para que puedan seguir multiplicándose) a cada miembro del grupo le toque el mismo número de frutas?_
+_Dado el número de frutas actualmente en el árbol y el número de integrantes del grupo ($11$ contándote a ti), calcula ¿cuántas noches tienen que pasar para que si cosechan **TODAS** las frutas del árbol menos 1 (para que puedan seguir multiplicándose) a cada miembro del grupo le toque el mismo número de frutas?_
 
 # Problema
 
-Escribe un programa que dado $f$ el número de frutas acualmente en el árbol calcule la cantidad de noches que es necesario esperar para que, si se cosechan TODAS las frutas del árbol menos 1, a cada miembro del grupo le toquen la misma cantidad de frutas.
+Escribe un programa que dado $f$ el número de frutas acualmente en el árbol calcule la cantidad de noches que es necesario esperar para que, si se cosechan **TODAS** las frutas del árbol menos 1, a cada miembro del grupo le toquen la misma cantidad de frutas.
 
 # Entrada
 
@@ -40,6 +40,6 @@ En el segundo ejemplo, 17 no es un buen número. Después de una noche, el núme
 En el tercer ejemplo, 14 no es un buen número. Después de dos noches, el número de frutos se ha cuadruplicado, convirtiéndose en $56=5 \times 11+1$.
 ||end
 
-$ Límites
+# Límites
 
- * $2 \leq $f \leq 1,000,000$
+ * $2 \leq f \leq 1,000,000$

@@ -1,45 +1,24 @@
-# La mejor cerveza
-COMI Corp. se dio a la importante tarea de hacer una lista de las mejores $n$ cervezas nacionales, comenzando por la mejor cerveza, para esto convoco a sus más confiables y capacitados elementos en el arte de degustar cervezas y despues de una noche de borrachera ellos hicieron una votación sobre las $n$ cervezas nacionales pero como aun no recuperaban del todo la sobriedad olvidaron ordenar la lista de resultados.
-
-Para ordenar la lista COMI Corp. ha solicitado ayuda a dos profesionales en el ordenamiento de listas:
-
-**1. El mezclador**
-
-**2. El combinador**
-
-Y ha diseñado la siguiente estrategia con ayuda de John Von Neumann:
- 
-1. El mezclador sera el encargados de dividir el trabajo, primero partira a la mitad la lista de  votaciones de las $n$ cervezas de tal manera que cada sublista tenga el mismo numero de elementos $n/2$ o tal vez una sublista pueda tener un elemento  más que la otra y luego de estas dos sublistas formara 4 siguiendo la misma logica y asi hasta  tener listas de una sola votación entoces llamará a El combinador.
-
-2. El combinador tomara dos sublistas ordenadas de la lista y los combinara de forma ordenada.
-
-Sin embargo, el combinador se ha enfermado y la COMI Corp. necesita de tu ayuda. Para que tengas una idea mas clara de la estrategia puedes ver la siguiente imagen donde se ilustra la estrategia a seguir en un ejemplo:
-
- <img src="http://programminglife.io/public/images/Divide_and_Conquer.png" alt="Drawing" style="width: 200px;"/>
-
+# Contando Inversiones
 
 # Entrada y Salida
 
-**Este es un problema interactivo**, por lo que no tendrás que leer la entrada ni imprimir la salida, sino implementar en tu código la función `combinar(int votaciones[],int izquierda,int mitad ,int derecha)`.
+**Este es un problema interactivo**, por lo que no tendrás que leer la entrada ni imprimir la salida, sino implementar en tu código la función `contarInversion(int tam,int lista[])`.
 
 # Implementación
 
 ### La función
 
- ```combinar(int votaciones[],int izquierda, int mitad,int derecha)```
+ ```contarInversion(int tam,int lista[])```
 
-C/C++ `void combinar(int votaciones[],int izquierda,int mitad,int derecha);`
+C/C++ `int contarInversion(int tam,int lista[]);`
 
 ### Descripción
-En la  función `combinar` los parametros `int izquierda`, `int mitad`  e `int derecha` te deben ayudar a saber que subarreglos del arreglo `int votaciones[]` esta combinando y ordenando la función `combinar` 
-El evaluador buscará en tu código esta función y la llamará con los parametros `votaciones`, `izquierda`,`mitad` y `derecha`. Tu implementación deberá combinar y ordenar los elementos del arreglo `votaciones` entre `izquierda` y `mitad` con los elemnetos que estan entre `mitad+1` y `derecha`. Debes asumir que ambas sublistas estan ordenadas. 
+La  función `contarInversion` debe recibir un arreglo de enteros y su tamaño y debe regresar  el numero de inversiones en el arreglo. El evaluador buscará en tu código esta función y la llamará con los parametros `tam` y `lista`.
 
 ### Parámetros
 
-* `votaciones`: Es un arreglo de enteros que contiene los votos.
-* `izquierda`: Es un entero que indica la posición del arreglo donde inicia la primera sublista a combinar y ordenar.
-* `mitad`: Es un entero que indica la posición del arreglo donde termina la primera sublista a combinar y ordenar. La segunda sublista siempre comienza en `mitad+1`.
-* `derecha`: Es un entero que indica la posición del arreglo donde termina la segunda sublista a combinar y ordenar. 
+* `lista`: Es un arreglo de enteros.
+* `tam`: Es un entero que indica la cantidad de enteros que hay en lista 
 
 # Rutina de Ejemplo
 
@@ -58,46 +37,43 @@ Descripción
 
 || input
 
-combinar(votaciones,0,0,1)
+contar(lista,6)
 
 || output
 
--
+6
 
 || description
 
-Asumiendo que `int votaciones[] = {1,5,3,4,6,2}`
-la primer sublista son los elementos entre la posición $0$  y $0$ es decir {1} la segunda  sublista son los elementos entre las posiciones $1$ y $1$ es decir {5} al combinar y ordenar estas listas el arreglo `votaciones` queda como sigue:
-{1,5,3,4,6,2}
+Asumiendo que `int lista[] = {1,5,3,4,6,2}`
+el 5 esta antes que  el 3, 4 y 2 (3 inversiones); el 3 esta invertido con el 2 (1 inversión); el 4 esta invertido con el 2 (1 inversion) y el 6 esta invertido con el 2 (1 inversion). En total 6 inversiones.  
 || input
 
-combinar(votaciones,4,4,5)
+contar(lista,5)
 
 || output
 
--
+5
 
 || description
 
-Asumiendo que `int votaciones[] = {1,5,3,4,6,2}`
-la primer sublista son los elementos entre la posición $4$  y $4$ es decir {2} la segunda  sublista son los elementos entre las posiciones $5$ y $5$ es decir {6} al combinar y ordenar estas listas el arreglo `votaciones` queda como sigue:
-{1,5,3,4,2,6}
+Asumiendo que `int votaciones[] = {1, 20, 6, 4, 5}`
+20 con 6, 4 y 5 (3 inversiones) y 6 con 4 y 5 (2 inversiones). En total 5 inversiones. 
 || input
-combinar(votaciones,0,2,5)
+contar(lista,6)
 
 || output
 
--
+3
 
 || description
 Asumiendo que `int votaciones[] = {1,3,5,2,4,6}`
-la primer sublista son los elementos entre la posición $0$  y $3$ es decir {1,5,3} la segunda  sublista son los elementos entre las posiciones $3$ y $5$ es decir {4,6,2} al combinar y ordenar estas listas el arreglo original queda como sigue:
-{1,2,3,4,5,6}
+3 con 2 (1 inversión) 5 con 2 y 4 (2 inversiones). En total 3 inversiones 
 
 || end
 
 # Restricciones
 
-$0 \leq n \leq 10,000$
+$0 \leq n \leq 1,000,000$
 
 {{libinteractive:download}}
