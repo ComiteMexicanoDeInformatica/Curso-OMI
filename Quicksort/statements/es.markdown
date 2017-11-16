@@ -77,7 +77,7 @@ HacerPariticion(4);
 ||output
 1
 ||description
-En este ejemplo, el arreglo es $3, 1, 5, 4$. El pivote escogido es $3$ y después de hacer la partición el arreglo queda como 1 3 5 4, por lo que la posición final del pivote es 1.
+En este ejemplo, el arreglo es $3, 1, 5, 4$. El pivote escogido es $3$ y después de hacer la partición el arreglo queda como $1, 3, 5, 4$, por lo que la posición final del pivote es 1.
 ||input
 ElementoEnPosicion(0)
 ||output
@@ -100,7 +100,7 @@ HacerParticion(2)
 ||output
 1
 ||description
-En esta función el evaluador manda a llamar el sub-arreglo $5, 4$. El pivote escogido en este caso es el $5$
+En esta función el evaluador manda a llamar el sub-arreglo $5, 4$. El pivote escogido en este caso es el $5$.
 ||input
 ElementoEnPosicion(0)
 ||output
