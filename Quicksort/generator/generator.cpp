@@ -7,7 +7,7 @@
 using namespace std;
 int main() {
     ios_base::sync_with_stdio(0); cin.tie();
-    int casos[10] = {10, 25, 50, 100, 250, 500, 750, 1000, 1500, 2000};
+    int casos[10] = {10, 25, 50, 75, 100, 250, 500, 750, 900, 1000};
     srand(time(0));
 
     for (int i = 0; i < 10; i++) {
