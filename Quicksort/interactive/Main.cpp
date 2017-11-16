@@ -3,7 +3,7 @@
 #include <string.h>
 using namespace std;
 
-#define MAXN 1000
+#define MAXN 20000
 int n, v[MAXN];
 
 int ElementoEnPosicion(int i) {
