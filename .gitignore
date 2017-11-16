@@ -3,6 +3,8 @@
 
 * MAC
 *.DS_STORE
+Thumbs.db
+
 *.zip
 *.exe
 a.out
