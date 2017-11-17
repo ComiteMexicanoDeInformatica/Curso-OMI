@@ -1,13 +1,13 @@
 alias: COMI-Paseo-por-el-Bosque
 
 generate-output: true
-solution: solution/100_A.cpp
+solution: solution/solution.cpp
 timeout: 0.5
 admin-groups: [workshop-2017]
 
 params:
   title: Paseo por el Bosque
-  source: Curso OMI (Orac)
+  source: Curso OMI
 
   visibility: 0
 
