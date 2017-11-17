@@ -1,6 +1,5 @@
 # Descripción
-Esta es tu primera experiencia resolviendo un problema interactivo, y queremos que sea una experiencia agradable. 
-Asi que te dejamos la tarea de escribir dos funciones muy sencillas, para resolver un problema muy simple. ¡Ah! y al mismo tiempo distinguirás la diferencia entre variables locales y variables globales en C++.
+Esta es tu primera experiencia resolviendo un problema interactivo, y queremos que sea una experiencia agradable. Asi que te dejamos la tarea de escribir dos funciones muy sencillas, para resolver un problema muy simple. ¡Ah! y al mismo tiempo distinguirás la diferencia entre variables locales y variables globales en C++.
 
 El problema se origina porque los números o algunos de ellos, están perdiendo la memoria. Asi que, dependen de las funciones que tu escribas, para su bienestar.
 El número le dice, al programa-de-soporte-a-los-números, quien es, a través de la función: $$void\ recuerdame(int\ num)$$

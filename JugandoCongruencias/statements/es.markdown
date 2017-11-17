@@ -6,7 +6,7 @@ $$A \equiv B \mod C$$
 
 La anterior expresión se lee cómo **A es congruente con B, módulo C**. Ahora, para que entiendas mejor el concepto de congruencias, te lo explicaremos mediante un pequeño experimento que utiliza la operación normal de módulo que conoces. Imagina que calculamos **mod(5)** para **TODOS** los números enteros.
 
-!{congruences}(congruences.png)
+![congruences](congruences.png)
 
 Supongamos que rebanamos un circulo en 5 partes y las etiquetamos como $0,1,2,3$ y $4$. Entonces para cada uno de los enteros a los que se le aplicó la operación **mod(5)**, los pondremos dentro de la rebanada con la cual corresponda. Piensa que estas rebanadas son como contenedores los cuales van a guardar conjuntos de números. Por ejemplo, el número 26 iría en la rebanada marcada con 1, porque $26 mod 5=1$.
 

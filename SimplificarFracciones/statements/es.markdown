@@ -34,7 +34,7 @@ En este problema se te darán $N$ fracciones las cuales tendrás que simplificar
 En la primera línea recibirás un número $N$ el cual representa el número de líneas que recibirás posteriormente. En las siguientes $N$ líneas recibirás dos números por línea, $a$ y $b$, dónde $a$ será el denominador y $b$ el denominador de la fracción. 
 
 # Salida
-Tu salida deberán de ser $N$ líneas que representarán las fracciones simplificadas de la entrada. Es importante destacar que las $N4 líneas que escribas en la salida, deberán de estar en el mismo orden en que se puso en la entrada, sino se considerará como fallida la salida. Además, también las tendrás que poner por parejas de números, donde el primer número será el numerador y el segundo el denominador.
+Tu salida deberán de ser $N$ líneas que representarán las fracciones simplificadas de la entrada. Es importante destacar que las $N$ líneas que escribas en la salida, deberán de estar en el mismo orden en que se puso en la entrada, sino se considerará como fallida la salida. Además, también las tendrás que poner por parejas de números, donde el primer número será el numerador y el segundo el denominador.
 
 # Ejemplo
 ||input

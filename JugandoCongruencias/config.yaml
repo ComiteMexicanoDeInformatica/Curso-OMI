@@ -1,12 +1,12 @@
-﻿alias: COMI-Funciones-Matematicas
+﻿alias: COMI-Congruencias
 
 generate-output: true
 solution: solution/solution.cpp
-timeout: 0.5
+timeout: 1
 admin-groups: [workshop-2017]
 
 params:
-  title: Funciones Matemáticas
+  title: Jugando con Congruencias 
   source: Curso OMI
 
   visibility: 1

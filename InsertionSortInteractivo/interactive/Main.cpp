@@ -1,18 +1,27 @@
 #include <iostream>
 #include "ordenador.h" //esto también tiene que llamarse igual
 
+/**
+
+Calificación:
+0.5 si el arreglo está ordenado
+0.5 si utiliza el mínimo de operaciones
+
+**/
+
 using namespace std;
 
 int *A,*B;
-int i,m,n,j,N,M;
+int i,m,n,j,N,M; //m: operaciones mínimas, M: operaciones que hizo el alumno
 bool operacionesExcedidas;
 int valorGuardado;
+double calificacion;
 
 int guardar(int indice) //siguiente guarda el valor en indice
 {
-    if(indice<0 || indice >=n)
-        return -1;
-    valorGuardado=B[indice];
+	if(indice<0 || indice >=n)
+	        return -1;
+	valorGuardado=B[indice];
 	return valorGuardado;
 }
 
@@ -25,14 +34,10 @@ int obtener(int indice)
 
 bool desplazar(int indice)
 {
-	if(indice<0 || indice>=n-1 || m<0) //indice no válido, número de operaciones excedidas
-		{
-		if(m<0)
-			operacionesExcedidas=true;
+	if(indice<0 || indice>=n-1) //indice no válido
 		return 0;
-		}
 	B[indice+1]=B[indice];
-	m--;
+	M++;
 	return 1;
 }
 
@@ -43,7 +48,7 @@ void insertar(int indice)
 		operacionesExcedidas=true;
 		return;
 		}
-	if(indice<0 || indice>=n)
+	if(indice<0 || indice>=n) //indice no valido
 		return;
 	N--;
 	B[indice]=valorGuardado;
@@ -71,8 +76,6 @@ int main()
 			}
 		A[y+1]=c;
 		}
-	if(n<=100) //primeros 40 puntos
-		m=n*n;
 	//Operación del alumno
 	ordenar(n);
 	if(operacionesExcedidas)
@@ -88,6 +91,7 @@ int main()
 			return 0;
 			}
 		}
-	cout<<"1\n";
+	calificacion=1-((double)(M-m)/((n*n-m)*2));
+	cout<<calificacion<<endl;
 	return 0;
 }

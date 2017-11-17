@@ -1,7 +1,7 @@
 alias: COMI-Derrame-de-Petroleo
 
 generate-output: true
-solution: solution/solucion2.cpp
+solution: solution/solution.cpp
 timeout: 1.5
 admin-groups: [workshop-2017]
 params:

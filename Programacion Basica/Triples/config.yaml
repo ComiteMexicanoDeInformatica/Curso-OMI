@@ -1,13 +1,13 @@
-﻿alias: COMI-Funciones-Matematicas
+alias: COMI-Triples
 
 generate-output: true
-solution: solution/solution.cpp
-timeout: 0.5
+solution: solutions/solution.cpp
+timeout: 1
 admin-groups: [workshop-2017]
 
 params:
-  title: Funciones Matemáticas
-  source: Curso OMI
+  title: Triples
+  source: Curso OMI (Orac)
 
   visibility: 1
 
