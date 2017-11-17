@@ -9,7 +9,7 @@ Cada nodo también necesita estar conectado exactamente a otro nodo con un nuevo
 
 El circuito debe estar impreso en una placa de circuito plano, y no se pueden solapar los cables. Cada cable colocado entre dos nodos estará completamente sobre el cable principal o completamente debajo.
 
-![izquierda](ejemplo.jpg)![medio](ejemplo2.jpg)![derecha](ejemplo3.jpg)
+![izquierda](ejemplo.jpg) ![medio](ejemplo2.jpg) ![derecha](ejemplo3.jpg)
 
 * La imagen izquierda ilustra una configuración de cableado válida. 
 * La imagen del medio ilustra una configuración de cableado no válida. 
