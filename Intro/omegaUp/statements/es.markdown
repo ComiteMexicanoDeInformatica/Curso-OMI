@@ -22,7 +22,7 @@ Abajo de las instrucciones, especificaciones y casos de ejemplo de cada problema
 
 En la siguiente pantalla podrás pegar tu código o subir tu archivo (con el botón **Browse**) para envíar tu solución con el botón **Submit Query**. Es muy importante que especifiques el Lenguaje en que desarrollaste tu cádigo para que sea correctamente evaluado (C, C++, C++11, Java, Karel, etc.). 
 
-![Sección de Envíos de omegaUp](envíos.jpg)
+![Sección de Envíos de omegaUp](submit.jpg)
 
 En el recuadro de envíos aparecerá el Estatus, Porcentaje (de casos resueltos y en Detalle podrás recuperar tu código.
 
