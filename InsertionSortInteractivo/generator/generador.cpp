@@ -40,7 +40,7 @@ int main()
 		}
 	//Casos especiales
 	uniform_int_distribution<> dis2(0 , MAX_NUM); //0 <= A[i] <= 2^31 -1
-	t=400;
+	t=200;
 	int napadas[t];
 	for(int x=0;x<t;x++)
 		napadas[x]=dis2(gen);
