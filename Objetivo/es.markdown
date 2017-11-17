@@ -61,7 +61,19 @@ La distribocion de los problemas se presenta en la siguiente tabla:
 
 Tema                            |Problema|objetivo
 --------------------------------|--------|--------
-Programación Básica             |        |
+Programación Básica             |  | a+b explicandole como leer de leer datos y escribir a  la salida estandar
+                                |  | Sitting or Standing? - conditional statements, I/O
+                                |  | Mixed Fraction - division and modulo operators
+                                |  | A Mindbending Scenario - conditional statements, basic inclusion/exclusion
+                                |  | The Tremendous Tak-Tak Tree - modulo operators, loops
+                                |  | Counting to Infinity - loops
+                                |  | A Dish Best Served Cold - loops, maxima/minima, summation
+                                |  | Strings - Chars
+                                |  | Drought - controlling loop flow
+                                |  | Encyclopædia - arrays and direct lookup
+                                |  | Dictionary - arrays and linear search
+                                |  | Triple Hunting - arrays and storing results
+--------------------------------------------------------------------------------------------------------------
 Funciones y recursión           |        |
 Complejidad                     |        |
 Estructuras de datos            |        |
