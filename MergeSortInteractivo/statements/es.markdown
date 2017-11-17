@@ -79,7 +79,7 @@ despues de llamar mezclar el arreglo queda ordenado completamente
 {1,2,3,4,5,6}
 || input
 
-mezclar(votaciones,1,3)
+mezclar(1,3)
 
 || output
 
