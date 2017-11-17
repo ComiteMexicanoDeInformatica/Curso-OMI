@@ -1,4 +1,3 @@
-
 ¡Bienvenido a omegaUp!
 
 omegaUp es un ***juez en línea***. Eso quiere decir que tenemos miles de problemas de programación
