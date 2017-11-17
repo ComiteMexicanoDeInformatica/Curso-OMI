@@ -1,6 +1,6 @@
 ﻿# Descripción
 
-Un binomio es una expresión algebraica compuesta por dos términos distintos, por ejemplo, $x+y$ es un binomio. Cuando elevamos un binomio a una potencia $n$, donde $n$ es un entero no negativo, obtenemos diferentes expresiones algebraicas dependiendo del valor de $n$. Por ejemplo, para $n=1,2,3$ obtenemos las siguientes expresiones: $$(x+y)^1=x+y$$ $$(x+y)^2=x^2+2xy+y^2$$ $$(x+y)^3=x^3+3x^2y+3xy^2+y^3$$
+Un binomio es una expresión algebráica compuesta por dos términos distintos, por ejemplo, $x+y$ es un binomio. Cuando elevamos un binomio a una potencia $n$, donde $n$ es un entero no negativo, obtenemos diferentes expresiones algebráicas dependiendo del valor de $n$. Por ejemplo, para $n=1,2,3$ obtenemos las siguientes expresiones: $$(x+y)^1=x+y$$ $$(x+y)^2=x^2+2xy+y^2$$ $$(x+y)^3=x^3+3x^2y+3xy^2+y^3$$
 
 Tu tarea para este problema es, que dado el exponente $n$, encuentres el desarrollo de $(x+y)^n$ tomando en cuenta las siguientes consideraciones:
 

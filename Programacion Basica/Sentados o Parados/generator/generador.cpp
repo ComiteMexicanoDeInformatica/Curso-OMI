@@ -41,10 +41,23 @@ int main()
             int s = casos[n]-r;
             in << r <<" "<<s<<endl<<casos[n];
         }
+        for(int i=1; i<=casos[n]; i++){
+            if(indg[i] > indg_ni){
+                indg_ni = indg[i];
+                ni=i;
+            }
+            if(indg[i] < indg_nf){
+                indg_nf = indg[i];
+                nf = i;
+            }
+        }
+        printf("%d %d %d\n",casos[n],ni,nf);
+        for(int i=1; i<=n; i++){
+            printf("%d %d\n",G[i].p1,G[i].p2);
+        }
         /**termina tu código para generar el caso**/
 
         in.close();
-        solucion(str+".in",str+".out");
 
     }
     return 0;

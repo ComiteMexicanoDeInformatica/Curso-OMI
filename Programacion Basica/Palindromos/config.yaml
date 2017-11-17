@@ -6,10 +6,10 @@ timeout: 0.5
 admin-groups: [workshop-2017]
 
 params:
-  title: Palindromos
+  title: Palíndromos
   source: Curso OMI (Orac)
 
-  visibility: 0
+  visibility: 1
 
   languages: all
 

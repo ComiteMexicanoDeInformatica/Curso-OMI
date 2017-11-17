@@ -5,5 +5,5 @@ interface Main {
 };
 
 interface AdivinaElNumero {
-    void Player1(int x);
+    void Player1(int x,int y);
 };
