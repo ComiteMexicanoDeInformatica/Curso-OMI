@@ -27,7 +27,7 @@ int guardar(int indice) //siguiente guarda el valor en indice
 
 int obtener(int indice)
 {
-	if(indice<0 || indice>=n) //indice no válido
+	if(indice<0 || indice>n) //indice no válido
 		return -1;
 	return B[indice];
 }
