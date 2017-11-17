@@ -1,6 +1,6 @@
 ﻿alias: COMI-Insertion
 
-generate-output: false
+generate-output: true
 interactive: true
 admin-groups: [workshop-2017]
 
