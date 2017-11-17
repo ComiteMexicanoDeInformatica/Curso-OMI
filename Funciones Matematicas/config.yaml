@@ -7,7 +7,7 @@ admin-groups: [workshop-2017]
 
 params:
   title: Funciones Matemáticas
-  source: Curso OMI (Orac)
+  source: Curso OMI
 
   visibility: 1
 
