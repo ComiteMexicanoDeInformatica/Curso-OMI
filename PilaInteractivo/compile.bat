@@ -19,22 +19,22 @@ IF !ERRORLEVEL! NEQ 0 EXIT /B !ERRORLEVEL!
 ECHO DONE
 )
 
-SET TARGET=libinteractive\pila\pila.exe
-SET SOURCES=pila_interactivo.cpp libinteractive\pila\pila_entry.cpp
+SET TARGET=libinteractive\PilaInteractivo\PilaInteractivo.exe
+SET SOURCES=PilaInteractivo.cpp libinteractive\PilaInteractivo\PilaInteractivo_entry.cpp
 call:recompile %TARGET% %SOURCES%
 IF "%RECOMPILE%" == "1" (
 <NUL SET /p elidenewline=Compiling %TARGET%... 
-%GXX% -std=c++11 -o %TARGET% %SOURCES% -lm -O2 -g  -Wno-unused-result -Ilibinteractive\pila
+%GXX% -std=c++11 -o %TARGET% %SOURCES% -lm -O2 -g  -Wno-unused-result -Ilibinteractive\PilaInteractivo
 IF !ERRORLEVEL! NEQ 0 EXIT /B !ERRORLEVEL!
 ECHO DONE
 )
 
-SET TARGET=libinteractive\pila\pila_debug.exe
-SET SOURCES=pila_interactivo.cpp libinteractive\pila\pila_entry.cpp
+SET TARGET=libinteractive\PilaInteractivo\PilaInteractivo_debug.exe
+SET SOURCES=PilaInteractivo.cpp libinteractive\PilaInteractivo\PilaInteractivo_entry.cpp
 call:recompile %TARGET% %SOURCES%
 IF "%RECOMPILE%" == "1" (
 <NUL SET /p elidenewline=Compiling %TARGET%... 
-%GXX% -std=c++11 -o %TARGET% %SOURCES% -lm -g  -Wno-unused-result -Ilibinteractive\pila
+%GXX% -std=c++11 -o %TARGET% %SOURCES% -lm -g  -Wno-unused-result -Ilibinteractive\PilaInteractivo
 IF !ERRORLEVEL! NEQ 0 EXIT /B !ERRORLEVEL!
 ECHO DONE
 )

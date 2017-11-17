@@ -1,5 +1,6 @@
+#include "PilaInteractivo.h"
 #include<stdio.h>
-#include "pila_interactivo.h"
+
 
 char ins,val;
 
