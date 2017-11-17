@@ -45,6 +45,7 @@ script:
 - pipenv run python3 deploy.py --onlychanges "../Taquitos"
 - pipenv run python3 deploy.py --onlychanges "../Troyo el Cometriangulos"
 - pipenv run python3 deploy.py --onlychanges "../MergeSortInteractivo"
+- pipenv run python3 deploy.py --onlychanges "../VariacionConRepeticion"
 
 
 env:
