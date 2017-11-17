@@ -1,6 +1,9 @@
-En una escuela preparatoria, la maestra de español organizó un concurso de escribir palíndromos. Un palíndromos es una palabra, número o frase que se lee igual de izquierda a derecha y de derecha a izquierda.
+En una escuela preparatoria, la maestra de español organizó un concurso de escribir palíndromos. Un palíndromo es una palabra, número o frase que se lee igual de izquierda a derecha y de derecha a izquierda.
 En este concurso se jugará con palabras solamente.
-Te pidieron que escribas un programa que lea una palabra y decida si es palíndromo o no.
+
+# Problema
+
+Escribe un programa que lea una palabra y decida si es palíndromo o no.
 
 # Entrada
 
