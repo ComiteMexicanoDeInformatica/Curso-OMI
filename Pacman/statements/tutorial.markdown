@@ -16,5 +16,3 @@ Supongamos que después de esto, ambos quedan ordenados, por lo que debemos unirl
             combinar(izquierda, mitad, derecha);
         }
     }
-
-D
