@@ -2,12 +2,14 @@
 int k;
 void recuerdame(int num)
 {
-k=num;
+	k=num;
 }
+
 bool soy(int x)
 {
-if(k==x)
-return true;
-
-return false;
+	if(k==x) {
+		return true;	
+	} else {
+		return false;
+	}
 }

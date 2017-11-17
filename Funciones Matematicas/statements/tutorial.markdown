@@ -42,3 +42,5 @@ Se obtiene multiplicando el número base por la cantidad de veces que indica el 
 pow(X,Y) donde X es el número a elevar e Y es la potencia ambos X o Y pueden ser números enteros dados como parámetros.
 
 Puede producirse un error de dominio si x es negativo e y no es un valor entero. También se produce un error de dominio si el resultado no se puede representar cuando x es cero e y es menor o igual que cero.
+
+Puedes revisar todas las funciones de `Math.h` en la siguiente liga http://www.cplusplus.com/reference/cmath/ (página en inglés)
