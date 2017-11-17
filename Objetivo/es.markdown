@@ -73,7 +73,6 @@ Programación Básica             |  | a+b explicandole como leer de leer datos 
                                 |  | Encyclopædia - arrays and direct lookup
                                 |  | Dictionary - arrays and linear search
                                 |  | Triple Hunting - arrays and storing results
---------------------------------------------------------------------------------------------------------------
 Funciones y recursión           |        |
 Complejidad                     |        |
 Estructuras de datos            |        |
