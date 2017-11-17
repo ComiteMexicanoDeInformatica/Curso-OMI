@@ -23,7 +23,7 @@ void dfs(int nd,int prof){
         nodo_fin = nd;
     }
     dfs(G[nd].p1,prof+1);
-    dfs(G[nd].p2,prof+2);
+    dfs(G[nd].p2,prof+1);
     return;
 }
 int main()
@@ -82,7 +82,7 @@ int main()
         in << casos[n] << " " << ni << " "<< nodo_fin <<"\n";
 
         for(int i=1; i<=casos[n]; i++){
-                in << G[i].p1 << " " << G[i].p2;
+                in << G[i].p1 << " " << G[i].p2 << "\n";
         }
         /**termina tu código para generar el caso**/
 

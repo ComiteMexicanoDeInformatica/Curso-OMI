@@ -61,42 +61,54 @@ Valor devuelto
 || description
 Descripción
 || input
-adivina(5,10)
+player1(1,6)
 || output
 -
 || description
 Se llama a tu procedimiento.
 || input
-pista(7)
+siguienteCuarto(1)
 || output
-1
+4
 || description
-El numero que esta pensando omegaUp es mayor que 7.
+La puerta uno del cuarto 1 lleva al cuarto 4.
 || input
-pista(10)
+move(4)
 || output
--1
+-
 || description
-El numero que esta pensando omegaUp es menor que 10.
+El personaje se movi
 || input
-pista(9)
+regresa()
 || output
-0
+-
 || description
-El numero que esta pensando omegaUp es 9.
+El personaje regreso al cuarto 1.
+|| input
+siguienteCuarto(2)
+|| output
+6
+|| description
+La puerta dos del cuarto 1 lleva al cuarto 6.
+|| input
+move()
+|| output
+-
+|| description
+El personaje se mueve al cuarto 6 y a.
 
 || end
 
 # Restricciones
 
-*$-2^{61}$ $\leq$ a,b $\leq$ $2^{61}$*
+*$1$ $\leq$ $N$ $\leq$ $10^{5}$*
 
 # Consideraciones
 
-* Tu puntuacián será en base a la cantidad de llamadas que hagas a la función `long long pista(long long x)` de la siguiente manera.
+* Tu puntuacián será en base a la cantidad de llamadas que hagas a la función `void move(int c)` de la siguiente manera.
 
-* Tendras el 100% del valor del caso si haces a lo más $\log (b-a+1)$ llamadas.
-* Tendras el 50% del valor del caso su haces a lo mas $2\log (b-a+1)$ llamadas.
-* Si haces mas de $2\log (b-a+1)$ llamadas no obtendrás porcentaje.
+* Tendras el 100% del valor del caso si haces a lo más $N$ llamadas.
+* Tendras el 50% del valor del caso su haces a lo mas $2N$ llamadas.
+* Si haces mas de $2N$ llamadas no obtendrás porcentaje.
 
 {{libinteractive:download}}
