@@ -30,6 +30,7 @@ script:
 - pipenv run python3 deploy.py --onlychanges "../Entre conjuntos"
 - pipenv run python3 deploy.py --onlychanges "../Funciones Matematicas"
 - pipenv run python3 deploy.py --onlychanges "../InsertionSortInteractivo"
+- pipenv run python3 deploy.py --onlychanges "../JugandoCongruencias"
 - pipenv run python3 deploy.py --onlychanges "../Las pistas de azul"
 - pipenv run python3 deploy.py --onlychanges "../MesaRedonda"
 - pipenv run python3 deploy.py --onlychanges "../Parentesis"
