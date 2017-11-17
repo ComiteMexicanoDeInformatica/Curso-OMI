@@ -1,4 +1,4 @@
-﻿alias: COMI-Variacion-con-repeticion
+﻿alias: COMI-Variaciones
 
 generate-output: true
 solution: solution/solution.cpp
