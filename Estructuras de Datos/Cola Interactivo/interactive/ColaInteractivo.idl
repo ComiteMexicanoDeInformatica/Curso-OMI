@@ -7,6 +7,4 @@ interface ColaInteractivo {
 	);
 
 	int saca();
-
-	int longitud();
 };
