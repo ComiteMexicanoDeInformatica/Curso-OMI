@@ -1,7 +1,7 @@
 interface Main {
 };
 
-interface pila {
+interface PilaInteractivo {
     void agrega(
         int n
     );
