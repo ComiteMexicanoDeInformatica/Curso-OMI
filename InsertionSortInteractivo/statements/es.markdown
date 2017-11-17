@@ -11,6 +11,19 @@ Este problema se trata de ordenar un arreglo con el ordenamiento de inserción. 
 
 Este proceso lo hacemos desde $i=1$ hasta $i=n-1$ , podemos notar que después de hacerlo la primera vez, se nos garantiza que los dos primeros elementos de la lista $n_0$  y  $n_1$ se encuentran ordenados entre sí, al hacerlo de nuevo para $i=2$ se habrán ordenado entre sí los elementos de las $3$ primeras posiciones de la lista, por lo que despues de $i$ veces se habrán ordenado entre sí los $i+1$ primeros elementos de la lista. Al hacer este proceso $n-1$ veces estaremos garantizando que los $n$ números estan ordenados (el arreglo totalmente ordenado). Como este proceso recorre $n$ veces el arreglo (de tamaño $n$) podemos notar que su complejidad es $Ω(n^2)$. 
 
+# Entrada y Salida
+
+**Este es un problema interactivo**, por lo que no tendrás que leer la entrada ni imprimir la salida, sino implementar en tu código la función `ordena(n)`.
+
+# Implementación
+
+## Tu función `void ordena(int n)`
+
+C/C++ `void ordena(int n);`
+
+### Descripción
+
+El evaluador buscará en tu código esta función y la llamará con el número $n$ como parámetro. Tu implementación deberá llamar las funciones `guardar(int i)` la cual respalda y regresa el entero que se encuentra en esa posición, `obtener(int i)` la cual únicamente regresa el valor que se encuentra en esa posición, `desplazar(int i)` pasa a la posición $i+1$ el valor almacenado en la posición $i$ e `insertar(int i)` almacena en la posición indicada en el parámetro, el último valor respaldado por la función `guardar`.
 
 ### Parámetros
 
