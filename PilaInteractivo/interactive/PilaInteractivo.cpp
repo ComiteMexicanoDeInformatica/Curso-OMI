@@ -1,4 +1,4 @@
-﻿#include "pila_interactivo.h"
+﻿#include "PilaInteractivo.h"
 
 int arreglo[10000];
 int tam;
@@ -14,5 +14,5 @@ int saca()
 		return -1;
 	} else {
 		return arreglo[--tam];
-	}	
+	}
 }

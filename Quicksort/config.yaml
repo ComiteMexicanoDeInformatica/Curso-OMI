@@ -11,7 +11,7 @@ params:
 
   languages: all
 
-  time_limit: 1000
+  time_limit: 2000
   memory_limit: 32768
   output_limit: 16384
   stack_limit: 10485760

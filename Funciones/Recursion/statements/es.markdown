@@ -1,6 +1,6 @@
 Funciones Recursivas ([topcoder](https://www.topcoder.com/community/data-science/data-science-tutorials/an-introduction-to-recursion-part-1/).)
 ===================
-La *recursión* es una herramienta de programación maravillosa, provee una forma simple y poderosa de abordar  una variedad de problemas. Con frecuencia es dificil "pensar" recursivamente. También es facíl escribir un programa recursivo  que tarda demasiado tiempo en ejecutarse o no termina en absoluto. En este artículo repasaremos los conceptos básicos de la recursión y esperamos que te ayude a desarrollar o perfeccionar una habilidad de programación muy importante.
+La *recursión* es una herramienta de programación maravillosa, provee una forma simple y poderosa de abordar una variedad de problemas. Con frecuencia es dificil "pensar" recursivamente. También es facíl escribir un programa recursivo que tarda demasiado tiempo en ejecutarse o no termina en absoluto. En este artículo repasaremos los conceptos básicos de la recursión y esperamos que te ayude a desarrollar o perfeccionar una habilidad de programación muy importante.
 
 ¿Qué es la recursión?
 -----------------------
@@ -9,13 +9,13 @@ Para poder definir exactamente lo que es la recursión, primero necesitamos resp
 ```
 function HolaMundo(n)
 {
-    if(n<1)return
-    print("Hola Mundo!")
-    HolaMundo(n - 1)
+  if(n<1)return
+  print("Hola Mundo!")
+  HolaMundo(n - 1)
 }
 ```
 
-Puede que no esté claro  qué estamos haciendo aquí, así que explicaremos que está sucediendo, si llamamos a nuestra función con $n=10$. Dado que $n$ no es menor que $1$, no hacemos nada en la primera línea. En la siguiente línea, imprimimos "Hola Mundo!" Una vez. En este punto, necesitamos imprimir nuestra frase 9 veces más. Como ahora tenemos una función *HolaMundo* que puede hacer eso, simplemente llamamos a *HolaMundo* (esta vez con $n=9$) para imprimir las copias restantes. Esa copia de *HolaMundo* imprimirá la frase una vez, y luego llamará a otra copia de *HolaMundo* para imprimir los 8 restantes. Esto continuará hasta que finalmente llamemos a *HolaMundo* con $n=0$. *HolaMundo(0)* no hace nada; solo ejecuta el return (es decir regresa). Una vez que *HolaMundo(0)* ha finalizado, *HolaMundo(1)* también se ejecuta y regresa. Esto continúa hasta nuestra llamada original de *HolaMundo(10)*, que termina de ejecutarse habiendo impreso $10$ veces "Hola Mundo!"
+Puede que no esté claro qué estamos haciendo aquí, así que explicaremos que está sucediendo, si llamamos a nuestra función con $n=10$. Dado que $n$ no es menor que $1$, no hacemos nada en la primera línea. En la siguiente línea, imprimimos "Hola Mundo!" Una vez. En este punto, necesitamos imprimir nuestra frase 9 veces más. Como ahora tenemos una función *HolaMundo* que puede hacer eso, simplemente llamamos a *HolaMundo* (esta vez con $n=9$) para imprimir las copias restantes. Esa copia de *HolaMundo* imprimirá la frase una vez, y luego llamará a otra copia de *HolaMundo* para imprimir los 8 restantes. Esto continuará hasta que finalmente llamemos a *HolaMundo* con $n=0$. *HolaMundo(0)* no hace nada; solo ejecuta el return (es decir regresa). Una vez que *HolaMundo(0)* ha finalizado, *HolaMundo(1)* también se ejecuta y regresa. Esto continúa hasta nuestra llamada original de *HolaMundo(10)*, que termina de ejecutarse habiendo impreso $10$ veces "Hola Mundo!"
 
 Puedes estar pensando que esto no es muy emocionante, pero esta función demuestra algunas consideraciones clave en el diseño de un algoritmo recursivo
 
@@ -39,19 +39,19 @@ El problema que ilustramos anteriormente es simple, y la solución que escribimo
 
 En la discusión de algoritmos, cuando hablamos de un gráfo, generalmente no hablamos de un gráfico que muestra la relación entre variables. Por el contrario, generalmente estamos hablando de una red de cosas, personas o conceptos que están conectados entre sí de varias maneras. Por ejemplo, un mapa de carreteras podría considerarse como un gráfo que muestra ciudades y cómo están conectadas por carreteras. Los gráfos pueden ser grandes, complejos e incómodos de manejar programáticamente. También son muy comunes en la teoría de algoritmos y las competicias de algoritmos. Afortunadamente, trabajar con gráfos puede simplificarse mucho más si se utiliza la recursión. Un tipo común de gráfo es una jerarquía, un ejemplo de lo cual es el organigrama de una empresa:
 
-![Image description](https://community.topcoder.com/i/education/hierarchy2.PNG)
+![Image description](hierarchy2.png)
 
 ------------------
-Name     |Manager 
+Nombre   |Gerente 
 ---------|--------
-Betty 	 |Sam   
-Bob      |Sally
-Dilbert  |Nathan
-Joseph   |Sally 
-Nathan   |Veronica
-Sally    |Veronica
-Sam      |Joseph
-Susan    |Bob
+Betty 	 |Sam  
+Bob   |Sally
+Dilbert |Nathan
+Joseph  |Sally 
+Nathan  |Veronica
+Sally  |Veronica
+Sam   |Joseph
+Susan  |Bob
 Veronica |
 
 -------------------
@@ -66,17 +66,17 @@ Una buena solución, como habrás adivinado, es usar recursividad. Por ejemplo, 
 ```
 function contarEmpleadoAbajo(empleadoNombre)
 {
-    declare variable contador
-    contador = 0
-    for each persona in empleadoBasedatos
+  declare variable contador
+  contador = 0
+  for each persona in empleadoBasedatos
+  {
+    if(persona.manager == empleadoNombre)
     {
-        if(persona.manager == empleadoNombre)
-        {
-            contador = contador + 1
-            contador = contador + contarEmpleadoAbajo(persona.nombre)
-        }
+      contador = contador + 1
+      contador = contador + contarEmpleadoAbajo(persona.nombre)
     }
-    return contador
+  }
+  return contador
 }
 ```
 
@@ -92,4 +92,4 @@ Sin embargo, debemos ser muy cuidadosos aquí. Cambiamos la declaración de misi
 
 Está claro que estamos contando doblemente a Betty; la "declaración de misión" de nuestra función ya no coincide con la forma en que la estamos usando. Necesitamos deshacernos de la línea **"contador = contador + 1"**, reconociendo que la llamada recursiva ahora contará a Betty como "alguien que informa a Betty" (y por lo tanto no necesitamos contarla antes de la llamada recursiva).
 
-A medida que nuestras funciones se vuelven cada vez más complejas, los problemas con "declaraciones de misión" ambiguas se vuelven cada vez más evidentes. Para hacer que la recursividad funcione, debemos tener una especificación muy clara de lo que está haciendo cada llamada a la función  o, de lo contrario, podemos terminar con algunos errores muy difíciles de depurar. Incluso si el tiempo es limitado, a menudo vale la pena comenzar escribiendo un comentario que detalle exactamente qué se supone que debe hacer la función. Tener una "declaración de misión" clara significa que podemos estar seguros de que nuestras llamadas recursivas se comportarán como esperamos y que la imagen completa se combinará correctamente.
+A medida que nuestras funciones se vuelven cada vez más complejas, los problemas con "declaraciones de misión" ambiguas se vuelven cada vez más evidentes. Para hacer que la recursividad funcione, debemos tener una especificación muy clara de lo que está haciendo cada llamada a la función o, de lo contrario, podemos terminar con algunos errores muy difíciles de depurar. Incluso si el tiempo es limitado, a menudo vale la pena comenzar escribiendo un comentario que detalle exactamente qué se supone que debe hacer la función. Tener una "declaración de misión" clara significa que podemos estar seguros de que nuestras llamadas recursivas se comportarán como esperamos y que la imagen completa se combinará correctamente.

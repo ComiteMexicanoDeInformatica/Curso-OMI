@@ -1,6 +1,7 @@
+#include "PilaInteractivo.h"
 #include<stdio.h>
-#include "pila_interactivo.h"
 
+int n;
 char ins,val;
 
 int main()
@@ -15,6 +16,6 @@ int main()
         }
         if(ins=='s') printf("%d\n",saca());
     }
-
+    printf("\n");
     return 0;
 }
