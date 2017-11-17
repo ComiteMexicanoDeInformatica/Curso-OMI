@@ -12,11 +12,6 @@ int saca()
     return arreglo[++inicio];
 }
 
-int longitud()
-{
-    return fin - inicio;
-}
-
 void agrega(int n)
 {
     arreglo[++fin] = n;
