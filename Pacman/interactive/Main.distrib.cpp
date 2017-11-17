@@ -14,9 +14,12 @@ int hayComida(int pos){
 
     if (MAP[fil][col] == 'F') {
         puntos = 0.5;
+        cout << "Te encontraste con un fantasma y tus puntos bajan a la mitad :\'(\n";
     } else if (MAP[fil][col] == 'C'){
+        cout << "Hay comida en la posicion " << pos << " :D\n";
         return 1;
     }
+    cout << "No hay comida en la posicion " << pos << " :(\n";
     return 0;
 }
 
@@ -55,8 +58,8 @@ int main() {
     }
 
     if (buscaComida(P) == R){
-        cout << puntos;
+        cout << "Encontraste la ruta mas corta\n";
     } else {
-        cout << "0";
+        cout << "No es la respuesta correcta\n";
     }
 }
