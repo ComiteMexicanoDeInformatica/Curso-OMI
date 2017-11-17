@@ -19,15 +19,7 @@ Este problema es interactivo y deberás escribir una función llamada buscaComid
 
 El parámetro **pos** te ayudará a mostrar la casilla en la que te encuentras en este momento. Considera que el tablero está numerado de la siguiente manera.
 
-\begin{align*}
-1 \; 2 \; 3
-\end{align*}
-\begin{align*}
-4 \; 5 \; 6
-\end{align*}
-\begin{align*}
-7 \; 8 \; 9
-\end{align*}
+![Tablero](Tablero.png)
 
 Como resultado tu función deberá devolver la cantidad de pasos que debe realizar PacMan para saciar su hambre.
 
