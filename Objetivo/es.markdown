@@ -74,8 +74,7 @@ Uso y manejo de cadenas (strings)	|	[	COMI-Palindromos	](https://omegaup.com/are
 Utilizar ciclos y controles de flujo 	|	[	COMI-Sequia	](https://omegaup.com/arena/problem/COMI-Sequia)
 Utilizar arreglos y hacer busquedas directas en ellos	|	[	COMI-Excursion	](https://omegaup.com/arena/problem/COMI-Excursion)
 Utilizar arreglos y hacer busquedas lineales en ellos	|	[	COMI-Traductor	](https://omegaup.com/arena/problem/COMI-Traductor)
-"Utilizar arreglos y almacenar resultados
-"	|	[	COMI-Triples	](https://omegaup.com/arena/problem/COMI-Triples)
+Utilizar arreglos y almacenar resultados	|	[	COMI-Triples	](https://omegaup.com/arena/problem/COMI-Triples)
 Uso de funciones de Math (max, min, abs)	|	[	COMI-Funciones-Matematicas	](https://omegaup.com/arena/problem/COMI-Funciones-Matematicas)
 Utilizar funciones con parámetros (sólo tipos básicos)	|	[	COMI-Petroleo	](https://omegaup.com/arena/problem/COMI-Petroleo)
 Utilizar variables globales	|	[	COMI-Recuerdame	](https://omegaup.com/arena/problem/COMI-Recuerdame)
