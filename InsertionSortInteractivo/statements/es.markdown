@@ -93,7 +93,7 @@ Tu función pregunta que número hay en la posición 2 y el Evaluador lo respald
 obtener(1)
 
 || output
-
+ 
 3
 
 || description
@@ -154,7 +154,7 @@ $1 \leq n \leq 400$
 
 * Para otro 20% de casos $101 \leq n \leq 200$ y $k$ debe ser el mínimo de operaciones necesarias dependiendo de cada caso.
 
-* Para otro 20% $201 \leq n \leq 300$ y $k$ debe ser el mínimo de operaciones necesarias dependiendo de cada caso.0
+* Para otro 20%  $201 \leq n \leq 300$ y $k$ debe ser el mínimo de operaciones necesarias dependiendo de cada caso.
 
 * Para el restante 20% de los casos $301 \leq n \leq 500$ y $k$ debe ser el mínimo de operaciones necesarias.
 
