@@ -16,6 +16,6 @@ int main()
         }
         if(ins=='s') printf("%d\n",saca());
     }
-
+    printf("\n");
     return 0;
 }

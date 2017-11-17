@@ -61,50 +61,50 @@ La distribución de los problemas se presenta en la siguiente tabla:
 
 Objetivo|Problema
 --------|--------
-Explicar el objetivo del curso y la forma como se debe de atacar debe tener una seccion para el alumno y una para el maestro	|	COMI-Objetivo
-Explicar el funcionamiento de omegaUp, como se envia un codigo y como se evalua, el alumno debe entender el concepto de casos de pruebas	|	COMI-Intro-omegaUp
-Explicar los distintos veredictos que muestra omegaup al subir una solucion	|	COMI-Veredictos
-a+b explicandole como leer de leer datos y escribir a  la salida estandar	|	COMI-a-b
-Sitting or Standing? - conditional statements, I/O	|	COMI-Sentados-o-parados
-Mixed Fraction - division and modulo operators	|	COMI-Fraccion-Mixta
-A Mindbending Scenario - conditional statements, basic inclusion/exclusion	|	COMI-Canchas
-The Tremendous Tak-Tak Tree - modulo operators, loops	|	COMI-Tak-Tak-Tree
-Counting to Infinity - loops	|	COMI-Camino-a-Infinito
-A Dish Best Served Cold - loops, maxima/minima, summation	|	COMI-Comida-Fria
-Strings - Chars	|	COMI-Palindromos
-Drought - controlling loop flow	|	COMI-Sequia
-Encyclopædia - arrays and direct lookup	|	COMI-Excursion
-Dictionary - arrays and linear search	|	COMI-Traductor
-Triple Hunting - arrays and storing results	|	COMI-Triples
-Uso de funciones de Math (max, min, abs)	|	COMI-Funciones-Matematicas
-Funciones con parámetros (sólo tipos básicos)	|	COMI-Petroleo
-Variables globales	|	COMI-Recuerdame
-Funciones recursivas (https://www.topcoder.com/community/data-science/data-science-tutorials/an-introduction-to-recursion-part-1/)	|	COMI-Recursion
-Explicación	|	COMI-Complejidad
-Introducción	|	COMI-Estructuras-de-datos
-Pilas (explicación + implementar)	|	COMI-Conectate
-Paréntesis	|	COMI-Parentesis
-Pila interactivo, implementar push y pop	|	COMI-Pila-Interactivo
-Colas (explicación + implementar)	|	COMI-taquitos
-Cola interactivo, implementar push y pop	|	COMI-Cola-Interactivo
-Explicación de structs y uso de la STL	|	COMI-STL
-Listas enlazadas	|	COMI-Mesa-redonda
-Árboles binarios	|	COMI-Paseo-por-el-Bosque
-Pilas con struct y stl::stack	|	COMI-Pistas-Azul
-Colas con struct y stl::queue	|	COMI-Round-Robin
-Amplitud interactivo	|	COMI-Pacman
-Profundidad interactivo	|	COMI-De-cuarto-en-cuarto
-Binaria interactivo	|	COMI-Adivina-Numero
-Bubble sort interactivo	|	COMI-Bubble
-Insert sort interactivo	|	COMI-Insertion
-Merge sort interactivo	|	COMI-Merge
-Bucket sort interactivo	|	COMI-Bucket
-Quicksort interactivo	|	COMI-Quicksort
-Induccion	|	COMI-Troyo
-Divisibilidad	|	COMI-Conjuntos
-Congruencias	|	COMI-Congruencias
-Algoritmo de euclides	|	COMI-Simplificar-Fracciones
-Criba de erastótenes	|	COMI-Criba
-Permutaciones	|	COMI-Permutaciones
-Variaciones con repetición	|	COMI-Variaciones
-Combinaciones (coeficientes binomiales)	|	COMI-Binomios
+Explicar el funcionamiento de omegaUp, como se envia un codigo y como se evalua, debes entender el concepto de casos de pruebas	|	[COMI-Intro-omegaUp](https://omegaup.com/arena/problem/COMI-Intro-omegaUp)
+Explica los distintos veredictos que muestra omegaup al subir una solucion	|	[	COMI-Veredictos	](https://omegaup.com/arena/problem/COMI-Veredictos)
+Explicar como leer datos y escribir a  la salida estandar	|	[	COMI-a-b	]	(https://omegaup.com/arena/problem/COMI-a-b)
+Utilizar declaraciones condicionales, I/O	|	[	COMI-Sentados-o-parados	]	(https://omegaup.com/arena/problem/COMI-Sentados-o-parados)
+Explica el uso de los operadores de división y modulo	|	[	COMI-Fraccion-Mixta	]	(https://omegaup.com/arena/problem/COMI-Fraccion-Mixta)
+Utilizar declaraciones condicionales con inclusión y exclusion basica	|	[	COMI-Canchas	]	(https://omegaup.com/arena/problem/COMI-Canchas)
+Explicar ciclos y utilizar el operador modulo	|	[	COMI-Tak-Tak-Tree	]	(https://omegaup.com/arena/problem/COMI-Tak-Tak-Tree)
+Utilizar ciclos	|	[	COMI-Camino-a-Infinito	]	(https://omegaup.com/arena/problem/COMI-Camino-a-Infinito)
+Utilizar ciclos y calcular maximos, minimos y sumas	|	[	COMI-Comida-Fria	]	(https://omegaup.com/arena/problem/COMI-Comida-Fria)
+Uso y manejo de cadenas (strings)	|	[	COMI-Palindromos	]	(https://omegaup.com/arena/problem/COMI-Palindromos)
+Utilizar ciclos y controles de flujo 	|	[	COMI-Sequia	]	(https://omegaup.com/arena/problem/COMI-Sequia)
+Utilizar arreglos y hacer busquedas directas en ellos	|	[	COMI-Excursion	]	(https://omegaup.com/arena/problem/COMI-Excursion)
+Utilizar arreglos y hacer busquedas lineales en ellos	|	[	COMI-Traductor	]	(https://omegaup.com/arena/problem/COMI-Traductor)
+"Utilizar arreglos y almacenar resultados
+"	|	[	COMI-Triples	]	(https://omegaup.com/arena/problem/COMI-Triples)
+Uso de funciones de Math (max, min, abs)	|	[	COMI-Funciones-Matematicas	]	(https://omegaup.com/arena/problem/COMI-Funciones-Matematicas)
+Utilizar funciones con parámetros (sólo tipos básicos)	|	[	COMI-Petroleo	]	(https://omegaup.com/arena/problem/COMI-Petroleo)
+Utilizar variables globales	|	[	COMI-Recuerdame	]	(https://omegaup.com/arena/problem/COMI-Recuerdame)
+Definir y explicar funciones recursivas 	|	[	COMI-Recursion	]	(https://omegaup.com/arena/problem/COMI-Recursion)
+Explicación y ejemplos de Complejidad	|	[	COMI-Complejidad	]	(https://omegaup.com/arena/problem/COMI-Complejidad)
+Explicar y ejemplificar estructuras de datos basicas	|	[	COMI-Estructuras-de-datos	]	(https://omegaup.com/arena/problem/COMI-Estructuras-de-datos)
+Explicar el concepto de Pilas y hacer una implementacón 	|	[	COMI-Conectate	]	(https://omegaup.com/arena/problem/COMI-Conectate)
+Utilizar una pila	|	[	COMI-Parentesis	]	(https://omegaup.com/arena/problem/COMI-Parentesis)
+Implementar push y pop para una Pila	|	[	COMI-Pila-Interactivo	]	(https://omegaup.com/arena/problem/COMI-Pila-Interactivo)
+Explicar el concepto de Cola y hacer una implementación 	|	[	COMI-taquitos	]	(https://omegaup.com/arena/problem/COMI-taquitos)
+Implementar push y pop para una cola	|	[	COMI-Cola-Interactivo	]	(https://omegaup.com/arena/problem/COMI-Cola-Interactivo)
+Explicación de structs y uso de la STL	|	[	COMI-STL	]	(https://omegaup.com/arena/problem/COMI-STL)
+Utilizar y entender listas enlazadas	|	[	COMI-Mesa-redonda	]	(https://omegaup.com/arena/problem/COMI-Mesa-redonda)
+Utilizar y entender Árboles binarios	|	[	COMI-Paseo-por-el-Bosque	]	(https://omegaup.com/arena/problem/COMI-Paseo-por-el-Bosque)
+Utilizar Pilas con struct y stl::stack	|	[	COMI-Pistas-Azul	]	(https://omegaup.com/arena/problem/COMI-Pistas-Azul)
+Utilizar Colas con struct y stl::queue	|	[	COMI-Round-Robin	]	(https://omegaup.com/arena/problem/COMI-Round-Robin)
+Utilizar y entender busqueda en amplitud 	|	[	COMI-Pacman	]	(https://omegaup.com/arena/problem/COMI-Pacman)
+Utilizar  y entender busqueda en profundidad	|	[	COMI-De-cuarto-en-cuarto	]	(https://omegaup.com/arena/problem/COMI-De-cuarto-en-cuarto)
+Utilizar y entender busqueda binaria	|	[	COMI-Adivina-Numero	]	(https://omegaup.com/arena/problem/COMI-Adivina-Numero)
+Analizar utilizar y entender Bubble sort 	|	[	COMI-Bubble	]	(https://omegaup.com/arena/problem/COMI-Bubble)
+Analizar utilizar y entender Insert sort 	|	[	COMI-Insertion	]	(https://omegaup.com/arena/problem/COMI-Insertion)
+Analizar utilizar y entender Merge sort 	|	[	COMI-Merge	]	(https://omegaup.com/arena/problem/COMI-Merge)
+Analizar utilizar  y entender Bucket sort	|	[	COMI-Bucket	]	(https://omegaup.com/arena/problem/COMI-Bucket)
+Analizar utilizar y entender  Quicksort interactivo	|	[	COMI-Quicksort	]	(https://omegaup.com/arena/problem/COMI-Quicksort)
+Explicar el concepto Induccion	|	[	COMI-Troyo	]	(https://omegaup.com/arena/problem/COMI-Troyo)
+Explicar Divisibilidad	|	[	COMI-Conjuntos	]	(https://omegaup.com/arena/problem/COMI-Conjuntos)
+Explicar Congruencias	|	[	COMI-Congruencias	]	(https://omegaup.com/arena/problem/COMI-Congruencias)
+Explicar el  Algoritmo de euclides	|	[	COMI-Simplificar-Fracciones	]	(https://omegaup.com/arena/problem/COMI-Simplificar-Fracciones)
+Utilizar Criba de erastótenes para el calculo de numeros primos	|	[	COMI-Criba	]	(https://omegaup.com/arena/problem/COMI-Criba)
+Explicar Permutaciones	|	[	COMI-Permutaciones	]	(https://omegaup.com/arena/problem/COMI-Permutaciones)
+Explicar Variaciones con repetición	|	[	COMI-Variaciones	]	(https://omegaup.com/arena/problem/COMI-Variaciones)
+Explicar Combinaciones con coeficientes binomiales	|	[	COMI-Binomios	]	(https://omegaup.com/arena/problem/COMI-Binomios)
