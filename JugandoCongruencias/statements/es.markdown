@@ -42,6 +42,6 @@ Los unicos números que pertenecen a la misma rebanada de $26 mod 5=1$ son los n
 
 # Límites
 * $2 \leq C \leq 100$
-* $-1000 \leq B \leq 1$  $000$
-* $1 \leq n_i \leq 10$  $000$
+* $-1000 \leq B \leq 1000$
 * $1 \leq N \leq 1$  $000$  $000$
+* $1 \leq n_i \leq 10$  $000$
