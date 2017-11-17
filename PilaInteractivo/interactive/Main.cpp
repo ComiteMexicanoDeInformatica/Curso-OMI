@@ -1,7 +1,7 @@
 #include "PilaInteractivo.h"
 #include<stdio.h>
 
-
+int n;
 char ins,val;
 
 int main()
