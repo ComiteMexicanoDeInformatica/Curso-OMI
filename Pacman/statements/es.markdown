@@ -1,14 +1,12 @@
 ¡PacMan te está buscando!
 
-
-PacMan(también conocido como comemocos en España) fue uno de los juegos que ostentó el record guiness del videojuego más exitoso de todos los tiempos. 
+PacMan (también conocido como comemocos en España) fue uno de los juegos que ostentó el record guiness del videojuego más exitoso de todos los tiempos. 
 
 PacMan se puede mover en las 4 direcciones(norte, este, sur y oeste) siempre y cuando no haya una pared o un fantasma dispuesto a lastimarlo.
 
- 
 # Problema
 
-Esta ocasión PacMan está pidiendo la ayuda de OmegaUp para encontrar un(a) estudiante con mucho talento que le ayude a contar la cantidad de movimientos que debe hacer para llegar a la comida(punto amarillo o fruta) más cercana. 
+En esta ocasión PacMan está pidiendo la ayuda de OmegaUp, para encontrar un(a) estudiante con mucho talento que le ayude a contar la cantidad de movimientos que debe hacer, para llegar a la comida (punto amarillo o fruta) más cercana. 
 
 # Entrada y Salida
 
@@ -32,7 +30,7 @@ El parámetro **pos** te ayudará a mostrar la casilla en la que te encuentras e
 7 \; 8 \; 9
 \end{align*}
 
-Así es como recibes la entrada y una vez que la recibes debes de empezar a explorar el tablero con las siguientes funciones:
+Así es como recibes la entrada, y una vez que la recibes debes de empezar a explorar el tablero con las siguientes funciones:
 
     int hayComida(int pos);
 
@@ -40,12 +38,11 @@ Esta función te dice si hay comida en la posición que especificas como paráme
 
     int esPosibleAvanzar(int pos, char direccion);
 
-Esta función te ayudará a saber si es posible moverte en la dirección especificada desde una posición dada.
-Debes de especificar 'n' para indicar la dirección norte; 'e' para este; 'o' para oeste ; 's' para el sur.
+Esta función te ayudará a saber si es posible moverte en la dirección especificada desde una posición dada. Debes de especificar 'n' para indicar la dirección norte; 'e' para este; 'o' para oeste ; 's' para el sur.
 
 # Restricciones
 
-El tablero de juego será de máximo 100x100.
+El tablero de juego será de máximo **100x100**.
 Si el tablero no tiene comida deberás regresar un -1.
 
 {{libinteractive:download}}
