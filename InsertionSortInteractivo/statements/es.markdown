@@ -12,13 +12,13 @@ Este proceso lo hacemos desde $i=1$ hasta $i=n-1$ , podemos notar que después d
 
 # Entrada y Salida
 
-**Este es un problema interactivo**, por lo que no tendrás que leer la entrada ni imprimir la salida, sino implementar en tu código la función `ordena(n)`.
+**Este es un problema interactivo**, por lo que no tendrás que leer la entrada ni imprimir la salida, sino implementar en tu código la función `ordenar(n)`.
 
 # Implementación
 
-## Tu función `void ordena(int n)`
+## Tu función `void ordenar(int n)`
 
-C/C++ `void ordena(int n);`
+C/C++ `void ordenar(int n);`
 
 ### Descripción
 
@@ -49,7 +49,7 @@ Descripción
 
 || input
 
-guardar(2)
+ordenar(3)
 
 || output
 
@@ -93,7 +93,7 @@ Tu función pregunta que número hay en la posición 2 y el Evaluador lo respald
 obtener(1)
 
 || output
- 
+
 3
 
 || description
@@ -145,18 +145,6 @@ Tu función solicita almacenar el valor 1 en la posición 0 (el último valor al
 # Restricciones
 
 $1 \leq n \leq 400$
-
-# Consideraciones
-
-* Para los primeros 20% de los casos de prueba $1 \leq n \leq 20$ y $0 \leq k \leq n^2$
-
-* Para los siguientes 20% de los casos $21 \leq n \leq 100$ y $0 \leq k \leq n^2$
-
-* Para otro 20% de casos $101 \leq n \leq 200$ y $k$ debe ser el mínimo de operaciones necesarias dependiendo de cada caso.
-
-* Para otro 20%  $201 \leq n \leq 300$ y $k$ debe ser el mínimo de operaciones necesarias dependiendo de cada caso.
-
-* Para el restante 20% de los casos $301 \leq n \leq 500$ y $k$ debe ser el mínimo de operaciones necesarias.
 
 
 {{libinteractive:download}}
