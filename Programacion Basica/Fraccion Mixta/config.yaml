@@ -8,7 +8,7 @@ admin-groups: [workshop-2017]
 
 params:
   title: Fracción mixta
-  source: Curso OMI (ORAC)
+  source: Curso OMI (Orac)
 
   visibility: 1
 
