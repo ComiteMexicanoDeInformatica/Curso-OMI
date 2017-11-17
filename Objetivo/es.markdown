@@ -55,4 +55,23 @@ Este curso presenta los siguientes contenidos:
  * Variaciones con repetición
  * Combinaciones (coeficientes binomiales)
 
+Cada sección contiene un tutorial, un conjunto de problemas y sus soluciones y en la mayoria de los casos una explicación de la
+solución. Es importante abordar y solucionar los problemas en orden para que el proceso de aprendizaje sea lo mas completo  posible.
+La distribocion de los problemas se presenta en la siguiente tabla:
+
+Tema                            |Problema|objetivo
+--------------------------------|--------|--------
+Programación Básica             |        |
+Funciones y recursión           |        |
+Complejidad                     |        |
+Estructuras de datos            |        |
+Estructuras de datos avanzadas  |        |
+Búsquedas                       |        |
+Ordenamiento y complejidad      |        |
+Matemáticos                     |        |
+
+
+
+
+
 
