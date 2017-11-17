@@ -17,7 +17,7 @@ El evaluador buscará en tu código esta función y la llamará con el número $
 
 # Ejemplo
 
-A continuación se muestran las primeras llamadas de una rutina de ejemplo.
+A continuación se muestran un ejemplo sencillo de como deben funcionar con el algoritmo de inserción para una lista de 3 elementos { 2, 3, 1 } 
 
 || input
 
@@ -123,10 +123,18 @@ insertar(0)
 
 
 || description
-Tu función solicita almacenar el valor 1 en la posición 0 (el último valor almacenado por la función $guardar$)
+Tu función solicita almacenar el valor 1 en la posición 0 (el último valor almacenado por la función $guardar$) para quedar ordenada.
 || end
 
-# Descripción
+
+Para ver animaciones de otros ejemplos que te permitan entender mejor este método, puedes consultar:
+
+$ https://es.khanacademy.org/computing/computer-science/algorithms/insertion-sort/a/insertion-sort $
+
+$ https://es.wikipedia.org/wiki/Ordenamiento_por_inserci%C3%B3n $
+
+
+# Descripción de la solución
 
 Este problema se trata de ordenar un arreglo con el método de ordenamiento por inserción, a través de tu función `ordenar(n)` que deberá recorrer la lista. 
 
