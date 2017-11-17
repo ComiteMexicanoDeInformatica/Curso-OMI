@@ -3,7 +3,7 @@ Si consideramos el orden ascendente, una inversión en un arreglo de números es
 Tu tarea será contar las inversiones en un arreglo de enteros utilizando Merge Sort.
 # Entrada y Salida
 
-**Este es un problema interactivo**, por lo que no tendrás que leer la entrada ni imprimir la salida, sino implementar en tu código las funciónes: `merge(int lista[],int temp[],int izquierda,int mitad,int derecha)` y `mergeSort(int lista[],int temp[],int izquierda,int derecha)`.
+**Este es un problema interactivo**, por lo que no tendrás que leer la entrada ni imprimir la salida, sino implementar en tu código la función: `merge(int lista[],int temp[],int izquierda,int mitad,int derecha)` y entender y copiar las funciones `mergeSort(int lista[],int temp[],int izquierda,int derecha)` y `contar(int lista[],int tam)`.
 
 # Implementación
 
@@ -24,6 +24,7 @@ La  función `merge` debe recibir dos arreglo de enteros  `lista` y `temp` y los
 
 ## La función
 ```mergeSort(int lista[],int temp[],int izquierda,int derecha)```
+
 C/C++ `int mergeSort(int lista[],int temp[],int derecha,int izquierda);`
 
 ### Descripción
@@ -47,6 +48,28 @@ int mergeSort(int lista[],int temp[],int izquierda,int derecha){
 * `temp`: Es un arreglo de enteros temporal cuya función es almacenar inversiones para luego actualizar  
 * `izquierda`: Es un entero que indica donde inicia el subarreglo a dividir.
 * `derecha`: Es un entero que indica donde termina el subarreglo a dividir.
+
+
+## La función
+```contar(int lista[],int tam)```
+
+C/C++ `int mergeSort(int lista[],int tam);`
+
+### Descripción
+La  función `contar` debe recibir un arreglo de enteros  `lista` y un entero `tam` con el tamaño del arreglo. Esta función va crear el arreglo temporal auxiliar `temp` y va hacer la llamada inicial a `mergeSort` como sigue:
+```
+int contar(int lista[],int tam){
+  int inversiones;
+  int *temp = (int *)malloc(sizeof(int)*tam);
+  inversiones = mergeSort(lista, temp, 0, tam);
+  return inversiones;
+}
+```
+### Parámetros
+
+* `lista`: Es el arreglo de enteros en el que contaremos las inversiones.
+* `tam`: Es un entero con el tamaño del arreglo
+
 # Rutina de Ejemplo
 
 A continuación se muestran las primeras llamadas de una rutina de ejemplo. 
