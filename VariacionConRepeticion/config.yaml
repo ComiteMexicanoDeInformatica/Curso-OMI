@@ -5,7 +5,7 @@ solution: solution/solution.cpp
 timeout: 1
 admin-groups: [workshop-2017]
 params:
-  title: Variacion con repiticion
+  title: Variacion con repeticion
   source: Curso OMI
 
   visibility: 1
