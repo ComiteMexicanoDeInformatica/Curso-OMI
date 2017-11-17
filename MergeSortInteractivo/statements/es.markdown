@@ -1,24 +1,74 @@
 # Contando Inversiones
-
+Si consideramos el orden ascendente, una inversión en un arreglo de números es cualquier par ordenado (i,j) con la propiedad de que $i < j$, pero $a[i] > a[j]$ (el par (a[i], a[j] esta "desordenado" en el sentido ascendente). Por ejemplo, el areglo $(1, 2, 4, 3, 5)$ tiene $1$ inversión, y el arreglo $(5, 1, 2, 3, 4)$ tiene 4 inversiones. Recuerde que la cantidad de inversiones de un arreglo corresponde a la cantidad de intercambios de elementos que necesita efectuar un algoritmo de ordenación que intercambia elementos adyacentes. 
+Tu tarea será contar las inversiones en un arreglo de enteros utilizando Merge Sort.
 # Entrada y Salida
 
-**Este es un problema interactivo**, por lo que no tendrás que leer la entrada ni imprimir la salida, sino implementar en tu código la función `contarInversion(int tam,int lista[])`.
+**Este es un problema interactivo**, por lo que no tendrás que leer la entrada ni imprimir la salida, sino implementar en tu código la función: `merge(int lista[],int temp[],int izquierda,int mitad,int derecha)` y entender y copiar las funciones `mergeSort(int lista[],int temp[],int izquierda,int derecha)` y `contar(int lista[],int tam)`.
 
 # Implementación
 
 ### La función
+ ```merge(int lista[],int temp[],int izquierda,int mitad,int derecha)```
 
- ```contarInversion(int tam,int lista[])```
-
-C/C++ `int contarInversion(int tam,int lista[]);`
+C/C++ `int merge(int lista[],int temp[],int izquierda,int mitad,int derecha);`
 
 ### Descripción
-La  función `contarInversion` debe recibir un arreglo de enteros y su tamaño y debe regresar  el numero de inversiones en el arreglo. El evaluador buscará en tu código esta función y la llamará con los parametros `tam` y `lista`.
-
+La  función `merge` debe recibir dos arreglo de enteros  `lista` y `temp` y los enteros `izquierda`, `mitad` y `derecha`. Esta función va a asumir que el subarreglo con valores entre `lista[izquierda]` y `lista[mitad]` estan ordenados al igual que los valores en el subarreglo con valores entre `lista[mitad+1]` y `lista[derecha]` y va a combinar estos dos subarreglos de forma ordenada de tal manera que el subarreglo con valores entre `lista[izquierda]` y `lista[derecha]` quede ordenado, durante el proceso debe contar el numero de inversiones (Estas inversiones deben ser primero almacenadas en el arreglo temporal `temp` y luego actualizadas en el arreglo `lista`) que hizo y regresar este valor.   
 ### Parámetros
 
-* `lista`: Es un arreglo de enteros.
-* `tam`: Es un entero que indica la cantidad de enteros que hay en lista 
+* `lista`: Es el arreglo de enteros en el que contaremos las inversiones.
+* `temp`: Es un arreglo de enteros temporal cuya función es almacenar inversiones para luego actualizar  
+* `izquierda`: Es un entero que indica donde inicia el primer subarreglo a combinar.
+* `mitad`: Es un entero que indica donde termina el primer subarreglo a combinar, el segundo subarreglo siempre inicia en `mitad+1`.
+* `derecha`: Es un entero que indica donde termina el segundo subarreglo a combinar.
+
+## La función
+```mergeSort(int lista[],int temp[],int izquierda,int derecha)```
+
+C/C++ `int mergeSort(int lista[],int temp[],int derecha,int izquierda);`
+
+### Descripción
+La  función `mergeSort` debe recibir dos arreglo de enteros  `lista` y `temp` y los enteros `izquierda` y `derecha`. Esta función va a dividir el trabajo haciendo dos llamdas recursivas e invocando a merge como sigue:
+```
+int mergeSort(int lista[],int temp[],int izquierda,int derecha){
+  int mitad, inversiones = 0;
+  if (derecha > izquierda)
+  {
+    mitad = (izquierda + derecha)/2;
+    inversiones  = mergeSort(lista, temp, izquierda, mitad);
+    inversiones += mergeSort(lista, temp, mitad+1, derecha);
+    inversiones += merge(lista, temp, izquierda, mitad+1, derecha);
+  }
+  return inversiones;
+}
+```
+### Parámetros
+
+* `lista`: Es el arreglo de enteros en el que contaremos las inversiones.
+* `temp`: Es un arreglo de enteros temporal cuya función es almacenar inversiones para luego actualizar  
+* `izquierda`: Es un entero que indica donde inicia el subarreglo a dividir.
+* `derecha`: Es un entero que indica donde termina el subarreglo a dividir.
+
+
+## La función
+```contar(int lista[],int tam)```
+
+C/C++ `int mergeSort(int lista[],int tam);`
+
+### Descripción
+La  función `contar` debe recibir un arreglo de enteros  `lista` y un entero `tam` con el tamaño del arreglo. Esta función va crear el arreglo temporal auxiliar `temp` y va hacer la llamada inicial a `mergeSort` como sigue:
+```
+int contar(int lista[],int tam){
+  int inversiones;
+  int *temp = (int *)malloc(sizeof(int)*tam);
+  inversiones = mergeSort(lista, temp, 0, tam);
+  return inversiones;
+}
+```
+### Parámetros
+
+* `lista`: Es el arreglo de enteros en el que contaremos las inversiones.
+* `tam`: Es un entero con el tamaño del arreglo
 
 # Rutina de Ejemplo
 
@@ -49,7 +99,7 @@ Asumiendo que `int lista[] = {1,5,3,4,6,2}`
 el 5 esta antes que  el 3, 4 y 2 (3 inversiones); el 3 esta invertido con el 2 (1 inversión); el 4 esta invertido con el 2 (1 inversion) y el 6 esta invertido con el 2 (1 inversion). En total 6 inversiones.  
 || input
 
-contar(lista,5)
+contar(lista,temp,)
 
 || output
 
@@ -57,7 +107,7 @@ contar(lista,5)
 
 || description
 
-Asumiendo que `int votaciones[] = {1, 20, 6, 4, 5}`
+Asumiendo que `int lista[] = {1, 20, 6, 4, 5}`
 20 con 6, 4 y 5 (3 inversiones) y 6 con 4 y 5 (2 inversiones). En total 5 inversiones. 
 || input
 contar(lista,6)
@@ -67,13 +117,13 @@ contar(lista,6)
 3
 
 || description
-Asumiendo que `int votaciones[] = {1,3,5,2,4,6}`
+Asumiendo que `int lista[] = {1,3,5,2,4,6}`
 3 con 2 (1 inversión) 5 con 2 y 4 (2 inversiones). En total 3 inversiones 
 
 || end
 
 # Restricciones
 
-$0 \leq n \leq 1,000,000$
+$0 \leq n \leq 10,000$
 
 {{libinteractive:download}}

@@ -2,8 +2,7 @@
 #include <stdio.h>
 using namespace std;
 
-#define MAXN 10000
-int n, *v;
+int n, v[10000];
 
 int ElementoEnPosicion(int i) {
     if (i < 0 || i >= n)
@@ -20,25 +19,22 @@ int Intercambiar(int i, int j) {
     return 1;
 }
 
-void Quicksort(int nsize, int *arr) {
-    if (nsize > 1) {
-        n = nsize;
-        v = arr;
-        int piv = HacerParticion(nsize);
-        Quicksort(piv, arr);
-        Quicksort(nsize - piv - 1, arr + piv + 1);
+void Quicksort(int inicio, int fin) {
+    if (fin - inicio > 1) {
+        int piv = HacerParticion(inicio, fin);
+        Quicksort(inicio, piv);
+        Quicksort(piv + 1, fin);
     }
 }
 
 int main() {
-    int nsize, arr[MAXN];
-    scanf("%d", &nsize);
-    for (int i = 0; i < nsize; i++)
-        scanf("%d", &arr[i]);
-    Quicksort(nsize, arr);
+    scanf("%d", &n);
+    for (int i = 0; i < n; i++)
+        scanf("%d", &v[i]);
+    Quicksort(0, n);
 
-    for (int i = 0; i < nsize - 1; i++)
-        if (arr[i] > arr[i + 1]) {
+    for (int i = 0; i < n - 1; i++)
+        if (v[i] > v[i + 1]) {
             printf("0\n");
             return 0;
         }

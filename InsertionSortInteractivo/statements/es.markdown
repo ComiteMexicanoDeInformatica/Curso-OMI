@@ -2,11 +2,27 @@
 
 Este problema se trata de ordenar un arreglo con el ordenamiento de inserción. Un ordenamiento por inserción hace lo siguiente:
 
-1.-Compara $n_i$ con $n_{i-1}$ 
+1.-Guardar el valor $n_i$ como valor a acomodar.
 
-2.- Si $n_i < n_{i-1}$ , entonces buscamos la posición correcta de $n_i$  avanzando a $n_{i-2}$ para comprobar si $n_i < n_{i-2}$ y así sucesivamente hasta encontrar un $n_{i-j}$ donde $n_i < n_{i-j}$ o hasta encontrar el inicio de la lista.
+2.-Para cada valor entre las posiciones $i-1$ y $0$ obtener el valor almacenado en cada posición mientras sean mayores que el valor a acomodar y mientras aún no se llegue al inicio de la lista (posición $0$), para desplazar cada valor a la posición contigua anterior.
 
-Este proceso lo hacemos desde $i=1$ hasta $i=n-1$ , podemos notar que después de hacerlo la primera vez, se nos garantiza que los dos primeros elementos de la lista $n_0$  y  $n_1$ se encuentran ordenados entre sí, al hacerlo de nuevo para $i=2$ se habrán ordenado entre sí los elementos de las $3$ primeras posiciones de la lista, por lo que despues de $i$ veces se habrán ordenado entre sí los $i+1$ primeros elementos de la lista. Al hacer este proceso $n-1$ veces estaremos garantizando que los $n$ números estan ordenados (el arreglo totalmente ordenado). Como este proceso recorre $n$ veces el arreglo ( de tamaño $n$) podemos notar que su complejidad es $Ω(n^2)$. 
+3.-Una vez que el valor a acomodar encuentra un valor igual o menor, insertar el valor a acomodar en la posición que ocupaba el último valor desplazado.
+
+Este proceso lo hacemos desde $i=1$ hasta $i=n-1$ , podemos notar que después de hacerlo la primera vez, se nos garantiza que los dos primeros elementos de la lista $n_0$  y  $n_1$ se encuentran ordenados entre sí, al hacerlo de nuevo para $i=2$ se habrán ordenado entre sí los elementos de las $3$ primeras posiciones de la lista, por lo que despues de $i$ veces se habrán ordenado entre sí los $i+1$ primeros elementos de la lista. Al hacer este proceso $n-1$ veces estaremos garantizando que los $n$ números estan ordenados (el arreglo totalmente ordenado). Como este proceso recorre $n$ veces el arreglo (de tamaño $n$) podemos notar que su complejidad es $Ω(n^2)$. 
+
+# Entrada y Salida
+
+**Este es un problema interactivo**, por lo que no tendrás que leer la entrada ni imprimir la salida, sino implementar en tu código la función `ordena(n)`.
+
+# Implementación
+
+## Tu función `void ordena(int n)`
+
+C/C++ `void ordena(int n);`
+
+### Descripción
+
+El evaluador buscará en tu código esta función y la llamará con el número $n$ como parámetro. Tu implementación deberá llamar las funciones `guardar(int i)` la cual respalda y regresa el entero que se encuentra en esa posición, `obtener(int i)` la cual únicamente regresa el valor que se encuentra en esa posición, `desplazar(int i)` pasa a la posición $i+1$ el valor almacenado en la posición $i$ e `insertar(int i)` almacena en la posición indicada en el parámetro, el último valor respaldado por la función `guardar`.
 
 ### Parámetros
 
@@ -77,7 +93,7 @@ Tu función pregunta que número hay en la posición 2 y el Evaluador lo respald
 obtener(1)
 
 || output
-
+ 
 3
 
 || description
@@ -128,7 +144,7 @@ Tu función solicita almacenar el valor 1 en la posición 0 (el último valor al
 
 # Restricciones
 
-$1 \leq n \leq 500$
+$1 \leq n \leq 400$
 
 # Consideraciones
 
@@ -138,7 +154,7 @@ $1 \leq n \leq 500$
 
 * Para otro 20% de casos $101 \leq n \leq 200$ y $k$ debe ser el mínimo de operaciones necesarias dependiendo de cada caso.
 
-* Para otro 20% $201 \leq n \leq 300$ y $k$ debe ser el mínimo de operaciones necesarias dependiendo de cada caso.0
+* Para otro 20%  $201 \leq n \leq 300$ y $k$ debe ser el mínimo de operaciones necesarias dependiendo de cada caso.
 
 * Para el restante 20% de los casos $301 \leq n \leq 500$ y $k$ debe ser el mínimo de operaciones necesarias.
 

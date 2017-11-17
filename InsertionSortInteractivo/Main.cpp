@@ -4,7 +4,7 @@
 using namespace std;
 
 int *A,*B;
-int i,m,n,j,N;
+int i,m,n,j,N,M;
 bool operacionesExcedidas;
 int valorGuardado;
 
@@ -82,7 +82,6 @@ int main()
 		}
 	for(int x=0;x<n;x++)
 		{
-		//cout<<A[x]<<" "<<B[x]<<endl;
 		if(A[x]!=B[x])
 			{
 			cout<<"0\n";
