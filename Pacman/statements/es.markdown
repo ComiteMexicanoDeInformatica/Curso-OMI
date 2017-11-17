@@ -32,20 +32,39 @@ El parámetro **pos** te ayudará a mostrar la casilla en la que te encuentras e
 7 \; 8 \; 9
 \end{align*}
 
+Como resultado tu función deberá devolver la cantidad de pasos que debe realizar PacMan para saciar su hambre.
+
 Así es como recibes la entrada y una vez que la recibes debes de empezar a explorar el tablero con las siguientes funciones:
 
     int hayComida(int pos);
 
 Esta función te dice si hay comida en la posición que especificas como parámetro.
 
-    int esPosibleAvanzar(int pos, char direccion);
+    int esPosibleAvanzar(int posActual, char direccion);
 
-Esta función te ayudará a saber si es posible moverte en la dirección especificada desde una posición dada.
-Debes de especificar 'n' para indicar la dirección norte; 'e' para este; 'o' para oeste ; 's' para el sur.
+Esta función te ayudará a saber si es posible moverte en la dirección especificada desde tu posición actual.
+En el parámetro dirección debes especificar 'n' para indicar la dirección norte; 'e' para este; 'o' para oeste ; 's' para el sur.
+Como resultado esta función devolverá la posición a la que puedes avanzar en esa dirección. Si no es posible avanzar en esa dirección la función devolverá -1.
 
+###Ejemplo 
+Si consideramos que el mapa tiene 9 posiciones como el mapa mostrado arriba te mostramos algunos ejemplos de la función esPosibleAvanzar.
+ 
+||input
+   esPosibleAvanzar(5,'n')
+||output
+   2
+||description
+   La posición 5 tiene al norte la casilla 2 y es posible avanzar.
+||input
+   esPosibleAvanzar(7,'s')
+||output
+   -1
+||description
+   La posición 7 no tiene al sur ninguna casilla por lo que es imposible avanzar.
+||end
 # Restricciones
 
-El tablero de juego será de máximo 100x100.
-Si el tablero no tiene comida deberás regresar un -1.
+*El tablero de juego será de máximo 100x100.
+*Si el tablero no tiene comida deberás regresar un -1.
 
 {{libinteractive:download}}
