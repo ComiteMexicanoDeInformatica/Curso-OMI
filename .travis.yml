@@ -19,6 +19,7 @@ script:
 - pipenv run python3 deploy.py --onlychanges "../Programacion Basica/Sentados o Parados"
 - pipenv run python3 deploy.py --onlychanges "../Programacion Basica/Sequia"
 - pipenv run python3 deploy.py --onlychanges "../Programacion Basica/Tak-Tak Tree"
+- pipenv run python3 deploy.py --onlychanges "../Programacion Basica/Traductor"
 - pipenv run python3 deploy.py --onlychanges "../AdivinaElNumero"
 - pipenv run python3 deploy.py --onlychanges "../Binomios"
 - pipenv run python3 deploy.py --onlychanges "../Bubble"
@@ -39,7 +40,6 @@ script:
 - pipenv run python3 deploy.py --onlychanges "../RoundRobin"
 - pipenv run python3 deploy.py --onlychanges "../SimplificarFracciones"
 - pipenv run python3 deploy.py --onlychanges "../Taquitos"
-- pipenv run python3 deploy.py --onlychanges "../Traductor"
 - pipenv run python3 deploy.py --onlychanges "../Triples"
 - pipenv run python3 deploy.py --onlychanges "../Troyo el Cometriangulos"
 

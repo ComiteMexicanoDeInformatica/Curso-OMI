@@ -1,4 +1,4 @@
-alias: COMI_Traductor
+alias: COMI-Traductor
 
 generate-output: true
 solution: solutions/solution.cpp
@@ -7,7 +7,7 @@ admin-groups: [workshop-2017]
 
 params:
   title: Traductor
-  source: Curso COMI Orac
+  source: Curso COMI (Orac)
 
   visibility: 1
 
