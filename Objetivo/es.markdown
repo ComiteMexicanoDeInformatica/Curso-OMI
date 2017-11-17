@@ -61,8 +61,8 @@ La distribución de los problemas se presenta en la siguiente tabla:
 
 Objetivo|Problema
 --------|--------
-Explicar el funcionamiento de omegaUp, como se envia un codigo y como se evalua, debes entender el concepto de casos de pruebas	|	[	COMI-Intro-omegaUp	]	(https://omegaup.com/arena/problem/COMI-Intro-omegaUp)
-Explica los distintos veredictos que muestra omegaup al subir una solucion	|	[	COMI-Veredictos	]	(https://omegaup.com/arena/problem/COMI-Veredictos)
+Explicar el funcionamiento de omegaUp, como se envia un codigo y como se evalua, debes entender el concepto de casos de pruebas	|	[COMI-Intro-omegaUp](https://omegaup.com/arena/problem/COMI-Intro-omegaUp)
+Explica los distintos veredictos que muestra omegaup al subir una solucion	|	[	COMI-Veredictos	](https://omegaup.com/arena/problem/COMI-Veredictos)
 Explicar como leer datos y escribir a  la salida estandar	|	[	COMI-a-b	]	(https://omegaup.com/arena/problem/COMI-a-b)
 Utilizar declaraciones condicionales, I/O	|	[	COMI-Sentados-o-parados	]	(https://omegaup.com/arena/problem/COMI-Sentados-o-parados)
 Explica el uso de los operadores de división y modulo	|	[	COMI-Fraccion-Mixta	]	(https://omegaup.com/arena/problem/COMI-Fraccion-Mixta)
