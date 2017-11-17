@@ -1,74 +1,45 @@
-# Contando Inversiones
-Si consideramos el orden ascendente, una inversión en un arreglo de números es cualquier par ordenado (i,j) con la propiedad de que $i < j$, pero $a[i] > a[j]$ (el par (a[i], a[j] esta "desordenado" en el sentido ascendente). Por ejemplo, el areglo $(1, 2, 4, 3, 5)$ tiene $1$ inversión, y el arreglo $(5, 1, 2, 3, 4)$ tiene 4 inversiones. Recuerde que la cantidad de inversiones de un arreglo corresponde a la cantidad de intercambios de elementos que necesita efectuar un algoritmo de ordenación que intercambia elementos adyacentes. 
-Tu tarea será contar las inversiones en un arreglo de enteros utilizando Merge Sort.
+# La mejor cerveza
+COMI Corp. se dio a la importante tarea de hacer una lista de las mejores $n$ cervezas nacionales, comenzando por la mejor cerveza, para esto convoco a sus más confiables y capacitados elementos en el arte de degustar cervezas y despues de una noche de borrachera ellos hicieron una votación sobre las $n$ cervezas nacionales pero como aun no recuperaban del todo la sobriedad olvidaron ordenar la lista de resultados.
+
+Para ordenar la lista COMI Corp. ha solicitado ayuda a dos profesionales en el ordenamiento de listas:
+
+**1. El mezclador**
+
+**2. El combinador**
+
+Y ha diseñado la siguiente estrategia con ayuda de John Von Neumann:
+ 
+1. El mezclador sera el encargados de dividir el trabajo, primero partira a la mitad la lista de  votaciones de las $n$ cervezas de tal manera que cada sublista tenga el mismo numero de elementos $n/2$ o tal vez una sublista pueda tener un elemento  más que la otra y luego de estas dos sublistas formara 4 siguiendo la misma logica y asi hasta  tener listas de una sola votación entoces llamará a El combinador.
+
+2. El combinador tomara dos sublistas ordenadas de la lista y los combinara de forma ordenada.
+
+Sin embargo, el combinador se ha enfermado y la COMI Corp. necesita de tu ayuda. Para que tengas una idea mas clara de la estrategia puedes ver la siguiente imagen donde se ilustra la estrategia a seguir en un ejemplo:
+
+ <img src="http://programminglife.io/public/images/Divide_and_Conquer.png" alt="Drawing" style="width: 200px;"/>
+
+
 # Entrada y Salida
 
-**Este es un problema interactivo**, por lo que no tendrás que leer la entrada ni imprimir la salida, sino implementar en tu código la función: `merge(int lista[],int temp[],int izquierda,int mitad,int derecha)` y entender y copiar las funciones `mergeSort(int lista[],int temp[],int izquierda,int derecha)` y `contar(int lista[],int tam)`.
+**Este es un problema interactivo**, por lo que no tendrás que leer la entrada ni imprimir la salida, sino implementar en tu código la función `combinar(int votaciones[],int izquierda,int mitad ,int derecha)`.
 
 # Implementación
 
 ### La función
- ```merge(int lista[],int temp[],int izquierda,int mitad,int derecha)```
 
-C/C++ `int merge(int lista[],int temp[],int izquierda,int mitad,int derecha);`
+ ```combinar(int votaciones[],int izquierda, int mitad,int derecha)```
 
-### Descripción
-La  función `merge` debe recibir dos arreglo de enteros  `lista` y `temp` y los enteros `izquierda`, `mitad` y `derecha`. Esta función va a asumir que el subarreglo con valores entre `lista[izquierda]` y `lista[mitad]` estan ordenados al igual que los valores en el subarreglo con valores entre `lista[mitad+1]` y `lista[derecha]` y va a combinar estos dos subarreglos de forma ordenada de tal manera que el subarreglo con valores entre `lista[izquierda]` y `lista[derecha]` quede ordenado, durante el proceso debe contar el numero de inversiones (Estas inversiones deben ser primero almacenadas en el arreglo temporal `temp` y luego actualizadas en el arreglo `lista`) que hizo y regresar este valor.   
-### Parámetros
-
-* `lista`: Es el arreglo de enteros en el que contaremos las inversiones.
-* `temp`: Es un arreglo de enteros temporal cuya función es almacenar inversiones para luego actualizar  
-* `izquierda`: Es un entero que indica donde inicia el primer subarreglo a combinar.
-* `mitad`: Es un entero que indica donde termina el primer subarreglo a combinar, el segundo subarreglo siempre inicia en `mitad+1`.
-* `derecha`: Es un entero que indica donde termina el segundo subarreglo a combinar.
-
-## La función
-```mergeSort(int lista[],int temp[],int izquierda,int derecha)```
-
-C/C++ `int mergeSort(int lista[],int temp[],int derecha,int izquierda);`
+C/C++ `void combinar(int votaciones[],int izquierda,int mitad,int derecha);`
 
 ### Descripción
-La  función `mergeSort` debe recibir dos arreglo de enteros  `lista` y `temp` y los enteros `izquierda` y `derecha`. Esta función va a dividir el trabajo haciendo dos llamdas recursivas e invocando a merge como sigue:
-```
-int mergeSort(int lista[],int temp[],int izquierda,int derecha){
-  int mitad, inversiones = 0;
-  if (derecha > izquierda)
-  {
-    mitad = (izquierda + derecha)/2;
-    inversiones  = mergeSort(lista, temp, izquierda, mitad);
-    inversiones += mergeSort(lista, temp, mitad+1, derecha);
-    inversiones += merge(lista, temp, izquierda, mitad+1, derecha);
-  }
-  return inversiones;
-}
-```
+En la  función `combinar` los parametros `int izquierda`, `int mitad`  e `int derecha` te deben ayudar a saber que subarreglos del arreglo `int votaciones[]` esta combinando y ordenando la función `combinar` 
+El evaluador buscará en tu código esta función y la llamará con los parametros `votaciones`, `izquierda`,`mitad` y `derecha`. Tu implementación deberá combinar y ordenar los elementos del arreglo `votaciones` entre `izquierda` y `mitad` con los elemnetos que estan entre `mitad+1` y `derecha`. Debes asumir que ambas sublistas estan ordenadas. 
+
 ### Parámetros
 
-* `lista`: Es el arreglo de enteros en el que contaremos las inversiones.
-* `temp`: Es un arreglo de enteros temporal cuya función es almacenar inversiones para luego actualizar  
-* `izquierda`: Es un entero que indica donde inicia el subarreglo a dividir.
-* `derecha`: Es un entero que indica donde termina el subarreglo a dividir.
-
-
-## La función
-```contar(int lista[],int tam)```
-
-C/C++ `int mergeSort(int lista[],int tam);`
-
-### Descripción
-La  función `contar` debe recibir un arreglo de enteros  `lista` y un entero `tam` con el tamaño del arreglo. Esta función va crear el arreglo temporal auxiliar `temp` y va hacer la llamada inicial a `mergeSort` como sigue:
-```
-int contar(int lista[],int tam){
-  int inversiones;
-  int *temp = (int *)malloc(sizeof(int)*tam);
-  inversiones = mergeSort(lista, temp, 0, tam);
-  return inversiones;
-}
-```
-### Parámetros
-
-* `lista`: Es el arreglo de enteros en el que contaremos las inversiones.
-* `tam`: Es un entero con el tamaño del arreglo
+* `votaciones`: Es un arreglo de enteros que contiene los votos.
+* `izquierda`: Es un entero que indica la posición del arreglo donde inicia la primera sublista a combinar y ordenar.
+* `mitad`: Es un entero que indica la posición del arreglo donde termina la primera sublista a combinar y ordenar. La segunda sublista siempre comienza en `mitad+1`.
+* `derecha`: Es un entero que indica la posición del arreglo donde termina la segunda sublista a combinar y ordenar. 
 
 # Rutina de Ejemplo
 
@@ -87,43 +58,46 @@ Descripción
 
 || input
 
-contar(lista,6)
+combinar(votaciones,0,0,1)
 
 || output
 
-6
+-
 
 || description
 
-Asumiendo que `int lista[] = {1,5,3,4,6,2}`
-el 5 esta antes que  el 3, 4 y 2 (3 inversiones); el 3 esta invertido con el 2 (1 inversión); el 4 esta invertido con el 2 (1 inversion) y el 6 esta invertido con el 2 (1 inversion). En total 6 inversiones.  
+Asumiendo que `int votaciones[] = {1,5,3,4,6,2}`
+la primer sublista son los elementos entre la posición $0$  y $0$ es decir {1} la segunda  sublista son los elementos entre las posiciones $1$ y $1$ es decir {5} al combinar y ordenar estas listas el arreglo `votaciones` queda como sigue:
+{1,5,3,4,6,2}
 || input
 
-contar(lista,temp,)
+combinar(votaciones,4,4,5)
 
 || output
 
-5
+-
 
 || description
 
-Asumiendo que `int lista[] = {1, 20, 6, 4, 5}`
-20 con 6, 4 y 5 (3 inversiones) y 6 con 4 y 5 (2 inversiones). En total 5 inversiones. 
+Asumiendo que `int votaciones[] = {1,5,3,4,6,2}`
+la primer sublista son los elementos entre la posición $4$  y $4$ es decir {2} la segunda  sublista son los elementos entre las posiciones $5$ y $5$ es decir {6} al combinar y ordenar estas listas el arreglo `votaciones` queda como sigue:
+{1,5,3,4,2,6}
 || input
-contar(lista,6)
+combinar(votaciones,0,2,5)
 
 || output
 
-3
+-
 
 || description
-Asumiendo que `int lista[] = {1,3,5,2,4,6}`
-3 con 2 (1 inversión) 5 con 2 y 4 (2 inversiones). En total 3 inversiones 
+Asumiendo que `int votaciones[] = {1,3,5,2,4,6}`
+la primer sublista son los elementos entre la posición $0$  y $3$ es decir {1,5,3} la segunda  sublista son los elementos entre las posiciones $3$ y $5$ es decir {4,6,2} al combinar y ordenar estas listas el arreglo original queda como sigue:
+{1,2,3,4,5,6}
 
 || end
 
 # Restricciones
 
-$0 \leq n \leq 10,000$
+$0 /leq n /leq 10,000$
 
 {{libinteractive:download}}
