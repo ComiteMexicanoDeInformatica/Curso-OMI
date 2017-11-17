@@ -27,7 +27,7 @@ int main()
               break;
           case 4:
               cin>>n1;
-              raiz=sqrt(n1);
+              raiz=sqrt((double)n1);
               cout<<fixed<<setprecision(2)<<raiz<<endl;
               break;
           case 5:
