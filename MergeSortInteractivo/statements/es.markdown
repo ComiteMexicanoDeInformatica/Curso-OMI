@@ -21,19 +21,32 @@ La  función `merge` debe recibir dos arreglo de enteros  `lista` y `temp` y los
 * `izquierda`: Es un entero que indica donde inicia el primer subarreglo a combinar.
 * `mitad`: Es un entero que indica donde termina el primer subarreglo a combinar, el segundo subarreglo siempre inicia en `mitad+1`.
 * `derecha`: Es un entero que indica donde termina el segundo subarreglo a combinar.
-```mergeSort(int lista[],int temp[],int izquierda,int derecha)```
+
 ## La función
+```mergeSort(int lista[],int temp[],int izquierda,int derecha)```
 C/C++ `int mergeSort(int lista[],int temp[],int derecha,int izquierda);`
 
 ### Descripción
-La  función `merge` debe recibir dos arreglo de enteros  `lista` y `temp` y los enteros `izquierda`, `mitad` y `derecha`. Esta función va a asumir que el subarreglo con valores entre `lista[izquierda]` y `lista[mitad]` estan ordenados al igual que los valores en el subarreglo con valores entre `lista[mitad+1]` y `lista[derecha]` y va a combinar estos dos subarreglos de forma ordenada de tal manera que el subarreglo con valores entre `lista[izquierda]` y `lista[derecha]` quede ordenado, durante el proceso debe contar el numero de inversiones (Estas inversiones deben ser primero almacenadas en el arreglo temporal `temp` y luego actualizadas en el arreglo `lista`) que hizo y regresar este valor.   
+La  función `mergeSort` debe recibir dos arreglo de enteros  `lista` y `temp` y los enteros `izquierda` y `derecha`. Esta función va a dividir el trabajo haciendo dos llamdas recursivas e invocando a merge como sigue:
+```
+int mergeSort(int lista[],int temp[],int izquierda,int derecha){
+  int mitad, inversiones = 0;
+  if (derecha > izquierda)
+  {
+    mitad = (izquierda + derecha)/2;
+    inversiones  = mergeSort(lista, temp, izquierda, mitad);
+    inversiones += mergeSort(lista, temp, mitad+1, derecha);
+    inversiones += merge(lista, temp, izquierda, mitad+1, derecha);
+  }
+  return inversiones;
+}
+```
 ### Parámetros
 
 * `lista`: Es el arreglo de enteros en el que contaremos las inversiones.
 * `temp`: Es un arreglo de enteros temporal cuya función es almacenar inversiones para luego actualizar  
-* `izquierda`: Es un entero que indica donde inicia el primer subarreglo a combinar.
-* `mitad`: Es un entero que indica donde termina el primer subarreglo a combinar, el segundo subarreglo siempre inicia en `mitad+1`.
-* `derecha`: Es un entero que indica donde termina el segundo subarreglo a combinar.
+* `izquierda`: Es un entero que indica donde inicia el subarreglo a dividir.
+* `derecha`: Es un entero que indica donde termina el subarreglo a dividir.
 # Rutina de Ejemplo
 
 A continuación se muestran las primeras llamadas de una rutina de ejemplo. 
@@ -63,7 +76,7 @@ Asumiendo que `int lista[] = {1,5,3,4,6,2}`
 el 5 esta antes que  el 3, 4 y 2 (3 inversiones); el 3 esta invertido con el 2 (1 inversión); el 4 esta invertido con el 2 (1 inversion) y el 6 esta invertido con el 2 (1 inversion). En total 6 inversiones.  
 || input
 
-contar(lista,5)
+contar(lista,temp,)
 
 || output
 
@@ -71,7 +84,7 @@ contar(lista,5)
 
 || description
 
-Asumiendo que `int votaciones[] = {1, 20, 6, 4, 5}`
+Asumiendo que `int lista[] = {1, 20, 6, 4, 5}`
 20 con 6, 4 y 5 (3 inversiones) y 6 con 4 y 5 (2 inversiones). En total 5 inversiones. 
 || input
 contar(lista,6)
@@ -81,13 +94,13 @@ contar(lista,6)
 3
 
 || description
-Asumiendo que `int votaciones[] = {1,3,5,2,4,6}`
+Asumiendo que `int lista[] = {1,3,5,2,4,6}`
 3 con 2 (1 inversión) 5 con 2 y 4 (2 inversiones). En total 3 inversiones 
 
 || end
 
 # Restricciones
 
-$0 \leq n \leq 1,000,000$
+$0 \leq n \leq 10,000$
 
 {{libinteractive:download}}
