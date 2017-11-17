@@ -32,7 +32,7 @@ int main()
               break;
           case 5:
               cin >> n1 >> n2;
-              cout << (int)pow(n1,n2) << endl;
+              cout << (long long)pow(n1,n2) << endl;
               break;
       }
     }
