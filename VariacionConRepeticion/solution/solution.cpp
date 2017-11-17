@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 int main() {
-    int n, k, j;
+    long long n, k, j;
     cin >> n >> k >> j;
 
     /** Precalculamos las potencias **/
