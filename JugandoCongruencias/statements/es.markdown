@@ -10,7 +10,7 @@ La anterior expresión se lee cómo **A es congruente con B, módulo C**. Ahora,
 
 Supongamos que rebanamos un circulo en 5 partes y las etiquetamos como $0,1,2,3$ y $4$. Entonces para cada uno de los enteros a los que se le aplicó la operación **mod(5)**, los pondremos dentro de la rebanada con la cual corresponda. Piensa que estas rebanadas son como contenedores los cuales van a guardar conjuntos de números. Por ejemplo, el número 26 iría en la rebanada marcada con 1, porque $26 \bmod 5 = 1$.
 
-Ahora bien, ¿a caso no sería muy útil tener una manera de expresar los números que pertenecen a una misma rebanada?. Por ejemplo, el número 26 está en la misma rebanada que los números $1, 6, 11, 16, 21, /ldots$.
+Ahora bien, ¿a caso no sería muy útil tener una manera de expresar los números que pertenecen a una misma rebanada?. Por ejemplo, el número 26 está en la misma rebanada que los números $1, 6, 11, 16, 21, \ldots$.
 
 La forma más común de decir que dos números pertencen a la misma rebanada, es decir, que ellos están en la misma **clase de equivalencia**. Y, ¿cuál crees que sea la forma en la que se expresa esto matemáticamente?... ¡Exacto! Se expresa como $A \equiv B \mod C$. Si hacemos la analogía con el ejemplo del número 26 y 11, quedaría expresado como $26 \equiv 11 \mod 5$.
 
