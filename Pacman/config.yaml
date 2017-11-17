@@ -1,0 +1,85 @@
+alias: COMI-Pacman
+
+# optional argument, if false, the problem won't be deployed
+
+# disabled: true
+
+
+
+# if true, ignores the .outs and uses the solution
+
+# to generate them from the .ins
+
+generate-output: false
+
+solution: solution/solution.cpp
+
+# timeout for .out generator per .in
+
+timeout: 1
+
+
+
+# optional: create the problem if it isn't already in omegaUp
+
+# default true
+
+ create: true
+
+
+
+# optional: upload the required files for interactive problems
+
+# default false
+
+# conflicts with generate-output:
+
+#     generate-output must be false if interactive is true
+
+# interactive: true
+
+
+
+# all of these are required unless create is set to false
+
+params:
+
+  title: Pacman
+
+  source: Curso OMI (ORAC)
+
+  visibility: 1
+
+
+
+  # valid options: all, karel
+
+  languages: all
+
+
+
+  time_limit: 1000
+
+  memory_limit: 32768
+
+  output_limit: 16384
+
+  stack_limit: 10485760
+
+
+
+  overall_wall_time_limit: 60000
+
+
+
+  # valid options: token-caseless, token-numeric, token-numeric, custom, literal
+
+  validator: literal
+
+  validator_time_limit: 1000
+
+  extra_wall_time: 0
+
+
+
+  email_clarifications: 0
