@@ -1,6 +1,8 @@
 #include "Pacman.h"
 #include <queue>
 
+using namespace std;
+
 bool flag[10000];
 int pasos[10000];
 queue<int> busca;
