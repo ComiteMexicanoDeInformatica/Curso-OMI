@@ -1,12 +1,13 @@
-﻿alias: COMI-taquitos
+alias: COMI-Recuerdame
 
-generate-output: true
-solution: solution/solution.cpp
-timeout: 1
 admin-groups: [workshop-2017]
 
+generate-output: false
+
+interactive: true
+
 params:
-  title: Taquitos
+  title: Recuérdame
   source: Curso OMI
 
   visibility: 1
@@ -20,7 +21,7 @@ params:
 
   overall_wall_time_limit: 60000
 
-  validator: token-caseless
+  validator: literal
   validator_time_limit: 1000
   extra_wall_time: 0
 

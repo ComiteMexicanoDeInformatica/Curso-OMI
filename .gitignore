@@ -15,5 +15,7 @@ a.out
 # libinteractive
 *.cbp
 *.layout
+*.bat
 libinteractive
 libinteractive.jar
+Makefile

@@ -1,12 +1,13 @@
-﻿alias: COMI-taquitos
+alias: COMI-Cola-Interactivo
 
-generate-output: true
-solution: solution/solution.cpp
-timeout: 1
 admin-groups: [workshop-2017]
 
+generate-output: false
+
+interactive: true
+
 params:
-  title: Taquitos
+  title: Cola Interactivo
   source: Curso OMI
 
   visibility: 1
