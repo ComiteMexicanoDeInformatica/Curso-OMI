@@ -1,14 +1,16 @@
 # Descripción
 
-Mientras hacias tu tarea de matemáticas recordaste la importancia de siempre abrir y  cerrar los parentesis, te das cuenta que no le has dado la importancia a tus textos y ahora quieres corregirlos.
+Mientras hacias tu tarea de matemáticas, recordaste la importancia de siempre abrir y cerrar los parentesis, te das cuenta que no le has dado la importancia a tus textos y ahora quieres corregirlos.
+
 # Entrada
 
-Se te dara una cadena de caracteres que solo contienen "$($" y "$)$" .
+Se te dará una cadena de caracteres que solo contienen "$($" y "$)$".
+
 # Salida
 
-Imprimir SI en caso de que todos los paréntesis esten correctos ,y NO de lo contrario.
+Muestra **SI** en caso de que todos los paréntesis estén correctos, y de lo contrario muestra **NO**.
 
-# Ejemplo
+# Ejemplos
 
 ||input
 ((((()))))
@@ -26,6 +28,6 @@ SI
 
 # Límites
 
-$1\leq n \leq 10^6$
+$1 \leq n \leq 10^6$
 
-donde $n$ es el número de caracteres en la cadena.
+Donde $n$ es el número de caracteres en la cadena.
