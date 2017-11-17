@@ -1,5 +1,6 @@
 alias: COMI-Pacman
 
+admin-groups: [workshop-2017]
 # optional argument, if false, the problem won't be deployed
 
 # disabled: true
