@@ -46,5 +46,6 @@ Debes de especificar 'n' para indicar la dirección norte; 'e' para este; 'o' pa
 # Restricciones
 
 El tablero de juego será de máximo 100x100.
+Si el tablero no tiene comida deberás regresar un -1.
 
 {{libinteractive:download}}
