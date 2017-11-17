@@ -3,17 +3,17 @@
 // int ElementoEnPosicion(int i);
 // bool Intercambiar(int i, int j);
 
-int HacerParticion(int n) {
-    int piv = ElementoEnPosicion(n - 1);
-    int i = -1, j, k = n;
+int HacerParticion(int inicio, int fin) {
+    int piv = ElementoEnPosicion(fin - 1);
+    int i = inicio - 1, j = fin, k;
 
-    for (j = 0; j < n; j++)
-        if (ElementoEnPosicion(j) < piv)
-            Intercambiar(++i, j);
+    for (k = inicio; k < fin; k++)
+        if (ElementoEnPosicion(k) < piv)
+            Intercambiar(++i, k);
 
-    for (j = n - 1; j >= 0; j--)
-        if (ElementoEnPosicion(j) > piv)
-            Intercambiar(--k, j);
+    for (k = fin - 1; k >= inicio; k--)
+        if (ElementoEnPosicion(k) > piv)
+            Intercambiar(--j, k);
 
-    return (i + k) / 2;
+    return (i + j) / 2;
 }

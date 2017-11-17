@@ -1,16 +1,14 @@
-#  Palíndromo
-# Descripción
-En una escuela preparatoria, la maestra de español organizó un concurso de escribir palíndromos. Un palíndromos es una palabra, número o frase que se lee igual del principio al final, o del final hacia el principio. 
+En una escuela preparatoria, la maestra de español organizó un concurso de escribir palíndromos. Un palíndromos es una palabra, número o frase que se lee igual de izquierda a derecha y de derecha a izquierda.
 En este concurso se jugará con palabras solamente.
 Te pidieron que escribas un programa que lea una palabra y decida si es palíndromo o no.
 
 # Entrada
 
-Una linea con una palabra.
+Una línea con una palabra.
 
 # Salida
 
-Una linea con la respuesta: Si o No. 
+Una línea con la respuesta: Si o No.
 
 # Ejemplo
 
@@ -19,7 +17,7 @@ reconocer
 ||output
 Si
 ||description
-reconocer se lee igual del principio al final que del final hacia el principio.
+reconocer se lee igual de izquierda a derecha y de derecha a izquierda.
 ||end
 ||input
 rallar
@@ -31,6 +29,7 @@ roma
 ||output
 No
 ||end
+
 # Límites
 
 * Las palabras pueden tener de 1 a 1000 caracteres
