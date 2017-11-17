@@ -14,7 +14,7 @@ Históricamente las computadoras han ido evolucionando conforme a la cantidad de
 
 ----------
 
-Cada una de las anteriores operaciones van a ser representadas con el respectivo número que tienen a su derecha. Para este problema, en los casos particulares de las operaciones *Raíz Cuadrada* y *Potencias*, se tomarán en cuenta raices cuadradas con entrada entera y salida con **dos decimales**, y potencias con entradas y salidas enteras.
+Cada una de las anteriores operaciones van a ser representadas con el respectivo número que tienen a su derecha. Para este problema, en los casos particulares de las operaciones *Raíz Cuadrada* y *Potencias*, se tomarán en cuenta raices cuadradas con entrada entera y salida redondeada a **dos decimales**, y potencias con entradas y salidas enteras.
 
 
 # Entrada

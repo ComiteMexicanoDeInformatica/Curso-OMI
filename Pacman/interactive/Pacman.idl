@@ -1,0 +1,16 @@
+interface Main {
+    int hayComida(
+        int pos
+    );
+
+    int esPosibleAvanzar(
+        int posActual,
+        char direccion
+    );
+};
+
+interface Pacman {
+    int buscaComida(
+        int pos
+    );
+};

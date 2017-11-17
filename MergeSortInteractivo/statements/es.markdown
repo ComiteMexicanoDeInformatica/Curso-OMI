@@ -33,8 +33,8 @@ Para que tengas una idea mas clara de la estrategia puedes ver la siguiente imag
 C/C++ `void mezclar(int izquierda,int derecha);`
 
 ### Descripción
-En la  función `mezclar` tiene los parametros `int izquierda` e `int derecha` estos te diran cual subarreglo del arreglo de `votaciones` debes dividir en dos partes mientras sea posible para luego llamar a la funcion `combinar` . 
-El evaluador buscará en tu código esta función y la llamará con los parametros `izquierda` y `derecha`. Tu implementación deberá ir dividiendo el  arreglo `votaciones` entre `izquierda` y `derecha` y llamarse recursivamente sobre cada division. Cuando ya no sea posible dividir mas el arreglo `votaciones` debes llamar a la funcion `combinar.
+En la  función `mezclar` tiene los parametros `int izquierda` e `int derecha` estos te diran cual subarreglo del arreglo de `lista` debes dividir en dos partes mientras sea posible para luego llamar a la funcion `combinar` . 
+El evaluador buscará en tu código esta función y la llamará con los parametros `izquierda` y `derecha`. Tu implementación deberá ir dividiendo el  arreglo `lista` entre `izquierda` y `derecha` y llamarse recursivamente sobre cada division. Cuando ya no sea posible dividir mas el arreglo `lista` debes llamar a la funcion `combinar`.
 
 ### Parámetros
 
@@ -47,8 +47,8 @@ El evaluador buscará en tu código esta función y la llamará con los parametr
 C/C++ `void combinar(int izquierda,int mitad,int derecha);`
 
 ### Descrpción
-La función `combinar` asume que los valores en el arreglo `votaciones` entre las posiciones `izquierda` y `mitad`  ya estan ordenados y asume lo mismo para los valores entre las posiciones `mitad+1` y `derecha`. No tiene ningun valor de regreso pero
-en el arreglo `votaciones` combina y ordena los valores entre las posiciones `izquierda` y `derecha`
+La función `combinar` asume que los valores en el arreglo `lista` entre las posiciones `izquierda` y `mitad`  ya estan ordenados y asume lo mismo para los valores entre las posiciones `mitad+1` y `derecha`. No tiene ningun valor de regreso pero
+en el arreglo `lista` combina y ordena los valores entre las posiciones `izquierda` y `derecha`
 # Rutina de Ejemplo
 
 A continuación se muestran las primeras llamadas de una rutina de ejemplo. 
@@ -74,7 +74,7 @@ mezclar(0,5)
 
 || description
 
-Asumiendo que `int votaciones[] = {1,5,3,4,6,2}`
+Asumiendo que `int lista[] = {1,5,3,4,6,2}`
 despues de llamar mezclar el arreglo queda ordenado completamente
 {1,2,3,4,5,6}
 || input
@@ -87,7 +87,7 @@ mezclar(1,3)
 
 || description
 
-Asumiendo que `int votaciones[] = {1,5,3,4,6,2}`
+Asumiendo que `int lista[] = {1,5,3,4,6,2}`
 El arreglo queda ordenado entre las posiciones 1 y 3
 {1,3,4,5,2,6}
 || end
@@ -97,3 +97,5 @@ El arreglo queda ordenado entre las posiciones 1 y 3
 $0 /leq n /leq 10,000$
 
 {{libinteractive:download}}
+
+

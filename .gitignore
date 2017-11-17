@@ -8,6 +8,9 @@ Thumbs.db
 *.zip
 *.exe
 a.out
+*.o
+*.orig
+*.bak
 
 # libinteractive
 *.cbp

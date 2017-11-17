@@ -1,0 +1,6 @@
+interface Main{
+	void combinar(int izquierda,int mitad,int derecha);
+};
+interface prueba{
+	void mezclar(int izquierda,int derecha);
+};
