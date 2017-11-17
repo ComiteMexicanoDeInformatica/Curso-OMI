@@ -25,8 +25,6 @@ timeout: 1
 
 # default true
 
- create: true
-
 
 
 # optional: upload the required files for interactive problems
