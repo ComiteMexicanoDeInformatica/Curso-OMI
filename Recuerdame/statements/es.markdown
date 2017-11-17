@@ -5,14 +5,12 @@ El problema se origina porque los números o algunos de ellos, están perdiendo 
 El número le dice, al programa-de-soporte-a-los-números, quien es, a través de la función: $$void\ recuerdame(int\ num)$$
 Esta función recibe el número en el parámetro $num$.
 La otra función que debes escribir es $$bool\ soy(int\ x) $$
-Con esta función el desmemoriado número pregunta:$$soy(elNumero)$$
-La función regresa $cierto$ o $falso$ ($true$ o $false$) dependiendo de si $ elNumero$ es igual al valor guardado a travez de $num$
-
-
+Con esta función el desmemoriado número pregunta:$$soy(m)$$
+La función regresa $cierto$ o $falso$ ($true$ o $false$) dependiendo de si $ m$ es igual al valor guardado a través de $recuerdame$.
 
 # Entrada y Salida
 
-**Este es un problema interactivo**, por lo que no tendrás que leer la entrada ni imprimir la salida, sino implementar en tu código a las funciones `void recuerdame(int num)` y  `bool soy(int x)`.
+**Este es un problema interactivo**, por lo que no tendrás que leer la entrada ni imprimir la salida, sino implementar en tu código a las funciones `void recuerdame(int num)` y  `bool soy(int m)`.
 
 # Implementación
 
@@ -22,23 +20,23 @@ La función regresa $cierto$ o $falso$ ($true$ o $false$) dependiendo de si $ el
 
 ### Descripción
 
-El evaluador buscará en tu código a esta función y la llamará con el número $unNum$  como argumento. Tu implementación deberá guardar este número. 
+El evaluador buscará en tu código a esta función y la llamará con el número $num$  como argumento. Tu implementación deberá guardar este número. 
 
 ### Parámetros
 
-* `num`, es el número que se debe recordar
+* `num`, es el número que se debe recordar.
 
 ### Tu función C++ 
-`bool soy(int x)`
+`bool soy(int m)`
 
 
 ### Descripción
-El evaluador buscará en tu código a esta función y la llamará con el número $unNumX$  como argumento.
-Esta función puede regresarte uno de estos dos valores:
+El evaluador buscará en tu código a esta función y la llamará con el número $n$  como argumento.
+Esta función debe regresar:
 
-* `true`: Si `unNumX` es igual que `unNum`.
+* `true`: Si `m` es igual que `num` (el número guardado).
 
-* `false`: Si `unNumX` es diferente que `unNum`.
+* `false`: Si `m` es diferente que `num`.
 
 
 # Rutina de Ejemplo
@@ -62,7 +60,7 @@ soy(7)
 || output
 false
 || description
-El número por recordar es 10,que es diferente  a 7.
+El número por recordar es 10, que es diferente  a 7.
 || input
 soy(10)
 || output
@@ -73,10 +71,10 @@ El número por recordar es 10, que es igual a 10.
 
 # Restricciones
 
-*$0\leq$ unNum,unNumX $\leq$ 9$*
+$0 \leq num,m \leq 9$
 
 # Consideraciones
 
-* Tu puntuación será en base
+* Tu puntuación será en base a la cantidad de casos resueltos.
 
 {{libinteractive:download}}
