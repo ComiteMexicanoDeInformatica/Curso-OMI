@@ -40,6 +40,7 @@ int mergeSort(int lista[],int temp[],int izquierda,int derecha){
   }
   return inversiones;
 }
+```
 ### Parámetros
 
 * `lista`: Es el arreglo de enteros en el que contaremos las inversiones.
