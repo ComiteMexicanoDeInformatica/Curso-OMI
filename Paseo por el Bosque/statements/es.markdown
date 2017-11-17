@@ -1,9 +1,9 @@
 # Descripción
 
-Troyo ha estado paseando por el bosque, y esta harto de no encontrar patrones en un árbol magistral. Ayúdale a encontrar algún patrón. Pero tu que eres un gran programador, los patrones que decidiste darle, es recorrer el árbol en pre-orden, in-orden y post-orden.
+Troyo ha estado paseando por el bosque, y está harto de no encontrar patrones en un árbol magistral. Ayúdale a encontrar algún patrón. Pero tu, que eres un gran programador, decidiste darle la orden de recorrer el árbol en *pre-orden*, *in-orden* y *post-orden*.
 
 # Problema
-Dado un arreglo de $N$, deberás insertar cada uno de ellos en un árbol binario de búsqueda, según vienen en la entrada, e imprimir los recorridos del árbol en este órden; Preorden, Inorden y Postorden respectivamente. El primer elemento que leas será la raíz del árbol.
+Dado un arreglo de $N$, deberás insertar cada uno de ellos en un árbol binario de búsqueda, según vienen en la entrada, e imprimir los recorridos del árbol en este orden; Preorden, Inorden y Postorden respectivamente. El primer elemento que leas será la raíz del árbol.
 
 # Entrada
 Un entero $N$ que indica el tamaño del arreglo, seguido de los $N$ elementos del arreglo.
