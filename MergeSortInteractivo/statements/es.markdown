@@ -24,6 +24,7 @@ La  función `merge` debe recibir dos arreglo de enteros  `lista` y `temp` y los
 
 ## La función
 ```mergeSort(int lista[],int temp[],int izquierda,int derecha)```
+
 C/C++ `int mergeSort(int lista[],int temp[],int derecha,int izquierda);`
 
 ### Descripción
@@ -51,6 +52,7 @@ int mergeSort(int lista[],int temp[],int izquierda,int derecha){
 
 ## La función
 ```contar(int lista[],int tam)```
+
 C/C++ `int mergeSort(int lista[],int tam);`
 
 ### Descripción
