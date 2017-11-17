@@ -65,5 +65,8 @@ Si consideramos que el mapa tiene 9 posiciones como el mapa mostrado arriba te m
 
 *El tablero de juego será de máximo $100/times100$.
 *Si el tablero no tiene comida deberás regresar un -1.
+*Si Pacman es atacado por un fantasma, pierde la mitad de sus puntos.
+*Cuando Pacman este en un tablero sin comida, tampoco habrá fantasmas.
+*Sea k la cantidad de pasos a la comida más cercana, entonces se garantiza que si Pacman no pregunta por la existencia de comida en zonas del tablero más alejadas de k pasos no se encontrará con ningún fantasma.
 
 {{libinteractive:download}}
