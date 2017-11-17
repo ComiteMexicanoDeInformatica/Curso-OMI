@@ -1,11 +1,11 @@
 #include <algorithm>
 #include <iostream>
 #include "ordenador.h"
-#define MAX_OPERACIONES 100*100
+#define MAX_OPERACIONES (399*400)/2
 
 using namespace std;
 
-int A[2001],B[2001];
+int A[401],B[401];
 int i,m,n,j,N;
 bool operacionesExcedidas;
 int valorGuardado;
@@ -21,7 +21,7 @@ int guardar(int indice) //siguiente guarda el valor en indice
 
 int obtener(int indice)
 {
-	if(indice<0 || indice>=n) //indice no válido
+	if(indice<0 || indice>n) //indice no válido
 		{
 		cout<<"Indice no válido\n";
 		return -1;
@@ -31,18 +31,13 @@ int obtener(int indice)
 
 bool desplazar(int indice)
 {
-	if(indice<0 || indice>=n-1 || m<0) //indice no válido, número de operaciones excedidas
+	if(indice<0 || indice>=n-1) //indice no válido, número de operaciones excedidas
 		{
-		if(m<0)
-			{
-			cout<<"Numero de operaciones excedido\n";
-			operacionesExcedidas=1;
-			}
-		else
-			cout<<"Indice no valido\n";
+		cout<<"Indice no valido\n";
 		return 0;
 		}
 	B[indice+1]=B[indice];
+	m++;
 	cout<<"Se movio una posicion: "<<B[indice+1]<<" ("<<--m<<" operaciones restantes)\n";
 	return 1;
 }
@@ -98,7 +93,8 @@ int main()
 		else
 			cout<<"correcto\n";
 		}
-	cout<<"Haz resuelto el problema :)\n";
+	if(m<=M)
+		cout<<"Haz resuelto el problema :)\n";
 	return 0;
 }
 

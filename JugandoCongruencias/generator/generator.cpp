@@ -25,7 +25,7 @@ void solucion(){
 
 
 int main(){
-    int B,C,N,aux,numCasos=30;
+    int B,C,N,aux,numCasos=40;
 
 
     srand(time(NULL));
@@ -42,13 +42,11 @@ int main(){
             C++;
         }
         if(i==numCasos-1){
-            C=100;
+            C=99;
         }
         B=rand()%1001;
-        if(B==0||B==1)
+        if(B==0)
             B=2;
-        if(i>numCasos/2)
-            B=B*(-1);
         in << B << " ";
         in << C << endl;
         N=rand()%1000001;
@@ -59,6 +57,8 @@ int main(){
         in << N << endl;
         for(int j=0;j<N;j++){
             aux=rand()%10001;
+            if(j==N-1)
+                aux=10000;
             in << aux << endl;
         }
 

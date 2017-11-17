@@ -1,4 +1,4 @@
-¡En este problema tendrás que adivinar el número que esté pensado OmegaUp!
+¡En este problema tendrás que adivinar el número que está pensado OmegaUp!
 
 # Entrada y Salida
 
@@ -12,11 +12,11 @@ C/C++ `void adivina(long long a, long long b);`
 
 ### Descripción
 
-El evaluador buscará en tu código esta función y la llamará con los numeros $a$ y $b$ como parámetro. Tu implementación deberá adivinar el numero que este pensando OmegaUp ayudandose llamando a la función `pista()`.
+El evaluador buscará en tu código esta función y la llamará con los numeros $a$ y $b$ como parámetro. Tu implementación deberá adivinar el número que esté pensando OmegaUp, ayudándose llamando a la función `pista()`.
 
 ### Parámetros
 
-* `a`,`b`: Representa un rango, es decir si $x$ es el numero que esta pensando omegaUp entonces se cumple que **a $\leq$ x $\leq$ b** 
+* `a`,`b`: Representa un rango, es decir si $x$ es el numero que esta pensando omegaUp, entonces se cumple que **a $\leq x \leq$ b** 
 
 ### Función del evaluador `long long pista(long long x);`
 
@@ -26,13 +26,13 @@ C/C++
 
 Puedes llamar a esta función con cualquier entero como parámetro, y puede regresarte uno de estos tres valores:
 
-* `-1`: El numero en que esta pensando omegaUp es menor que $x$.
+* `-1`: El número en que esta pensando omegaUp es menor que $x$.
 
-* `0`: El numero que esta pensando omegaUp es igual a $x$.
+* `0`: El número que esta pensando omegaUp es igual a $x$.
 
-* `1`: El numero que esta pensando omegaUp es mayor a $x$.  
+* `1`: El número que esta pensando omegaUp es mayor a $x$.  
 
-**Nota:** El ultimo llamado que debe hacer tu programa a `pista()` es con la respuesta, es decir, con el numero que esta pensando OmegaUp.
+**Nota:** El último llamado que debe hacer tu programa a `pista()` es con la respuesta, es decir, con el numero que esta pensando OmegaUp.
 
 # Rutina de Ejemplo
 
@@ -55,25 +55,25 @@ pista(7)
 || output
 1
 || description
-El numero que esta pensando omegaUp es mayor que 7.
+El número que está pensando omegaUp es mayor que 7.
 || input
 pista(10)
 || output
 -1
 || description
-El numero que esta pensando omegaUp es menor que 10.
+El número que está pensando omegaUp es menor que 10.
 || input
 pista(9)
 || output
 0
 || description
-El numero que esta pensando omegaUp es 9.
+El número que está pensando omegaUp es 9.
 
 || end
 
 # Restricciones
 
-*$-2^{61}$ $\leq$ a,b $\leq$ $2^{61}$*
+*$-2^{61}$ $\leq$ **a,b** $\leq$ $2^{61}$*
 
 # Consideraciones
 

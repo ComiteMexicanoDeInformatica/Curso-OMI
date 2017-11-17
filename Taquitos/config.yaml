@@ -2,7 +2,7 @@
 
 generate-output: false
 solution: solution/solution.cpp
-timeout: 0.5
+timeout: 1
 admin-groups: [workshop-2017]
 
 params:
