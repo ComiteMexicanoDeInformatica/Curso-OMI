@@ -11,6 +11,7 @@ a.out
 *.o
 *.orig
 *.bak
+*.bat
 
 # libinteractive
 *.cbp

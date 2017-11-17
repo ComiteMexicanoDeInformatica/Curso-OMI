@@ -1,6 +1,5 @@
 #include "Pacman.h"
 #include <iostream>
-
 using namespace std;
 
 int F, C, P, R;
