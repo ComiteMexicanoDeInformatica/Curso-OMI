@@ -14,12 +14,12 @@ Históricamente las computadoras han ido evolucionando conforme a la cantidad de
 
 ----------
 
-Cada una de las anteriores operaciones van a ser representadas con el respectivo número que tienen a su derecha. Para este problema, en los casos particulares de las operaciones *Raíz Cuadrada* y *Potencias*, se tomarán en cuenta raices cuadradas con entrada entera y salida redondeada a **dos decimales**, y potencias con entradas y salidas enteras.
+Cada una de las anteriores operaciones van a ser representadas con el respectivo número que tienen a su izquierda. Para este problema, en los casos particulares de las operaciones *Raíz Cuadrada* y *Potencias*, se tomarán en cuenta raices cuadradas con entrada entera y salida redondeada a **dos decimales**, y potencias con entradas y salidas enteras.
 
 
 # Entrada
 
-En la primera línea recibirás un número $N$ el cual representará el número de operaciones que se te pedirá realizar. En las siguientes $N$ líneas primeramente recibirás un número $1 \leq M \leq 5$ el cual te indicará la operación ha realizarse. Posteriormente a recibir dicho número, en la misma línea recibirás los números con los que realizarás la operación seleccionada. De manera particular, para los casos de *Valor Absoluto* y *Raíz Cuadrada* recibirás un único numero, y las demás operaciones recibirán dos números.
+En la primera línea recibirás un número $N$ el cual representará el número de operaciones que se te pedirá realizar. En las siguientes $N$ líneas primeramente recibirás un número $M$ el cual te indicará la operación ha realizarse. Posteriormente a recibir dicho número, en la misma línea recibirás los números con los que realizarás la operación seleccionada. De manera particular, para los casos de *Valor Absoluto* y *Raíz Cuadrada* recibirás un único numero, y las demás operaciones recibirán dos números.
 
 # Salida
 
@@ -49,4 +49,4 @@ La primera línea nos indica que se realizarán 6 operaciones. La siguiente $N$ 
 # Límites
 
 * $1 \leq M \leq 5$
-* $1 \leq N \leq 1000$
+* $1 \leq N \leq 1,000$

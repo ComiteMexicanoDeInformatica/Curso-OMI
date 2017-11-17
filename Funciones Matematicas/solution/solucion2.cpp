@@ -11,17 +11,17 @@ int main()
     float a1,b1;
     int f,k;
     cin>>f;
-    for(int i=0;i!=f;i++)
+    for(int i=0; i!=f; i++)
     {
         cin>>k;
         if(k==1)
         {
             cin>>a;
             if(a<0)
-               {
-                   a*=-1;
-               }
-               cout<<a<<endl;
+            {
+                a*=-1;
+            }
+            cout<<a<<endl;
         }
         if(k==2)
         {
@@ -37,7 +37,14 @@ int main()
         {
             cin>>a1;
             a1=sqrt(a1);
-            printf("%.2f\n", a1);
+            /*
+            a1*=100;
+            int kora=a1;
+            a1=kora;
+            a1/=100;
+            */
+            cout<<setprecision(2)<<fixed;
+            cout<<a1<<endl;
         }
         if(k==5)
         {
@@ -49,11 +56,11 @@ int main()
             }
             else
             {
-            for(int j=1;j!=b;j++)
-            {
-                a*=c;
-            }
-            cout<<a<<endl;
+                for(int j=1; j!=b; j++)
+                {
+                    a*=c;
+                }
+                cout<<a<<endl;
             }
         }
     }

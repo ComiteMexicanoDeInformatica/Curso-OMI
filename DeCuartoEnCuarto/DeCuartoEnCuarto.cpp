@@ -1,6 +1,6 @@
 #include "DeCuartoEnCuarto.h"
 
-bool use[100010],done=false;
+bool use[500010],done=false;
 
 void Player1(int x,int y){
     if(x == y){
