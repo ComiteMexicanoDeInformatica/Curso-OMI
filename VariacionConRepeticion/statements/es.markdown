@@ -26,4 +26,4 @@ aaaab
 
 * $1 \leq n \leq 10$
 * $1 \leq k \leq 18$
-* $1 \leq j \leq n^r$
+* $1 \leq j \leq n^k$
