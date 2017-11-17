@@ -39,7 +39,7 @@ int esPosibleAvanzar(int posActual, char direccion){
             }
         case 'e':
             if (col != (C-1) && MAP[fil][col+1] != '#'){
-                return (fil) * C + col+;
+                return (fil) * C + col;
             }
         default:
             return -1;
