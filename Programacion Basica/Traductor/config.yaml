@@ -1,18 +1,16 @@
-alias: COMI-Fraccion-Mixta
+alias: COMI-Traductor
 
 generate-output: true
-solution: solution/solution.cpp
+solution: solutions/solution.cpp
 timeout: 0.5
-
 admin-groups: [workshop-2017]
 
 params:
-  title: Fracción mixta
-  source: Curso OMI (Orac)
+  title: Traductor
+  source: Curso COMI (Orac)
 
   visibility: 1
 
-  # valid options: all, karel
   languages: all
 
   time_limit: 1000
@@ -22,7 +20,6 @@ params:
 
   overall_wall_time_limit: 60000
 
-  # valid options: token-caseless, token-numeric, token-numeric, custom, literal
   validator: token-caseless
   validator_time_limit: 1000
   extra_wall_time: 0
