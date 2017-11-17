@@ -26,17 +26,17 @@ Lo que hace que Quicksort pueda ser más rápido o no, es la elección del pivote. 
 
 **Tu función** `HacerParticion`
 
-C/C++ `int HacerParticion(int n);`
+C/C++ `int HacerParticion(int inicio, int fin);`
 
-Pascal `function HacerParticion(var n: LongInt): LongInt;`
+Pascal `function HacerParticion(var inicio, fin: LongInt): LongInt;`
 
 **Descripción**
 
-Esta función hará la partición del arreglo y deberá retornar la posición final del pivote (indexeado en 0). Tu función será llamada para cada partición que hagas en el arreglo.
+Esta función hará la partición del arreglo y deberá retornar la posición final del pivote. Tu función será llamada para cada partición que hagas en el arreglo.
 
 **Parámetros**
 
- - `n`: Un entero indicando el tamaño del arreglo.
+ - `inicio`, `fin`: El rango del arreglo sobre el cual se hará la partición. La posición `fin` no forma parte del rango. 
 
 **Funciones del evaluador** `ElementoEnPosicion()`, `Intercambiar()`
 
@@ -73,11 +73,11 @@ Valor devuelto
 ||description
 Descripción
 ||input
-HacerPariticion(4);
+HacerPariticion(0, 4);
 ||output
 1
 ||description
-En este ejemplo, el arreglo es $3, 1, 5, 4$. El pivote escogido es $3$ y después de hacer la partición el arreglo queda como $1, 3, 5, 4$, por lo que la posición final del pivote es 1.
+En este ejemplo, el arreglo es $3, 1, 5, 4$. El pivote escogido es $3$ y después de hacer la partición queda en la posición 1 (véase las siguientes llamadas).
 ||input
 ElementoEnPosicion(0)
 ||output
@@ -96,23 +96,23 @@ Intercambiar(0, 1)
 ||description
 Intercambiamos los elementos $3$ y $1$, por lo que el arreglo queda como $1, 3, 5, 4$.
 ||input
-HacerParticion(2)
+HacerParticion(2, 4)
 ||output
 1
 ||description
 En esta función el evaluador manda a llamar el sub-arreglo $5, 4$. El pivote escogido en este caso es el $5$.
 ||input
-ElementoEnPosicion(0)
+ElementoEnPosicion(2)
 ||output
 5
 ||description
 ||input
-ElementoEnPosicion(1)
+ElementoEnPosicion(3)
 ||output
 4
 ||description
 ||input
-Intercambiar(0, 1)
+Intercambiar(2, 3)
 ||output
 1
 ||description
@@ -121,7 +121,7 @@ Intercambiamos los elementos $5$ y $4$, por lo que el arreglo queda como $4$ y $
 
 # Límites
 
-* $0 < n \leq 10,000$
+* $0 < n \leq 5,000$
 
 # Consideraciones
 

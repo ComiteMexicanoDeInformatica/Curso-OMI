@@ -1,20 +1,19 @@
 #include "quicksort.h"
 
 // int ElementoEnPosicion(int i);
-// int Intercambiar(int i, int j);
+// bool Intercambiar(int i, int j);
 
-int HacerParticion(int n) {
-    int piv = ElementoEnPosicion(n - 1);
-    int i = -1, j;
+int HacerParticion(int inicio, int fin) {
+    int piv = ElementoEnPosicion(fin - 1);
+    int i = inicio - 1, j = fin, k;
 
-    for (j = 0; j < n - 1; j++)
-        if (ElementoEnPosicion(j) < piv)
-            Intercambiar(++i, j);
-    Intercambiar(++i, n - 1);
+    for (k = inicio; k < fin; k++)
+        if (ElementoEnPosicion(k) < piv)
+            Intercambiar(++i, k);
 
-    piv = ElementoEnPosicion(i);
-    for (j = i; j < n - 1; j++)
-        if (piv != ElementoEnPosicion(j + 1))
-            break;
+    for (k = fin - 1; k >= inicio; k--)
+        if (ElementoEnPosicion(k) > piv)
+            Intercambiar(--j, k);
+
     return (i + j) / 2;
 }

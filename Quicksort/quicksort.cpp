@@ -1,9 +1,9 @@
 #include "quicksort.h"
 
 // int ElementoEnPosicion(int i);
-// int Intercambiar(int i, int j);
+// bool Intercambiar(int i, int j);
 
-int HacerParticion(int n) {
+int HacerParticion(int inicio, int fin) {
     //FIXME
     return 0;
 }
