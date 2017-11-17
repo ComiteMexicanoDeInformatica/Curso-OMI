@@ -1,6 +1,6 @@
 ﻿alias: COMI-taquitos
 
-generate-output: false
+generate-output: true
 solution: solution/solution.cpp
 timeout: 1
 admin-groups: [workshop-2017]
