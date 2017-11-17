@@ -1,22 +1,24 @@
-# Descripción
 Esta es tu primera experiencia resolviendo un problema interactivo, y queremos que sea una experiencia agradable. Asi que te dejamos la tarea de escribir dos funciones muy sencillas, para resolver un problema muy simple. ¡Ah! y al mismo tiempo distinguirás la diferencia entre variables locales y variables globales en C++.
 
 El problema se origina porque los números o algunos de ellos, están perdiendo la memoria. Asi que, dependen de las funciones que tu escribas, para su bienestar.
-El número le dice, al programa-de-soporte-a-los-números, quien es, a través de la función: $$void\ recuerdame(int\ num)$$
-Esta función recibe el número en el parámetro $num$.
-La otra función que debes escribir es $$bool\ soy(int\ x) $$
-Con esta función el desmemoriado número pregunta:$$soy(m)$$
-La función regresa $cierto$ o $falso$ ($true$ o $false$) dependiendo de si $ m$ es igual al valor guardado a través de $recuerdame$.
+El número le dice, al programa-de-soporte-a-los-números, quien es, a través de la función `void recuerdame(int num)`.
+
+Esta función recibe el número en el parámetro `num`.
+
+La otra función que debes escribir es `bool soy(int x)`.
+Con esta función el desmemoriado número pregunta: `soy(m)`, y
+la función regresa `cierto` o `falso` (`true` o `false`) dependiendo de si `m` es igual al valor guardado a través de `recuerdame`.
 
 # Entrada y Salida
 
-**Este es un problema interactivo**, por lo que no tendrás que leer la entrada ni imprimir la salida, sino implementar en tu código a las funciones `void recuerdame(int num)` y  `bool soy(int m)`.
+**Este es un problema interactivo**,
+por lo que no tendrás que leer la entrada ni imprimir la salida,
+sino implementar en tu código a las funciones `void recuerdame(int num)` y `bool soy(int m)`.
 
 # Implementación
 
 ### Tu función C++ 
 `void recuerdame(int num)`
-
 
 ### Descripción
 
@@ -60,7 +62,7 @@ soy(7)
 || output
 false
 || description
-El número por recordar es 10, que es diferente  a 7.
+El número por recordar es 10, que es diferente a 7.
 || input
 soy(10)
 || output
