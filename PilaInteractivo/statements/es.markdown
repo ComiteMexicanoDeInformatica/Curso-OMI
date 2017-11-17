@@ -80,7 +80,7 @@ Se devuelve -1 porque ya no hay mas elementos en la pila
 
 # Restricciones
 
-$0 /leq n /leq 100,000$
+$0 \leq n \leq 100,000$
 
 # Consideraciones
 
