@@ -9,7 +9,7 @@ Supongamos que rebanamos un circulo en 5 partes y las etiquetamos como $0,1,2,3$
 
 Ahora bien, ¿no sería muy útil tener una manera de expresar los números que pertenecen a una misma rebanada?. Por ejemplo, el número 26 está en la misma rebanada que los números 1, 6, 11, 16, 21, etc.
 
-La forma más común de decir que dos números pertencen a la misma rebanada, es decir que ellos están en la misma clase de equivalencia. Y, ¿cuál crees que sea la forma en la que se expresa esto matemáticamente?... ¡Exacto! Se expresa como $A \equiv B \mod C$. Si hacemos la analogía con el ejemplo del número 26 y 11, quedaría expresado como $26 \equiv 11 \mod 5$.
+La forma más común de decir que dos números pertencen a la misma rebanada, es decir, que ellos están en la misma clase de equivalencia. Y, ¿cuál crees que sea la forma en la que se expresa esto matemáticamente?... ¡Exacto! Se expresa como $A \equiv B \mod C$. Si hacemos la analogía con el ejemplo del número 26 y 11, quedaría expresado como $26 \equiv 11 \mod 5$.
 
 #Problema
 Ahora bien, en este problema se te pide algo sencillo. Tomando en cuenta la simbología $A \equiv B \mod C$, se te proporcionará los valores de $B$ y $C$, y posteriormente se te darán $N$ valores los cuales tendrás que analizar y decir cuantos de ellos pertenecen a la misma *rebanada*, es decir, a la misma clase de equivalencia.
