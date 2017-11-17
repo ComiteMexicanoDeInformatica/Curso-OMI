@@ -22,6 +22,7 @@ script:
 - pipenv run python3 deploy.py --onlychanges "../Programacion Basica/Traductor"
 - pipenv run python3 deploy.py --onlychanges "../Programacion Basica/Triples"
 - pipenv run python3 deploy.py --onlychanges "../Funciones/Funciones Matematicas"
+- pipenv run python3 deploy.py --onlychanges "../Funciones/Recuerdame"
 - pipenv run python3 deploy.py --onlychanges "../Estructuras de Datos/Cola Interactivo"
 - pipenv run python3 deploy.py --onlychanges "../AdivinaElNumero"
 - pipenv run python3 deploy.py --onlychanges "../Binomios"
