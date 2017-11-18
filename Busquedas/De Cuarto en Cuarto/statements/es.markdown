@@ -6,7 +6,7 @@ Los cuartos de la casa poseen la particularidad que tienen exactamente dos puert
 
 # Entrada y Salida
 
-**Este es un problema interactivo**, por lo que no tendrás que leer la entrada ni imprimir la salida, sino implementar en tu código la función `Player1(int x)` y podrás mandar a llamar algunas funciones del evaluador.
+**Este es un problema interactivo**, por lo que no tendrás que leer la entrada ni imprimir la salida, sino implementar en tu código la función `Player1(int x, int y)` y podrás mandar a llamar algunas funciones del evaluador.
 
 # Implementación
 
