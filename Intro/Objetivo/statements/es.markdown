@@ -25,27 +25,27 @@ Este curso presenta los siguientes contenidos:
  * Funciones con parámetros
  * Variables globales
  * Funciones recursivas
-3. Complejidad
-4. Estructuras de datos
+3. Estructuras de datos
  * Pilas
  * Colas
-5. Estructuras de datos avanzadas
+4. Estructuras de datos avanzadas
  * Explicación de structs y uso de la STL
  * Listas enlazadas
  * Árboles binarios
  * Pilas con struct y stl::stack
  * Colas con struct y stl::queue
-6. Búsquedas
+5. Búsquedas
  * Amplitud
  * Profundidad
  * Binaria
-7. Ordenamiento y complejidad
+6. Ordenamiento y complejidad
+ * Complejidad
  * Bubble sort
  * Insert sort
  * Merge sort
  * Bucket sort
  * Quicksort
-8. Matemáticas
+7. Matemáticas
  * Inducción
  * Divisibilidad
  * Congruencias

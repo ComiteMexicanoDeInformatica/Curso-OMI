@@ -1,15 +1,23 @@
-# Descripción
-
-Troyo ha estado paseando por el bosque, y está harto de no encontrar patrones en un árbol magistral. Ayúdale a encontrar algún patrón. Pero tú que eres un gran programador, decidiste darle la orden de recorrer el árbol en *pre-orden*, *in-orden* y *post-orden*.
+Troyo ha estado paseando por el bosque, y está harto de no encontrar patrones en un árbol magistral.
+Ayúdale a encontrar algún patrón. Pero tú que eres un gran programador,
+decidiste darle la orden de recorrer el árbol en *pre-orden*, *in-orden* y *post-orden*.
 
 # Problema
-Dado un arreglo de tamaño $N$, deberás insertar cada uno de ellos en un árbol binario de búsqueda según vienen en la entrada, e imprimir los recorridos del árbol en este orden; Preorden, Inorden y Postorden respectivamente. El primer elemento que leas será la raíz del árbol.
+
+Dado un arreglo de tamaño $N$, deberás insertar cada uno de ellos en un árbol binario de búsqueda
+según vienen en la entrada, e imprimir los recorridos del árbol en
+pre-orden, in-orden y post-orden respectivamente. El primer elemento que leas será la raíz del árbol.
 
 # Entrada
-En la primera línea un entero $N$ que indica el tamaño del arreglo, en la siguiente línea están los $N$ elementos del arreglo.
+
+En la primera línea un entero, $N$, que indica el tamaño del arreglo,
+en la siguiente línea están los $N$ elementos del arreglo.
 
 # Salida
-En la primera línea deberás imprimir el recorrido en pre-orden, en la segunda deberás imprimir el recorrido en inorden, y en la tercera y última el post-orden.
+
+En la primera línea deberás imprimir el recorrido en pre-orden,
+en la segunda deberás imprimir el recorrido en inorden,
+y en la tercera y última el post-orden.
 
 ||input
 8
