@@ -1,4 +1,4 @@
-# Problema
+﻿# Problema
 
 En este problema controlas a un personaje que está atrapado en una casa enorme. Inicialmente el personaje empieza en el cuarto $X$ de la casa y desea llegar al cuarto $Y$ (los cuartos están numerados de $1$ a $N$).
 
@@ -16,14 +16,14 @@ C/C++ `void Player1(int x, int y);`
 
 ### Descripción
 
-El evaluador buscará en tu código esta función y la llamará con dos enteros $x$ , $y$ donde $1 \leq N \leq 10^5$.
+El evaluador buscará en tu código esta función y la llamará con dos enteros $x$ , $y$ donde $1 \leq x,y \leq 10^5$.
 
 ### Parámetros
 
 * `x`: El cuarto donde inicia el personaje.
 * `y`: El cuarto a donde debe llegar el personaje.
 
-### Funci�n del evaluador `siguienteCuarto(int n)`
+### Función del evaluador `siguienteCuarto(int n)`
 
 C/C++ `int siguienteCuarto(int n)`
 
@@ -50,6 +50,7 @@ C/C++ `void regresa()`
 
 Con esta función el personaje regresará al cuarto de donde provenía cuando llegó al actual, siempre y cuando haya a dónde regresar, de lo contrario el universo explota y perderás el juego. ¡Ten cuidado con el regresa()!.
 
+** Nota :** Al finalizar tu programa el personaje deberá estar en el cuarto $y$.  
 # Rutina de Ejemplo
 
 A continuación se muestran las primeras llamadas de una rutina de ejemplo.
