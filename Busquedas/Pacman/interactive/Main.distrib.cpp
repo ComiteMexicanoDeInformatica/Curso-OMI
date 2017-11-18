@@ -1,5 +1,6 @@
 #include "Pacman.h"
 #include <iostream>
+
 using namespace std;
 
 int F, C, P, R;
@@ -31,21 +32,25 @@ int esPosibleAvanzar(int posActual, char direccion){
             if (fil != 0 && MAP[fil-1][col] != '#'){
                 return (fil-1) * C + col+1;
             }
+            break;
         case 's':
             if (fil != (F-1) && MAP[fil+1][col] != '#'){
                 return (fil+1) * C + col+1;
             }
+            break;
         case 'o':
             if (col != 0 && MAP[fil][col-1] != '#'){
                 return (fil) * C + col;
             }
+            break;
         case 'e':
             if (col != (C-1) && MAP[fil][col+1] != '#'){
-                return (fil) * C + col;
+                return (fil) * C + col+2;
             }
-        default:
-            return -1;
+            break;
+
     }
+    return -1;
 }
 
 int main() {
