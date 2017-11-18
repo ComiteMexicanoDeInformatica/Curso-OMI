@@ -108,4 +108,4 @@ Explicar Permutaciones    |    [    COMI-Permutaciones    ](https://omegaup.com/
 Explicar Variaciones con repetición    |    [    COMI-Variaciones    ](https://omegaup.com/arena/problem/COMI-Variaciones)
 Explicar Combinaciones con coeficientes binomiales    |    [    COMI-Binomios    ](https://omegaup.com/arena/problem/COMI-Binomios)
 
-# Te damos la bienvenida a este primer **Curso Introductorio a la OMI** y te deseamos el mayor de los éxitos.
+### Te damos la bienvenida a este primer **Curso Introductorio a la OMI** y te deseamos el mayor de los éxitos.
