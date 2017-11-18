@@ -26,7 +26,7 @@ SI
 ||output
 SI
 SI
-SI
+NO
 NO
 NO
 ||end
