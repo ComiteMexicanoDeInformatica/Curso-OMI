@@ -160,7 +160,7 @@ mientras sean mayores que el valor a acomodar y aún no se llegue al inicio de l
 			y--;
 		}
 
-3.-Una vez que el valor a acomodar encuentra un valor igual o menor, insertarlo en la posición desocupada.
+3.-Una vez que el valor a acomodar encuentra un valor igual o menor, insertarlo en la posición que dejó el último valor mayor (el último valor que se movió).
 
 		insertar(y+1);
 		}
