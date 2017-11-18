@@ -1,56 +1,78 @@
-#Explicación de structs y uso de la STL
+﻿#Estructuras de Datos
 
-Una estructura de datos es un grupo de elementos de datos agrupados bajo un mismo nombre. Cada elemento de datos se conoce como miembro de datos y pueden ser de diferente tipo y diferente longitud. La forma de definir una estructura es haciendo uso de la palabra `struct`. La declaración de `struct` debe acabar con una llave. El tamaño de una estructura es al menos tan grande como la suma de los tamaños de sus miembros. La declaración de una estructura a continuación:
+En lo que se refiere a la resolución de problemas, muchas veces para plantear el problema imaginamos
+objetos y acciones que se relacionan entre sí.
+Por ejemplo, un mesero tiene platos de colores apilados; de vez en cuando el que lava los platos coloca un plato recién lavado sobre la pila de platos; y en otras ocasiones el mesero toma el plato que está hasta arriba y sirve ahí la comida que ha sido preparada por el cocinero para posteriormente llevarla a su destino. Si sabemos de qué color es la pila inicial de platos, y en qué momentos el que lava los platos colocó platos sobre la pila(y claro, también sabemos el color de estos), y en qué momentos el mesero retiró el plato que se encontraba hasta arriba; podemos saber de qué color será el plato que le toca a cada cliente. Una manera de saberlo podría ser, hacer una representación dramática de los hechos; pero esto no es necesario, ya que también podríamos tomar un lápiz y un papel, y escribir una lista de los colores de los platos, posteriormente, ir escribiendo los colores de los platos que se pusieron en la pila al final de la lista, y borrar el ultimo color de la lista cada que un plato se retire.
 
-    Struct type_nombre
-    {
-        Struct-declaration-list;
-    }
+No se necesita ser un gran matemático para pensar en hacer eso, sin embargo, en el momento de querer implementar un programa en C que lo reproduzca, nos encontramos con que no tenemos ninguna lista donde se coloquen y se quiten cosas del final, tenemos solamente arreglos, variables, estructuras, apuntadores, etc. Claro que podemos simular esta lista con las herramientas que nos proporciona C, así pues, los objetos(como la pila de platos) ligados a operaciones(como poner un nuevo plato o quitar un plato) que modifican al objeto son llamados estructuras de datos.
 
-El `type_nombre` es el nombre de la estructura que integra el grupo de elementos de datos que pueden ser de diferentes tipos de datos. Si desea acceder a los miembros de la estructura de datos, debe declararse la variable de estructura de la siguiente manera:
+***Una definición sencilla de estructura de datos: unión de un conjunto de datos y funciones que
+modifican dicho conjunto.***
 
-    Struct type_nombre variable;
+Es muy importante conocer las estructuras de datos mas comunes que se utilizan en la programación, ya que son vitales para plantear el problema y al resolverlo, poder implementar su solución eficazmente.
 
-Una vez definida la variable tipo struct, se accede a cada elemento de la estructura de datos de la siguiente manera: 
+#Pilas
 
-    Variable_Struct_type.elemento_declaration_list
+Una pila, es la estructura de datos mencionada en el ejemplo anterior, es decir, un altero de objetos. O mas formalmente, una estructura de datos en la cual solo se pueden hacer dos operaciones: colocar un elemento en la cima, o quitar un elemento de la cima.
+Lo único que se puede hacer en una pila es colocar un objeto hasta arriba, o quitar el objeto que está arriba, ya que si se quita un objeto de abajo o del centro (lo mismo que si se intenta añadir uno), la pila colapsaría.
 
-Una estructura de datos es un objeto struct, las direcciones de sus elementos (y las direcciones de las unidades del campo de asignación de bits) aumentan en el orden en que se definieron los miembros. Los punteros sirven para señalar objetos y también para manipularlos. Un puntero puede apuntar a una estructura y puede acceder a sus campos, se puede convertir en un puntero a su primer miembro (o, si el miembro es un campo de bits, a su unidad de asignación). Del mismo modo, un puntero al primer miembro de una estructura se puede convertir en un puntero a la estructura adjunta. Puede haber un relleno sin nombre entre dos miembros de una estructura o después del último miembro, pero no antes del primer miembro. La sintaxis para la declaración de estructura es la siguiente:
+Si queremos programar algo similar, lo mas obvio es guardar la información de la pila en un arreglo. Las operaciones que comunmente se programan en una pila son:
+___________
+ * push *[Insertar en la pila]*
+ * top *[Consultar el elemento que está en la cima de la pila]*
+ * pop *[Extraer el elemento que está en la cima]*
+ * size *[Consultar el número de elementos en la pila]*
+ * empty *[Verificar si la pila está vacía]*
+___________
 
-    <tipo_objeto > * <etiqueta_puntero> [= <iniciador>]
+#Colas
 
-En este caso, tipo_objeto es de la forma struct punto, con lo que la declaración es:
+Imagina una conversación de chat entre dos personas, aunque los conversantes no se den cuenta, existe algo llamado lag, es decir, el tiempo que tardan las dos computadoras en mandarse y recibir los mensajes. Dependiendo de la conexión, el lag puede variar entre menos de un segundo o incluso mas de un minuto. Si por un momento, por falla del servidor, una de las computadoras pierde la conexión, y en ese momento un usuario está intentando mandar varios mensajes, el programa de chat guardará los mensajes que el usuario está tratando de mandar, y cuando se recupere la conexión, el programa de chat mandará los mensajes en el mismo orden que el usuario los escribió.
 
-    struct punto * ptr;
+Obviamente, el programa de chat no usa una pila para eso, ya que si usara una pila, el receptor leería los
+mensajes en el orden inverso que el emisor los escribió, es decir, en una pila el último que entra es el primero que sale. De ahí que a las pilas se les conozca como estructuras LIFO(Last In, First Out; Último en entrar, primero en salir). 
 
-Opcionalmente puede incluirse un iniciador como en el ejemplo anterior:
+Existen otras estructuras llamadas colas, en una cola el primero que entra es el primero que sale. Su nombre deriva de las filas que se hacen en los supermercados, cines, bancos, etc. Donde el primero que llega, es el primero en ser atendido, y el último que llega es el último en ser atendido (suponiendo que no haya preferencias burocráticas en dicho establecimiento). Las colas, son conocidas como estructuras FIFO(First In, First Out; Primero en entrar, primero en salir).
 
-    struct punto * ptr = &pto;
+Una cola es una estructura de datos, en la cual sólo se pueden aplicar dos operaciones: colocar un elemento al final, o quitar un elemento del principio. Sin embargo, en la implementación de una cola se programan las funcionalidades para:
+
+_____________________________________
+* push  *[Insertar al final de la cola]*
+* front *[Consultar el elemento que está enfrente]*
+* pop *[Extraer el elemento del frente]*
+* size *[Consultar el número de elementos en la cola]*
+* empty *[Consultar si la cola está vacía]*
+_____________________________________
+
+#Listas enlazadas
+
+Frecuentemente necesitamos tener almacenadas listas de datos en memoria, y hacer operaciones de agregar o quitar números pero no al final ni al principio, sino en medio. Para solucionar estos y otros problemas, existen las listas enlazadas, Las listas enlazadas son estructuras de datos compuestas por una sucesión de elementos llamados nodos; en la que cada nodo contiene un dato y la dirección del próximo nodo, en caso de que lo haya.
+
+La siguiente imagen muestra una representación gráfica de una lista enlazada.
+
+
+Una forma de definir un nodo es:
+
+* Una estructura vacía ó
+* Un elemento de información y un elace a otro nodo.
+
+La tarea de implementar una enlazada puede hacerse eficazmente con dos arreglos: uno para guardar los datos y otro para guardar los enlaces, además se requiere una variable que diga el tamaño de la lista. Lo único que falta definir es el elemento vacío, para ello, podemos asumir que el dato 0 es el elemento vacío, y en el momento que nos encontremos con él, sabemos que la lista ya habrá terminado. Insertar un nodo con un dato x en una lista requiere un tiempo lineal. Las funcionalidades que se programan para una lista enlazada son:
+
+_____________________________________
+* push_back  *[Insertar al final de la lista]*
+* push_front *[Insertar el elemento que está enfrente]*
+* pop_front *[Eliminar el elemento que está al inicio de la lista]*
+* pop_back  *[Eliminar el elemento que está al final de la lista]*
+* front *[Consultar el elemento que está al inicio de la lista]*
+* back *[Consultar el elemento que está al final de la lista]*
+* insert *[Insertar un elemento en medio de la lista]*
+* erase *[Eliminar un elemento de en medio de la lista]*
+* empty *[Consultar si la lista está vacía]*
+* size *[Consultar el número de elementos en la lista]*
+
+Existen otras estructuras de datos avanzadas como los árboles, colas de prioridad, BIT, etc, que abordaremos más adelante.
 
 
 
-#Uso de la STL
 
-La librería STL es una colección de algoritmos y contenedores como son: vectores, listas enlazadas, conjuntos ordenados que son de fácil uso y eficaces. La manipulación de los contenedores es a través de iteradores que permite recorrer fácilmente un contenedor sin tomar en cuenta la implementación de la misma. Un iterador y un const_iterator permiten recorrer un contenedor de inicio a fin. Un const_iterator contrariamente a un iterator, da acceso únicamente para la lectura del elemento deseado. Así, un recorrido con const_iterator no produce cambios en el contenedor. Es por ello que un contenedor “const” puede ser recorrido por const_iterators pero no por iterators.  
 
-En importante tener conocimiento de las clases que manejan la librería STL y elegir la que se adapte a la necesidad de la solución. Sea x el tamaño de un contenedor. Un algoritmo es llamado lineal (en O(x)) si su tiempo de cálculo es proporcional a x. Igualmente, un algoritmo puede ser instantáneo (O(1)), logarítmico O(log(x)), polinomial O(x^k), exponencial O(e(x)).
-
-    std::pair<T1,T2>
-
-Un par es una estructura de dos elementos contenidos de tipos diferentes eventualmente. Ciertos algoritmos de STL (por ejemplo find) devuelven pares (posición del elemento encontrado y un booleano que indica si ha sido encontrado). 
-
-    std::list<T,...>
-
-La clase list provee una estructura genérica de listas enlazadas pudiendo eventualmente contener repeticiones. 
-
-    std::vector<T,...>
-
-Todos los elementos contenidos en el vector están contiguos en memoria, lo que permite acceder inmediatamente a cualquier elemento. 
-
-    std::set<T,...>
-
-La clase set permite describir un conjunto ordenado y sin repetición de elementos. Previamente es necesario parar este orden como parámetro template (un funtor). Por defecto, el funtor std::less (basado en el operador <) es utilizado, lo que equivale a tener un conjunto de elementos clasificados del más pequeño al más grande. Concretamente, basta con implementar el operador < de una clase o una estructura de tipo T para poder definir un std::set<T>. Además, el tipo T debe disponer de un constructor vacío T(). 
-
-    std::map<K,T,...>
-
-Un map permite asociar una contraseña a un dato. El map toma a los menos dos parámetros templates: el tipo de la clave K y el tipo del dato T. Al igual que std::set, el tipo K debe ser ordenado (este orden puede ser pasado como 3er parámetro template, std::less<K> par défaut) y, el tipo T solo asigna un constructor vacío.
