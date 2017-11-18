@@ -8,7 +8,7 @@ int main() {
     scanf("%d", &n);
 
     for(int i = 0; i < n; i++){
-        scanf("%c", &ins);
+        scanf("%c ", &ins);
         if (ins == 'a') {
             scanf("%d", &val);
             agrega(val);
