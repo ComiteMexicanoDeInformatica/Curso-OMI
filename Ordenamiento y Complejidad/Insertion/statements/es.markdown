@@ -4,11 +4,12 @@ Este problema se trata de ordenar un arreglo, con el ordenamiento de inserción.
 
 1.-Guardar el valor $n_i$ como valor a acomodar.
 
-2.-Para cada valor entre las posiciones $i-1$ y $0$, obtener el valor almacenado en cada posición mientras sean mayores que el valor a acomodar y mientras aún no se llegue al inicio de la lista (posición $0$), para desplazar cada valor a la posición contigua anterior.
+2.-Para cada valor entre las posiciones $i-1$ y $0$, obtener el valor almacenado en cada posición y moverlo a la posición anterior
+mientras sean mayores que el valor a acomodar y aún no se llegue al inicio de la lista (posición $0$).
 
-3.-Una vez que el valor a acomodar encuentra un valor igual o menor, insertar el valor a acomodar en la posición que ocupaba el último valor desplazado.
+3.-Una vez que el valor a acomodar encuentra un valor igual o menor, insertarlo en la posición desocupada.
 
-Este proceso lo hacemos desde $i=1$ hasta $i=n-1$ , podemos notar que después de hacerlo la primera vez, se nos garantiza que los dos primeros elementos de la lista $n_0$ y $n_1$ se encuentran ordenados entre sí, al hacerlo de nuevo para $i=2$ se habrán ordenado entre sí los elementos de las $3$ primeras posiciones de la lista, por lo que después de $i$ veces se habrán ordenado entre sí, los $i+1$ primeros elementos de la lista. Al hacer este proceso $n-1$ veces estaremos garantizando que los $n$ números están ordenados (el arreglo totalmente ordenado). Como este proceso recorre $n$ veces el arreglo (de tamaño $n$) podemos notar que su complejidad es $Ω(n^2)$. 
+Este proceso lo hacemos desde $i=1$ hasta que alcance el valor de $n-1$ , podemos notar que después de hacerlo la primera vez,  los dos primeros elementos de la lista $n_0$ y $n_1$ se encuentran ordenados entre sí, al hacerlo de nuevo para $i=2$ se habrán ordenado entre sí los elementos de las $3$ primeras posiciones de la lista, por lo que al hacer el proceso $n-1$ veces, los $n$ números estarán ordenados (el arreglo totalmente ordenado). Como este proceso recorre $n$ veces el arreglo (de tamaño $n$) podemos notar que su complejidad es $Ω(n^2)$. 
 
 # Entrada y Salida
 

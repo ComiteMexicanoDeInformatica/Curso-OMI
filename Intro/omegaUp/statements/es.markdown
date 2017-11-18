@@ -26,7 +26,7 @@ En la siguiente pantalla podrás pegar tu código o subir tu archivo (con el bot
 
 ![Pantalla de envíos](submit.jpg)
 
-En el recuadro de envíos aparecerá el Estatus, Porcentaje (de casos resueltos) y en **Detalle** podrás recuperar tu código.
+En el recuadro de envíos aparecerá el Estatus, Porcentaje (de casos resueltos y en Detalle podrás recuperar tu código.
 
 Como puedes hacer varios envíos de tu solución para cada problema, podras mejorar tu código y tu puntaje de acuerdo a la calificación y retroalimentación que omegaUp te dá en cada envío. 
 
