@@ -1,65 +1,65 @@
 # Problema
 
-En este problema controlas a un personaje que est· atrapado en una casa enorme. Inicialmente el personaje empieza en el cuarto $X$ de la casa y desea llegar al cuarto $Y$ (los cuartos est·n numerados de $1$ a $N$).
+En este problema controlas a un personaje que est√° atrapado en una casa enorme. Inicialmente el personaje empieza en el cuarto $X$ de la casa y desea llegar al cuarto $Y$ (los cuartos est√°n numerados de $1$ a $N$).
 
 Los cuartos de la casa poseen la particularidad que tienen exactamente dos puertas, cada una de ellas conecta a otro cuarto.
 
 # Entrada y Salida
 
-**Este es un problema interactivo**, por lo que no tendr·s que leer la entrada ni imprimir la salida, sino implementar en tu cÛdigo la funciÛn `Player1(int x, int y)` y podr·s mandar a llamar algunas funciones del evaluador.
+**Este es un problema interactivo**, por lo que no tendr√°s que leer entrada ni imprimir salida, sino implementar en tu c√≥digo la funci√≥n `Player1(int x, int y)` y podr√°s mandar a llamar algunas funciones del evaluador.
 
-# ImplementaciÛn
+# Implementaci√≥n
 
-### Tu funciÛn `Player1(int x, int y)`
+### Tu funci√≥n `Player1(int x, int y)`
 
 C/C++ `void Player1(int x, int y);`
 
-### DescripciÛn
+### Descripci√≥n
 
-El evaluador buscar· en tu cÛdigo esta funciÛn y la llamar· con dos enteros $x$ , $y$ donde $1 \leq N \leq 10^5$.
+El evaluador buscar√° en tu c√≥digo esta funci√≥n y la llamar√° con dos enteros $x$ , $y$ donde $1 \leq N \leq 10^5$.
 
-### Par·metros
+### Par√°metros
 
 * `x`: El cuarto donde inicia el personaje.
 * `y`: El cuarto a donde debe llegar el personaje.
 
-### FunciÛn del evaluador `siguienteCuarto(int n)`
+### FunciÔøΩn del evaluador `siguienteCuarto(int n)`
 
 C/C++ `int siguienteCuarto(int n)`
 
-Puedes llamar a esta funciÛn para saber a que cuarto te conduce la $n-Èsima$ puerta del cuarto, donde actualmente est· el personaje. (Si $n$ es mayor a 2 o menor a 1 regresar· -1; de lo contrario el cuarto al que conduce la puerta).
+Puedes llamar a esta funci√≥n para saber a qu√© cuarto te conduce la $n-√©sima$ puerta del cuarto, donde actualmente est√° el personaje. (Si $n$ es mayor a 2 o menor a 1 regresar√° -1; de lo contrario el cuarto al que conduce la puerta).
 
-### DescripciÛn
+### Descripci√≥n
 
-* `1`: La funciÛn regresa el cuarto al que llegas desde el cuarto actual tomando la puerta 1.
-* `2`: La funciÛn regresa el cuarto al que llegas desde el cuarto actual tomando la puerta 2.
-* `k`: Si $k\neq1$ y $k\neq2$ la funciÛn regresa -1 ya que  no ser· una puerta v·lida.
+* `1`: La funci√≥n regresa el cuarto al que llegas desde el cuarto actual tomando la puerta 1.
+* `2`: La funci√≥n regresa el cuarto al que llegas desde el cuarto actual tomando la puerta 2.
+* `k`: Si $k\neq1$ y $k\neq2$ la funci√≥n regresa -1 ya que no es una puerta v√°lida.
 
-### FunciÛn del evaluador `move(int c)`
+### Funci√≥n del evaluador `move(int c)`
 
 C/C++ `void move(int c)`
 
-Con esta funciÛn le dices al evaluador que quieres mover al personaje al cuarto $c$, esto se realizar· siempre y cuando donde est· actualmente el personaje exista una puerta que conduzca al cuarto $c$, de lo contrario chocar·s con pared (guiÒo guiÒo) y perder·s el juego. °Ten cuidado con el move()!
+Con esta funci√≥n le dices al evaluador que quieres mover al personaje al cuarto $c$, esto se realizar√° siempre y cuando donde est√° actualmente el personaje exista una puerta que conduzca al cuarto $c$, de lo contrario chocar√°s con pared (gui√±o gui√±o) y perder√°s el juego. ¬°Ten cuidado con el move()!
 
-### Par·metros
+### Par√°metros
 * `c`: Un entero tal que $1 \leq c \leq N$.
 
-### FunciÛn del evaluador `regresa()`
+### Funci√≥n del evaluador `regresa()`
 
 C/C++ `void regresa()`
 
-Con est· funciÛn el personaje regresar· al cuarto de donde llegÛ al actual, siempre y cuando haya a donde regresar, de lo contrario el universo explotar· y perder·s el juego. °Ten cuidado con el regresa()!.
+Con esta funci√≥n el personaje regresar√° al cuarto de donde proven√≠a cuando lleg√≥ al actual, siempre y cuando haya a d√≥nde regresar, de lo contrario el universo explota y perder√°s el juego. ¬°Ten cuidado con el regresa()!.
 
 # Rutina de Ejemplo
 
-A continuaciÛn se muestran las primeras llamadas de una rutina de ejemplo.
+A continuaci√≥n se muestran las primeras llamadas de una rutina de ejemplo.
 
 || input
-FunciÛn llamada
+Funci√≥n llamada
 || output
 Valor devuelto
 || description
-DescripciÛn
+Descripci√≥n
 || input
 player1(1,6)
 || output
@@ -77,13 +77,13 @@ move(4)
 || output
 -
 || description
-El personaje se moviÛ al cuarto 4.
+El personaje se movi√≥ al cuarto 4.
 || input
 regresa()
 || output
 -
 || description
-El personaje regresÛ al cuarto 1.
+El personaje regres√≥ al cuarto 1.
 || input
 siguienteCuarto(2)
 || output
@@ -100,14 +100,14 @@ El personaje se mueve al cuarto 6.
 
 # Restricciones
 
-*$1 \leq N \leq 10^5*
+*$1 \leq N \leq 10^5$*
 
 # Consideraciones
 
-* Tu puntuaci·n ser· en base a la cantidad de llamadas que hagas a la funciÛn `void move(int c)` de la siguiente manera.
+* Tu puntuaci√≥n se definir√° en base a la cantidad de llamadas que hagas a la funci√≥n `void move(int c)` de la siguiente manera:
 
-* Tendr·s un puntaje de 100% del valor del caso, si haces a lo m·s $N$ llamadas.
-* Tendr·s el 50% del valor del caso su haces a lo mas $2N$ llamadas.
-* Si haces mas de $2N$ llamadas, no obtendr·s puntaje.
+* Tendr√°s un puntaje de 100% del valor del caso, si haces a lo m√°s $N$ llamadas.
+* Tendr√°s el 50% del valor del caso si haces a lo m√°s $2N$ llamadas.
+* Si haces mas de $2N$ llamadas, no obtendr√°s puntos.
 
 {{libinteractive:download}}
