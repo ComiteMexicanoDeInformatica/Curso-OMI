@@ -9,8 +9,6 @@ mientras sean mayores que el valor a acomodar y aún no se llegue al inicio de l
 
 3.-Una vez que el valor a acomodar encuentra un valor igual o menor, insertarlo en la posición que dejó el último valor mayor (el último valor que se movió).
 
-![Ejemplo](insertionExample.gif)
-
 Este proceso lo hacemos de $i=1$ a $n$ , podemos notar que después de hacerlo la primera vez,  los dos primeros elementos de la lista $n_0$ y $n_1$ se encuentran ordenados entre sí, al hacerlo de nuevo para $i=2$ se habrán ordenado entre sí los elementos de las $3$ primeras posiciones de la lista, por lo que al hacer el proceso $n-1$ veces, los $n$ números estarán ordenados (el arreglo totalmente ordenado). Como este proceso recorre $n$ veces el arreglo (de tamaño $n$) podemos notar que su complejidad es $Ω(n^2)$. 
 
 # Entrada y Salida
