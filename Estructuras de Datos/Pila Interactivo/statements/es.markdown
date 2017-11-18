@@ -4,7 +4,7 @@ Este problema se trata de implementar una pila.
 
 # Entrada y Salida
 
-**Este es un problema interactivo**, por lo que no tendrás que leer la entrada ni imprimir la salida, sino implementar en tu código la función `agrega(int n)` y `saca()`.
+**Este es un problema interactivo** por lo que no tendrás que leer la entrada ni imprimir la salida, sino implementar en tu código las funciones `agrega(int n)` y `saca()`.
 
 # Implementación
 
@@ -26,7 +26,7 @@ C/C++ `int saca();`
 
 ### Descripción
 
-Esta función debe regresar el objeto que este hasta arriba de la pila y sacarla de ella, es decir si en este momento la pila tiene los datos 3, 6, 9 y se manda a llamar `saca()` la funcion debera regresar 9 y la pila debe quedar solo con los datos 3, 6.
+Esta función debe regresar el objeto que esté hasta arriba de la pila y sacarla de ella, es decir si en este momento la pila tiene los datos 3, 6, 9 y se manda a llamar `saca()` la funcion debera regresar 9 y la pila debe quedar solo con los datos 3, 6.
 
 En caso de que la pila este vacía imprime $-1$.
 
@@ -39,7 +39,7 @@ agrega(3)
 || output
 -
 || description
-Al principio la pila esta vacia al llamar por primera vez la pila queda un solo elemanto [3]
+Al principio la pila esta vacía al llamar por primera vez la pila queda un solo elemanto [3]
 || input
 agrega(6)
 || output
