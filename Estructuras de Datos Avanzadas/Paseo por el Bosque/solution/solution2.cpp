@@ -2,7 +2,7 @@
 #include<stdio.h>
 using namespace std;
 
-int arbol[15000][5];
+int arbol[150000][5];
 int nods=0;
 void crea(int a,int b)
 {
