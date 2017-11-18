@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define MAX 100005
+#define MAX 1000005
 int izq[MAX],der[MAX],tree[MAX],nodos=0;
 int new_nodo(int n){
 	tree[nodos]=n;
