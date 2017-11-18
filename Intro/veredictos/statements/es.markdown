@@ -1,8 +1,10 @@
-Como mencionamos en el problema anterior, omegaUp evalúa de forma automática.
-
 Cuando tu programa funciona como esperamos, recibes los puntos de ese caso de prueba,
 pero cuando no, pueden haber ocurrido muchas cosas distintas. Cada error posible
-te va a dar un veredicto distinto. Hablemos de los más comunes. Probablemente esto
+te va a dar un veredicto distinto (Estatus). 
+
+![Estatus de envíos](estatus.png)
+
+Hablemos de los más comunes. Probablemente esto
 es mucha información en este momento, pero siempre puedes regresar a este curso si
 recibes un veredicto que no entiendes, así que no te preocupes por el momento.
 
@@ -22,6 +24,8 @@ recibes un veredicto que no entiendes, así que no te preocupes por el momento.
   zumbadores cuando no había en el piso.
 * **Error del juez (no reenviar)**: Algo salió mal con omegaUp, no con tu código. No hace falta reenviar tu
   código.
+
+Recuerda que después de enviar una solución, debes esperar 1 minuto para hacer un nuevo envío y la solución que cuenta  es la que te dió mas puntos.
 
 Con esta nueva información, avancemos al siguiente módulo para aprender a utilizar el
 veredicto de omegaUp para arreglar tus envíos.
