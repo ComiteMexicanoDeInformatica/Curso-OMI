@@ -16,14 +16,15 @@ if (el_numero % 3 == 0) {
 
 Vamos a proponernos un objetivo intermedio de \textit{coleccionar todas las posiciones triples de un arreglo}.
 
-(Por qué? Sería muy simple mostrar todas las posiciones triples mientras leemos la entrada. Sin embargo, el problema nos pide que empecemos mostrando el número de triples. No lo sabemos hasta que leemos toda la entrada. Así que necesitamos donde guardar el resultado obtenido. Además, es una técnica muy útil colocar los resultados previos en algún lugar utilizarlos posteriormente).
+(¿Por qué? Sería muy simple mostrar todas las posiciones triples mientras leemos la entrada. Sin embargo, el problema nos pide que empecemos mostrando el número de triples. No lo sabemos hasta que leemos toda la entrada. Así que necesitamos donde guardar el resultado obtenido. Además, es una técnica muy útil colocar los resultados previos en algún lugar utilizarlos posteriormente).
 
 Asumiremos que ya leimos todos los números en un arreglo:
 
+```
 for (int i = 0; i < nNumeros; i++) {
 	fscan("%d",&triples[i]);
 }
-
+```
 // FALTA: Contar y coleccionar los triples
 // FALTA: Escribir la salida
 

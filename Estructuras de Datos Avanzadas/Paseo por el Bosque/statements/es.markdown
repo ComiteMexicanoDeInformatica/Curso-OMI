@@ -1,12 +1,12 @@
 # Descripción
 
-Troyo ha estado paseando por el bosque, y está harto de no encontrar patrones en un árbol magistral. Ayúdale a encontrar algún patrón. Pero tu, que eres un gran programador, decidiste darle la orden de recorrer el árbol en *pre-orden*, *in-orden* y *post-orden*.
+Troyo ha estado paseando por el bosque, y está harto de no encontrar patrones en un árbol magistral. Ayúdale a encontrar algún patrón. Pero tú que eres un gran programador, decidiste darle la orden de recorrer el árbol en *pre-orden*, *in-orden* y *post-orden*.
 
 # Problema
-Dado un arreglo de $N$, deberás insertar cada uno de ellos en un árbol binario de búsqueda, según vienen en la entrada, e imprimir los recorridos del árbol en este orden; Preorden, Inorden y Postorden respectivamente. El primer elemento que leas será la raíz del árbol.
+Dado un arreglo de tamaño $N$, deberás insertar cada uno de ellos en un árbol binario de búsqueda según vienen en la entrada, e imprimir los recorridos del árbol en este orden; Preorden, Inorden y Postorden respectivamente. El primer elemento que leas será la raíz del árbol.
 
 # Entrada
-Un entero $N$ que indica el tamaño del arreglo, seguido de los $N$ elementos del arreglo.
+En la primera línea un entero $N$ que indica el tamaño del arreglo, en la siguiente línea están los $N$ elementos del arreglo.
 
 # Salida
 En la primera línea deberás imprimir el recorrido en pre-orden, en la segunda deberás imprimir el recorrido en inorden, y en la tercera y última el post-orden.
@@ -20,12 +20,10 @@ En la primera línea deberás imprimir el recorrido en pre-orden, en la segunda 
 1 4 3 2 6 8 7 5
 ||end
 
-#Nota
+# Nota
+ * Aquí las definiciones de los recorridos mencionados, y de qué es un árbol binario de búsqueda. [Recorridos de un árbol](https://es.wikipedia.org/wiki/Recorrido_de_%C3%A1rboles)
+ * Se te asegura que todos los valores de entrada son diferentes.
 
-* Aquí las definiciones de los recorridos mencionados, y de que es un árbol binario de búsqueda. [Recorridos de un árbol][1]
-[1]: https://es.wikipedia.org/wiki/Recorrido_de_%C3%A1rboles
-* Se te asegura que todos los valores de entrada son diferentes.
-  
-#Límites
+# Límites
 
-* $1 \leq N \leq 10^5$.
+ * $1 \leq N \leq 10^5$.

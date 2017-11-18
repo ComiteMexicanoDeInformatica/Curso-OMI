@@ -1,13 +1,13 @@
 #Explicación de structs y uso de la STL
 
-Una estructura de datos es un grupo de elementos de datos agrupados bajo un mismo nombre. Cada elemento de datos se conoce como miembro de datos y pueden ser de diferente tipo y diferente longitud. La forma de definir una estructura es haciendo uso de la palabra struct. La declaración de struct debe acabar con una llave. El tamaño de una estructura es al menos tan grande como la suma de los tamaños de sus miembros. La declaración de una estructura a continuación:
+Una estructura de datos es un grupo de elementos de datos agrupados bajo un mismo nombre. Cada elemento de datos se conoce como miembro de datos y pueden ser de diferente tipo y diferente longitud. La forma de definir una estructura es haciendo uso de la palabra `struct`. La declaración de `struct` debe acabar con una llave. El tamaño de una estructura es al menos tan grande como la suma de los tamaños de sus miembros. La declaración de una estructura a continuación:
 
-    Struct Type_nombre
+    Struct type_nombre
     {
-    Struct-declaration-list;
+        Struct-declaration-list;
     }
 
-El type_nombre es el nombre de la estructura que integra el grupo de elementos de datos que pueden ser de diferentes tipos de datos. Si desea acceder a los miembros de la estructura de datos, debe declararse la variable de estructura de la siguiente manera:
+El `type_nombre` es el nombre de la estructura que integra el grupo de elementos de datos que pueden ser de diferentes tipos de datos. Si desea acceder a los miembros de la estructura de datos, debe declararse la variable de estructura de la siguiente manera:
 
     Struct type_nombre variable;
 
@@ -15,7 +15,7 @@ Una vez definida la variable tipo struct, se accede a cada elemento de la estruc
 
     Variable_Struct_type.elemento_declaration_list
 
-Una estructura de datos es un objeto struct, las direcciones de sus elementos (y las direcciones de las unidades del campo de asignación de bits) aumentan en el orden en que se definieron los miembros.  Los punteros sirven para señalar objetos  y también para manipularlos. Un puntero puede apuntar a una estructura y puede acceder a sus campos, se puede convertir en un puntero a su primer miembro (o, si el miembro es un campo de bits, a su unidad de asignación). Del mismo modo, un puntero al primer miembro de una estructura se puede convertir en un puntero a la estructura adjunta. Puede haber un relleno sin nombre entre dos miembros de una estructura o después del último miembro, pero no antes del primer miembro. La sintaxis para la declaración de estructura es la siguiente:
+Una estructura de datos es un objeto struct, las direcciones de sus elementos (y las direcciones de las unidades del campo de asignación de bits) aumentan en el orden en que se definieron los miembros. Los punteros sirven para señalar objetos y también para manipularlos. Un puntero puede apuntar a una estructura y puede acceder a sus campos, se puede convertir en un puntero a su primer miembro (o, si el miembro es un campo de bits, a su unidad de asignación). Del mismo modo, un puntero al primer miembro de una estructura se puede convertir en un puntero a la estructura adjunta. Puede haber un relleno sin nombre entre dos miembros de una estructura o después del último miembro, pero no antes del primer miembro. La sintaxis para la declaración de estructura es la siguiente:
 
     <tipo_objeto > * <etiqueta_puntero> [= <iniciador>]
 

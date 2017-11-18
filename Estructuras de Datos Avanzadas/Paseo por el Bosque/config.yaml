@@ -9,7 +9,7 @@ params:
   title: Paseo por el Bosque
   source: Curso OMI
 
-  visibility: 0
+  visibility: 1
 
   languages: all
 
