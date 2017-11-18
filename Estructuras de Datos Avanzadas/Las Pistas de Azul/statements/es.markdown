@@ -1,4 +1,4 @@
-# Descripción
+﻿# Descripción
 
 Seguramente has escuchado hablar del programa *Las pistas de Blue*, donde un perro dejaba huellas para que su amo Steve encontrara ciertos objetos. *Azul* es el primo de *Blue*, que vive en México y él utiliza números para que su amo Esteban encuentre objetos. El mundo está dividido en un conjunto de casillas donde en cada una se encuentra un PAR de números (fila, columna) que indica la posición donde está la siguiente pista.
 
@@ -9,7 +9,7 @@ Dada un conjunto de pistas y las ubicaciones de estas, deberás decirle a Esteba
 
 # Entrada
 
-En la primera línea, un entero $1 \leq N \leq 50$, que denota las dimensiones de la casa (siempre será de $N$ filas por $N$ columnas). En la segunda línea dos enteros $0 \leqF, C \leq N-1$ separados por espacios que denotan las coordenadas de la casilla donde está el objeto. En cada una de las siguientes $N$ líneas, $2 * N$ números, donde cada par, indica la coordenada de la siguiente pista en cada casilla (ver ejemplo).
+En la primera línea, un entero $1 \leq N \leq 50$, que denota las dimensiones de la casa (siempre será de $N$ filas por $N$ columnas). En la segunda línea dos enteros $0 \leq F, C \leq N-1$ separados por espacios que denotan las coordenadas de la casilla donde está el objeto. En cada una de las siguientes $N$ líneas, $2 * N$ números, donde cada par, indica la coordenada de la siguiente pista en cada casilla (ver ejemplo).
 
 # Salida
 
