@@ -2,7 +2,7 @@
 
 Este problema se trata de ordenar un arreglo con el ordenamiento de cubetas. Un ordenamiento de cubetas hace lo siguiente:
 
-* Lees el numero $m_i$
+* Lees el número $m_i$
 * Luego en un arreglo sumas $1$ a la  posición $m_i$
 
 En este problema te daremos un arreglo $M$ de $N$ números, seguido te haremos $K$ preguntas, las preguntas consisten en decir cuantas veces se repite cierto número. Los números siempre estaran entre 0 y 100.

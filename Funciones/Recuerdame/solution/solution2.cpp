@@ -4,10 +4,10 @@ int k;
 
 void recuerdame(int num)
 {
-	k=num;
+  k=num;
 }
 
 bool soy(int x)
 {
-	return x==k;
+  return x==k;
 }
