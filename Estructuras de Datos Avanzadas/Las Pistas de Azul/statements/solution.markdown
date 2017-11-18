@@ -57,6 +57,7 @@ La matriz `pintadas[][]` es para marcar nuestro camino y asi no entrar a un cicl
 Luego toca simular el camino desde cada casilla $(i,j)$, por eso el segundo `for`; y el conteo de los caminos se llevará a cabo en la variable global `resp`.
 
 La primera condicional es para detectar si la casilla que queremos evaluar es la casilla a la que se desea llegar, ya que como indica el problema esté camino no deberá considerarse.
+
 De no ser esa casilla se llama a la función `simula(i,j);` para seguir las pistas. 
 
 ```
