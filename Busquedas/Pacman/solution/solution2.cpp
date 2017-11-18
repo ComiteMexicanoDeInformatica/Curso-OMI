@@ -1,6 +1,7 @@
 #include "Pacman.h"
 #include <queue>
 #include <utility>
+using namespace std;
 
 #define MAXN 1000000
 typedef pair<int, int> pii;
