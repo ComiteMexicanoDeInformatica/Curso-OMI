@@ -5,8 +5,6 @@ Pero esto está a punto de cambiar.
 Después de muchas noches de insomnio, se te ha ocurrido la mejor de las revanchas: ganarles en su propio juego.
 Vas a escribir un paquete para estadística tan completo que los vas a dejar sin trabajo.
 
-Con este paquete se va a poder predecír el clima, calcular la esperanza de vida de una persona, e inclusive será un jugador de poker imbatible.
-
 Decides que lo primero que tu progama debe hacer es análisis de datos básico,
 que consiste en leer un conjunto de datos (una lista de enteros) y va a calcular las siguientes medidas de dispersión:
 
