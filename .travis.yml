@@ -21,6 +21,7 @@ script:
 - pipenv run python3 deploy.py --onlychanges "../Estructuras de Datos/Conectate"
 - pipenv run python3 deploy.py --onlychanges "../Estructuras de Datos/Parentesis"
 - pipenv run python3 deploy.py --onlychanges "../Estructuras de Datos/Pila Interactivo"
+- pipenv run python3 deploy.py --onlychanges "../Estructuras de Datos/Rectangulo"
 - pipenv run python3 deploy.py --onlychanges "../Estructuras de Datos/Taquitos"
 - pipenv run python3 deploy.py --onlychanges "../Funciones/Funciones Matematicas"
 - pipenv run python3 deploy.py --onlychanges "../Funciones/Recuerdame"
