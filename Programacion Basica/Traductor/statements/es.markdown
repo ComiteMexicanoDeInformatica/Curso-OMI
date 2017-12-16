@@ -56,4 +56,4 @@ Como la palabra `4` no tiene una traducción a enteral, se imprime `C?`.
 # Límites
 
 * $0 \leq d, w \leq 1,000$
-* $-2,000,000,000 \leq n_{i}, e_{i} \leq 2,000,000,000$
+* 0 \leq n_{i}, e_{i} \leq 10,000$
