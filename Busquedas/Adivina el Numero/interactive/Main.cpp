@@ -16,8 +16,8 @@ long long pista(long long x){
     if(x > f) return -1;
     if(x < i) return 1;
     if(x==i && x==f) {
-            return 0;
             found = true;
+            return 0;
     }
 
     int r_menor = x - i;
