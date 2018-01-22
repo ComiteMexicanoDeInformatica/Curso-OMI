@@ -9,6 +9,9 @@ install:
 - pipenv install
 
 script:
+- pipenv run python3 deploy.py --onlychanges "../Intro/Objectivo"
+- pipenv run python3 deploy.py --onlychanges "../Intro/omegaUp"
+- pipenv run python3 deploy.py --onlychanges "../Intro/veredictos"
 - pipenv run python3 deploy.py --onlychanges "../Busquedas/Adivina el Numero"
 - pipenv run python3 deploy.py --onlychanges "../Busquedas/De Cuarto en Cuarto"
 - pipenv run python3 deploy.py --onlychanges "../Busquedas/Derrame de Petroleo"
@@ -51,6 +54,7 @@ script:
 - pipenv run python3 deploy.py --onlychanges "../Programacion Basica/Tak-Tak Tree"
 - pipenv run python3 deploy.py --onlychanges "../Programacion Basica/Traductor"
 - pipenv run python3 deploy.py --onlychanges "../Programacion Basica/Triples"
+- pipenv run python3 deploy.py --onlychanges "../Despedida"
 
 env:
   global:
