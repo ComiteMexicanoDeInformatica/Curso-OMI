@@ -5,7 +5,7 @@ admin-groups: [Workshop-2017]
 generate-output: false
 
 params:
-  title: Introducción a omegaUp
+  title: Veredictos de omegaUp
   source: Curso OMI
 
   visibility: 1
