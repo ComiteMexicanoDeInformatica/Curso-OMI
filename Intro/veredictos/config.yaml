@@ -1,7 +1,5 @@
 alias: COMI-Veredictos
 
-disabled: true
-
 admin-groups: [Workshop-2017]
 
 generate-output: false
