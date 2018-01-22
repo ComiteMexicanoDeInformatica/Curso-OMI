@@ -6,8 +6,8 @@ int main()
     int d, w, trad;
     cin >> d >> w;
 
-    int dicc1[1001];
-    int dicc2[1001];
+    int dicc1[10001];
+    int dicc2[10001];
 
     for (int i = 0; i < d; i++) {
         cin >> dicc1[i] >> dicc2[i];
