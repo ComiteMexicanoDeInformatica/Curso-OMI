@@ -60,7 +60,7 @@ La distribución de los problemas se presenta en la siguiente tabla:
 
 |Objetivo|Problema|
 |--------|--------|
-|Explicar el funcionamiento de omegaUp, cómo se envía un código y cómo se evalua. Debes entender el concepto de casos de pruebas    |    [    COMI-Intro-omegaUp    ](https://omegaup.com/arena/problem/COMI-Intro-omegaUp)|
+|Explicar el funcionamiento de omegaUp, cómo se envía un código y cómo se evalúa. Debes entender el concepto de casos de pruebas    |    [    COMI-Intro-omegaUp    ](https://omegaup.com/arena/problem/COMI-Intro-omegaUp)|
 |Explicar los distintos veredictos que muestra omegaup al subir una solución    |    [    COMI-Veredictos    ](https://omegaup.com/arena/problem/COMI-Veredictos)|
 |Explica cómo leer datos y escribir a  la salida estándar    |    [    COMI-a-b    ](https://omegaup.com/arena/problem/COMI-a-b)|
 |Cómo utilizar declaraciones condicionales, I/O    |    [    COMI-Sentados-o-parados    ](https://omegaup.com/arena/problem/COMI-Sentados-o-parados)|
@@ -72,7 +72,7 @@ La distribución de los problemas se presenta en la siguiente tabla:
 |Uso y manejo de cadenas (strings)    |    [    COMI-Palindromos    ](https://omegaup.com/arena/problem/COMI-Palindromos)|
 |Cómo utilizar ciclos y controles de flujo     |    [    COMI-Sequia    ](https://omegaup.com/arena/problem/COMI-Sequia)|
 |Cómo utilizar arreglos y hacer búsquedas directas en ellos    |    [    COMI-Excursion    ](https://omegaup.com/arena/problem/COMI-Excursion)|
-|Cómo utilizar arreglos y hacer busquedas lineales en ellos    |    [    COMI-Traductor    ](https://omegaup.com/arena/problem/COMI-Traductor)|
+|Cómo utilizar arreglos y hacer búsquedas lineales en ellos    |    [    COMI-Traductor    ](https://omegaup.com/arena/problem/COMI-Traductor)|
 |Cómo utilizar arreglos y almacenar resultados    |    [    COMI-Triples    ](https://omegaup.com/arena/problem/COMI-Triples)|
 |Uso de funciones de Math (max, min, abs)    |    [    COMI-Funciones-Matematicas    ](https://omegaup.com/arena/problem/COMI-Funciones-Matematicas)|
 |Cómo utilizar funciones con parámetros (sólo tipos básicos)    |    [    COMI-Petroleo    ](https://omegaup.com/arena/problem/COMI-Petroleo)|
@@ -102,7 +102,7 @@ La distribución de los problemas se presenta en la siguiente tabla:
 |Explicar Divisibilidad    |    [    COMI-Conjuntos    ](https://omegaup.com/arena/problem/COMI-Conjuntos)|
 |Explicar Congruencias    |    [    COMI-Congruencias    ](https://omegaup.com/arena/problem/COMI-Congruencias)|
 |Explicar el  Algoritmo de Euclides    |    [    COMI-Simplificar-Fracciones    ](https://omegaup.com/arena/problem/COMI-Simplificar-Fracciones)|
-|Utilizar Criba de Erastótenes para el cálculo de números primos    |    [    COMI-Criba    ](https://omegaup.com/arena/problem/COMI-Criba)|
+|Utilizar Criba de Eratóstenes para el cálculo de números primos    |    [    COMI-Criba    ](https://omegaup.com/arena/problem/COMI-Criba)|
 |Explicar Permutaciones    |    [    COMI-Permutaciones    ](https://omegaup.com/arena/problem/COMI-Permutaciones)|
 |Explicar Variaciones con repetición    |    [    COMI-Variaciones    ](https://omegaup.com/arena/problem/COMI-Variaciones)|
 |Explicar Combinaciones con coeficientes binomiales    |    [    COMI-Binomios    ](https://omegaup.com/arena/problem/COMI-Binomios)|
