@@ -7,14 +7,14 @@ debes escribir un programa que cumpla con los requisitos del problema y después
 tu código para que lo evaluemos.
 
 La evaluación es completamente automática, utilizando ***casos de prueba*** secretos, que utilizamos
-para deteriminar tu ***veredicto*** (la decisión de si tu programa es correcto o no). 
+para determinar tu ***veredicto*** (la decisión de si tu programa es correcto o no). 
 
 
 ![Evaluación en omegaUp](grading-es.png)
 
-En la mayoría de los problemas deberás leer algunos datos de entrada e imprimir las soluciones. La especificación de que datos leer y que datos imprimir vendrá descrita en la redacción del problema. Más adelante podrás ver varios ejemplos de como son y como resolver estos problemas.
+En la mayoría de los problemas deberás leer algunos datos de entrada e imprimir las soluciones. La especificación sobre qué datos leer y qué datos imprimir vendrá descrita en la redacción del problema. Más adelante podrás ver varios ejemplos de cómo son y cómo resolver estos problemas.
 
-Toda la entrada y salida debe ser estándar mediante teclado y consola (No es neceario abrir o leer archivos). Como este proceso es automático, debes tener cuidado de seguir con precisión las instrucciones del problema; evita imprimir cualquier otra cosa en pantalla  o leer del teclado cosas que no se te indiquen, por ejemplo, debes evitar mensajes como *“Introduce  un  valor”* (omegaUp te proporcionará la entrada tal y como viene descrita en el problema) de lo contrario tu solución será calificada como erronea.
+Toda la entrada y salida debe ser estándar mediante teclado y consola (no es necesario abrir o leer archivos). Como este proceso es automático, debes tener cuidado de seguir con precisión las instrucciones del problema; evita imprimir cualquier otra cosa en pantalla  o leer del teclado cosas que no se te indiquen, por ejemplo, debes evitar mensajes como *“Introduce  un  valor”* (omegaUp te proporcionará la entrada tal y como viene descrita en el problema) de lo contrario tu solución será calificada como errónea.
 
 Abajo de las instrucciones, especificaciones y casos de ejemplo de cada problema, verás la sección de **Envíos** y deberás pulsar la barra **Nuevo envío** para subir tu solución.
 
@@ -30,4 +30,4 @@ En el recuadro de envíos aparecerá el Estatus, Porcentaje (de casos resueltos)
 
 Como puedes hacer varios envíos de tu solución para cada problema, podras mejorar tu código y tu puntaje de acuerdo a la calificación y retroalimentación que omegaUp te dá en cada envío. 
 
-En los siguientes módulos aprenderás sobre los distintos veredictos posibles que puede recibir tu envíoa y a resolver problemas en omegaUp.
+En los siguientes módulos aprenderás sobre los distintos veredictos posibles que puede recibir tu envío y a resolver problemas en omegaUp.
