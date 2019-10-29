@@ -5,14 +5,7 @@ jobs:
     docker:
       - image: circleci/python:3.5
     steps:
-      - run: curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-      - run: sudo apt-get install nodejs
-      - run: git config --global core.quotePath false
       - checkout
-      - run: git submodule update --init
-      - run: git clone 'https://github.com/omegaup/karel.js.git'
-      - run: sudo chown -R circleci:circleci /usr/local/bin
-      - run: cd karel.js && sudo npm install -g --unsafe-perm
       - run:
           command: |
             cd utils
