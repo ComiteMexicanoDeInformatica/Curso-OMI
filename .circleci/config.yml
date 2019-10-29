@@ -1,0 +1,39 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/omi-2019
+    docker:
+      - image: circleci/python:3.5
+    steps:
+      - run: curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+      - run: sudo apt-get install nodejs
+      - run: git config --global core.quotePath false
+      - checkout
+      - run: git submodule update --init
+      - run: git clone 'https://github.com/omegaup/karel.js.git'
+      - run: sudo chown -R circleci:circleci /usr/local/bin
+      - run: cd karel.js && sudo npm install -g --unsafe-perm
+      - run:
+          command: |
+            cd utils
+            sudo pip install pipenv
+            pipenv install
+      - run: cd utils && pipenv run python3 generateouts.py
+      - run: cd utils && pipenv run python3 runtests.py
+      - add_ssh_keys
+      - deploy:
+          name: Deploy to public branch
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              cd utils
+              pipenv run python3 upload.py || exit 1
+              chmod +x publish && ./publish || exit 1
+            fi
+workflows:
+  version: 2
+  test-and-publish:
+    jobs:
+      - build:
+          filters:
+            branches:
+              ignore: public
