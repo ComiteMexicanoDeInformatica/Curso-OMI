@@ -1,8 +1,16 @@
 {
   "problems": [
     {
-      "title": "Dos por Uno",
-      "path": "selectivo-final/buyonegetonefree"
+      "title": "Intro - Objetivo",
+      "path": "Intro/Objetivo"
+    },
+    {
+      "title": "Intro - omegaUp",
+      "path": "Intro/omegaUp"
+    },
+    {
+      "title": "Intro - Veredictos",
+      "path": "Intro/Veredictos"
     }
   ]
 }
