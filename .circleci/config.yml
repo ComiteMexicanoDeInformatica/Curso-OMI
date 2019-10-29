@@ -1,7 +1,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/omi-2019
+    working_directory: ~/Curso-OMI
     docker:
       - image: circleci/python:3.5
     steps:
