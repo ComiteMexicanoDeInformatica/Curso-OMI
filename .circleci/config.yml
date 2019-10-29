@@ -6,6 +6,7 @@ jobs:
       - image: circleci/python:3.5
     steps:
       - checkout
+      - run: git submodule update --init
       - run:
           command: |
             cd utils
