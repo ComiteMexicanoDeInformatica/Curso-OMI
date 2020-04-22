@@ -11,6 +11,10 @@
     {
       "title": "Intro - Veredictos",
       "path": "Intro/Veredictos"
+    },
+    {
+      "title": "Ordenamiento y Complejidad - Insertion Sort Interactivo",
+      "path": "Ordenamiento y Complejidad/Insertion"
     }
   ]
 }

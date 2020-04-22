@@ -1,5 +1,5 @@
 #include <iostream>
-#include "ordenador.h" //esto también tiene que llamarse igual
+#include "InsertionSortInteractivo.h" //esto también tiene que llamarse igual
 
 /**
 
