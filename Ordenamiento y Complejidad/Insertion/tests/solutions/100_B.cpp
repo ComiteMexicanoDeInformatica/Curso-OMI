@@ -1,4 +1,4 @@
-#include "ordenador.h"
+#include "InsertionSortInteractivo.h"
 void ordenar(int n){
 	for(int i=0;i<n;i++){
 		int aux=guardar(i),aux2=i-1;

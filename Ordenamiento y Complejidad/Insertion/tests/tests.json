@@ -1,0 +1,15 @@
+{
+  "solutions": [
+    {
+      "filename": "solutions/100_A.cpp",
+      "verdict": "AC"
+    },
+    {
+      "filename": "solutions/100_B.cpp",
+      "verdict": "AC"
+    }
+  ],
+  "inputs": {
+    "filename": "dummy-validator.py"
+  }
+}
