@@ -4,16 +4,16 @@
 all: libinteractive/Main/Main libinteractive/ordenador/ordenador libinteractive/ordenador/ordenador_debug libinteractive/run
 
 libinteractive/Main/Main: Main.cpp libinteractive/Main/Main_entry.cpp libinteractive/Main/Main_entry.S
-	g++ -std=c++11 -o $@ $^ -lm -O2 -g -Wl,-e,__entry -Wno-unused-result -Ilibinteractive/Main
+	g++ -o $@ $^ -std=c++11 -lm -O2 -g -Wl,-e,__entry -Wno-unused-result -Ilibinteractive/Main
 
-libinteractive/ordenador/ordenador: ordenador.cpp libinteractive/ordenador/ordenador_entry.cpp
-	g++ -std=c++11 -o $@ $^ -lm -O2 -g  -Wno-unused-result -Ilibinteractive/ordenador
+libinteractive/ordenador/ordenador: InsertionSortInteractivo.cpp libinteractive/ordenador/ordenador_entry.cpp
+	g++ -o $@ $^ -std=c++11 -lm -O2 -g -Wno-unused-result -Ilibinteractive/ordenador
 
-libinteractive/ordenador/ordenador_debug: ordenador.cpp libinteractive/ordenador/ordenador_entry.cpp
-	g++ -std=c++11 -o $@ $^ -lm -g  -Wno-unused-result -Ilibinteractive/ordenador
+libinteractive/ordenador/ordenador_debug: InsertionSortInteractivo.cpp libinteractive/ordenador/ordenador_entry.cpp
+	g++ -o $@ $^ -std=c++11 -lm -g -Wno-unused-result -Ilibinteractive/ordenador
 
 libinteractive/run: libinteractive/run.c
-	gcc -std=c99 -o $@ $^ -O2 -D_XOPEN_SOURCE=600 -D_BSD_SOURCE -D_DARWIN_C_SOURCE -Wall
+	gcc -o $@ $^ -std=c99 -O2 -D_XOPEN_SOURCE=600 -D_DEFAULT_SOURCE -D_DARWIN_C_SOURCE -Wall
 
 .PHONY: clean
 clean:

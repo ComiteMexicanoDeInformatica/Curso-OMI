@@ -1,6 +1,6 @@
 #include <algorithm>
 #include <iostream>
-#include "ordenador.h"
+#include "InsertionSortInteractivo.h"
 #define MAX_OPERACIONES (399*400)/2
 
 using namespace std;
