@@ -2,13 +2,11 @@
   "solutions": [
     {
       "filename": "solutions/100_A.cpp",
-      "verdict": "AC",
-      "score": 100
+      "verdict": "AC"
     },
     {
       "filename": "solutions/100_B.cpp",
-      "verdict": "AC",
-      "score": 100
+      "verdict": "AC"
     }
   ],
   "inputs": {
