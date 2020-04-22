@@ -1,0 +1,32 @@
+{
+    "title": "Insertion Sort Interactivo",
+    "source": "Curso OMI (Orac)",
+
+    "limits": {
+        "TimeLimit": 2000,
+        "MemoryLimit": 32728,
+        "InputLimit": 134217728,
+        "OutputLimit": 134217728,
+        "ExtraWallTime": 3000,
+        "OverallWallTimeLimit": 60000
+    },
+
+    "validator": {
+        "name": "literal",
+        "limits": {
+            "TimeLimit": 1000
+        }
+    },
+
+    "interactive": {
+        "module_name": "InsertionSortInteractivo"
+    },
+
+    "misc": {
+        "alias": "COMI-Insertion",
+        "visibility": 1,
+        "languages": "all",
+        "email_clarifications": 0,
+        "admin-groups": ["workshop-2017"]
+    }
+}
