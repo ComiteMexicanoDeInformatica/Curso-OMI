@@ -3,8 +3,8 @@
     "source": "Curso OMI (Orac)",
 
     "limits": {
-        "TimeLimit": 2000,
-        "MemoryLimit": 32728,
+        "TimeLimit": 3000,
+        "MemoryLimit": 131072,
         "InputLimit": 134217728,
         "OutputLimit": 134217728,
         "ExtraWallTime": 3000,
