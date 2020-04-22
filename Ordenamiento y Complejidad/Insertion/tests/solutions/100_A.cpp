@@ -1,4 +1,4 @@
-#include "ordenador.h"
+#include "InsertionSortInteractivo.h"
 
 /**
 
