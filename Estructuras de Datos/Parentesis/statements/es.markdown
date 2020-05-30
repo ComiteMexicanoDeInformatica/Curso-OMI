@@ -1,4 +1,4 @@
-# Descripci�n
+# Descripción
 
 Mientras hacías tu tarea de matemáticas, recordaste la importancia de siempre abrir y cerrar los paréntesis.
 Te das cuenta que no le has dado la importancia a tus textos y ahora quieres corregirlos.
