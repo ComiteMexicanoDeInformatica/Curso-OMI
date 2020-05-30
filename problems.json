@@ -13,6 +13,10 @@
       "path": "Intro/Veredictos"
     },
     {
+      "title": "Estructuras de Datos - Paréntesis",
+      "path": "Estructuras de Datos/Parentesis"
+    },
+    {
       "title": "Ordenamiento y Complejidad - Insertion Sort Interactivo",
       "path": "Ordenamiento y Complejidad/Insertion"
     }

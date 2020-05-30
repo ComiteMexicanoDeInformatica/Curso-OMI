@@ -1,14 +1,15 @@
-# DescripciÛn
+# Descripci√≥n
 
-Mientras hacias tu tarea de matem·ticas, recordaste la importancia de siempre abrir y cerrar los parentesis, te das cuenta que no le has dado la importancia a tus textos y ahora quieres corregirlos.
+Mientras hac√≠as tu tarea de matem√°ticas, recordaste la importancia de siempre abrir y cerrar los par√©ntesis.
+Te das cuenta que no le has dado la importancia a tus textos y ahora quieres corregirlos.
 
 # Entrada
 
-Se te dar· una cadena de caracteres que solo contienen "$($" y "$)$".
+Se te dar√° una cadena de caracteres que solo contienen `(` y `)`.
 
 # Salida
 
-Muestra **SI** en caso de que todos los parÈntesis estÈn correctos, y de lo contrario muestra **NO**.
+Muestra **SI** en caso de que todos los par√©ntesis est√©n correctos, y de lo contrario muestra **NO**.
 
 # Ejemplos
 
@@ -26,8 +27,8 @@ NO
 SI
 ||end
 
-# LÌmites
+# L√≠mites
 
 $1 \leq n \leq 10^6$
 
-Donde $n$ es el n˙mero de caracteres en la cadena.
+Donde $n$ es el n√∫mero de caracteres en la cadena.
