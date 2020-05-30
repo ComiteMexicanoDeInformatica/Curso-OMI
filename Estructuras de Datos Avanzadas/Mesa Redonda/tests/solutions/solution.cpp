@@ -2,7 +2,7 @@
 #include <stdlib.h>    //malloc
 using namespace std;
 
-int  localiza(int x);
+void localiza(int x);
 void alta(int x);
 void baja();
 
