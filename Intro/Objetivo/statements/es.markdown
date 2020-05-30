@@ -80,6 +80,7 @@ La distribución de los problemas se presenta en la siguiente tabla:
 |Definir y explicar funciones recursivas     |    [    COMI-Recursion    ](https://omegaup.com/arena/problem/COMI-Recursion)|
 |Explicación y ejemplos de Complejidad    |    [    COMI-Complejidad    ](https://omegaup.com/arena/problem/COMI-Complejidad)|
 |Explicar y ejemplificar estructuras de datos básicas    |    [    COMI-Estructuras-de-datos    ](https://omegaup.com/arena/problem/COMI-Estructuras-de-datos)|
+|Tutorial de estructuras de datos básicas   |    [    COMI-Tutorial-ED     ](https://omegaup.com/arena/problem/COMI-Tutorial-ED)|
 |Explicar el concepto de Pilas y hacer una implementación     |    [    COMI-Conectate    ](https://omegaup.com/arena/problem/COMI-Conectate)|
 |Cómo utilizar una pila    |    [    COMI-Parentesis    ](https://omegaup.com/arena/problem/COMI-Parentesis)|
 |Implementar push y pop para una Pila    |    [    COMI-Pila-Interactivo    ](https://omegaup.com/arena/problem/COMI-Pila-Interactivo)|
