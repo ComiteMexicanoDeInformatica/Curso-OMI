@@ -8,7 +8,7 @@ void baja();
 
 typedef struct reg{
     reg *sig;
-    int  dat;       //n�mero de alumno
+    int  dat;       //número de alumno
 }reg;
 
 reg *p, *a, *aux;
