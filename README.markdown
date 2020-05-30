@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/ComiteMexicanoDeInformatica/Curso-OMI.svg?branch=master)](https://travis-ci.org/ComiteMexicanoDeInformatica/Curso-OMI)
-
 Objetivo
 ==========================================
 
