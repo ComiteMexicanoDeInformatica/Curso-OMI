@@ -8,7 +8,7 @@ void baja();
 
 typedef struct reg{
     reg *sig;
-    int  dat;       //número de alumno
+    int  dat;       //nï¿½mero de alumno
 }reg;
 
 reg *p, *a, *aux;
@@ -50,7 +50,7 @@ void alta(int x)
     }
 }
 
-int localiza(int x)
+void localiza(int x)
 {
     if(a->sig!=NULL){       //Solo queda Randy
         aux=a;
