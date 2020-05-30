@@ -6,7 +6,7 @@ Vamos a resolver el problema PARÉNTESIS, Para evitar errores y complicaciones e
 - Escribir como resultado un SI cuando la cadena de paréntesis este balanceada y un NO cuando este incorrecta. 
 
 
-CONSIDERACIONES PARA LA DEFINICIóN DE VARIABLES 
+CONSIDERACIONES PARA LA DEFINICIÓN DE VARIABLES 
  
 Antes de que podamos leer algo, necesitaremos variables empezando por una para almacenar la cadena de paréntesis. 
 
