@@ -2,10 +2,10 @@
 #define maxcola 100000
 using namespace std;
 /**Definir la estructura de datos cola_circular donde:
-    *maxcola es una constante que denota el n˙mero m·ximo de elementos que podr· almacenar la cola
-    *v es un vector est·tico de tamaÒo maxcola
-    *frente es un Ìndice que controla el lado por donde se extraen elementos
-    *final es un Ìndice que controla el lado por donde se insertan elementos a la cola
+    *maxcola es una constante que denota el n√∫mero m√°ximo de elementos que podr√° almacenar la cola
+    *v es un vector est√°tico de tama√±o maxcola
+    *frente es un √≠ndice que controla el lado por donde se extraen elementos
+    *final es un √≠ndice que controla el lado por donde se insertan elementos a la cola
     *cont es una variable entera que cuenta cuantos elementos existen en la cola.
 **/
 struct cola_circular
