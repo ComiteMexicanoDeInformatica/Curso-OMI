@@ -2,13 +2,13 @@
 #include <stdlib.h>    //malloc
 using namespace std;
 
-int  localiza(int x);
+void localiza(int x);
 void alta(int x);
 void baja();
 
 typedef struct reg{
     reg *sig;
-    int  dat;       //número de alumno
+    int  dat;       //nÃºmero de alumno
 }reg;
 
 reg *p, *a, *aux;
@@ -50,7 +50,7 @@ void alta(int x)
     }
 }
 
-int localiza(int x)
+void localiza(int x)
 {
     if(a->sig!=NULL){       //Solo queda Randy
         aux=a;
