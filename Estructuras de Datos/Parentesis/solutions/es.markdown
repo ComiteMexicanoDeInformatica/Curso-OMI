@@ -1,12 +1,12 @@
-PARÉNTESIS
+Vamos a resolver el problema PARÉNTESIS.
 
-Vamos a resolver el problema PARÉNTESIS, Para evitar errores y complicaciones en su implementación, es importante analizar la solución ¿Qué tiene que hacer nuestro programa? 
-- Leer una cadena, que es un conjunto de caracteres, en este caso conformada  por paréntesis abiertos "(" y cerrados ")" en distinto orden. 
+Para evitar errores y complicaciones en su implementación, es importante considerar la pregunta: ¿Qué tiene que hacer nuestro programa? 
+
+- Leer una cadena, que es un conjunto de caracteres, en este caso conformada por paréntesis abiertos `(` y cerrados `)` en distinto orden. 
 - Verificar si el conjunto de paréntesis esta balanceado o existe alguno(s) que se cierran incorrectamente o no se cierren. 
 - Escribir como resultado un SI cuando la cadena de paréntesis este balanceada y un NO cuando este incorrecta. 
 
-
-CONSIDERACIONES PARA LA DEFINICIÓN DE VARIABLES 
+# CONSIDERACIONES PARA LA DEFINICIÓN DE VARIABLES 
  
 Antes de que podamos leer algo, necesitaremos variables empezando por una para almacenar la cadena de paréntesis. 
 
@@ -22,8 +22,7 @@ También declararemos dos variables enteras que utilizaremos como índices, x pa
 
   int x=0,y=0;
 
-  
-VERIFICAR SI EL CONJUNTO DE PARÉNTESIS ESTA BALANCEADO 
+# VERIFICAR SI EL CONJUNTO DE PARÉNTESIS ESTA BALANCEADO 
 
 EL primer paso es leer el conjunto de parentesis en nuestro string
 
@@ -64,8 +63,7 @@ Solo nos falta incrementar la posición del índice x y cerrar el ciclo while
   x++;
  }
 
- 
-ESCRIBIR LA SALIDA 
+# ESCRIBIR LA SALIDA 
 
 Nótese que cuando salimos del ciclo con break, se le dió a x el valor de -1 para utilizarlo como una bandera para indicar que el ciclo terminó por que no están balanceados los paréntesis, de tal forma que 
 
