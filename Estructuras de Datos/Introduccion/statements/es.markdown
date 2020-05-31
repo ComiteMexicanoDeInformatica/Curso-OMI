@@ -2,7 +2,7 @@
 
 En lo que se refiere a la resolución de problemas, muchas veces para plantear el problema imaginamos
 objetos y acciones que se relacionan entre sí.
-Por ejemplo, un mesero tiene platos de colores apilados; de vez en cuando el que lava los platos coloca un plato recién lavado sobre la pila de platos; y en otras ocasiones el mesero toma el plato que está hasta arriba y sirve ahí la comida que ha sido preparada por el cocinero para posteriormente llevarla a su destino. Si sabemos de qué color es la pila inicial de platos, y en qué momentos el que lava los platos colocó platos sobre la pila(y claro, también sabemos el color de estos), y en qué momentos el mesero retiró el plato que se encontraba hasta arriba; podemos saber de qué color será el plato que le toca a cada cliente. Una manera de saberlo podría ser, hacer una representación dramática de los hechos; pero esto no es necesario, ya que también podríamos tomar un lápiz y un papel, y escribir una lista de los colores de los platos, posteriormente, ir escribiendo los colores de los platos que se pusieron en la pila al final de la lista, y borrar el ultimo color de la lista cada que un plato se retire.
+Por ejemplo, un mesero tiene platos de colores apilados; de vez en cuando el que lava los platos coloca un plato recién lavado sobre la pila de platos; y en otras ocasiones el mesero toma el plato que está hasta arriba y sirve ahí la comida que ha sido preparada por el cocinero para posteriormente llevarla a su destino. Si sabemos de qué color es la pila inicial de platos, y en qué momentos el que lava los platos colocó platos sobre la pila(y claro, también sabemos el color de estos), y en qué momentos el mesero retiró el plato que se encontraba hasta arriba; podemos saber de qué color será el plato que le toca a cada cliente. Una manera de saberlo podría ser, hacer una representación dramática de los hechos; pero esto no es necesario, ya que también podríamos tomar un lápiz y un papel, y escribir una lista de los colores de los platos, posteriormente, ir escribiendo los colores de los platos que se pusieron en la pila al final de la lista, y borrar el último color de la lista cada que un plato se retire.
 
 No se necesita ser un gran matemático para pensar en hacer eso, sin embargo, en el momento de querer implementar un programa en C que lo reproduzca, nos encontramos con que no tenemos ninguna lista donde se coloquen y se quiten cosas del final, tenemos solamente arreglos, variables, estructuras, apuntadores, etc. Claro que podemos simular esta lista con las herramientas que nos proporciona C, así pues, los objetos(como la pila de platos) ligados a operaciones(como poner un nuevo plato o quitar un plato) que modifican al objeto son llamados estructuras de datos.
 
@@ -48,13 +48,10 @@ _____________________________________
 
 Frecuentemente necesitamos tener almacenadas listas de datos en memoria, y hacer operaciones de agregar o quitar números pero no al final ni al principio, sino en medio. Para solucionar estos y otros problemas, existen las listas enlazadas, Las listas enlazadas son estructuras de datos compuestas por una sucesión de elementos llamados nodos; en la que cada nodo contiene un dato y la dirección del próximo nodo, en caso de que lo haya.
 
-La siguiente imagen muestra una representación gráfica de una lista enlazada.
-
-
 Una forma de definir un nodo es:
 
 * Una estructura vacía ó
-* Un elemento de información y un elace a otro nodo.
+* Un elemento de información y un enlace a otro nodo.
 
 La tarea de implementar una enlazada puede hacerse eficazmente con dos arreglos: uno para guardar los datos y otro para guardar los enlaces, además se requiere una variable que diga el tamaño de la lista. Lo único que falta definir es el elemento vacío, para ello, podemos asumir que el dato 0 es el elemento vacío, y en el momento que nos encontremos con él, sabemos que la lista ya habrá terminado. Insertar un nodo con un dato x en una lista requiere un tiempo lineal. Las funcionalidades que se programan para una lista enlazada son:
 
@@ -71,8 +68,3 @@ _____________________________________
 * size *[Consultar el número de elementos en la lista]*
 
 Existen otras estructuras de datos avanzadas como los árboles, colas de prioridad, BIT, etc, que abordaremos más adelante.
-
-
-
-
-
