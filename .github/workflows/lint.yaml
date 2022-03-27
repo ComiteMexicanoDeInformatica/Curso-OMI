@@ -1,0 +1,60 @@
+name: Lint
+
+on:
+  pull_request:
+
+env:
+  GIT_USERNAME: ${{ github.actor }}
+  GIT_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
+  FIX_COMMIT_MESSAGE: Fixed /hook_tools/lint.py lints
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+          submodules: true
+
+      - name: Pull container
+        run: ./utils/lint --only-pull-image
+
+      - name: Lint
+        run: |
+          git show ${{ github.event.pull_request.head.sha }} --format=%s --no-patch --no-color
+
+          if [[ "$(git show ${{ github.event.pull_request.head.sha }} --format=%s --no-patch --no-color)" == "${{ env.FIX_COMMIT_MESSAGE }}" ]]; then
+            # The previous commit is a lint-fix commit, do not attempt to
+            # re-run the linter.
+            ./utils/lint \
+              --command-name="utils/lint" \
+              --diagnostics-output=github \
+              validate --all
+            exit 0
+          fi
+
+          ./utils/lint \
+            --command-name="utils/lint" \
+            --diagnostics-output=github \
+            fix --all && exit 0 || true
+
+          # The linter was able to find some fixable things.
+
+          # Authenticate with GitHub.
+          git config --global user.name "${{ env.GIT_USERNAME }}"
+          git config --global user.email "${{ env.GIT_USERNAME }}@users.noreply.github.com"
+          cat <<- EOF > $HOME/.netrc
+          machine github.com
+          login ${{ env.GIT_USERNAME }}
+          password ${{ env.GIT_PASSWORD }}
+          machine api.github.com
+          login ${{ env.GIT_USERNAME }}
+          password ${{ env.GIT_PASSWORD }}
+          EOF
+          chmod 600 $HOME/.netrc
+
+          # Now push that commit to the source branch.
+          git commit -am "${{ env.FIX_COMMIT_MESSAGE }}"
+          git push origin HEAD:${{ github.head_ref }}
