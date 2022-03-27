@@ -1,26 +1,26 @@
-# Soluciï¿½n
+# Solución
 
-Nos dan un nï¿½mero $n$ y debemos imprimir una lista de $1$ a $n$ .Este problema es muy directo con lo que se pide, hacer un ciclo de $1$ a $n$ e imprimir cada iteraciï¿½n. Se puede resolver con un for o con un while.
+Nos dan un número $n$ y debemos imprimir una lista de $1$ a $n$ .Este problema es muy directo con lo que se pide, hacer un ciclo de $1$ a $n$ e imprimir cada iteración. Se puede resolver con un for o con un while.
 
-Soluciï¿½n con while:
-int a=0,b;
-
+Solución con while:
+    int a=0,b;
+    
     cin>>b;
-
+    
     while(a!=b)
     {
-
+    
     a++;
-
+    
     cout<<a<<endl;
-
+    
     }
 
-Soluciï¿½n con for:
+Solución con for:
 
 int n;
 
 cin>>n;
 
 for(int i=0; i<=n; i++)
-cout<<i<<endl;
+    cout<<i<<endl;

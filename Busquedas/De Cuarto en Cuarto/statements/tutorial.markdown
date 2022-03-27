@@ -1,14 +1,14 @@
 Este problema lo podemos resolver probando con todas las posibilidades.
 
-Supongamos que nos encontramos en el cuarto $x$. Si $x=y$, terminamos. De lo contrario, probamos con movernos a las dos habitaciones adyacentes en algï¿½n orden (en caso de ser posible) y proceder de manera recursiva.
+Supongamos que nos encontramos en el cuarto $x$. Si $x=y$, terminamos. De lo contrario, probamos con movernos a las dos habitaciones adyacentes en algún orden (en caso de ser posible) y proceder de manera recursiva.
 
-Si al avanzar hacia alguna de las habitaciones adyacentes, no logramos llegar a la casilla de la meta (con ayuda de una variable global podremos saber si logramos llegar en algï¿½n momento) entonces regresamos a la casilla $x$ desde la cual partimos.
+Si al avanzar hacia alguna de las habitaciones adyacentes, no logramos llegar a la casilla de la meta (con ayuda de una variable global podremos saber si logramos llegar en algún momento) entonces regresamos a la casilla $x$ desde la cual partimos. 
 
-Sin embargo, antes de movernos a los cuartos siguientes, hay que checar que no hayamos llegado a la soluciï¿½n con anterioridad, ya que de lo contrario, debemos ignorar cualquier movimiento.
+Sin embargo, antes de movernos a los cuartos siguientes, hay que checar que no hayamos llegado a la solución con anterioridad, ya que de lo contrario, debemos ignorar cualquier movimiento.
 
 De igual manera, si ya visitamos un cuarto con anterioridad, es claro que no queremos volver a visitarlo, por lo que necesitamos checarlo con ayuda de un arreglo auxiliar (global).
 
-Tomando en cuenta todas estas consideraciones, la soluciï¿½n deberï¿½a lucir mï¿½s o menos de la siguiente manera.
+Tomando en cuenta todas estas consideraciones, la solución debería lucir más o menos de la siguiente manera.
 
     bool use[100010], done = false;
 
@@ -36,7 +36,6 @@ Tomando en cuenta todas estas consideraciones, la soluciï¿½n deberï¿½a lucir mï¿
        }
 
        return;
-
 }
 
-Esta manera de resolver problemas de manera exhaustiva se le conoce como **Bï¿½squeda en Profundidad**.
+Esta manera de resolver problemas de manera exhaustiva se le conoce como **Búsqueda en Profundidad**.

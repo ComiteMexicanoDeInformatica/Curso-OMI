@@ -1,4 +1,4 @@
-Para resolver el problema, antes debemos introducir el concepto de combinaciones.
+Para resolver el problema, antes debemos introducir el concepto de combinaciones. 
 
 Recordemos, cuando vimos el tema de permutaciones, que si tenemos un conjunto de $n$ elementos y queremos contar el número de permutaciones con $r$ elementos de este conjunto, podemos calcularlo fácilmente usando la siguiente fórmula
 
@@ -53,7 +53,7 @@ Es por ello que a estos números se les conoce también como **coeficientes bino
         cout << "y^" << n;
     }
 
-Sin embargo, cabe mencionar que el problema con la fórmula anterior es que, al hacer uso de _factoriales_, el resultado podría desbordarse antes de tiempo. Es por ello que tenemos las siguientes identidades
+Sin embargo, cabe mencionar que el problema con la fórmula anterior es que, al hacer uso de *factoriales*, el resultado podría desbordarse antes de tiempo. Es por ello que tenemos las siguientes identidades
 
 $$\binom{n}{0}=\binom{n}{n}=1$$
 $$\binom{n}{r}=\binom{n-1}{r-1}+\binom{n-1}{r}$$

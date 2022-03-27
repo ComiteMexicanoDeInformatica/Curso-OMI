@@ -22,25 +22,23 @@ la función regresa `true` o `false` dependiendo de si `m` es igual al valor gua
 
 ### Descripción
 
-El evaluador buscará en tu código esta función y la llamará con el número $num$ como argumento. Tu implementación deberá guardar este número.
+El evaluador buscará en tu código esta función y la llamará con el número $num$  como argumento. Tu implementación deberá guardar este número.
 
 ### Parámetros
 
-- `num`, es el número que se debe recordar.
+* `num`, es el número que se debe recordar.
 
 ### Tu función C++
-
 `bool soy(int m)`
 
 ### Descripción
-
-El evaluador buscará en tu código esta función y la llamará con el número $n$ como argumento.
+El evaluador buscará en tu código esta función y la llamará con el número $n$  como argumento.
 
 Esta función debe regresar:
 
-- `true`: Si `m` es igual que `num` (el número guardado).
+* `true`: Si `m` es igual que `num` (el número guardado).
 
-- `false`: Si `m` es diferente que `num`.
+* `false`: Si `m` es diferente que `num`.
 
 # Rutina de Ejemplo
 
@@ -55,22 +53,22 @@ Descripción
 || input
 recuerdame(10)
 || output
-
-- || description
-  Se llama a tu procedimiento.
-  || input
-  soy(7)
-  || output
-  false
-  || description
-  El número por recordar es 10, que es diferente a 7.
-  || input
-  soy(10)
-  || output
-  true
-  || description
-  El número por recordar es 10, que es igual a 10.
-  || end
+-
+|| description
+Se llama a tu procedimiento.
+|| input
+soy(7)
+|| output
+false
+|| description
+El número por recordar es 10, que es diferente a 7.
+|| input
+soy(10)
+|| output
+true
+|| description
+El número por recordar es 10, que es igual a 10.
+|| end
 
 # Restricciones
 
@@ -78,6 +76,6 @@ $0 \leq num,m \leq 9$
 
 # Consideraciones
 
-- Tu puntuación será en base a la cantidad de casos resueltos.
+* Tu puntuación será en base a la cantidad de casos resueltos.
 
 {{libinteractive:download}}

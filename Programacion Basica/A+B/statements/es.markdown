@@ -6,7 +6,7 @@ La entrada consiste en dos enteros, $a$ y $b$, separados por un espacio en blanc
 
 #Salida
 
-Tu salida debe ser un solo número entero, la suma de $a$ y $b$.
+Tu salida debe ser un solo número entero, la suma de $a$ y $b$.  
 
 #Ejemplo
 ||input
@@ -25,4 +25,4 @@ Tu salida debe ser un solo número entero, la suma de $a$ y $b$.
 
 #Límites
 
-- $a$ y $b$ pueden ser enteros desde $1$ hasta $1,000$
+ * $a$ y $b$ pueden ser enteros desde $1$ hasta $1,000$

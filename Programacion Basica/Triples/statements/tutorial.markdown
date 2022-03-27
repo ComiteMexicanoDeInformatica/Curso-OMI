@@ -5,9 +5,9 @@ De acuerdo a la redacción, un \textit{triple} es cualquier múltiplo de 3. Desd
 Para futuras consideraciones, diremos que un número es múltiplo de 3 exactamente al haber un residuo de 0 cuando se divide entre 3. Aquí tenemos un pseudo-código
 
 if (el_numero % 3 == 0) {
-// el_numero es triple
+	// el_numero es triple
 } else {
-// el_numero no es triple
+	// el_numero no es triple
 }
 
 ... así detectaremmos correctamente si un número dado es triplo
@@ -25,11 +25,10 @@ for (int i = 0; i < nNumeros; i++) {
 	fscan("%d",&triples[i]);
 }
 ```
-
 // FALTA: Contar y coleccionar los triples
 // FALTA: Escribir la salida
 
-Vamos a declarar un nuevo arreglo `triples` que va a almacenar todos los números triples.
+Vamos a declarar un nuevo arreglo ``triples`` que va a almacenar todos los números triples.
 
 int triples[MAX_N];
 
@@ -38,9 +37,9 @@ No sabemos cuantos números triples habrá, asi es que estaremos previendo y cre
 Ahora nuestro código contará y coleccionará los triples, podrá verse como lo siguiente:
 
 for (int i = 0; i < nNumeros; i++) {
-if (triples[i] % 3 == 0) {
-// FALTA: el número es un triple, ahora qué?
-}
+	if (triples[i] % 3 == 0) {
+		// FALTA: el número es un triple, ahora qué?
+	}
 }
 
 Aquí viene la parte interesante. Como llenamos el arreglo de triples correctamente?
@@ -66,7 +65,7 @@ Qué valores han cambiado? Si queremos codificar explícitamente este cambio en 
 triples[6] = 18;
 nTriples = 7;
 
-Ahora vamos a pensar en que contexto del ciclo tratamos de escribir. Obviamente que **nTriples** se ha incrementado en 1**. **triples[6]** ahora almacena el lugar en el ciclo donde vamos (**i** en el ejemplo del código de arriba). Y, lo interesante, 6 es el valor inicial de **nTriples** De hecho el valor de **nTriples\*\* nos indicará cual es la siguiente posición del arreglo, que no se está utilizando.
+Ahora vamos a pensar en que contexto del ciclo tratamos de escribir. Obviamente que **nTriples** se ha incrementado en 1**. **triples[6]** ahora almacena el lugar en el ciclo donde vamos (**i** en el ejemplo del código de arriba). Y, lo interesante, 6 es el valor inicial de **nTriples** De hecho el valor de **nTriples** nos indicará cual es la siguiente posición del arreglo, que no se está utilizando.
 
 Así que mejor escribimos lo siguiente:
 
@@ -82,23 +81,23 @@ Podemos pornelo en un lugar vacío que tiene nuestro ciclo. Necesitamos asegurar
 
 nTriples = 0;
 for (int i = 0; i < nNumero; i++) {
-// nTriples = el número de triples que hemos encontrado
-// hay nTriples de valores en el arreglo triples[]
-if (list[i] % 3 == 0) {
-// el número es un triple
-triples[nTriples] = i;
-nTriples++;
-}
+	// nTriples = el número de triples que hemos encontrado
+	// hay nTriples de valores en el arreglo triples[]
+	if (list[i] % 3 == 0) {
+		// el número es un triple
+		triples[nTriples] = i;
+		nTriples++;
+	}
 }
 
 (En el código de arriba hay un error potencial. Pero dependerá de que estamos haciendo. Lo discutiremos más tarde)
 
 Observa que hay un comentario extra al inicio del ciclo " n Triples = al número de triples que hemos encontrado / hay nTriples de valores en el arreglo triples[]". Esto nos recuerda la forma en que el código se comportará y nos servirá para un par de propósitos
 
-- **Miestras estamos escribiendo** código, recordamos el uso para cada varialbe. Hay un lugar conveniente para poner el recordatorio
-- Si después **buscando errores**, escribiremos el código que se supone nos dará un buen punto inicial. Un error podría ser causado al escribir mal el código del ciclo (por ejemplo, si nTriples se incializa a 2). También podía ser causado por partes que le agregaremos y que se comporten de una manera diferente a lo que esperamos; o estados diferentes que se producen por el código.
+* **Miestras estamos escribiendo** código, recordamos el uso para cada varialbe. Hay un lugar conveniente para poner el recordatorio
+* Si después **buscando errores**, escribiremos el código que se supone nos dará un buen punto inicial. Un error podría ser causado al escribir mal el código del ciclo (por ejemplo, si nTriples se incializa a 2). También podía ser causado por partes que le agregaremos y que se comporten de una manera diferente a lo que esperamos; o estados diferentes que se producen por el código.
 
-- Si estamos **cambiando o reusando código**, debemos de fijarnos para que sirve cada variable así nos podemos dar cuenta de nuevo. (Aún y después de un día o dos es fácil olvidar pequeños detalles del código que hemos escrito).
+* Si estamos **cambiando o reusando código**, debemos de fijarnos para que sirve cada variable así nos podemos dar cuenta de nuevo. (Aún y después de un día o dos es fácil olvidar pequeños detalles del código que hemos escrito).
 
 Es buena práctica agregar este tipo de comentarios al código, explicando para que se utiliza una variable en determinado momento. No se debe sobreutilizar: solo agregar suficientes notas para ayudar a \textit{nuestro propio} entendimiento al leer el código que hemos escrito. Que no es mucho lo que debe de variar de persona a persona.
 
@@ -109,16 +108,16 @@ La redacción del problema nos da dos casos los cuales debemos de manejarlos de 
 El valor de nTriples es exactamente lo que necesitamos para de ahí partir.
 
 if (nTriples == 0) {
-printf("No hay nada!\n");
+	printf("No hay nada!\n");
 } else {
-printf("%d\n", nTriples);
-// HACER: Mostrar los triples separados por un espacio
+	printf("%d\n", nTriples);
+	// HACER: Mostrar los triples separados por un espacio
 }
 
 Para mostrar la lista de los números separados por un espacio, podríamos usar lo siguiente:
 
 for (int i = 0; i < nTriples; i++) {
-printf("%d ", triples[i]);
+	printf("%d ", triples[i]);
 }
 printf("\n");
 
@@ -136,14 +135,14 @@ Gracias al comando **if** sabemos que hay al menos un elemento en el arreglo tri
 
 printf("%d", triples[0]);
 for (int i = 1; i < nTriples; i++) {
-printf(" %d", triples[i]);
+	printf(" %d", triples[i]);
 }
 printf("\n");
 
 ...o esto:
 
 for (int i = 0; i < nTriples - 1; i++) {
-printf("%d ", triples[i]);
+	printf("%d ", triples[i]);
 }
 printf("%d\n", triples[nTriples - 1]);
 
@@ -154,12 +153,12 @@ Observe ambos códigos. Cómo mostraremos de manera correcta, la lista separados
 En vez de manejar el "caso especial" del primer o último elemento fuera del ciclo, podemos utilizar el comando **if** y hacer lo mismo dentro del ciclo:
 
 for (int i = 0; i < nTriples; i++) {
-printf("%d", triples[i]);
-if (i == nTriples - 1) {
-printf("\n");
-} else {
-printf(" ");
-}
+	printf("%d", triples[i]);
+	if (i == nTriples - 1) {
+		printf("\n");
+	} else {
+		printf(" ");
+	}
 }
 
 Juntando todo obtendremos una solución favorable para \textit{Triples}
@@ -181,7 +180,7 @@ El error-por-uno es un error muy común. (tal vez cuando una parte del programa 
 
 Para el programa que hemos escrito, hay al menos 3 formas de corregir el error:
 
-- \*\*Agregar el +1 que falta durante la salida
+* **Agregar el +1 que falta durante la salida
 
 printf("%d", triples[i]+1);
 
@@ -189,7 +188,7 @@ El resto del programa usa un contador basado en 0 cuando usamos los arreglos. Ag
 
 Si usamos éste método, deberíamos agregar un comentario a la declaración del arreglo triples, indicando que el número dentro del arreglo, usado como índice, será basados en posición 0.
 
-- \*\*Agregar el +1 perido cuando llenemos el arreglo triples
+* **Agregar el +1 perido cuando llenemos el arreglo triples
 
 triples[nTriples] = i + 1;
 
@@ -197,14 +196,14 @@ Así sólo usaremos el arreglo triples para mostrar, y pondremos el valor correc
 
 Si usamos ésta solución, deberíamos agregar un comentario cuando declaramos el arreglo triples, que indique que el índice está basado en posiciones 1.
 
-- **Cambiar el ciclo principal para que vaya de 1 a n**
+* **Cambiar el ciclo principal para que vaya de 1 a n**
 
 for (int i = 1; i <= nNumero; i++) {
-// nTriples = el número de triples que hemos encontrado
-// hay nTriples valores en el arreglo triples[]
-if (list[i-1] % 3 == 0) {
-...
-}
+	// nTriples = el número de triples que hemos encontrado
+	// hay nTriples valores en el arreglo triples[]
+	if (list[i-1] % 3 == 0) {
+		...
+	}
 }
 
 En vez de modificar i, deberíamos de asegurarnos que el valor correcto empuieza con ciclos entre 1 y n (en vez de 0 y n-1), inclusive.

@@ -36,10 +36,8 @@ Lo anterior, podríamos escribirlo de la siguiente manera:
 
 1. Leer la entrada
 2. Simular el crecimiento del árbol:
-
-- Mantener un registro de cuántas noches han pasado, y la cantidad de frutas que hay en el árbol
-- Detener la simulación cuando la cantidad de frutas sea repartible
-
+ - Mantener un registro de cuántas noches han pasado, y la cantidad de frutas que hay en el árbol
+ - Detener la simulación cuando la cantidad de frutas sea repartible
 3. Mostrar el resultado
 
 # Cuándo detener la simulación
@@ -184,7 +182,7 @@ while (nFrutas % 11 != 1) {
 }
 ```
 
-Leyendo en voz alta podría ser "asigna a número de noches en 0.
+Leyendo en voz alta podría ser "asigna a número de noches en 0. 
 Ahora, mientras las frutas no se pueden repetir, duplica el número de frutas y cuenta que pasó
 una noche más". Así funciona una simulación.
 

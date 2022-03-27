@@ -1,5 +1,5 @@
-Años de sequía han afectado duramente a Australia. Con los niveles de captación en su punto más bajo, decides comprar un tanque de agua de lluvia. Pronto llegan las lluvias de invierno y el tanque comienza a llenarse lentamente.
-Comienzas a preguntarse cuándo estará completamente lleno el tanque. Un amigo de la oficina meteorológica te compartió las predicciones de lluvia para los próximos días.
+Años de sequía han afectado duramente a Australia. Con los niveles de captación en su punto más bajo, decides comprar un tanque de agua de lluvia. Pronto llegan las lluvias de invierno y el tanque comienza a llenarse lentamente. 
+Comienzas a preguntarse cuándo estará completamente lleno el tanque. Un amigo de la oficina meteorológica te compartió las  predicciones de lluvia para los próximos días. 
 
 # Problema
 
@@ -15,7 +15,7 @@ Las $n$ líneas de entrada restantes describirán los niveles de precipitación 
 
 Tu salida debe consistir en un entero único: la cantidad de días hasta que se llene el tanque de agua de lluvia.
 
-||input
+||input 
 6 10
 2
 3
@@ -23,11 +23,11 @@ Tu salida debe consistir en un entero único: la cantidad de días hasta que se 
 2
 2
 4
-||output
+||output 
 4
 ||end
 
 # Límites
 
-- $1 \leq n \leq 1,000$
-- $0 \leq L_i \leq 1,000,000$
+ * $1 \leq n \leq 1,000$
+ * $0 \leq L_i \leq 1,000,000$

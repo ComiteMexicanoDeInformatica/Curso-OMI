@@ -1,14 +1,15 @@
-# Descripciï¿½n
+# Descripción
 
-Karel el constructor ha decidido hacer una nueva casa en la metropolï¿½ de karelotitlan. Como sabras Karel no es muy bueno con las figuras geometricas irregulares, asi que ha decidido construir su casa en la primer calle y que su casa sera el espacio rectangular mï¿½s grande que hay en la metropoli.
+Karel el constructor ha decidido hacer una nueva casa en la metropolí de karelotitlan. Como sabras Karel no es muy bueno con las figuras geometricas irregulares, asi que ha decidido construir su casa en la primer calle y  que su casa sera el espacio rectangular más grande que hay en la metropoli.
+
 
 # Entrada
 
-Se te dara $n$, el nï¿½mero de avenidas que hay en la metropoli, en la siguiente linea habra $n$ enteros indicando cuanto espacio libre hay en esa avenida (partiendo de la primera calle) .
+Se te dara $n$, el número de avenidas que hay en la metropoli, en la siguiente linea habra $n$ enteros indicando cuanto espacio libre hay en esa avenida (partiendo de la primera calle) .
+
 
 # Salida
-
-El ï¿½rea del rectï¿½ngulo mï¿½s grande
+El área del rectángulo más grande 
 
 # Ejemplo
 
@@ -19,12 +20,14 @@ El ï¿½rea del rectï¿½ngulo mï¿½s grande
 12
 
 ||end
-$Explicaciï¿½n$
+$Explicación$
 
 ![Karel](karel.png)
 
-# Lï¿½mites
+
+# Límites
 
 $1 \leq n \leq 10^6 $
 
 $1 \leq n_i \leq 10^6 $
+

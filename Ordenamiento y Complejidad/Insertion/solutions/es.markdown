@@ -4,18 +4,20 @@ Al igual que los últimos problemas **este es un problema interactivo**, por lo 
 
 El evaluador buscará en tu código esta función y la llamará con el número $n$ como parámetro. Tu implementación deberá llamar las funciones `guardar(int i)` la cual retorna y respalda el entero que se encuentra en esa posición, `obtener(int i)` la cual únicamente retorna el valor que se encuentra en esa posición, `desplazar(int i)` pasa a la posición $i+1$ el valor almacenado en la posición $i$) e `insertar(int i)` almacena en la posición indicada en el parámetro, el último valor respaldado por la función `guardar`.
 
-    #include "ordenador.h"
-    /**
-    int  guardar(int indice)
-    void obtener(int indice)
-    bool desplazar(int indice)
-    void insertar(int indice)
-    **/
-    void ordenar(int n)  //debe llamarse igual
+
+	#include "ordenador.h"
+	/**
+	int  guardar(int indice)
+	void obtener(int indice)
+	bool desplazar(int indice)
+	void insertar(int indice)
+	**/
+	void ordenar(int n)  //debe llamarse igual 
+
 
 # Ejemplo
 
-A continuación se muestran un ejemplo sencillo de como deben funcionar con el algoritmo de inserción para una lista de 3 elementos { 2, 3, 1 }
+A continuación se muestran un ejemplo sencillo de como deben funcionar con el algoritmo de inserción para una lista de 3 elementos { 2, 3, 1 } 
 
 || input
 
@@ -87,6 +89,8 @@ desplazar(1)
 
 || output
 
+
+
 || description
 Tu función solicita mover el 3 almacenado en la posición 1 a la posición 2
 || input
@@ -106,6 +110,8 @@ desplazar(0)
 
 || output
 
+
+
 || description
 Tu función solicita mover el 2 almacenado en la posición 0 a la posición 1
 || input
@@ -114,9 +120,12 @@ insertar(0)
 
 || output
 
+
+
 || description
 Tu función solicita almacenar el valor 1 en la posición 0 (el último valor almacenado por la función $guardar$) para quedar ordenada.
 || end
+
 
 Para ver animaciones de otros ejemplos que te permitan entender mejor este método, puedes consultar:
 
@@ -124,32 +133,37 @@ $ https://es.khanacademy.org/computing/computer-science/algorithms/insertion-sor
 
 $ https://es.wikipedia.org/wiki/Ordenamiento_por_inserci%C3%B3n $
 
+
 # Descripción de la solución
 
-Este problema se trata de ordenar un arreglo con el método de ordenamiento por inserción, a través de tu función `ordenar(n)` que deberá recorrer la lista.
+Este problema se trata de ordenar un arreglo con el método de ordenamiento por inserción, a través de tu función `ordenar(n)` que deberá recorrer la lista. 
 
-    void ordenar(int n) {   //debe llamarse igual
-    	int t, y;
-    	for(int x=0; x<n; x++) {
+	
+	void ordenar(int n) {   //debe llamarse igual
+		int t, y;
+		for(int x=0; x<n; x++) {
 
 Un ordenamiento por inserción hace lo siguiente:
 
 1.-Guardar el valor $n_i$ como valor a acomodar.
 
-    	t=guardar(x);
+		
+		t=guardar(x);
+
 
 2.-Para cada valor entre las posiciones $i-1$ y $0$, obtener el valor almacenado en cada posición y moverlo a la posición anterior
 mientras sean mayores que el valor a acomodar y aún no se llegue al inicio de la lista (posición $0$).
-y=x-1;
-while(y>=0 && obtener(y)>t) {
-desplazar(y);
-y--;
-}
+	
+		y=x-1;
+		while(y>=0 && obtener(y)>t) {
+			desplazar(y);
+			y--;
+		}
 
 3.-Una vez que el valor a acomodar encuentra un valor igual o menor, insertarlo en la posición que dejó el último valor mayor con que se comparó.
 
-    	insertar(y+1);
-    	}
-    }
+		insertar(y+1);
+		}
+	}
 
-Este proceso lo hacemos de $i=1$ a $n$ , podemos notar que después de hacerlo la primera vez, los dos primeros elementos de la lista $n_0$ y $n_1$ se encuentran ordenados entre sí, al hacerlo de nuevo para $i=2$ se habrán ordenado entre sí los elementos de las $3$ primeras posiciones de la lista, por lo que al hacer el proceso $n-1$ veces, los $n$ números estarán ordenados (el arreglo totalmente ordenado). Como este proceso recorre $n$ veces el arreglo (de tamaño $n$) podemos notar que su complejidad es $Ω(n^2)$.
+Este proceso lo hacemos de $i=1$ a $n$ , podemos notar que después de hacerlo la primera vez,  los dos primeros elementos de la lista $n_0$ y $n_1$ se encuentran ordenados entre sí, al hacerlo de nuevo para $i=2$ se habrán ordenado entre sí los elementos de las $3$ primeras posiciones de la lista, por lo que al hacer el proceso $n-1$ veces, los $n$ números estarán ordenados (el arreglo totalmente ordenado). Como este proceso recorre $n$ veces el arreglo (de tamaño $n$) podemos notar que su complejidad es $Ω(n^2)$. 

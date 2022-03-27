@@ -44,7 +44,6 @@ y $16$ permanecerán paradas.
 ||end
 
 # Límites
-
-- $0 \leq r \leq 10,000$
-- $0 \leq s \leq 10,000$
-- $0 \leq b \leq 1,000,000,000$
+* $0 \leq r \leq 10,000$
+* $0 \leq s \leq 10,000$
+* $0 \leq b \leq 1,000,000,000$

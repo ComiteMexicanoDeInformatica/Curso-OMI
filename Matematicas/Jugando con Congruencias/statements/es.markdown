@@ -20,10 +20,9 @@ Ahora bien, en este problema se te pide algo sencillo. Tomando en cuenta la simb
 
 # Entrada
 
-En la primera línea recibirás 2 números que representarán a $B$ y $C$ respectivamente. Como este es uno de nuestros primeros acercamientos a las congruencias, los valores de estas variables siempre serán positivas. En la segunda línea recibirás el valor de $N$, y en las siguientes $N$ líneas recibirás 1 número por línea (llamemos a estos números $n_i$).
+En la primera línea recibirás 2 números que representarán a $B$ y $C$ respectivamente. Como este es uno de nuestros primeros acercamientos a las congruencias, los valores de estas variables siempre serán positivas. En la segunda línea recibirás el valor de $N$, y en las siguientes $N$ líneas recibirás 1 número por línea (llamemos a estos números $n_i$). 
 
 # Salida
-
 Un entero que represente cuántos de los números $n_i$ pertenecen a la misma clase de equivalencia.
 
 # Ejemplo
@@ -42,8 +41,7 @@ Los únicos números que pertenecen a la misma rebanada de $26 mod 5=1$ son los 
 ||end
 
 # Límites
-
-- $2 \leq C \leq 100$
-- $1 \leq B \leq 1,000$
-- $1 \leq N \leq 1,000,000$
-- $1 \leq n_i \leq 10,000$
+* $2 \leq C \leq 100$
+* $1 \leq B \leq 1,000$
+* $1 \leq N \leq 1,000,000$
+* $1 \leq n_i \leq 10,000$

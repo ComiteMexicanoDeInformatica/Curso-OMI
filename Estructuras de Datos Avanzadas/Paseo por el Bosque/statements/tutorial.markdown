@@ -41,7 +41,7 @@
 		postorden(der[nodo]);
 		view(nodo);
 	}
-
+	
 	int main (){
 		ios_base::sync_with_stdio(0);
 		cin.tie(0);
@@ -64,7 +64,7 @@
 
 ```
 
-# Explicaciï¿½n
+# Explicación
 
 Para construir el arbol binario, cada nodo debe tener dos hijos, el izquierdo y el derecho, donde el izquierdo es menor que el padre y el derecho mayor.
 
@@ -72,7 +72,8 @@ Para construir el arbol binario, cada nodo debe tener dos hijos, el izquierdo y 
 int izq[MAX],der[MAX],tree[MAX],nodos=0;
 ```
 
-En la posiciï¿½n $i$ del arreglo $tree[MAX]$ almacenara el valor del i-esimo nodo, en $der[MAX]$ el hijo derecho del i-esimo nodo e $izq[MAX]$ el hijo izquierdo del i-esimo nodo.
+En la posición $i$ del arreglo $tree[MAX]$ almacenara el valor del i-esimo nodo, en $der[MAX]$ el hijo derecho del i-esimo nodo e $izq[MAX]$ el hijo izquierdo del i-esimo nodo.
+
 
 ```
 	int new_nodo(int n){
@@ -83,9 +84,9 @@ En la posiciï¿½n $i$ del arreglo $tree[MAX]$ almacenara el valor del i-esimo nod
 	}
 ```
 
-La funciï¿½n $int new_nodo(int n)$ recibe como parametro el valor que se quiere agregar al ï¿½rbol.
+La función $int new_nodo(int n)$ recibe como parametro el valor que se quiere agregar al árbol.
 
-Hay que tener en cuenta que $nodos$ es una variable global que estara representando la cantidad de nodos que hay en el ï¿½rbol. Asi los datos del $i-esimo$ y gracias a esto su almacenamiento sera en la casilla $i$ de los arreglos.
+Hay que tener en cuenta que $nodos$ es una variable global que estara representando la cantidad de nodos que hay en el árbol. Asi los datos del $i-esimo$ y gracias a esto su almacenamiento sera en la casilla $i$ de los arreglos.
 
 ```
 	void in(int nodo,int n){
@@ -100,8 +101,8 @@ Hay que tener en cuenta que $nodos$ es una variable global que estara representa
 	}
 ```
 
-Esta funcion $void in(int nodo,int n)$ su objetivo es insertar un nuevo nodo en la posiciï¿½n correcta, la variable $nodo$ representa el nodo del ï¿½rbol en donde esta actualmente la funciï¿½n por decirlo de alguna manera; y la variable $n$ es el valor que se desea insertar.
-Entonces la condicional decide si $n$ debe ir a la izquierda o a la derecha de $nodo$, y asi de una manera recursiva se encuentra la posiciï¿½n adecuada.
+Esta funcion $void in(int nodo,int n)$ su objetivo es insertar un nuevo nodo en la posición correcta, la variable $nodo$ representa el nodo del árbol en donde esta actualmente la función por decirlo de alguna manera; y la variable $n$ es el valor que se desea insertar.
+Entonces la condicional decide si $n$ debe ir a la izquierda o a la derecha de $nodo$, y asi de una manera recursiva se encuentra la posición adecuada.
 
 ```
 	void view(int nodo){
@@ -110,6 +111,7 @@ Entonces la condicional decide si $n$ debe ir a la izquierda o a la derecha de $
 ```
 
 La funcion $void view(int nodo)$ da como salida el valor de tree[nodo].
+
 
 ```
 	void preorden(int nodo){
@@ -120,7 +122,7 @@ La funcion $void view(int nodo)$ da como salida el valor de tree[nodo].
 	}
 ```
 
-La funciï¿½n $void preorden(int nodo)$ tiene como objetivo realizar el recorrido en preorden del arbol, teniendo como caso base si llegamos a un nodo no valido, si no, dar como salida el nodo padre y de manera recursiva ir al lado izquierdo y despues al derecho.
+La función $void preorden(int nodo)$ tiene como objetivo realizar el recorrido en preorden del arbol, teniendo como caso base si llegamos a un nodo no valido, si no, dar como salida el nodo padre y de manera recursiva ir al lado izquierdo y despues al derecho.
 
 ```
 	void inorden(int nodo){
@@ -151,8 +153,8 @@ La funcion $void postorden(int nodo)$ primero visita hijo izquierdo, luego hijo 
 	}
 ```
 
-Basicamente el condicional es para tener en cuenta cuando $i=0$ no existe ningun nodo en el ï¿½rbol, y este lo asigna como raiz.
-Si ya no es un ï¿½rbol vacio, es decir $i>0$ solo se agrega al ï¿½rbol respestando la regla del hijo izquierdo y el derecho.
+Basicamente el condicional es para tener en cuenta cuando $i=0$ no existe ningun nodo en el árbol, y este lo asigna como raiz.
+Si ya no es un árbol vacio, es decir $i>0$ solo se agrega al árbol respestando la regla del hijo izquierdo y el derecho.
 
 ```
 		preorden(raiz);

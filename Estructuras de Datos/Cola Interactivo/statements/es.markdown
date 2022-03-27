@@ -19,7 +19,7 @@ Tu implementación deberá agregar el entero $n$ a una cola.
 
 ### Parámetros
 
-- `n`: El entero a agregar a la cola.
+* `n`: El entero a agregar a la cola.
 
 ## Tu función `saca()`
 
@@ -48,45 +48,47 @@ Descripción
 || input
 agrega(15)
 || output
-
-- || description
-  Al principio la cola está vacia.
-  Con esta llamada, la cola ahora es `[15]`.
-  || input
-  agrega(6)
-  || output
-- || description
-  Se agrega el elemento y la cola queda `[15 , 6]`.
-  || input
-  agrega(9)
-  || output
-- || description
-  Se agrega el elemento y la cola queda `[15, 6, 9]`.
-  || input
-  saca()
-  || output
-  15
-  || description
-  Se devuelve `15` porque es el primer elemento y la cola queda `[6, 9]`.
-  || input
-  saca()
-  || output
-  6
-  || description
-  Se devuelve `6` porque es el primer elemento y la cola queda `[9]`.
-  || input
-  saca()
-  || output
-  9
-  || description
-  Se devuelve `9` porque es el primer elemento y la cola queda vacía `[]`.
-  || input
-  saca()
-  || output
-  -1
-  || description
-  Se devuelve `-1` porque ya no hay más elementos en la cola.
-  || end
+-
+|| description
+Al principio la cola está vacia.
+Con esta llamada, la cola ahora es `[15]`.
+|| input
+agrega(6)
+|| output
+-
+|| description
+Se agrega el elemento y la cola queda `[15 , 6]`.
+|| input
+agrega(9)
+|| output
+-
+|| description
+Se agrega el elemento y la cola queda `[15, 6, 9]`.
+|| input
+saca()
+|| output
+15
+|| description
+Se devuelve `15` porque es el primer elemento y la cola queda `[6, 9]`.
+|| input
+saca()
+|| output
+6
+|| description
+Se devuelve `6` porque es el primer elemento y la cola queda `[9]`.
+|| input
+saca()
+|| output
+9
+|| description
+Se devuelve `9` porque es el primer elemento y la cola queda vacía `[]`.
+|| input
+saca()
+|| output
+-1
+|| description
+Se devuelve `-1` porque ya no hay más elementos en la cola.
+|| end
 
 # Restricciones
 
@@ -94,7 +96,7 @@ $0 \leq n \leq 10,000$
 
 # Consideraciones
 
-- Se asegura que la cola nunca tendrá mas de $10,000$ elementos.
+* Se asegura que la cola nunca tendrá mas de $10,000$ elementos.
 
 # Evaluador
 
@@ -104,7 +106,7 @@ En la primera línea un entero, el número de operaciones a realizarse.
 
 Por cada operación, una línea con el siguiente formato:
 
-- `a x`: Agrega a `x` a la cola.
-- `s`: Saca el primer elemento de la cola.
+* `a x`: Agrega a `x` a la cola.
+* `s`: Saca el primer elemento de la cola.
 
 {{libinteractive:download}}

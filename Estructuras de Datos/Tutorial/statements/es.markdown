@@ -1,25 +1,26 @@
-# Nivel IPO
+Nivel IPO
+=========
 
-En este primer nivel (_Inputs, Process, Outputs_) ya deberías poder
+En este primer nivel (*Inputs, Process, Outputs*) ya deberías poder
 resolver retos interactivos elementales que reciben entradas, realizan
 procesos simples (fórmulas) y emiten salidas. Esto implica una buena
 comprensión de los siguientes conceptos:
 
-- Tipos de datos
-- Primitivos
-- Numéricos
-- Enteros
-- Reales
-- Alfanuméricos
-- Caracteres
-- Cadenas
-- Booleanos
-- Derivados
-- Arreglos
-- Referencias
-- Apuntadores
-- Expresiones (precedencia y asociatividad)
-- Sentencias
+* Tipos de datos
+* Primitivos
+* Numéricos
+* Enteros
+* Reales
+* Alfanuméricos
+* Caracteres
+* Cadenas
+* Booleanos
+* Derivados
+* Arreglos
+* Referencias
+* Apuntadores
+* Expresiones (precedencia y asociatividad)
+* Sentencias
 
 ### Enunciado 1
 
@@ -32,7 +33,7 @@ Puedes aprovechar la suma de Gauss para hacer un código elemental de
 tipo interactivo.
 $$1+2+3+\cdots+(n-1)+n=\sum_{i=1}^{n}i=\frac{n(n+1)}{2}$$
 
-Realizar este programa con un bucle _no_ es una buena idea:
+Realizar este programa con un bucle *no* es una buena idea:
 
       unsigned int sum = 0;
       for(unsigned int i = 1; i <= n; ++i) {
@@ -54,15 +55,16 @@ El bucle es más complejo (costoso) que la fómula directa.
       return 0;
     }
 
-# Nivel SCIB
+Nivel SCIB
+==========
 
 El segundo nivel abarca las estructuras de control de flujo, con las que
 aumenta mucho tu poder de cómputo.
 
-- Secuencia
-- Condición
-- Iteración
-- Bifurcación
+* Secuencia
+* Condición
+* Iteración
+* Bifurcación
 
 ### Enunciado 2
 
@@ -75,7 +77,7 @@ Las siguientes fórmulas producen ternas pitagóricas para cualesquier
 $m > n \in \mathbb{Z}^+$; la terna producida será primitiva si y sólo si
 $m$ y $n$ son primos relativos de distinta paridad.
 
-$$
+$$\begin{align}
 a & = & m^2 - n^2 \\\\
 b & = & 2mn \\\\
 c & = & m^2 + n^2 \\\\
@@ -338,10 +340,11 @@ estándar.
 
 La desviación estándar discreta se define como la raíz cuadrada de la
 varianza de la distribución de probabilidad discreta:
-$$
+
+$$s = \sqrt{\frac{\sum_{i=1}^{n}(x_i - \overline{x})^2}{n}}$$
 
 Un cálculo que sólo requiere una pasada (la suma, la media) puede
-hacerse _in situ_, por lo que ni siquiera requiere arreglos:
+hacerse *in situ*, por lo que ni siquiera requiere arreglos:
 
       int count = 0;
       double f, sum = 0;
@@ -353,7 +356,7 @@ hacerse _in situ_, por lo que ni siquiera requiere arreglos:
         cout << (sum / count) << '\n';
       }
 
-En cambio, la desviación estándar requiere _dos_ pasadas: una para
+En cambio, la desviación estándar requiere *dos* pasadas: una para
 calcular la media y otra para la acumulación de los cuadrados de las
 diferencias.
 
@@ -404,7 +407,8 @@ A partir de estas dos estructuras de datos elementales podemos modelar
 máquinas de proceso sumamente útiles para el desarrollo de nuestros
 algoritmos.
 
-## Vectores
+Vectores
+--------
 
 Un vector es una generalización del concepto de arreglo. No obstante,
 puede implementarse mediante un arreglo dinámico o mediante una lista
@@ -416,7 +420,7 @@ Por ejemplo, puedes reemplazar todas las ocurrencias de la palabra
 funcionamiento se vea alterado. Sin embargo, el proceso de lectura de
 los datos perderá eficiencia cada vez que el vector alcance el tope de
 su capacidad porque antes de poder insertar un nuevo dato será necesario
-un proceso de reubicación (_reallocating_).
+un proceso de reubicación (*reallocating*).
 
 Analiza el siguiente código en tu sistema local para que comprendas cómo
 va reubicándose el arreglo conforme va creciendo; en mi compilador se
@@ -493,7 +497,7 @@ tomarse en orden inverso.
 Nota el uso de los iteradores directos (`const_iterator`) y
 reversos(`const_reverse_iterator`) para recorrer eficientemente los
 vectores; no se usa el decremento sobre el iterador reverso porque
-prevalece la noción de _avanzar_ sobre el vector.
+prevalece la noción de *avanzar* sobre el vector.
 
 ### Solución 5
 
@@ -524,15 +528,16 @@ prevalece la noción de _avanzar_ sobre el vector.
       return 0;
     }
 
-## Pilas
+Pilas
+-----
 
-Una pila es una máquina de datos gobernada por el mecanismo LIFO (_last
-in, first out_). Los cuatro métodos relevantes para su gestión son:
+Una pila es una máquina de datos gobernada por el mecanismo LIFO (*last
+in, first out*). Los cuatro métodos relevantes para su gestión son:
 
-- `empty` (estado inicial)
-- `push` (inserción)
-- `pop` (extracción)
-- `top` (copia del valor superior)
+* `empty` (estado inicial)
+* `push` (inserción)
+* `pop` (extracción)
+* `top` (copia del valor superior)
 
 No se necesita acceso a ningún dato que no sea el tope.
 
@@ -576,21 +581,22 @@ en ella.
       return 0;
     }
 
-## Colas
+Colas
+-----
 
 Al contrario que las pilas, el mecanismo clave en las colas es FIFO
-(_first in, first out_). Pueden ser implementadas mediante listas
+(*first in, first out*). Pueden ser implementadas mediante listas
 ligadas simples o dobles (según el tipo de recorrido que se precise
 hacer sobre sus datos).
 
 Los métodos disponibles son los siguientes:
 
-- `empty` (estado inicial)
-- `size` (tamaño actual)
-- `front` (cabeza)
-- `back` (cola)
-- `push` (insersión por la cola)
-- `pop` (extracción por la cabeza)
+* `empty` (estado inicial)
+* `size` (tamaño actual)
+* `front` (cabeza)
+* `back` (cola)
+* `push` (insersión por la cola)
+* `pop` (extracción por la cabeza)
 
 El uso de arreglos dinámicos para construir colas eficientes queda
 restringido a los casos en que el total de datos encolados no rebase la
@@ -635,7 +641,8 @@ natural y acorde al proceso que se implementa.
       return 0;
     }
 
-## Árboles
+Árboles
+-------
 
 Un árbol es un tipo especial de lista doblemente enlazada que contiene
 enlaces hacia la izquierda (datos menores que el actual) o hacia la

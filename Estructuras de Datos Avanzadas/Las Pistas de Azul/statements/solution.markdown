@@ -48,7 +48,6 @@ int main()
     return 0;
 }
 ```
-
 # Explicación del codigo
 
 Las primeras líneas de codigo son para dar entrada de los datos, para esto, como cada casilla tendrá la fila y columna de la casilla a la que puede ir, se declararon las matrices `filas[55][55]` y `columnas[55][55]`, donde en la casilla `[i][j]` se guardará la información de esa casilla.
@@ -59,7 +58,7 @@ Luego toca simular el camino desde cada casilla $(i,j)$, por eso el segundo `for
 
 La primera condicional es para detectar si la casilla que queremos evaluar es la casilla a la que se desea llegar, ya que como indica el problema esté camino no deberá considerarse.
 
-De no ser esa casilla se llama a la función `simula(i,j);` para seguir las pistas.
+De no ser esa casilla se llama a la función `simula(i,j);` para seguir las pistas. 
 
 ```
 void simula(int f,int c)
@@ -78,21 +77,20 @@ void simula(int f,int c)
     return;
 }
 ```
-
 Como puede verse, nuestro caso base es cuando ya llegamos a la casilla destino, de cumplirse se aumenta en uno las respuestas y termina ese llamado.
 
 También en el caso de que la casilla este marcada o bien no haya a donde ir (es decir, que la casilla tenga la información $(-1,-1)$) solo se termina el llamado.
 
 Luego si no hay razón para terminar el llamado se puede seguir con el camino.
+ - Marcando.
+ - Haciendo el llamado recursivo con la pista o información de esa casilla.
+ - Desmarcando.
 
-- Marcando.
-- Haciendo el llamado recursivo con la pista o información de esa casilla.
-- Desmarcando.
+ #Optimización
 
-#Optimización
+ Como puedes ver al desmarcar deja libre las casillas para poder iniciar un nuevo camino a partir de ellas, puede hacerse la observación que si se empieza un camino desde la casilla $(i,j)$ y se puede llegar a la casilla destino pasando por $k$ casillas, puedes estar seguro que iniciando desde todas esas $k$ casillas llegaras a la casilla destino; analogamente si no se llega, desde ninguna de las $k$ casillas se podrá lograr. En estos casos ya no se desmarca y en caso de poderse en lugar de sumar 1 a la respuesta se sumaría $k$.
 
-Como puedes ver al desmarcar deja libre las casillas para poder iniciar un nuevo camino a partir de ellas, puede hacerse la observación que si se empieza un camino desde la casilla $(i,j)$ y se puede llegar a la casilla destino pasando por $k$ casillas, puedes estar seguro que iniciando desde todas esas $k$ casillas llegaras a la casilla destino; analogamente si no se llega, desde ninguna de las $k$ casillas se podrá lograr. En estos casos ya no se desmarca y en caso de poderse en lugar de sumar 1 a la respuesta se sumaría $k$.
+ También si en un camino de $q$ casillas te encuentras una casilla marcada, si desde la marcada se pudo, sumas $q$, de lo contrario con ninguna de las $q$ se puede llegar.
 
-También si en un camino de $q$ casillas te encuentras una casilla marcada, si desde la marcada se pudo, sumas $q$, de lo contrario con ninguna de las $q$ se puede llegar.
+ Con estas observaciones se puede generar un algoritmo con complejidad $O(N^2)$.
 
-Con estas observaciones se puede generar un algoritmo con complejidad $O(N^2)$.

@@ -1,19 +1,16 @@
-# Descripciï¿½n
+# Descripción
 
-La Criba de Eratï¿½stenes es un algoritmo que permite hallar todos los nï¿½meros primos menores que un nï¿½mero natural dado $n$. Se forma una tabla con todos los nï¿½meros naturales comprendidos entre $2$ y $n$, y se van tachando los nï¿½meros que no son primos de la siguiente manera: comenzando por el $2$, se tachan todos sus mï¿½ltiplos; comenzando de nuevo, cuando se encuentra un nï¿½mero entero que no ha sido tachado, ese nï¿½mero es declarado primo, y se procede a tachar todos sus mï¿½ltiplos, asï¿½ sucesivamente. El proceso termina cuando el cuadrado del mayor nï¿½mero confirmado como primo o no, lo es.
+La Criba de Eratóstenes es un algoritmo que permite hallar todos los números primos menores que un número natural dado $n$. Se forma una tabla con todos los números naturales comprendidos entre $2$ y $n$, y se van tachando los números que no son primos de la siguiente manera: comenzando por el $2$, se tachan todos sus múltiplos; comenzando de nuevo, cuando se encuentra un número entero que no ha sido tachado, ese número es declarado primo, y se procede a tachar todos sus múltiplos, así sucesivamente. El proceso termina cuando el cuadrado del mayor número confirmado como primo o no, lo es.
 
 ![Criba](criba.gif)
 
 # Entrada
-
-Se te darï¿½ $k$ , en las siguientes $k$ lï¿½neas se te darï¿½ una lista de $k$ nï¿½meros.
+Se te dará $k$ , en las siguientes $k$ líneas se te dará una lista de $k$ números. 
 
 # Salida
-
-Por cada nï¿½mero deberas imprimir **SI** si $k_i$ es primo y **NO** en caso contrario.
+Por cada número deberas imprimir **SI** si $k_i$ es primo y **NO** en caso contrario.
 
 # Ejemplo
-
 ||input
 1
 2
@@ -34,6 +31,6 @@ NO
 NO
 ||end
 
-# Lï¿½mites
+# Límites
 
 $1 \leq k,k_i \leq 10^6$

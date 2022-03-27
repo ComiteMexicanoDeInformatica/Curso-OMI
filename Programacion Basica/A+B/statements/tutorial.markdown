@@ -1,5 +1,5 @@
 Comparado con otros problemas dentro de este curso, este no es nada complicado, sino que
-es una buena oportunidad para práctica y comprender la entrada y salida de datos (Input/Output).
+es una buena oportunidad para práctica y comprender la entrada y salida de datos (Input/Output). 
 
 Antes de escribir cualquier línea de código, es nesesario saber lo que necesita el programa.
 
@@ -10,7 +10,7 @@ Antes de escribir cualquier línea de código, es nesesario saber lo que necesit
 # Estructura esqueleto del programa
 
 Comencemos con un programa que aún no hace nada.
-
+ 
 ```
 #include <iostream>
 
@@ -41,7 +41,7 @@ como programadores.
 # Declarar y leer variables
 
 Para escribir un programa, necesitamos usar variables. Éstas nos sirven para
-guardar información al solucionar un problema.
+guardar información al solucionar un problema. 
 
 Antes de usar variables, primero tenemos que avisarle a la computadora
 que las necesitamos. A esto le llamamos declarar las variables. Para eso,
@@ -67,20 +67,20 @@ std::cin >> a >> b;
 ```
 
 Juntemos lo que hemos hecho hasta ahora.
+ 
+	int main()
+	{
 
-    int main()
-    {
+		/* Declaracion de variables */
+		int a, b, total;
 
-    	/* Declaracion de variables */
-    	int a, b, total;
+		/* Leer variables */
+		std::cin >> a >> b;
 
-    	/* Leer variables */
-    	std::cin >> a >> b;
+		/*Calcular la respuesta*/
 
-    	/*Calcular la respuesta*/
-
-    	/*Mostramos la salida*/
-    }
+		/*Mostramos la salida*/
+	}
 
 # Calculando la respuesta
 
@@ -110,20 +110,20 @@ std::cout << total << std::endl;
 
 Juntando todo lo que aprendimos, nos quedamos con la siguiente solución.
 
-    #include <iostream>
+	#include <iostream>
 
-    int main()
-    {
+	int main()
+	{
 
-    	/* Declaramos las variables */
+		/* Declaramos las variables */
                 int a, b, total;
 
-    	/* Leer las variables */
+		/* Leer las variables */
                 std:cin >> a >> b;
 
-    	/* Calcular la respuesta */
+		/* Calcular la respuesta */
                 total = a + b;
 
-    	/* Mostramos la salida */
+		/* Mostramos la salida */
                 std::cout << total << std::endl;
-    }
+	}

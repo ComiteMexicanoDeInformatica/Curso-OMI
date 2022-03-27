@@ -35,4 +35,4 @@ No
 
 # Límites
 
-- Las palabras pueden tener de 1 a 1000 caracteres
+* Las palabras pueden tener de 1 a 1000 caracteres

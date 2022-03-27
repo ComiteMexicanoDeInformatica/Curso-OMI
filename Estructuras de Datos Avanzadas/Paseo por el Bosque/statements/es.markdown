@@ -1,6 +1,6 @@
 Troyo ha estado paseando por el bosque, y está harto de no encontrar patrones en un árbol magistral.
 Ayúdale a encontrar algún patrón. Pero tú que eres un gran programador,
-decidiste darle la orden de recorrer el árbol en _pre-orden_, _in-orden_ y _post-orden_.
+decidiste darle la orden de recorrer el árbol en *pre-orden*, *in-orden* y *post-orden*.
 
 # Problema
 
@@ -29,10 +29,9 @@ y en la tercera y última el post-orden.
 ||end
 
 # Nota
-
-- Aquí las definiciones de los recorridos mencionados, y de qué es un árbol binario de búsqueda. [Recorridos de un árbol](https://es.wikipedia.org/wiki/Recorrido_de_%C3%A1rboles)
-- Se te asegura que todos los valores de entrada son diferentes.
+ * Aquí las definiciones de los recorridos mencionados, y de qué es un árbol binario de búsqueda. [Recorridos de un árbol](https://es.wikipedia.org/wiki/Recorrido_de_%C3%A1rboles)
+ * Se te asegura que todos los valores de entrada son diferentes.
 
 # Límites
 
-- $1 \leq N \leq 10^5$.
+ * $1 \leq N \leq 10^5$.
