@@ -4,6 +4,6 @@
 // bool Intercambiar(int i, int j);
 
 int HacerParticion(int inicio, int fin) {
-    //FIXME
-    return 0;
+  // FIXME
+  return 0;
 }
