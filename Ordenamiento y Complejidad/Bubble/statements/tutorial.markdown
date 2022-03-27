@@ -1,4 +1,4 @@
-El metodo de ordenamiento por burbuja (por si aun no te imaginas como puede verse, es  asi)
+El metodo de ordenamiento por burbuja (por si aun no te imaginas como puede verse, es asi)
 ![Burbuja](burbuja.gif)
 
 entonces simplemente tenemos que hacer 2 ciclos anidados ( ya que el movimiento 1 nos garantiza que un número estara ordenado ( el ultimo)) lo haremos N veces
@@ -17,4 +17,4 @@ para asegurarnos que funciones.
     }
     }
     return 0;
-    } 
+    }

@@ -59,5 +59,5 @@ Después de dos noches, el número de frutos se ha cuadruplicado, convirtiéndos
 
 # Límites
 
-* $2 \leq f \leq 1,000,000$
-* Siempre se va a poder hacer la cosecha eventualmente.
+- $2 \leq f \leq 1,000,000$
+- Siempre se va a poder hacer la cosecha eventualmente.

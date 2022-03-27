@@ -11,7 +11,7 @@ El `type_nombre` es el nombre de la estructura que integra el grupo de elementos
 
     Struct type_nombre variable;
 
-Una vez definida la variable tipo struct, se accede a cada elemento de la estructura de datos de la siguiente manera: 
+Una vez definida la variable tipo struct, se accede a cada elemento de la estructura de datos de la siguiente manera:
 
     Variable_Struct_type.elemento_declaration_list
 
@@ -27,29 +27,27 @@ Opcionalmente puede incluirse un iniciador como en el ejemplo anterior:
 
     struct punto * ptr = &pto;
 
-
-
 #Uso de la STL
 
-La librería STL es una colección de algoritmos y contenedores como son: vectores, listas enlazadas, conjuntos ordenados que son de fácil uso y eficaces. La manipulación de los contenedores es a través de iteradores que permite recorrer fácilmente un contenedor sin tomar en cuenta la implementación de la misma. Un iterador y un const_iterator permiten recorrer un contenedor de inicio a fin. Un const_iterator contrariamente a un iterator, da acceso únicamente para la lectura del elemento deseado. Así, un recorrido con const_iterator no produce cambios en el contenedor. Es por ello que un contenedor “const” puede ser recorrido por const_iterators pero no por iterators.  
+La librería STL es una colección de algoritmos y contenedores como son: vectores, listas enlazadas, conjuntos ordenados que son de fácil uso y eficaces. La manipulación de los contenedores es a través de iteradores que permite recorrer fácilmente un contenedor sin tomar en cuenta la implementación de la misma. Un iterador y un const_iterator permiten recorrer un contenedor de inicio a fin. Un const_iterator contrariamente a un iterator, da acceso únicamente para la lectura del elemento deseado. Así, un recorrido con const_iterator no produce cambios en el contenedor. Es por ello que un contenedor “const” puede ser recorrido por const_iterators pero no por iterators.
 
 En importante tener conocimiento de las clases que manejan la librería STL y elegir la que se adapte a la necesidad de la solución. Sea x el tamaño de un contenedor. Un algoritmo es llamado lineal (en O(x)) si su tiempo de cálculo es proporcional a x. Igualmente, un algoritmo puede ser instantáneo (O(1)), logarítmico O(log(x)), polinomial O(x^k), exponencial O(e(x)).
 
     std::pair<T1,T2>
 
-Un par es una estructura de dos elementos contenidos de tipos diferentes eventualmente. Ciertos algoritmos de STL (por ejemplo find) devuelven pares (posición del elemento encontrado y un booleano que indica si ha sido encontrado). 
+Un par es una estructura de dos elementos contenidos de tipos diferentes eventualmente. Ciertos algoritmos de STL (por ejemplo find) devuelven pares (posición del elemento encontrado y un booleano que indica si ha sido encontrado).
 
     std::list<T,...>
 
-La clase list provee una estructura genérica de listas enlazadas pudiendo eventualmente contener repeticiones. 
+La clase list provee una estructura genérica de listas enlazadas pudiendo eventualmente contener repeticiones.
 
     std::vector<T,...>
 
-Todos los elementos contenidos en el vector están contiguos en memoria, lo que permite acceder inmediatamente a cualquier elemento. 
+Todos los elementos contenidos en el vector están contiguos en memoria, lo que permite acceder inmediatamente a cualquier elemento.
 
     std::set<T,...>
 
-La clase set permite describir un conjunto ordenado y sin repetición de elementos. Previamente es necesario parar este orden como parámetro template (un funtor). Por defecto, el funtor std::less (basado en el operador <) es utilizado, lo que equivale a tener un conjunto de elementos clasificados del más pequeño al más grande. Concretamente, basta con implementar el operador < de una clase o una estructura de tipo T para poder definir un std::set<T>. Además, el tipo T debe disponer de un constructor vacío T(). 
+La clase set permite describir un conjunto ordenado y sin repetición de elementos. Previamente es necesario parar este orden como parámetro template (un funtor). Por defecto, el funtor std::less (basado en el operador <) es utilizado, lo que equivale a tener un conjunto de elementos clasificados del más pequeño al más grande. Concretamente, basta con implementar el operador < de una clase o una estructura de tipo T para poder definir un std::set<T>. Además, el tipo T debe disponer de un constructor vacío T().
 
     std::map<K,T,...>
 

@@ -61,5 +61,5 @@ Ningún número en la lista es un múltiplo de 3.
 
 # Límites
 
-* $1 \leq n \leq 50,000$
-* $0 \leq l_{i} \leq 2,000,000,000$
+- $1 \leq n \leq 50,000$
+- $0 \leq l_{i} \leq 2,000,000,000$

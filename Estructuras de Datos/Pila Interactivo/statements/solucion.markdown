@@ -15,7 +15,7 @@
 			return -1;
 		} else {
 		return arreglo[--tam];
-		}	
+		}
 	}
 ```
 

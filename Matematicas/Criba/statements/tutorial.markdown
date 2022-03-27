@@ -4,7 +4,8 @@ La criba de Eratóstenes es un algoritmo que permite hallar todos los números p
 
 #Explicación
 
-----------
+---
+
 Teniendo ya tu arreglo ordenado como se muestra a continuación en un rango de 1 a 100:
 
 **Es importante que recuerdes que debes de dejar de repetir el proceso cuando llegas al número primo que es mayor a la raíz cuadrada del numero mayor del arreglo**

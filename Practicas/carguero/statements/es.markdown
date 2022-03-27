@@ -1,15 +1,18 @@
-# Descripción
-<p>La Organización Mundial Inter-oceánica (OMI) ha iniciado operaciones en el país y actualmente dispone de 4 cargueros para transportar mercancía de un puerto marítimo a otro. A pocos días de realizar su primer envío de **12 contenedores**, el jefe de operaciones ha decidido que **cada carguero lleve 3 contenedores**, y que éstos, de acuerdo con su peso, estén distribuidas uniformemente.
+# Descripciï¿½n
 
-![Carguero marítimo](carguero.jpg)
+<p>La Organizaciï¿½n Mundial Inter-oceï¿½nica (OMI) ha iniciado operaciones en el paï¿½s y actualmente dispone de 4 cargueros para transportar mercancï¿½a de un puerto marï¿½timo a otro. A pocos dï¿½as de realizar su primer envï¿½o de **12 contenedores**, el jefe de operaciones ha decidido que **cada carguero lleve 3 contenedores**, y que ï¿½stos, de acuerdo con su peso, estï¿½n distribuidas uniformemente.
+
+![Carguero marï¿½timo](carguero.jpg)
 
 <p>Ayuda al jefe de operaciones para minimizar $T - t$, donde $T$ es el peso del carguero con mayor carga y, $t$ el peso del carguero con la carga menor.
 
 # Entrada
-12 líneas que contienen la carga $c_i$, donde ($1 \leq c \leq 1,000,000$)
+
+12 lï¿½neas que contienen la carga $c_i$, donde ($1 \leq c \leq 1,000,000$)
 
 # Salida
-Una sola línea indicando el valor mínimo de $T - t$
+
+Una sola lï¿½nea indicando el valor mï¿½nimo de $T - t$
 
 # Ejemplo
 
@@ -29,5 +32,5 @@ Una sola línea indicando el valor mínimo de $T - t$
 ||output
 1
 ||description
-Una posible solución es dividir las cargas así: (3,8,9), (4,5,10), (2,6,11) y (1,7,12) dando como diferencia 1 a una posible carga menor de 19, del carguero 2; y a una mayor de 20, del carguero 4.
+Una posible soluciï¿½n es dividir las cargas asï¿½: (3,8,9), (4,5,10), (2,6,11) y (1,7,12) dando como diferencia 1 a una posible carga menor de 19, del carguero 2; y a una mayor de 20, del carguero 4.
 ||end

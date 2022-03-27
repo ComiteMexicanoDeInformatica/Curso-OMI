@@ -1,42 +1,42 @@
-# Descripción
+# Descripciï¿½n
 
-El algoritmo de **Quicksort**, como su nombre sugiere, sirve para ordenar los elementos de un arreglo, y es uno de los más conocidos dentro de los algoritmos de ordenamiento. Quicksort se basa en la idea de *Divide y Vencerás* y consta de los siguientes pasos:
+El algoritmo de **Quicksort**, como su nombre sugiere, sirve para ordenar los elementos de un arreglo, y es uno de los mï¿½s conocidos dentro de los algoritmos de ordenamiento. Quicksort se basa en la idea de _Divide y Vencerï¿½s_ y consta de los siguientes pasos:
 
- - Escoger un elemento del arreglo. A este elemento se le conoce como *pivote*.
- - Pre-ordenar los elementos del arreglo de tal manera que los elementos que queden a la izquierda del pivote sean menores a este y los que queden a la derecha sean mayores. Este es el paso más importante del algoritmo y se le conoce como *partición*.
- - Resolver (recursivamente) los dos sub-arreglos en los que quedó dividido el arreglo original.
+- Escoger un elemento del arreglo. A este elemento se le conoce como _pivote_.
+- Pre-ordenar los elementos del arreglo de tal manera que los elementos que queden a la izquierda del pivote sean menores a este y los que queden a la derecha sean mayores. Este es el paso mï¿½s importante del algoritmo y se le conoce como _particiï¿½n_.
+- Resolver (recursivamente) los dos sub-arreglos en los que quedï¿½ dividido el arreglo original.
 
 ![](quicksort.jpg)
 
-Existen distintas maneras de escoger el pivote, algunas de las cuales son: 
+Existen distintas maneras de escoger el pivote, algunas de las cuales son:
 
- - Escoger el primer o último elemento del arreglo. 
- - Escoger la mediana del arreglo. 
- - Escoger un elemento al azar.
+- Escoger el primer o ï¿½ltimo elemento del arreglo.
+- Escoger la mediana del arreglo.
+- Escoger un elemento al azar.
 
-Sin embargo, si bien el Quicksort puede llegar a ser un algoritmo bastante rápido, con una complejidad media de $O(n\;\mathrm{log}\;n)$, también puede llegar a ser tan lento como *Burbuja* con una complejidad de $O(n^2)$. 
+Sin embargo, si bien el Quicksort puede llegar a ser un algoritmo bastante rï¿½pido, con una complejidad media de $O(n\;\mathrm{log}\;n)$, tambiï¿½n puede llegar a ser tan lento como _Burbuja_ con una complejidad de $O(n^2)$.
 
-Lo que hace que Quicksort pueda ser más rápido o no, es la elección del pivote. Lo ideal sería que, al escoger el pivote y hacer la partición, el arreglo quede dividido en dos sub-arreglos de igual tamaño. Sin embargo, si el pivote resultase ser, por ejemplo, el primer elemento del arreglo, la partición fallaría, obteniendo solo un sub-arreglo.
+Lo que hace que Quicksort pueda ser mï¿½s rï¿½pido o no, es la elecciï¿½n del pivote. Lo ideal serï¿½a que, al escoger el pivote y hacer la particiï¿½n, el arreglo quede dividido en dos sub-arreglos de igual tamaï¿½o. Sin embargo, si el pivote resultase ser, por ejemplo, el primer elemento del arreglo, la particiï¿½n fallarï¿½a, obteniendo solo un sub-arreglo.
 
 # Entrada y Salida
 
-**Este es un problema interactivo**, por lo que no tendrás que leer la entrada ni imprimir la salida, sino implementar la función `HacerParticion`.
+**Este es un problema interactivo**, por lo que no tendrï¿½s que leer la entrada ni imprimir la salida, sino implementar la funciï¿½n `HacerParticion`.
 
-# Implementación
+# Implementaciï¿½n
 
-**Tu función** `HacerParticion`
+**Tu funciï¿½n** `HacerParticion`
 
 C/C++ `int HacerParticion(int inicio, int fin);`
 
 Pascal `function HacerParticion(var inicio, fin: LongInt): LongInt;`
 
-**Descripción**
+**Descripciï¿½n**
 
-Esta función hará la partición del arreglo y deberá retornar la posición final del pivote. Tu función será llamada para cada partición que hagas en el arreglo.
+Esta funciï¿½n harï¿½ la particiï¿½n del arreglo y deberï¿½ retornar la posiciï¿½n final del pivote. Tu funciï¿½n serï¿½ llamada para cada particiï¿½n que hagas en el arreglo.
 
-**Parámetros**
+**Parï¿½metros**
 
- - `inicio`, `fin`: El rango del arreglo sobre el cual se hará la partición. La posición `fin` no forma parte del rango. 
+- `inicio`, `fin`: El rango del arreglo sobre el cual se harï¿½ la particiï¿½n. La posiciï¿½n `fin` no forma parte del rango.
 
 **Funciones del evaluador** `ElementoEnPosicion()`, `Intercambiar()`
 
@@ -44,40 +44,40 @@ C/C++ `int ElementoEnPosicion(int i);`
 
 Pascal `function ElementoEnPosicion(var i: LongInt): LongInt;`
 
-**Descripción**
+**Descripciï¿½n**
 
-Esta función retornará el elemento en la posición $i$ del arreglo o -1 en caso de que el índice dado esté fuera del rango. Los elementos del arreglo son siempre enteros no negativos.
+Esta funciï¿½n retornarï¿½ el elemento en la posiciï¿½n $i$ del arreglo o -1 en caso de que el ï¿½ndice dado estï¿½ fuera del rango. Los elementos del arreglo son siempre enteros no negativos.
 
-**Parámetros**
+**Parï¿½metros**
 
- - `i`: Un entero indicando el índice del elemento en el arreglo.
+- `i`: Un entero indicando el ï¿½ndice del elemento en el arreglo.
 
 C/C++ `int Intercambiar(int i, int j);`
 
 Pascal `function Intercambiar(var i, j: LongInt): LongInt;`
 
-**Descripción**
+**Descripciï¿½n**
 
-Esta función intercambiará los elementos del arreglo en las posiciones $i$ y $j$. Retorna 1 si fue posible intercambiarlos y 0 en caso contrario.
+Esta funciï¿½n intercambiarï¿½ los elementos del arreglo en las posiciones $i$ y $j$. Retorna 1 si fue posible intercambiarlos y 0 en caso contrario.
 
-**Parámetros**
+**Parï¿½metros**
 
- - `i`, `j`: Dos enteros indicando los índices de los elementos a intercambiar en el arreglo.
+- `i`, `j`: Dos enteros indicando los ï¿½ndices de los elementos a intercambiar en el arreglo.
 
 # Rutina de Ejemplo
 
 ||input
-Función llamada
+Funciï¿½n llamada
 ||output
 Valor devuelto
 ||description
-Descripción
+Descripciï¿½n
 ||input
 HacerPariticion(0, 4);
 ||output
 1
 ||description
-En este ejemplo, el arreglo es $3, 1, 5, 4$. El pivote escogido es $3$ y después de hacer la partición queda en la posición 1 (véase las siguientes llamadas).
+En este ejemplo, el arreglo es $3, 1, 5, 4$. El pivote escogido es $3$ y despuï¿½s de hacer la particiï¿½n queda en la posiciï¿½n 1 (vï¿½ase las siguientes llamadas).
 ||input
 ElementoEnPosicion(0)
 ||output
@@ -100,7 +100,7 @@ HacerParticion(2, 4)
 ||output
 1
 ||description
-En esta función el evaluador manda a llamar el sub-arreglo $5, 4$. El pivote escogido en este caso es el $5$.
+En esta funciï¿½n el evaluador manda a llamar el sub-arreglo $5, 4$. El pivote escogido en este caso es el $5$.
 ||input
 ElementoEnPosicion(2)
 ||output
@@ -119,13 +119,13 @@ Intercambiar(2, 3)
 Intercambiamos los elementos $5$ y $4$, por lo que el arreglo queda como $4$ y $5$.
 ||end
 
-# Límites
+# Lï¿½mites
 
-* $0 < n \leq 5,000$
+- $0 < n \leq 5,000$
 
 # Consideraciones
 
-* El arreglo está indexeado en 0.
-* Los elementos del arreglo serán siempre enteros no-negativos.
+- El arreglo estï¿½ indexeado en 0.
+- Los elementos del arreglo serï¿½n siempre enteros no-negativos.
 
 {{libinteractive:download}}

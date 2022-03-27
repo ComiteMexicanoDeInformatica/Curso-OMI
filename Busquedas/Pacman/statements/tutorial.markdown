@@ -42,7 +42,7 @@ La búsqueda se realiza mientras la cola no está vacía, puesto que si en algú
             pasos[norte] = pasos[actual] + 1;
             flag[norte] = true;
         }
-        // De forma análoga en las otras direcciones        
+        // De forma análoga en las otras direcciones
         busca.pop();
     }
 

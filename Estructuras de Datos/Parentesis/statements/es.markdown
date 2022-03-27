@@ -20,7 +20,7 @@ SI
 ||input
 )()()()
 ||output
-NO 
+NO
 ||input
 (()())
 ||output

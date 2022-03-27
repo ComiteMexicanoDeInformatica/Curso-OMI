@@ -1,6 +1,6 @@
 ##Felicidades##
 
-El Comité Mexicano de Informática te felicita por tu desempeño y trabajo realizado durante estos días ya que has concluido de forma mas que sobresaliente este curso diseñado para ti. 
+El Comité Mexicano de Informática te felicita por tu desempeño y trabajo realizado durante estos días ya que has concluido de forma mas que sobresaliente este curso diseñado para ti.
 
 #Antecedentes#
 **¿Qué es la OMI?**
@@ -11,7 +11,6 @@ La OMI es un concurso en el que sobre todo se requiere tener facilidad, habilida
 
 #¿Qué sigue?#
 Es definitivo que debes de seguir preparándote, para esto te recomendamos probar tu habilidad en los siguientes concursos:
-
 
 Examen OMI Público del 2015:
 
@@ -33,4 +32,4 @@ https://omegaup.com/arena/OMI2017DIA1PUBLICO
 
 http://www.olimpiadadeinformatica.org.mx/OMI/OMI/Delegaciones.aspx
 
-Gracias. 
+Gracias.

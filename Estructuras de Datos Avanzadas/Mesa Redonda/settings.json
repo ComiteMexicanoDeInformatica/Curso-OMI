@@ -1,28 +1,28 @@
 {
-    "title": "Mesa Redonda",
-    "source": "Curso OMI",
+  "title": "Mesa Redonda",
+  "source": "Curso OMI",
 
+  "limits": {
+    "TimeLimit": 1000,
+    "MemoryLimit": 134217728,
+    "InputLimit": 134217728,
+    "OutputLimit": 134217728,
+    "ExtraWallTime": 3000,
+    "OverallWallTimeLimit": 60000
+  },
+
+  "validator": {
+    "name": "token-caseless",
     "limits": {
-        "TimeLimit": 1000,
-        "MemoryLimit": 134217728,
-        "InputLimit": 134217728,
-        "OutputLimit": 134217728,
-        "ExtraWallTime": 3000,
-        "OverallWallTimeLimit": 60000
-    },
-
-    "validator": {
-        "name": "token-caseless",
-        "limits": {
-            "TimeLimit": 1000
-        }
-    },
-
-    "misc": {
-        "alias": "COMI-Mesa-redonda",
-        "visibility": 1,
-        "languages": "all",
-        "email_clarifications": 0,
-        "admin-groups": ["workshop-2017"]
+      "TimeLimit": 1000
     }
+  },
+
+  "misc": {
+    "alias": "COMI-Mesa-redonda",
+    "visibility": 1,
+    "languages": "all",
+    "email_clarifications": 0,
+    "admin-groups": ["workshop-2017"]
+  }
 }

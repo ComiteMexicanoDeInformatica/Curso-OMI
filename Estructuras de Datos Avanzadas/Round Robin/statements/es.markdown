@@ -15,6 +15,7 @@ En la primera línea dos enteros, $N$ y $K$.
 En cada una de las siguientes $N$ líneas, dos enteros $X, Y$, separados por un espacio. Que denotan el ID del proceso y el tiempo de ejecución que necesita para concluir.
 
 # Salida
+
 $N$ líneas con los ID de los procesos en el orden que concluyeron. Considera que los procesos de la entrada ya se encuentran en la lista de espera.
 
 # Ejemplo
@@ -38,6 +39,6 @@ $N$ líneas con los ID de los procesos en el orden que concluyeron. Considera qu
 
 # Límites
 
-* $1 \leq N \leq 1000$
-* $1 \leq K \leq 100$
-* $1 \leq t_i \leq 1000$
+- $1 \leq N \leq 1000$
+- $1 \leq K \leq 100$
+- $1 \leq t_i \leq 1000$
