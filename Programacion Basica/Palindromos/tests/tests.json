@@ -1,1 +1,8 @@
-{}
+{
+  "solutions": [
+    {
+      "filename": "../solutions/solution.cpp",
+      "verdict": "AC"
+    }
+  ]
+}
