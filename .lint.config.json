@@ -10,7 +10,7 @@
       "allowlist": [".*\\.json$"]
     },
     "markdown": {
-      "allowlist": []
+      "allowlist": [".*\\\\Palindromos\\\\.*\\.cpp"]
     },
     "python": {
       "allowlist": [".*\\.py$"],
