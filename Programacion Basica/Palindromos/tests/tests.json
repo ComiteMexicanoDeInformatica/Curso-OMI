@@ -1,0 +1,12 @@
+{
+  "solutions": [
+    {
+      "filename": "../solutions/solution.cpp",
+      "verdict": "AC"
+    },
+    {
+      "filename": "../solutions/solution_b.cpp",
+      "verdict": "AC"
+    }
+  ]
+}

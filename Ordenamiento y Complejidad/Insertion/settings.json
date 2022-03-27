@@ -1,32 +1,32 @@
 {
-    "title": "Insertion Sort Interactivo",
-    "source": "Curso OMI (Orac)",
+  "title": "Insertion Sort Interactivo",
+  "source": "Curso OMI (Orac)",
 
+  "limits": {
+    "TimeLimit": 3000,
+    "MemoryLimit": 3333334,
+    "InputLimit": 134217728,
+    "OutputLimit": 134217728,
+    "ExtraWallTime": 3000,
+    "OverallWallTimeLimit": 60000
+  },
+
+  "validator": {
+    "name": "literal",
     "limits": {
-        "TimeLimit": 3000,
-        "MemoryLimit": 3333334,
-        "InputLimit": 134217728,
-        "OutputLimit": 134217728,
-        "ExtraWallTime": 3000,
-        "OverallWallTimeLimit": 60000
-    },
-
-    "validator": {
-        "name": "literal",
-        "limits": {
-            "TimeLimit": 1000
-        }
-    },
-
-    "interactive": {
-        "module_name": "InsertionSortInteractivo"
-    },
-
-    "misc": {
-        "alias": "COMI-Insertion",
-        "visibility": 1,
-        "languages": "all",
-        "email_clarifications": 0,
-        "admin-groups": ["workshop-2017"]
+      "TimeLimit": 1000
     }
+  },
+
+  "interactive": {
+    "module_name": "InsertionSortInteractivo"
+  },
+
+  "misc": {
+    "alias": "COMI-Insertion",
+    "visibility": 1,
+    "languages": "all",
+    "email_clarifications": 0,
+    "admin-groups": ["workshop-2017"]
+  }
 }

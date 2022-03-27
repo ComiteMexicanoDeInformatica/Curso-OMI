@@ -1,13 +1,9 @@
-#include"Recuerdame.h"
+#include "Recuerdame.h"
 int k;
-void recuerdame(int num)
-{
-  k=num;
-}
+void recuerdame(int num) { k = num; }
 
-bool soy(int x)
-{
-  if(k==x) {
+bool soy(int x) {
+  if (k == x) {
     return true;
   } else {
     return false;

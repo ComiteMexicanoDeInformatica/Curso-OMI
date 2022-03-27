@@ -1,0 +1,35 @@
+{
+  "lint": {
+    "clang-format": {
+      "allowlist": [".*\\.cpp$"]
+    },
+    "karel": {
+      "allowlist": [".*\\.(kp|kj)$"]
+    },
+    "json": {
+      "allowlist": [".*\\.json$"]
+    },
+    "markdown": {
+      "allowlist": [".*\\\\Palindromos\\\\.*\\.cpp"]
+    },
+    "python": {
+      "allowlist": [".*\\.py$"],
+      "pylint_config": ".pylintrc"
+    },
+    "problematic-terms": {
+      "terms": [
+        {
+          "regexps": ["^[ \\t]*using\\s+namespace\\s+std\\s*;[ \\t]*$"],
+          "message": "El uso de `using namespace std;` es no-deseable.\n\nEl comité de C++ se reserva el derecho de usar cualquier nombre en `std::`, porque hacer `using namespace std;` es una causa común de errores al momento de cambiar de compilador. Por ejemplo, C++17 introdujo `std::count()`[1], así que todos los códigos de C++ que usan `using namespace std;` y declaran algo con el nombre `count` tienen un CE instantáneo.\n\n1: https://en.cppreference.com/w/cpp/algorithm/count"
+        },
+        {
+          "regexps": [
+            "^[ \\t]*#\\s*include\\s*<\\s*bits/stdc\\+\\+\\.h\\s*>[ \\t]*$"
+          ],
+          "message": "El uso de `bits/stdc++.h` es no-deseable.\n\nTodas las cabeceras de `bits/` son específicas al compilador y la arquitectura. Una causa común de errores de compilación locales es el uso de esta librería."
+        }
+      ],
+      "allowlist": [".*\\\\Palindromos\\\\.*\\.cpp"]
+    }
+  }
+}

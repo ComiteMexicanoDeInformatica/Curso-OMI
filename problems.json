@@ -1,40 +1,7 @@
 {
   "problems": [
     {
-      "title": "Intro - Objetivo",
-      "path": "Intro/Objetivo"
-    },
-    {
-      "title": "Intro - omegaUp",
-      "path": "Intro/omegaUp"
-    },
-    {
-      "title": "Intro - Veredictos",
-      "path": "Intro/Veredictos"
-    },
-    {
-      "title": "Estructuras de Datos - Introducción",
-      "path": "Estructuras de Datos/Introduccion"
-    },
-    {
-      "title": "Estructuras de Datos - Tutorial",
-      "path": "Estructuras de Datos/Tutorial"
-    },
-    {
-      "title": "Estructuras de Datos - Paréntesis",
-      "path": "Estructuras de Datos/Parentesis"
-    },
-    {
-      "title": "Estructuras de Datos - Taquitos",
-      "path": "Estructuras de Datos/Taquitos"
-    },
-    {
-      "title": "Estructuras de Datos Avanzadas - Mesa Redonda",
-      "path": "Estructuras de Datos Avanzadas/Mesa Redonda"
-    },
-    {
-      "title": "Ordenamiento y Complejidad - Insertion Sort Interactivo",
-      "path": "Ordenamiento y Complejidad/Insertion"
+      "path": "Programacion Basica/Palindromos"
     }
   ]
 }
