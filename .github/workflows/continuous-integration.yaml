@@ -9,7 +9,7 @@ on:
     branches: [main]
 
 env:
-  OMEGAUPUSER: ofmi
+  OMEGAUPUSER: omips
   OMEGAUP_API_TOKEN: ${{ secrets.OMEGAUP_API_TOKEN }}
   GIT_USERNAME: ${{ github.actor }}
 
