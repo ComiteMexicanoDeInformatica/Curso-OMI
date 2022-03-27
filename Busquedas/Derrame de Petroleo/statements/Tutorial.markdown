@@ -30,7 +30,6 @@ A partir de ello vamos a crear un procedimiento en una función que denominamos 
     int dx[4]={1,-1,0,0};
     int dy[4]={0,0,1,-1};
 
-
 Estas existen y pueden ser utilizadas en cualquier parte y función del programa (a menos que declarásemos en una función u parámetro o variable local con el mismo nombre).
 
 3.-$dfs$ se invoca a sí misma cuando existe una casilla adyascente y t<=k A eso se le llama RECURSIóN que es un artificio que nos permite especificar un proceso basado en su propia definición, como seguramente lo has visto matemáticamente con los números factoriales $n! = n (n-1)!$ o con la Serie de Fibonacci $Fib(n) = Fib(n-1) + Fib(n-2)$
