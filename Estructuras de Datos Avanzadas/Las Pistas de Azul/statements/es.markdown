@@ -1,10 +1,11 @@
 ﻿# Descripción
 
-Seguramente has escuchado hablar del programa *Las pistas de Blue*, donde un perro dejaba huellas para que su amo Steve encontrara ciertos objetos. *Azul* es el primo de *Blue*, que vive en México y él utiliza números para que su amo Esteban encuentre objetos. El mundo está dividido en un conjunto de casillas donde en cada una se encuentra un PAR de números (fila, columna) que indica la posición donde está la siguiente pista.
+Seguramente has escuchado hablar del programa _Las pistas de Blue_, donde un perro dejaba huellas para que su amo Steve encontrara ciertos objetos. _Azul_ es el primo de _Blue_, que vive en México y él utiliza números para que su amo Esteban encuentre objetos. El mundo está dividido en un conjunto de casillas donde en cada una se encuentra un PAR de números (fila, columna) que indica la posición donde está la siguiente pista.
 
 Esteban, al encontrar el objeto que buscaba, notó que su casa estaba llena de pistas y por lo tanto su casa estaba muy sucia por el andar de Azul, así que él quiere saber en qué partes de la casa pudo haber estado Azul para poder limpiar.
 
 # Problema
+
 Dada un conjunto de pistas y las ubicaciones de estas, deberás decirle a Esteban el número de casillas desde, las cuales, empezando en cada una de ellas y siguiendo las pistas, se puede llegar a la casilla donde está el objeto.
 
 # Entrada
@@ -22,7 +23,7 @@ Un entero que indica el número de casillas, desde las cuales, se puede llegar a
 1 2
 0 2 -1 -1 2 0
 1 1 -1 -1 2 2
-1 2  0  1 1 2
+1 2 0 1 1 2
 ||output
 4
 ||description
@@ -33,13 +34,13 @@ En el ejemplo la respuesta es 4 porque desde las casillas (0,0), (0,2), (2,0) y 
 
 #Nota
 
-* Al menos te tienes que mover a una casilla para que puedas contarla, es decir, empezar en la casilla del objeto no deberá contarse
-* Las casillas que están marcadas con -1,-1 indica que no hay pista que te lleve a otra casilla
- 
+- Al menos te tienes que mover a una casilla para que puedas contarla, es decir, empezar en la casilla del objeto no deberá contarse
+- Las casillas que están marcadas con -1,-1 indica que no hay pista que te lleve a otra casilla
+
 # Límites
 
-* $0 \leq F,C \leq N-1$
-* $1 \leq N \leq50$
+- $0 \leq F,C \leq N-1$
+- $1 \leq N \leq50$
 
 #Evaluación
 

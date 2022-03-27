@@ -8,9 +8,11 @@ Troyo el cometriángulos está hambriento! El requiere de tus asosmbrosas habili
 Tu tarea es decirle a Troyo cuantos puntos tiene el $n$-ésimo triángulo.
 
 # Entrada
+
 La primera y única linea de entrada consiste unicamente de un entero $n$.
 
 # Salida
+
 En la primera y única linea deberás imprimir la cantidad de puntos que tiene el $n$-ésimo triángulo.
 
 # Ejemplo
@@ -27,4 +29,4 @@ En la primera y única linea deberás imprimir la cantidad de puntos que tiene e
 
 #Límites
 
-* $1 \leq n \leq 10^{18}$.
+- $1 \leq n \leq 10^{18}$.

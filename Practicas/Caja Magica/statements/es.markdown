@@ -1,26 +1,26 @@
-# Descripción
+# Descripciï¿½n
 
-Vlasta la Sabia del reino del más allá, recibió una caja mágica con un secreto como un regalo de su amiga Haya la Sabia del reino de un poco más acá. Sin embargo, Vlasta la Sabia no sabe cuál es el secreto de la caja mágica, no la ha podido. Ella tiene la esperanza de que la ayudes.
+Vlasta la Sabia del reino del mï¿½s allï¿½, recibiï¿½ una caja mï¿½gica con un secreto como un regalo de su amiga Haya la Sabia del reino de un poco mï¿½s acï¿½. Sin embargo, Vlasta la Sabia no sabe cuï¿½l es el secreto de la caja mï¿½gica, no la ha podido. Ella tiene la esperanza de que la ayudes.
 
-La cerradura de la caja se ve como algo así: contiene $4$ huecos para colocar piedras preciosas formando un cuadrado de $2$ x $2$, y algunos números enteros están escritos en el borde de los huecos. La siguiente imagen te dará un panorama de como está la cerradura.
+La cerradura de la caja se ve como algo asï¿½: contiene $4$ huecos para colocar piedras preciosas formando un cuadrado de $2$ x $2$, y algunos nï¿½meros enteros estï¿½n escritos en el borde de los huecos. La siguiente imagen te darï¿½ un panorama de como estï¿½ la cerradura.
 
 ![Figura A](caja_magica_1.png)
 
-La caja viene acompañada de $9$ piedras preciosas. Sus formas corresponden a los huecos y cada piedra contiene un número del $1$ al $9$ (cada número está escrito sólamente en una piedra preciosa). La caja se abrirá sólo después de que sean colocadas las piedras preciosas correctamente; es decir, en cada hueco debería haber exactamente una piedra. También la suma de los números de los renglones del cuadrado, columnas y diagonales deberán corresponder con los números escritos en los bordes de los huecos. Por ejemplo, la cerradura mostrada en la figura de arriba, se abrirá si colocamos las piedras en los huecos con los números como se muestran en la figura de abajo.
+La caja viene acompaï¿½ada de $9$ piedras preciosas. Sus formas corresponden a los huecos y cada piedra contiene un nï¿½mero del $1$ al $9$ (cada nï¿½mero estï¿½ escrito sï¿½lamente en una piedra preciosa). La caja se abrirï¿½ sï¿½lo despuï¿½s de que sean colocadas las piedras preciosas correctamente; es decir, en cada hueco deberï¿½a haber exactamente una piedra. Tambiï¿½n la suma de los nï¿½meros de los renglones del cuadrado, columnas y diagonales deberï¿½n corresponder con los nï¿½meros escritos en los bordes de los huecos. Por ejemplo, la cerradura mostrada en la figura de arriba, se abrirï¿½ si colocamos las piedras en los huecos con los nï¿½meros como se muestran en la figura de abajo.
 
 ![Figura B](caja_magica_2.png)
 
-Vlasta la Sabia quiere saber, dados los números de la cerradura de la caja, como colocar las piedras preciosas para que la abran. Ayuda a Vlasta a resolver esta difícil tarea.
+Vlasta la Sabia quiere saber, dados los nï¿½meros de la cerradura de la caja, como colocar las piedras preciosas para que la abran. Ayuda a Vlasta a resolver esta difï¿½cil tarea.
 
 # Entrada
 
-La entrada contiene los números escritos en los bordes de la cerradura de la caja. La primer línea contiene los números enteros, separados con un espacio, $r_1$ y $r_2$ que son las sumas de los números en los renglones del cuadrado. La segunda línea contiene los números enteros, separados con un espacio, $c_1$ y $c_2$ que son las sumas de los números en las columnas del cuadrado. La tercer línea contiene los números enteros separados con un espacio, $d_1$ y $d_2$, que son la suma de los números de la diagonal principal y lateral del cuadrado ($1 \leq r_1, r_2, c_1, c_2, d_1, d_2 \leq 20$). La correspondencia entre las 6 variables anteriores y los lugares donde están escritas se muestra en la imagen de abajo. Para más aclaraciones por favor observa el segundo caso que muestra el ejemplo dado en la descripción del problema.
+La entrada contiene los nï¿½meros escritos en los bordes de la cerradura de la caja. La primer lï¿½nea contiene los nï¿½meros enteros, separados con un espacio, $r_1$ y $r_2$ que son las sumas de los nï¿½meros en los renglones del cuadrado. La segunda lï¿½nea contiene los nï¿½meros enteros, separados con un espacio, $c_1$ y $c_2$ que son las sumas de los nï¿½meros en las columnas del cuadrado. La tercer lï¿½nea contiene los nï¿½meros enteros separados con un espacio, $d_1$ y $d_2$, que son la suma de los nï¿½meros de la diagonal principal y lateral del cuadrado ($1 \leq r_1, r_2, c_1, c_2, d_1, d_2 \leq 20$). La correspondencia entre las 6 variables anteriores y los lugares donde estï¿½n escritas se muestra en la imagen de abajo. Para mï¿½s aclaraciones por favor observa el segundo caso que muestra el ejemplo dado en la descripciï¿½n del problema.
 
 ![Figura C](caja_magica_3.png)
 
 # Salida
 
-Muestra la forma en que deberán estar acomodadas las piedras en la caja: dos líneas que contengan dos enteros del $1$ al $9$, separados por un espacio. Los números deberán ser diferentes entre sí. Si no hay una solución para abrir la cerradura, entonces despliega un sólo número "-1" (sin las comillas).
+Muestra la forma en que deberï¿½n estar acomodadas las piedras en la caja: dos lï¿½neas que contengan dos enteros del $1$ al $9$, separados por un espacio. Los nï¿½meros deberï¿½n ser diferentes entre sï¿½. Si no hay una soluciï¿½n para abrir la cerradura, entonces despliega un sï¿½lo nï¿½mero "-1" (sin las comillas).
 
 Si hay muchas salidas, muestra cualquiera.
 
@@ -56,5 +56,5 @@ Si hay muchas salidas, muestra cualquiera.
 
 # Nota
 
-* Fíjate en el último caso del problema. Es imposible abrir la caja porque Vlasta la Sabia necesitará 4 piedras preciosas idénticas que tengan el número "5". Sin embargo, Vlasta sólo tiene una piedra preciosa con cada uno de los números del $1$ al $9$.
-* Como los casos son únicos, al no existir solución, están agrupados
+- Fï¿½jate en el ï¿½ltimo caso del problema. Es imposible abrir la caja porque Vlasta la Sabia necesitarï¿½ 4 piedras preciosas idï¿½nticas que tengan el nï¿½mero "5". Sin embargo, Vlasta sï¿½lo tiene una piedra preciosa con cada uno de los nï¿½meros del $1$ al $9$.
+- Como los casos son ï¿½nicos, al no existir soluciï¿½n, estï¿½n agrupados
