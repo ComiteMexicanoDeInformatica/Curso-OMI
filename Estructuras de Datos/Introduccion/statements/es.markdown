@@ -62,10 +62,10 @@ La tarea de implementar una enlazada puede hacerse eficazmente con dos arreglos:
 
 ---
 
-- push_back _[Insertar al final de la lista]_
-- push_front _[Insertar el elemento que está enfrente]_
-- pop_front _[Eliminar el elemento que está al inicio de la lista]_
-- pop_back _[Eliminar el elemento que está al final de la lista]_
+- push*back *[Insertar al final de la lista]\_
+- push*front *[Insertar el elemento que está enfrente]\_
+- pop*front *[Eliminar el elemento que está al inicio de la lista]\_
+- pop*back *[Eliminar el elemento que está al final de la lista]\_
 - front _[Consultar el elemento que está al inicio de la lista]_
 - back _[Consultar el elemento que está al final de la lista]_
 - insert _[Insertar un elemento en medio de la lista]_
