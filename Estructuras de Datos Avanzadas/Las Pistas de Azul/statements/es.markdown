@@ -17,14 +17,8 @@ Un entero que indica el número de casillas, desde las cuales, se puede llegar a
 
 # Ejemplo
 
-||input
-3
-1 2
-0 2 -1 -1 2 0
-1 1 -1 -1 2 2
-1 2  0  1 1 2
-||output
-4
+||examplefile
+sample
 ||description
 ![Cuadrícula de Pistas](PistasAzul.jpg)
 
