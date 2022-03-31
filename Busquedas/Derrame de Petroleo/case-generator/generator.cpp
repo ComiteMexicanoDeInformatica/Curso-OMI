@@ -12,7 +12,7 @@ int pos_rc[NUM_CASOS][2], pos_k_max[NUM_CASOS], plataforma[NUM_CASOS][2],
     tierra[NUM_CASOS];
 
 int azar(int minimo, int maximo) {
-  /* Regresa un n�mero al azar de m.nimo a maximo */
+  /* Regresa un número al azar de mìnimo a maximo */
   if (minimo == maximo)
     return minimo;
   else
@@ -20,13 +20,13 @@ int azar(int minimo, int maximo) {
 }
 
 void llenar_r() {
-  /* Funci.n que llena los valores m.nimos y m�ximo para el rengl.n y la columna
+  /* Función que llena los valores mínimos y máximo para el renglón y la columna
    */
 
   int valor_r, valor_c;
   /* valor_r y valor_c es el valor que tiene la r y la c, tienen el mismo valor
-  si el l.mite del m.nimo y el m�ximo es 1, pero diferente si los min/max son
-  m�s que uno */
+  si el límite del mínimo y el máximo es 1, pero diferente si los min/max son
+  más que uno */
 
   for (int x = 0; x < NUM_CASOS; x++) {
     if (x < 4) {
@@ -57,14 +57,14 @@ void llenar_r() {
       valor_r = azar(10, 50);
       valor_c = azar(10, 50);
     }
-    /* En la posici.n 0 se guarda r y en 1 se guarda c */
+    /* En la posición 0 se guarda r y en 1 se guarda c */
     pos_rc[x][0] = valor_r;
     pos_rc[x][1] = valor_c;
   }
 }
 
 void llenar_k() {
-  /* Funci.n que llena los valores m�ximo para k (los d.as que pasan), el m.nimo
+  /* Función que llena los valores máximo para k (los días que pasan), el mínimo
    * es 1 */
 
   for (int x = 0; x < NUM_CASOS; x++) {
@@ -103,7 +103,7 @@ void llenar_k() {
 }
 
 void llenar_pp() {
-  /* Funci.n que llena la posici.n de la plataforma petrolera */
+  /* Función que llena la posición de la plataforma petrolera */
 
   for (int x = 0; x < NUM_CASOS; x++) {
     if (x <= 5) {
@@ -132,7 +132,7 @@ void llenar_pp() {
 }
 
 void llenar_tierra() {
-  /* Funci.n que llena los valores m.nimos y m�ximos de cuanta tierra puede
+  /* Función que llena los valores mínimos y máximos de cuanta tierra puede
    * haber */
 
   for (int x = 0; x < NUM_CASOS; x++) {
@@ -235,13 +235,13 @@ int main() {
 
   srand(time(NULL));
 
-  /* Los rangos de las consideraciones est�n en el archivo details.txt
-     que est� en raiz de la carpeta del problema */
+  /* Los rangos de las consideraciones están en el archivo details.txt
+     que está en raiz de la carpeta del problema */
 
-  llenar_r();      /* Llena los valores del rengl.n y la columna */
-  llenar_k();      /* Llena los valores de k m�ximos */
-  llenar_pp();     /* Indica la posici.n de la plataforma petrolera */
-  llenar_tierra(); /* Valores minimo y m�ximo de tierra que puede haber */
+  llenar_r();      /* Llena los valores del renglón y la columna */
+  llenar_k();      /* Llena los valores de k máximos */
+  llenar_pp();     /* Indica la posición de la plataforma petrolera */
+  llenar_tierra(); /* Valores minimo y máximo de tierra que puede haber */
   /// muestra();
   generar(13, 1, 1);
   return 0;
