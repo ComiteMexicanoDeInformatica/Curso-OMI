@@ -35,18 +35,20 @@ class Test(unittest.TestCase):
     def test(self):
         with open('data.in', 'r') as handle:
             lines = handle.read().split('\n')
-        
+
         self.assertEqual(lines[-1], '')
         lines.pop()
 
         first_line_reg = re.compile(r'^(\d+)')
-        self.assertTrue(first_line_reg.match(lines[0]), "First line incorrectly formatted")
+        self.assertTrue(first_line_reg.match(lines[0]),
+            "First line incorrectly formatted")
         N = int(lines[0])
         # Validar N
         self.assertTrue(1 <= N <= 50, "N out of bounds")
 
         second_line_reg = re.compile(r'^(\d+) (\d+)')
-        self.assertTrue(second_line_reg.match(lines[1]), "First line incorrectly formatted")
+        self.assertTrue(second_line_reg.match(lines[1]),
+            "First line incorrectly formatted")
         F, C = map(int, lines[1].split(' '))
         # Validar F, C
         self.assertTrue(0 <= F <= N - 1, "F out of bounds")
@@ -54,8 +56,6 @@ class Test(unittest.TestCase):
 
         # Validar número de lineas
         self.assertEqual(len(lines), N + 2)
-
-
 
 if __name__ == '__main__':
     validatortest.main()
