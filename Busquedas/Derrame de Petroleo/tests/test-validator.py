@@ -10,6 +10,7 @@ import unittest
 
 from omegaup.validator import validatortest
 
+
 class Test(unittest.TestCase):
 
     def test(self):
