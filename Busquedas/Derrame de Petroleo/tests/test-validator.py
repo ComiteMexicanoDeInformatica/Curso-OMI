@@ -10,21 +10,18 @@ import unittest
 
 from omegaup.validator import validatortest
 
-MAX_N = 1000
-NUM_SUBTAREAS = 3
-
-
 class Test(unittest.TestCase):
 
     def test(self):
         with open('data.in', 'r') as handle:
             lines = handle.read().split('\n')
 
-        self.assertEqual(lines[-1], '')
+        self.assertEqual(lines[-1], '', "file doesn't end with EOL")
         lines.pop()
 
         first_line_reg = re.compile(r'^(\d+) (\d+) (\d+)$')
-        self.assertTrue(first_line_reg.match(lines[0]), "first line incorrectly formatted")
+        self.assertTrue(first_line_reg.match(lines[0]),
+                        "first line incorrectly formatted")
         R, C, K = map(int, lines[0].split(' '))
 
         # Validar R, C, K
