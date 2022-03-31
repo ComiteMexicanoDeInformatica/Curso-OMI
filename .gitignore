@@ -22,4 +22,4 @@ libinteractive.jar
 Makefile
 
 .vscode
-results
+results*
