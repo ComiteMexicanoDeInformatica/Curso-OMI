@@ -20,14 +20,12 @@ class Test(unittest.TestCase):
         with open('data.in', 'r') as handle:
             lines = handle.read().split('\n')
 
-        #self.assertEqual(lines[-1], '')
+        self.assertEqual(lines[-1], '')
         lines.pop()
 
         first_line_reg = re.compile(r'^(\d+) (\d+) (\d+)$')
         self.assertTrue(first_line_reg.match(lines[0]), "first line incorrectly formatted")
         R, C, K = map(int, lines[0].split(' '))
-
-        return
 
         # Validar R, C, K
         self.assertTrue(1 <= R <= 2000, "R out of bounds")
@@ -46,6 +44,7 @@ class Test(unittest.TestCase):
                 self.assertFalse(saw_dollar, "too many $ in map")
 
         self.assertFalse(saw_dollar, "no $ in map")
+
 
 if __name__ == '__main__':
     validatortest.main()
