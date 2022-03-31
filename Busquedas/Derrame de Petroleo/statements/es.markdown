@@ -14,28 +14,10 @@ Tu programa debe leer de teclado tres enteros separados por un espacio $R$, $C$ 
 
 Tu programa debe mostrar $R$ líneas, cada una con $C$ caracteres. Cada carácter en esta cuadrícula debe ser el mismo que el carácter correspondiente en la cuadrícula de entrada, a excepción de las casillas marinas que han sido cubiertas por petróleo después de $K$ días. Estos deberían estar representados por caracteres '*'.
 
-||input
-4 6 4
-###...
-.$....
-...###
-#.#..#
-||output
-###**.
-*$****
-***###
-#*#..#
-||input
-4 3 2
-#.#
-.$.
-.##
-...
-||output
-#*#
-*$*
-*##
-...
+||examplefile
+sample
+||examplefile
+sample2
 ||end
 
  # Límites
