@@ -40,6 +40,7 @@ class Test(unittest.TestCase):
             self.assertEqual(len(line), C, "line width mismatch")
             if '$' in line:
                 self.assertFalse(saw_dollar, "too many $ in map")
+                saw_dollar = True
 
         self.assertFalse(saw_dollar, "no $ in map")
 
