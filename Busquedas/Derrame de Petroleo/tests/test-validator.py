@@ -42,7 +42,7 @@ class Test(unittest.TestCase):
                 self.assertFalse(saw_dollar, "too many $ in map")
                 saw_dollar = True
 
-        self.assertFalse(saw_dollar, "no $ in map")
+        self.assertTrue(saw_dollar, "no $ in map")
 
 
 if __name__ == '__main__':
