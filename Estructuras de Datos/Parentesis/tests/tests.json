@@ -10,10 +10,11 @@
     },
     {
       "filename": "../solutions/wrong.py3",
-      "verdict": "PA"
+      "verdict": "WA"
     }
   ],
   "inputs": {
     "filename": "test-validator.py"
-  }
+  },
+  "max_score": 100
 }
