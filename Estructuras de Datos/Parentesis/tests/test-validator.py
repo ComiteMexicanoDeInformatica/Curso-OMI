@@ -20,5 +20,6 @@ class Test(unittest.TestCase):
         with open('data.in', 'r') as handle:
             parens = inputParser.parse(handle.read())
 
+
 if __name__ == '__main__':
     validatortest.main()
