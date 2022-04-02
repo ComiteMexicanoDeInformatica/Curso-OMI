@@ -27,7 +27,7 @@ def inputParser():
             return f'line length to be {C}, got {len(line)}'
         return None
 
-    lineWithoutDollar = oup.label('line without $', p.regex(r'[.#]*') << oup.eol)
+    lineWithoutDollar = oup.label('line w/o $', p.regex(r'[.#]*') << oup.eol)
     lineWithDollar = oup.label('line', p.regex(r'[.#]*\$?[.#]*') << oup.eol)
 
     saw_dollar = False
@@ -38,6 +38,7 @@ def inputParser():
 
     if not saw_dollar:
         return p.fail('$ to be present in map')
+
 
 class Test(unittest.TestCase):
 

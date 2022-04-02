@@ -12,6 +12,7 @@ import parsy as p
 from omegaup.validator import validatortest
 import omegaup.validator.parsing as oup
 
+
 @p.generate
 def inputParser():
     a = yield oup.boundedInteger(1, 1000, 'a')
@@ -19,6 +20,7 @@ def inputParser():
     b = yield oup.boundedInteger(1, 1000, 'b')
     yield oup.eol
     return (a, b)
+
 
 class Test(unittest.TestCase):
 
