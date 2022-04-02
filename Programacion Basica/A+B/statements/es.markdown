@@ -1,14 +1,14 @@
 Deberás escribir un programa que tome dos números y los sume.
 
-#Entrada
+# Entrada
 
 La entrada consiste en dos enteros, $a$ y $b$, separados por un espacio en blanco.
 
-#Salida
+# Salida
 
-Tu salida debe ser un solo número entero, la suma de $a$ y $b$.  
+Tu salida debe ser un solo número entero, la suma de $a$ y $b$.
 
-#Ejemplo
+# Ejemplo
 ||input
 5 5
 ||output
@@ -23,6 +23,6 @@ Tu salida debe ser un solo número entero, la suma de $a$ y $b$.
 23 + 45 = 68
 ||end
 
-#Límites
+# Límites
 
  * $a$ y $b$ pueden ser enteros desde $1$ hasta $1,000$

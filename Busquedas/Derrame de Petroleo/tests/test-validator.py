@@ -7,41 +7,43 @@
 import sys
 import re
 import unittest
+import parsy as p
 
 from omegaup.validator import validatortest
+import omegaup.validator.parsing as oup
 
+
+@p.generate
+def inputParser():
+    R = yield oup.boundedInteger(1, 2000, 'R')
+    yield oup.space
+    C = yield oup.boundedInteger(1, 2000, 'C')
+    yield oup.space
+    K = yield oup.boundedInteger(1, 10**7, 'K')
+    yield oup.eol
+
+    def evalLineLength(line):
+        if len(line) != C:
+            return f'line length to be {C}, got {len(line)}'
+        return None
+
+    lineWithoutDollar = oup.label('line without $', p.regex(r'[.#]*') << oup.eol)
+    lineWithDollar = oup.label('line', p.regex(r'[.#]*\$?[.#]*') << oup.eol)
+
+    saw_dollar = False
+    for r in range(R):
+        parser = lineWithoutDollar if saw_dollar else lineWithDollar
+        line = yield oup.guard(parser, evalLineLength)
+        saw_dollar |= '$' in line
+
+    if not saw_dollar:
+        return p.fail('$ to be present in map')
 
 class Test(unittest.TestCase):
 
     def test(self):
         with open('data.in', 'r') as handle:
-            lines = handle.read().split('\n')
-
-        self.assertEqual(lines[-1], '', "file doesn't end with EOL")
-        lines.pop()
-
-        first_line_reg = re.compile(r'^(\d+) (\d+) (\d+)$')
-        self.assertTrue(first_line_reg.match(lines[0]),
-                        "first line incorrectly formatted")
-        R, C, K = map(int, lines[0].split(' '))
-
-        # Validar R, C, K
-        self.assertTrue(1 <= R <= 2000, "R out of bounds")
-        self.assertTrue(1 <= C <= 2000, "C out of bounds")
-        self.assertTrue(0 <= K <= 10**7, "K out of bounds")
-
-        # Validar número de lineas
-        self.assertEqual(len(lines), 1 + R, "line count mismatch")
-
-        saw_dollar = False
-        map_reg = re.compile(r'^[.#$]+$')
-        for line in lines[1:]:
-            self.assertTrue(map_reg.match(line), "invalid character in map")
-            self.assertEqual(len(line), C, "line width mismatch")
-            if '$' in line:
-                self.assertFalse(saw_dollar, "too many $ in map")
-
-        self.assertFalse(saw_dollar, "no $ in map")
+            inputParser.parse(handle.read())
 
 
 if __name__ == '__main__':
