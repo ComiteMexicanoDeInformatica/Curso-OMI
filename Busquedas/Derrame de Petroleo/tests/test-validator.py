@@ -24,7 +24,7 @@ def inputParser():
 
     def evalLineLength(line):
         if len(line) != C:
-            return f'line length to be {C}, got {len(line)}'
+            return f'line length {C}, got {len(line)}'
         return None
 
     lineWithoutDollar = oup.label('line w/o $', p.regex(r'[.#]*') << oup.eol)
