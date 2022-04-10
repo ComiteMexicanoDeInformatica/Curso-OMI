@@ -15,34 +15,12 @@ Por cada una de las entradas del tipo $3$ y $4$, deberás imprimir un entero por
 
 # Ejemplo
 
-||input
-9
-1 4
-1 3
-1 10
-3
-1 5
-2
-2
-1 9
-4
-||output
-3
-7
+||examplefile
+sample
 ||description
 Al principio se forman 3 personas pidiendo $4$, $3$ y $10$ tacos respectivamente. Después se pregunta por el número de personas formadas, así que la respuesta es $3$. Luego se forma un cliente más pidiendo $5$ tacos. Posteriormente son atendidos los primeros 2 clientes, por lo que se venden $4+3=7$ tacos. Luego se forma un cliente más a la fila pidiendo $9$ tacos. Finalmente, se pregunta por el número de tacos vendidos, así que la respuesta es $7$.
-||input
-6
-4
-1 3
-2
-1 7
-4
-3
-||output
-0
-3
-1
+||examplefile
+sample1
 ||end
 
 # Límites

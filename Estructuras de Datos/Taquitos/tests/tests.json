@@ -1,15 +1,16 @@
 {
   "solutions": [
     {
-      "filename": "solutions/solution.cpp",
+      "filename": "../solutions/solution.cpp",
       "verdict": "AC"
     },
     {
-      "filename": "solutions/solution2.cpp",
+      "filename": "../solutions/solution2.cpp",
       "verdict": "AC"
     }
   ],
   "inputs": {
-    "filename": "dummy-validator.py"
-  }
+    "filename": "test-validator.py"
+  },
+  "max_score": 100
 }
