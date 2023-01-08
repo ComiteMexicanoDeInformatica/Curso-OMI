@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args){
+    Scanner cin = new Scanner(System.in);
+    int a,b;
+    a=cin.nextInt();
+    b=cin.nextInt();
+
+    if(a%b ==0){
+      System.out.println(""+(a/b));
+    }else{
+      System.out.println(""+(a/b)+" "+(a%b)+"/"+b);
+    }
+  }
+}
